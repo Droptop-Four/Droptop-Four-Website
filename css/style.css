@@ -252,8 +252,8 @@ input[type="checkbox"] {
 .panel {
   margin: 0 0 15px;
   padding: 0 18px;
-  background-color: white;
-  color: #000;
+  background-color: #0d0d11;
+  color: #fff;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
