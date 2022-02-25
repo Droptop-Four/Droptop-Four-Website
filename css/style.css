@@ -253,7 +253,7 @@ input[type="checkbox"] {
   margin: 0 0 15px;
   padding: 0 18px;
   background-color: #0d0d11;
-  color: #fff;
+  color: #0d0d11;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
