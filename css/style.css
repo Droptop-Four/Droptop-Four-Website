@@ -23,11 +23,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
+.navbar a {
   text-decoration: none;
 }
 
-li {
+.navbar li {
   list-style: none;
 }
 
