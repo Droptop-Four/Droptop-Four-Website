@@ -23,11 +23,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
+.navbar a {
   text-decoration: none;
 }
 
-li {
+.navbar li {
   list-style: none;
 }
 
@@ -252,8 +252,8 @@ input[type="checkbox"] {
 .panel {
   margin: 0 0 15px;
   padding: 0 18px;
-  background-color: white;
-  color: #000;
+  background-color: #0d0d11;
+  color: #0d0d11;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
