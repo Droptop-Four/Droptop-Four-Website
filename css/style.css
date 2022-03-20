@@ -329,3 +329,49 @@ input[type="checkbox"] {
   font-size: 10px;
   color: #60d96b;
 }
+
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 20px;
+}
+
+/* Got this from a random codepen. will refactor soon */
+.slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(/img/slide.png);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.slideshow .slideshow-mover-1 {
+  animation: moveSlideshow 17s linear infinite;
+}
+.slideshow .slideshow-mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 20s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
