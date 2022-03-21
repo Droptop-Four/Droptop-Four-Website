@@ -1,0 +1,8 @@
+.droptop-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vh;
+    height: 32px;
+    background-color: beige;
+}
