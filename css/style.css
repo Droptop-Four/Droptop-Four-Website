@@ -120,7 +120,8 @@ input[type="checkbox"] {
     right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 0;    
+    z-index: 999;
   }
   .menu li:hover {
     display: inline-block;
@@ -133,6 +134,7 @@ input[type="checkbox"] {
   }
   input[type="checkbox"]:checked ~ .menu {
     display: block;
+    
   }
   .hamburger {
     display: block;
@@ -160,6 +162,57 @@ input[type="checkbox"] {
   opacity: 0.3;
   z-index: -999;
 }
+
+
+
+
+
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 20px;
+}
+
+/* Got this from a random codepen. will refactor soon */
+.slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(/img/slide.png);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.slideshow .slideshow-mover-1 {
+  animation: moveSlideshow 17s linear infinite;
+}
+.slideshow .slideshow-mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 20s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
 
 
 
@@ -331,47 +384,3 @@ input[type="checkbox"] {
 }
 
 
-
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: 20px;
-}
-
-/* Got this from a random codepen. will refactor soon */
-.slideshow {
-  height: 200px;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.slideshow > div {
-  height: 200px;
-  width: 2526px;
-  background: url(/img/slide.png);
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  transform: translate3d(0, 0, 0);
-}
-.slideshow .slideshow-mover-1 {
-  animation: moveSlideshow 17s linear infinite;
-}
-.slideshow .slideshow-mover-2 {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
-  animation: moveSlideshow 20s linear infinite;
-}
-
-
-@keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-66.6666%);  
-  }
-}

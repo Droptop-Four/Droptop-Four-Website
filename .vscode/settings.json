@@ -153,9 +153,6 @@
             "gitDecoration.stageModifiedResourceForeground": "#399EE6",
             "settings.modifiedItemIndicator": "#399EE6",
             "notebook.focusedRowBorder": "#9e8be5"
-        },
-        "activityBar.background": "#472131",
-        "titleBar.activeBackground": "#642E45",
-        "titleBar.activeForeground": "#FCF9FA"
+        }
     }
 }
