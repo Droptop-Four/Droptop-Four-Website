@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 :root {
@@ -82,7 +82,7 @@ body {
 }
 
 .site-name {
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 3px;
   font-size: 30px;
 }
