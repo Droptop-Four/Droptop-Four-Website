@@ -6,7 +6,7 @@
   --main-bg-color-tr: #22222D80;
   --main-bg-highlight-tr: #4B4B4B80;
   --secondary-bg-color: #0D0D11;
-  --primary-text-color: #4BD765;
+  --accents-text-color: #4BD765;
   --important-text-color: #FB8368;
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
@@ -46,7 +46,7 @@ body {
 /* Skip-to-main-content */
 .skip-to-main-content {
   background: var(--main-bg-color);
-  color: var(--primary-text-color)  ;
+  color: var(--accents-text-color)  ;
   padding: 0.5rem 1.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
   position: absolute;
@@ -67,11 +67,11 @@ body {
   min-height: 8vh;
   padding: 20px;
   background-color: var(--secondary-bg-color);
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
   z-index: 999;
 }
 .nav-links a {
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
 }
 /* LOGO */
 .logo img {
@@ -89,7 +89,7 @@ body {
 
 .site-name a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
 }
 
 /* NAVBAR MENU */
@@ -119,7 +119,7 @@ input[type="checkbox"] {
   display: none;
   font-size: 24px;
   user-select: none;
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
   cursor: pointer;
   z-index: 999;
 }
@@ -165,7 +165,7 @@ input[type="checkbox"] {
 	top: 0;
 	height: 100vh;
 	width: 100vw;
-  background-image: url("../img/DroptopFourLogo.png");
+  background-image: url("/img/DroptopFourLogo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -230,7 +230,7 @@ input[type="checkbox"] {
 /* ------ COMMUNITY APPS PAGE ------ */
 
 .community-apps-banner {
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
   font-size: 50px;
   display: flex;
   flex-direction: column;
@@ -238,6 +238,19 @@ input[type="checkbox"] {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+
+.app-making {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.app-tutorial-link {
+  color: var(--accents-text-color);
+  
+}
+
 
 .appsList li {
   padding-bottom: 20px;
@@ -267,7 +280,7 @@ input[type="checkbox"] {
 .app-card-title {
   font-size: 30px;
   font-weight: bold;
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
 }
 
 .app-card-image {
@@ -303,7 +316,7 @@ input[type="checkbox"] {
 
 .app-card-button {
   background-color: var(--main-bg-color);
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
   border: none;
   padding: 10px;
   text-align: center;
@@ -346,7 +359,7 @@ input[type="checkbox"] {
 }
 
 .faq-banner {
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
   font-size: 50px;
   display: flex;
   flex-direction: column;
@@ -368,7 +381,7 @@ input[type="checkbox"] {
 .accordion {
   background-color: var(--main-bg-color-tr);
   border-style: 2px solid;
-  border-color: var(--primary-text-color);
+  border-color: var(--accents-text-color);
   color: var(--main-text-color);
   cursor: pointer;
   padding: 18px;
@@ -376,7 +389,8 @@ input[type="checkbox"] {
   margin: 15px 0;
   text-align: left;
   transition: 0.4s;
-  font-size: 20px
+  font-size: 20px;
+  border-radius: 8px;
 }
 
 .accordion:after {
@@ -423,7 +437,7 @@ input[type="checkbox"] {
 }
 
 .faq-ullist {
-  color: var(--primary-text-color);
+  color: var(--accents-text-color);
   list-style-position: inside;
   padding-bottom: 1rem;
 }
@@ -461,12 +475,15 @@ input[type="checkbox"] {
 .faq-disclaimer {
   display: flex;
   flex-direction: column;
-  color: var(--primary-text-color);
+  color: var(--main-text-color);
   align-items: center;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
+.faq-disclaimer-link {
+  color: var(--accents-text-color)
+}
 
 
 
