@@ -161,11 +161,11 @@ input[type="checkbox"] {
   display: flex;
 	align-self: stretch;
 	position: absolute;
-	left: 0;
+	lefts: 0;
 	top: 0;
 	height: 100vh;
 	width: 100vw;
-  background-image: url("./img/DroptopFourLogo.png");
+  background-image: url("../img/DroptopFourLogo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -223,6 +223,116 @@ input[type="checkbox"] {
     transform: translateX(-66.6666%);  
   }
 }
+
+
+
+
+/* ------ COMMUNITY APPS PAGE ------ */
+
+.community-apps-banner {
+  color: var(--primary-text-color);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.appsList li {
+  padding-bottom: 20px;
+}
+
+.app-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #0D0D11;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.app-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.app-card-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.app-card-image {
+  width: 80%;
+  padding-top: 20px;
+}
+
+.app-card-name {
+  text-transform: uppercase;
+  padding-top: 10px;
+  color: var(--main-text-color)
+}
+
+.app-card-author {
+  color: var(--secondary-text-color);
+}
+
+.app-card-author-link {
+  color: var(--secondary-text-color);
+}
+
+.app-card-desc {
+  align-items: center;
+  text-align: center;
+  max-width: 90%;
+  color: var(--main-text-color);
+  padding: 10px 10px;
+}
+
+.app-card-buttons {
+  padding: 0 5px;
+}
+
+.app-card-button {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.app-card-button:hover {
+  background-color: var(--main-bg-highlight-tr);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.app-card-button:active {
+  background-color: var(--main-bg-highlight-tr);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.app-card-button:focus {
+  outline: none;
+}
+
+
+
 
 
 
