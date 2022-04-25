@@ -247,6 +247,20 @@ input[type="checkbox"] {
 
 
 
+/* ------ DOWNLOAD PAGE ------ */
+
+.download-banner {
+  color: var(--accents-text-color);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
 
 /* ------ COMMUNITY APPS PAGE ------ */
 
@@ -369,7 +383,7 @@ input[type="checkbox"] {
 
 
 
-/* ------ COMMUNITY APPS PAGE ------ */
+/* ------ CREATE AN APP PAGE ------ */
 
 .create-an-app-banner {
   color: var(--accents-text-color);
