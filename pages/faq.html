@@ -57,14 +57,14 @@
             </div>
         </section>
 
+        <div class="faq-disclaimer">
+            <p>Can't find the answer you're looking for? Ask in the #help channel of the <a href="https://discord.gg/jbxcmfn2vZ" class="faq-disclaimer-link">Droptop Discord Server</a>.</p>
+        </div>
+
         <section class="faq-contents" id="main-content">
 
-            <div class="faq-disclaimer">
-                <p>Can't find the answer you're looking for? Ask in the #help channel of the <a href="https://discord.gg/jbxcmfn2vZ" class="faq-disclaimer-link">Droptop Discord Server</a>.</p>
-            </div>
-
             <div class="faq-accordion">
-                <button class="accordion">I paid for supporter version, but lost it. How do I restore it?</button>
+                <button class="accordion" id="supporter">I paid for supporter version, but lost it. How do I restore it?</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: Lost supporter version.</p>
                     <p class="faq-solution">
@@ -81,7 +81,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">Gmail isn't working</button>
+                <button class="accordion" id="gmail">Gmail isn't working</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: Mails are not appearing in the Gmail app</p>
                     <p class="faq-solution">
@@ -110,7 +110,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">I can't install the update</button>
+                <button class="accordion" id="update">I can't install the update</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: Receiving an error when installing the update</p>
                     <p class="faq-solution">
@@ -123,7 +123,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">I want to move Droptop to another display</button>
+                <button class="accordion" id="move">I want to move Droptop to another display</button>
                 <div class="panel">
                     <p class="faq-notes">Tip: You can move Droptop to another monitor, or stretch Droptop over multiple monitors by clicking on the home icon in the top-left corner, and navigating to "Droptop settings" >> "Options" >> "Move to another monitor", and selecting one of the options. "Always Show Droptop" mode must be disabled and each monitor in your setup must have the same resolution. However, if you have monitors with different resolutions, see the solution below:</p>
                     <p class="faq-problem">Problem: My multi-monitor setup has displays with different resolutions. How do I move Droptop to the other monitor?</p>
@@ -147,7 +147,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">I want to change the name of an application on the bar</button>
+                <button class="accordion" id="app-name">I want to change the name of an application on the bar</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: An application I'm using isn't the name I want displayed on the bar</p>
                     <p class="faq-solution">
@@ -177,7 +177,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">Droptop is slow</button>
+                <button class="accordion" id="slow">Droptop is slow</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: Droptop is slow</p>
                     <p class="faq-solution">
@@ -221,7 +221,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">How do I optimize Droptop for good battery life?</button>
+                <button class="accordion" id="battery">How do I optimize Droptop for good battery life?</button>
                 <div class="panel">
                     <p class="faq-notes">Although Droptop uses very few resources when sitting idle in the background, you may want to optimize Droptop for extended laptop battery life. Here are some solutions:</p>
                     <p class="faq-problem">Problem: I need to maximize my battery life</p>
@@ -244,7 +244,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">My music & videos aren't showing up in the Volume app</button>
+                <button class="accordion" id="volume-app">My music & videos aren't showing up in the Volume app</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: Not displaying song title & artist in the Volume app</p>
                     <p class="faq-solution">
@@ -271,7 +271,7 @@
                     </p>
                 </div>
 
-                <button class="accordion">My weather, browser media, mail, or exchange rate data isn't updating</button>
+                <button class="accordion" id="weather">My weather, browser media, mail, or exchange rate data isn't updating</button>
                 <div class="panel">
                     <p class="faq-problem">Problem: The webparser isn't retrieving data</p>
                     <p class="faq-solution">Solution: Try...

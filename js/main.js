@@ -22,7 +22,7 @@ const products = document.getElementById("appsList");
 class Apps {
   async Items() {
     try {
-      let result = await fetch('/data/community_apps.json')
+      let result = await fetch('/data/community_apps/community_apps.json')
       let data = await result.json()
       // return data
 
@@ -48,7 +48,7 @@ class Display {
     apps.forEach((item) => {
       result += `
         <li>
-          <div class="app-card">
+          <div class="app-card" id="${item.id}">
             <div class="app-card-container">
               <img class="app-card-image" src="${item.image}" alt="${item.name} image">
               <h3 class="app-card-name">${item.name}</h3>
