@@ -388,6 +388,7 @@ input[type="checkbox"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  color: var(--main-text-color)
 }
 
 .create-an-app-tablecontents li a {
