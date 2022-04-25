@@ -44,6 +44,10 @@ html {
   color: var(--secondary-text-color)
 }
 
+.link {
+  color: var(--accents-text-color)
+}
+
 body {
   background-color: var(--main-bg-color);
   min-height: 100%;
@@ -586,9 +590,7 @@ input[type="checkbox"] {
   padding-bottom: 30px;
 }
 
-.faq-disclaimer-link {
-  color: var(--accents-text-color)
-}
+
 
 
 
