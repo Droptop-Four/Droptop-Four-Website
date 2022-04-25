@@ -27,6 +27,23 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+.code {
+  background-color: #d3f5fd;
+  color: #2085ed;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+.important {
+  color: var(--important-text-color);
+}
+
+.underline {
+  text-decoration: underline;
+  color: var(--secondary-text-color)
+}
+
 body {
   background-color: var(--main-bg-color);
   min-height: 100%;
@@ -348,6 +365,99 @@ input[type="checkbox"] {
 
 
 
+/* ------ COMMUNITY APPS PAGE ------ */
+
+.create-an-app-banner {
+  color: var(--accents-text-color);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.create-an-app-tablecontents {
+  list-style-position: inside;
+  width: 80%;
+  min-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-an-app-tablecontents li a {
+  color: var(--accents-text-color);
+}
+
+.create-an-app-tablecontents ul li ul li {
+  padding-left: 3rem;
+}
+
+.create-an-app-contents {
+  color: var(--main-text-color);
+  width: 80%;
+  min-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.make-an-app {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.make-an-app h3 {
+  text-transform: uppercase;
+}
+
+.make-an-app-disclaimer {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.make-an-app-process {
+  text-align: left;
+  color: var(--secondary-text-color)
+}
+
+.make-an-app-process li {
+  margin-bottom: 10px;
+}
+
+.builtin-variables {
+  padding-left: 1rem
+}
+
+.builtin-variables h4 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.builtin-variable {
+  color: var(--accents-text-color)
+}
+
+.share-an-app {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.share-an-app h3 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+
+
+
+
 
 
 
@@ -465,13 +575,7 @@ input[type="checkbox"] {
   padding-top: 0.5rem;
 }
 
-.code {
-  background-color: #d3f5fd;
-  color: #2085ed;
-  border-radius: 3px;
-  font-family: courier, monospace;
-  padding: 0 3px;
-}
+
 
 .faq-disclaimer {
   display: flex;
