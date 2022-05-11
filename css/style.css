@@ -11,10 +11,9 @@
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
   --tertiary-text-color: #84858A;
-  --banner-font-size: 50px;
 }
 
-hml {
+html {
   height: 100%;
   scroll-behavior: smooth;
   width: auto !important;
@@ -34,27 +33,19 @@ hml {
   border-radius: 3px;
   font-family: courier, monospace;
   padding: 0 3px;
-  overflow-wrap: break-word;
 }
 
 .important {
   color: var(--important-text-color);
-  overflow-wrap: break-word;
 }
 
 .underline {
   text-decoration: underline;
-  color: var(--secondary-text-color);
-  overflow-wrap: break-word;
+  color: var(--secondary-text-color)
 }
 
 .link {
-  color: var(--accents-text-color);
-  overflow-wrap: break-word;
-}
-
-.hidden {
-  display: none;
+  color: var(--accents-text-color)
 }
 
 body {
@@ -62,6 +53,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar a {
@@ -153,6 +145,35 @@ input[type="checkbox"] {
   z-index: 999;
 }
 
+@media (max-width: 1080px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;    
+    z-index: 999;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: var(--main-bg-highlight-tr);
+    color: var(--main-text-color);
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+    
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
 
 
 
@@ -230,7 +251,7 @@ input[type="checkbox"] {
 
 .download-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,19 +266,13 @@ input[type="checkbox"] {
 
 .community-apps-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-
-.community-apps-banner h1 {
-  text-align: center;
-}
-
 
 
 .app-making {
@@ -372,7 +387,7 @@ input[type="checkbox"] {
 
 .create-an-app-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -475,16 +490,12 @@ input[type="checkbox"] {
 
 .faq-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.faq-banner h1 {
-  text-align: center;
 }
 
 .faq-contents {
@@ -594,11 +605,6 @@ input[type="checkbox"] {
   padding-bottom: 30px;
 }
 
-.faq-disclaimer p {
-  width: 80%;
-  text-align:center;
-}
-
 
 
 
@@ -670,44 +676,4 @@ input[type="checkbox"] {
   font-size: 10px;
   color: var(--secondary-text-color);
 }
-
-
-
-
-
-
-
-@media (max-width: 1080px) {
-  :root {
-    --banner-fontsize: 40px;
-  }
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: var(--main-bg-color);
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;    
-    z-index: 999;
-  }
-  .menu li:hover {
-    display: inline-block;
-    background-color: var(--main-bg-highlight-tr);
-    color: var(--main-text-color);
-    transition: 0.3s ease;
-  }
-  .menu li + li {
-    margin-top: 12px;
-  }
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-    
-  }
-  .hamburger {
-    display: block;
-  }
-}
-
-
 
