@@ -33,19 +33,23 @@ html {
   border-radius: 3px;
   font-family: courier, monospace;
   padding: 0 3px;
+  overflow-wrap: break-word;
 }
 
 .important {
   color: var(--important-text-color);
+  overflow-wrap: break-word;
 }
 
 .underline {
   text-decoration: underline;
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
+  overflow-wrap: break-word;
 }
 
 .link {
-  color: var(--accents-text-color)
+  color: var(--accents-text-color);
+  overflow-wrap: break-word;
 }
 
 .hidden {
