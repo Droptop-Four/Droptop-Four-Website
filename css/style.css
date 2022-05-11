@@ -484,11 +484,11 @@ input[type="checkbox"] {
 
 /* ------ FAQ PAGE ------ */
 
-.faq-page {
+/* .faq-page {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .faq-banner {
   color: var(--accents-text-color);
@@ -603,6 +603,11 @@ input[type="checkbox"] {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.faq-disclaimer p {
+  text-align: center;
+  width: 80%;
 }
 
 
