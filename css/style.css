@@ -48,6 +48,10 @@ html {
   color: var(--accents-text-color)
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-color: var(--main-bg-color);
   min-height: 100%;
