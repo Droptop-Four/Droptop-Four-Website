@@ -80,6 +80,8 @@ body {
   transform: translateY(0%);
 }
 
+
+
 /* ------ NAVBAR ------ */
 .navbar {
   display: flex;
@@ -274,19 +276,15 @@ input[type="checkbox"] {
   padding-bottom: 50px;
 }
 
+.community-apps-banner h1 {
+  text-align: center;
+}
 
 .app-making {
   margin-bottom: 30px;
   text-align: center;
   color: var(--main-text-color);
 }
-
-
-.app-tutorial-link {
-  color: var(--accents-text-color);
-  
-}
-
 
 .appsList li {
   padding-bottom: 20px;
@@ -594,8 +592,6 @@ input[type="checkbox"] {
   padding-top: 0.5rem;
 }
 
-
-
 .faq-disclaimer {
   display: flex;
   flex-direction: column;
@@ -676,4 +672,39 @@ input[type="checkbox"] {
   font-size: 10px;
   color: var(--secondary-text-color);
 }
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;    
+    z-index: 999;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: var(--main-bg-highlight-tr);
+    color: var(--main-text-color);
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+    
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
 
