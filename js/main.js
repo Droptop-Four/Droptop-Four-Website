@@ -18,7 +18,7 @@ for (i = 0; i < acc.length; i++) {
 const products = document.getElementById("appsList");
 
 
-/* get basket items from JSON */
+/* Get apps from JSON */
 class Apps {
   async Items() {
     try {
@@ -27,7 +27,7 @@ class Apps {
       // return data
 
       /* destructuring data */
-      let appsItems = data.apps.productList
+      let appsItems = data.apps
       appsItems = appsItems.map(item => {
         const { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image } = item.app
 
@@ -40,7 +40,8 @@ class Apps {
     }
   }
 }
-/* Display stuff from the basket */
+
+/* Display apps */
 class Display {
   displayApps(apps) {
     //console.log(basket)
