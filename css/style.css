@@ -10,7 +10,7 @@
   --important-text-color: #FB8368;
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
-  --tertiary-text-color: #8485850px;
+  --tertiary-text-color: #84858A;
 }
 
 html {
@@ -33,27 +33,19 @@ html {
   border-radius: 3px;
   font-family: courier, monospace;
   padding: 0 3px;
-  overflow-wrap: break-word;
 }
 
 .important {
   color: var(--important-text-color);
-  overflow-wrap: break-word;
 }
 
 .underline {
   text-decoration: underline;
-  color: var(--secondary-text-color);
-  overflow-wrap: break-word;
+  color: var(--secondary-text-color)
 }
 
 .link {
-  color: var(--accents-text-color);
-  overflow-wrap: break-word;
-}
-
-.hidden {
-  display: none;
+  color: var(--accents-text-color)
 }
 
 body {
@@ -61,6 +53,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar a {
@@ -152,6 +145,35 @@ input[type="checkbox"] {
   color: var(--accents-text-color);
   cursor: pointer;
   z-index: 999;
+}
+
+@media (max-width: 1080px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;    
+    z-index: 999;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: var(--main-bg-highlight-tr);
+    color: var(--main-text-color);
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+    
+  }
+  .hamburger {
+    display: block;
+  }
 }
 
 
@@ -474,10 +496,6 @@ input[type="checkbox"] {
   padding-bottom: 50px;
 }
 
-.faq-banner h1 {
-  text-align: center;
-}
-
 .faq-contents {
   color: var(--main-text-color);
   width: 80%;
@@ -583,11 +601,6 @@ input[type="checkbox"] {
   padding-bottom: 30px;
 }
 
-.faq-disclaimer p {
-  width: 80%;
-  text-align:center;
-}
-
 
 
 
@@ -665,7 +678,6 @@ input[type="checkbox"] {
 
 
 
-
 @media screen and (max-width: 1080px) {
   .menu {
     display: none;
@@ -694,6 +706,5 @@ input[type="checkbox"] {
     display: block;
   }
 }
-
 
 
