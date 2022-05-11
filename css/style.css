@@ -10,11 +10,10 @@
   --important-text-color: #FB8368;
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
-  --tertiary-text-color: #84858A;
-  --banner-font-size: 50px;
+  --tertiary-text-color: #8485850px;
 }
 
-hml {
+html {
   height: 100%;
   scroll-behavior: smooth;
   width: auto !important;
@@ -230,7 +229,7 @@ input[type="checkbox"] {
 
 .download-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,7 +244,7 @@ input[type="checkbox"] {
 
 .community-apps-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,7 +371,7 @@ input[type="checkbox"] {
 
 .create-an-app-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -475,7 +474,7 @@ input[type="checkbox"] {
 
 .faq-banner {
   color: var(--accents-text-color);
-  font-size: var(--banner-fontsize);
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -678,9 +677,6 @@ input[type="checkbox"] {
 
 
 @media (max-width: 1080px) {
-  :root {
-    --banner-fontsize: 40px;
-  }
   .menu {
     display: none;
     position: absolute;
