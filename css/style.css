@@ -257,6 +257,107 @@ input[type="checkbox"] {
 
 
 
+
+.home-banner {
+  color: var(--accents-text-color);
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  /* background-color: red; */
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.showcase-container {
+  /* width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding-top: 150px;
+  padding-bottom: 150px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(/img/showcase1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 0%;
+  background-color: none;
+}
+
+
+.home-banner-text {
+  
+}
+
+
+.home-banner-text h1 {
+  float: left;
+  text-align: left;
+  width: 55%;
+  padding-left: 100px;
+}
+
+
+.download-button-container {
+  align-items: center;
+  /* background-color: green; */
+  width: auto;
+}
+
+
+.download-button {
+  background-color: var(--main-bg-color);
+  color: var(--accents-text-color);
+  border: none;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 8px;
+  margin-left: 10%;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.download-button:hover {
+  background-color: var(--main-bg-highlight-tr);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.download-button:active {
+  background-color: var(--main-bg-highlight-tr);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.download-button:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------ DOWNLOAD PAGE ------ */
 
 .download-banner {
@@ -559,6 +660,7 @@ input[type="checkbox"] {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  border-radius: 8px;
 }
 
 .faq-problem {
@@ -717,6 +819,14 @@ input[type="checkbox"] {
   }
   .hamburger {
     display: block;
+  }
+  .home-banner {
+    padding-top: 80px;
+  }
+  .home-banner h1 {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
   }
 }
 
