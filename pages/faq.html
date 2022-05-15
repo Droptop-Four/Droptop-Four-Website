@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/png" href="./img/BunzLogo4.png"> -->
-    <!-- <meta name="theme-color" content="#F338FB"> -->
+    <link rel="icon" type="image/png" href="/img/DroptopFourLogo.png">
+    <meta name="theme-color" content="#4BD765">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FAQs | Droptop Four</title>
 </head>
 
@@ -41,7 +39,7 @@
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/pages/download.html">Download</a></li>
                     <li><a href="/pages/community-apps.html">Community Apps</a></li>
-                    <li><a href="/pages/community-themes.html">Community Themes</a></li>
+                    <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
                     <li><a href="/pages/faq.html">FAQs</a></li>
                 </div>
             </ul>
@@ -59,32 +57,38 @@
             </div>
         </section>
 
+        <div class="faq-disclaimer">
+            <p>Can't find the answer you're looking for? Ask in the #help channel of the <a href="https://discord.gg/jbxcmfn2vZ" class="link">Droptop Discord Server</a>.</p>
+        </div>
+
         <section class="faq-contents" id="main-content">
 
             <div class="faq-accordion">
-
-                <button class="accordion">I paid for supporter version, but lost it. How do I restore it?</button>
+                <button class="accordion" id="supporter">I paid for supporter version, but lost it. How do I restore it?</button>
                 <div class="panel">
-                    <p>Problem: Lost supporter version.</p>
-                    <p>
+                    <p class="faq-problem">Problem: Lost supporter version.</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <ul>
-                            <li>Check your email for the download link</li>
-                            <li>Go to your email provider (Gmail, Outlook, etc.)</li>
-                            <li>Search your inbox for "Droptop" or "Gumroad", and see if you have a download link</li>
+                        <ul class="faq-ullist">
+                            <li>Check your email for the download link
+                                <ol class="faq-ollist">
+                                    <li>Go to your email provider (Gmail, Outlook, etc.)</li>
+                                    <li>Search your inbox for "Droptop" or "Gumroad", and see if you have a download link</li>
+                                    <li class="faq-notes">Note: Droptop's core (basic version) needs to be installed prior to applying the "Supporter Version" upgrade</li>
+                                </ol>
+                            </li>
                         </ul>
-                        Note: Droptop's core (basic version) needs to be installed prior to applying the "Supporter Version" upgrade
                     </p>
                 </div>
 
-                <button class="accordion">Gmail isn't working</button>
+                <button class="accordion" id="gmail">Gmail isn't working</button>
                 <div class="panel">
-                    <p>Problem: Mail is not appearing in the Gmail app</p>
-                    <p>
+                    <p class="faq-problem">Problem: Mails are not appearing in the Gmail app</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <ul>
+                        <ul class="faq-ullist">
                             <li>Using 2-Step Verification? Create an app password for use with Rainmeter & Droptop
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>In Security settings of your Gmail account, navigate to "App passwords"</li>
                                     <li>Under the "App" dropdown menu, select "Other"</li>
                                     <li>Type "Droptop" and press enter</li>
@@ -93,121 +97,106 @@
                                 </ol>
                             </li>
                             <li>Check your Gmail account settings
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>In the Droptop settings >> Options >> Apps >> Mail menu, set your Gmail username and password</li>
                                     <li>Press enter to confirm your entry after typing</li>
                                 </ol>
                             </li>
                         </ul>
                     </p>
-
-                    <p>Problem: I received an email saying that "Somebody tried to log into my account"</p>
-                    <p>
+                    <p class="faq-problem">Problem: I received an email saying that "Somebody tried to log into my account"</p>
+                    <p class="faq-solution">
                         No one actually attempted to log into your account. No one has your log in information except you. The "Somebody" that tried to log into your account was you, but Gmail did not recognize you. Ensure that 2-Step verification is enabled on your account and use an app password for Droptop, explained above.
                     </p>
-
                 </div>
 
-                <button class="accordion">I can't install the update</button>
+                <button class="accordion" id="update">I can't install the update</button>
                 <div class="panel">
-
-                    <p>Problem: Receiving an error when installing the update</p>
-                    <p>
+                    <p class="faq-problem">Problem: Receiving an error when installing the update</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <ul>
-                            <li>Log out and back in again</li>
+                        <ul class="faq-ullist">
                             <li>Log off of your Windows account and log back in</li>
                             <li>Re-run the install file</li>
                         </ul>
                     </p>
-
                 </div>
 
-                <button class="accordion">I want to move Droptop to another display</button>
+                <button class="accordion" id="move">I want to move Droptop to another display</button>
                 <div class="panel">
-
-                    <p>Tip: You can move Droptop to another monitor, or stretch Droptop over multiple monitors by clicking on the home icon in the top-left corner, and navigating to "Droptop settings" >> "Options" >> "Move to another monitor", and selecting one of the options. "Always Show Droptop" mode must be disabled and each monitor in your setup must have the same resolution. However, if you have monitors with different resolutions, see the solution below:</p>
-
-                    <p>My multi-monitor setup has displays with different resolutions. How do I move Droptop to the other monitor?</p>
-
-
-                    <p>
+                    <p class="faq-notes">Tip: You can move Droptop to another monitor, or stretch Droptop over multiple monitors by clicking on the home icon in the top-left corner, and navigating to "Droptop settings" >> "Options" >> "Move to another monitor", and selecting one of the options. "Always Show Droptop" mode must be disabled and each monitor in your setup must have the same resolution. However, if you have monitors with different resolutions, see the solution below:</p>
+                    <p class="faq-problem">Problem: My multi-monitor setup has displays with different resolutions. How do I move Droptop to the other monitor?</p>
+                    <p class="faq-solution">
                         Solution:
-                        <ul>
+                        <ul class="faq-ullist">
                             <li>Manually move Droptop
-                                <ol>
-                                    <li>Open the file Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\UserSettings.inc</li>
-                                    <li>Find the variable BarXposOffset=</li>
+                                <ol class="faq-ollist">
+                                    <li>Open the file <a class="code">Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\UserSettings.inc</a></li>
+                                    <li>Find the variable <a class="code">BarXposOffset</a></li>
                                     <li>Change the value "0" to "500" to move Droptop 500 pixels to the right or "-500" to move Droptop 500 pixels to the left.</li>
                                     <li>Save the file and refresh Droptop to see the changes. Change "500" to any number of pixels until the bar has moved to the correct location on your display.</li>
-                                    <li>You can also do this with the variable BarYposOffset= to change the bar's Y position if necessary.</li>
+                                    <li>You can also do this with the variable <a class="code">BarYposOffset=</a> to change the bar's Y position if necessary.</li>
                                     <li>Once the bar is in the correct spot, you can change the size of the bar to fit the screen.</li>
-                                    <li>In the same file, find the variable BarLengthOffset=</li>
+                                    <li>In the same file, find the variable <a class="code">BarLengthOffset=</a></li>
                                     <li>Change the value "0" to "500" to stretch the bar 500 pixels to the right or "-500" to shrink the bar 500 pixels to the left.</li>
                                     <li>Save the file and refresh Droptop to see the changes. Change "500" to any number of pixels until the bar is the correct size for your display.</li>
                                 </ol>
                             </li>
                         </ul>
                     </p>
-
-
                 </div>
 
-                <button class="accordion">I want to change the name of an application on the bar</button>
+                <button class="accordion" id="app-name">I want to change the name of an application on the bar</button>
                 <div class="panel">
-
-                    <p>Problem: An application I'm using isn't the name I want displayed on the bar</p>
-
-                    <p>
+                    <p class="faq-problem">Problem: An application I'm using isn't the name I want displayed on the bar</p>
+                    <p class="faq-solution">
                         Solution:
-                        <ul>
+                        <ul class="faq-ullist">
                             <li>Create your own substitution
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>To add your own substitution, with the app selected, click on the application's name in the Droptop bar</li>
                                     <li>In the dropdown menu, select "More options", then "Change app name".</li>
-                                    <li>The file UserSettings.inc will open. In this file, find the variable UserAppSubstitutions=
-                                        <ul>
-                                            <li>The end of the line would look like, for example: ,"Discord":"NEW-APP-NAME"</li>
+                                    <li>The file <a class="code">UserSettings.inc</a> will open. In this file, find the variable UserAppSubstitutions=</li>
+                                    <li>Select the end of this line. A template for a new app substitution has been added to your clipboard. Select the end of this line and paste (<kbd>Ctrl</kbd> + <kbd>V</kbd>)
+                                        <ul class="faq-ollist2">
+                                            <li>The end of the line would look like, for example: <a class="code">,"Discord":"NEW-APP-NAME"</a></li>
                                         </ul>
                                     </li>
-                                    <li>Select the end of this line. A template for a new app substitution has been added to your clipboard. Select the end of this line and paste (CTRL+V)</li>
-                                    <li>Replace NEW-APP-NAME with your application's new name.</li>
-                                    <li>Tip: If the first character of the application's name is a lowercase letter (eg. iTunes), use a non-space character as the first letter in your substitution. For example: ,"iTunes","[\x200B]iTunes"</li>
-                                    <li>Tip: If the substitution doesn't work, try adding (?is) to the beginning of your app name to make the line case-insensitive. For example: ,"(?is)Explorer":"Finder"</li>
-                                    <li>Note: Must be exact words and is case-sensitive.</li>
-                                    <li>Substitutions use RegEx.</li>
+                                    <li>Replace NEW-APP-NAME with your application's new name.
+                                        <ul class="faq-ollist2">
+                                            <li>Tip: If the first character of the application's name is a lowercase letter (eg. iTunes), use a non-space character as the first letter in your substitution. For example: <a class="code">,"iTunes","[\x200B]iTunes"</a></li>
+                                            <li>Tip: If the substitution doesn't work, try adding <a class="code">(?is)</a> to the beginning of your app name to make the line case-insensitive. For example: <a class="code">,"(?is)Explorer":"Finder"</a></li>
+                                            <li  class="faq-notes">Note: Must be exact words and is case-sensitive.</li>
+                                            <li>Substitutions use RegEx.</li>
+                                        </ul>
+                                    </li>
                                 </ol>
                             </li>
                         </ul>
                     </p>
-
-
                 </div>
 
-                <button class="accordion">Droptop is slow</button>
+                <button class="accordion" id="slow">Droptop is slow</button>
                 <div class="panel">
-
-                    <p>Problem: Droptop is slow</p>
-                            
-                    <p>
+                    <p class="faq-problem">Problem: Droptop is slow</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <ul>
+                        <ul class="faq-ullist">
                             <li>Enable Hardware Acceleration
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>Right-click on the Rainmeter icon in the Windows system tray (it's rain drop shaped)</li>
                                     <li>Select "Manage"</li>
                                     <li>Select the Settings tab</li>
                                     <li>Check box "Use hardware acceleration (Requires restart)"</li>
                                     <li>Right click on an empty portion of the Droptop bar. Select More options >> Restart Rainmeter.</li>
-                                    <li>Note: Some PCs may have issues with hardware acceleration turned on, including slower performance and graphical glitches. If these occur, disable hardware acceleration.</li>
+                                    <li class="faq-notes">Note: Some PCs may have issues with hardware acceleration turned on, including slower performance and graphical glitches. If these occur, disable hardware acceleration.</li>
                                 </ol>
                             </li>
-                                    
                             <li>Disable "Use heavy blur"
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>Go to Droptop settings >> Options >> Blur effects</li>
-                                    <li>Disable "Use heavy blur effect"></li>                                    Note: This setting is theme-specific. You may need to re-disable this setting if you switch to another theme.
-                                    <li>Set CPU priority for Rainmeter to High</li>                                   Open task manager (Ctrl + Shift + Escape)
+                                    <li>Disable "Use heavy blur effect"></li>                                    <li class="faq-notes">Note: This setting is theme-specific. You may need to re-disable this setting if you switch to another theme.</li>
+                                    <li>Set CPU priority for Rainmeter to High</li>                                   Open task manager (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Escape</kbd>)
                                     <li>Navigate to the Details tab</li>
                                     <li>Find "Rainmeter" in the list of processes</li>
                                     <li>Right-click on "Rainmeter", select "Set priority" >> "High"</li>
@@ -216,13 +205,12 @@
                             </li>
                         </ul>
                     </p>
-
-                    <p>Problem: Droptop is slow when scrolling toolbars</p>
-                    <p>
+                    <p class="faq-problem">Problem: Droptop is slow when scrolling toolbars</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <ul>
+                        <ul class="faq-ullist">
                             <li>Disable submenu and/or all icons
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>Open Droptop settings</li>
                                     <li>In the "Appearance" tab, select the "More" tab.</li>
                                     <li>Enable "Hide icons in submenus" and/or "Hide all menu icons"</li>
@@ -232,107 +220,98 @@
                     </p>
                 </div>
 
-                <button class="accordion">How do I optimize Droptop for good battery life?</button>
+                <button class="accordion" id="battery">How do I optimize Droptop for good battery life?</button>
                 <div class="panel">
-
-                    <p>Although Droptop uses very few resources when sitting idle in the background, you may want to optimize Droptop for extended laptop battery life. Here are some solutions:</p>
-                    <p>Problem: I need to maximize my battery life</p>
-                    <p>
+                    <p class="faq-notes">Although Droptop uses very few resources when sitting idle in the background, you may want to optimize Droptop for extended laptop battery life. Here are some solutions:</p>
+                    <p class="faq-problem">Problem: I need to maximize my battery life</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <ul>
+                        <ul class="faq-ullist">
                             <li>Disable unused system tray apps
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>Right-click on a system tray app in the top-right corner</li>
                                     <li>De-select any apps you don't frequently use. Apps can be re-enabled later at any time.</li>
                                 </ol>
                             </li>
                             <li>Enable "Game mode"
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>When not using Droptop for an extended period of time, you can go to the Windows system tray, right-click on the Rainmeter icon (the rain drop icon), and select "Game mode". Droptop will deactivate completely</li>
                                     <li>To reactivate Droptop, de-select the "Game mode" option.</li>
                                 </ol>
                             </li>
                         </ul>
                     </p>
-
-
                 </div>
 
-                <button class="accordion">My music & videos aren't showing up in the Volume app</button>
+                <button class="accordion" id="volume-app">My music & videos aren't showing up in the Volume app</button>
                 <div class="panel">
-
-                    <p>Problem: Not displaying song title & artist in the Volume app</p>
-                    <p>
+                    <p class="faq-problem">Problem: Not displaying song title & artist in the Volume app</p>
+                    <p class="faq-solution">
                         Solution: Try...
-                        <li>Make sure that the correct media player is selected in the Volume app
-                            <ol>
-                                <li>Click on the Volume app, select "Preferred media player"</li>
-                                <li>Select the application that you want to use for media playback</li>
-                            </ol>
-                        </li>
-                        <li>MusicBee isn't working
-                            <ol>
-                                <li>If you use MusicBee as your media player, click on the Volume app, select "Preferred media player"</li>
-                                <li>Select the "Other" option</li>
-                                <li>In MusicBee, go to Edit >> Edit Preferences >> "Plugins" tab</li>
-                                <li>Under "CD Art Display" select "Enable"</li>
-                                <li>Check the box "Launch on startup"</li>
-                                <li>Press the "Apply" button</li>
-                                <li>Note: You may need to restart MusicBee and/or Rainmeter to confirm changes</li>
-                            </ol>
-                        </li>
+                        <ul class="faq-ullist">
+                            <li>Make sure that the correct media player is selected in the Volume app
+                                <ol class="faq-ollist">
+                                    <li>Click on the Volume app, select "Preferred media player"</li>
+                                    <li>Select the application that you want to use for media playback</li>
+                                </ol>
+                            </li>
+                            <li>MusicBee isn't working
+                                <ol class="faq-ollist">
+                                    <li>If you use MusicBee as your media player, click on the Volume app, select "Preferred media player"</li>
+                                    <li>Select the "Other" option</li>
+                                    <li>In MusicBee, go to Edit >> Edit Preferences >> "Plugins" tab</li>
+                                    <li>Under "CD Art Display" select "Enable"</li>
+                                    <li>Check the box "Launch on startup"</li>
+                                    <li>Press the "Apply" button</li>
+                                    <li class="faq-notes">Note: You may need to restart MusicBee and/or Rainmeter to confirm changes</li>
+                                </ol>
+                            </li>
+                        </ul>
                     </p>
-
                 </div>
 
-                <button class="accordion">My weather, browser media, mail, or exchange rate data isn't updating</button>
+                <button class="accordion" id="data">My weather, browser media, mail, or exchange rate data isn't updating</button>
                 <div class="panel">
-
-                    <p>Problem: The webparser isn't retrieving data</p>
-                    <p>Solution: Try...
-                        <ul>
+                    <p class="faq-problem">Problem: The webparser isn't retrieving data</p>
+                    <p class="faq-solution">Solution: Try...
+                        <ul class="faq-ullist">
                             <li>Exit and re-open Rainmeter
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>Right click on an empty portion of the Droptop bar. Select More options >> Restart Rainmeter.</li>
                                 </ol>
                             </li>
                             <li>Check your internet connection or restart your PC</li>
                             <li>Make sure your Gmail username/password is correct in the Mail app
-                                <ol>
+                                <ol class="faq-ollist">
                                     <li>You can change your Gmail username and password in the Droptop settings under the Gmail tab. Press enter after entering your information to confirm your entry.</li>
                                 </ol>
                             </li>    
                             <li>Make sure your selected currency in the Exchange app is the correct 3 letter code (eg. USD or GBP)</li>
                         </ul>
                     </p>
-
-
                 </div>
-               
                 
             </div>
 
-
-            <p>Can't find the answer you're looking for? Ask in the #help channel of the Droptop Discord.</p>
-
         </section>
 
-
-
-        
+        <div class="faq-disclaimer">
+            <p>Can't find the answer you're looking for? Ask in the #help channel of the <a href="https://discord.gg/jbxcmfn2vZ" target="_blank" class="link">Droptop Discord Server</a>.</p>
+        </div>
 
 
 
         <!-- Footer -->
         <footer class="footer">
             <div class="social">
-                <a href="" target="_blank"><i class="fab fa-deviantart"></i></a>
-                <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank"><i class="fab fa-deviantart"></i></a>
+            <a href="https://github.com/Droptop-Four" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank"><i class="fab fa-discord"></i></a>
             </div>
             <ul class="list">
                 <li><a href="/pages/download.html">Download</a></li>
                 <li><a href="/pages/community-apps.html">Community Apps</a></li>
-                <li><a href="/pages/community-themes.html">Community Themes</a></li>
+                <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
                 <li><a href="/pages/faq.html">FAQs</a></li>
             </ul>
             <p class="copyright">

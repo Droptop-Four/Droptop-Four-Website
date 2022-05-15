@@ -1,0 +1,121 @@
+{
+    "apps": [
+        {
+            "app": {
+                "id": 9,
+                "name": "Media Control",
+                "author": "Yaron",
+                "author_link": "https://github.com/Yaron2334",
+                "desc": "Alternative WebNowPlaying media control center.Requires the WebNowPlaying extension for Chrome, Brave, Firefox, or Edge browsers.",
+                "official_link": "https://github.com/Yaron2334/Media-Control",
+                "direct_download_link": "https://github.com/Yaron2334/Media-Control/raw/main/Media%20Control%20-%20Yaron%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/MediaControl-Yaron.png"
+            }
+        },
+        {
+            "app": {
+                "id": 8,
+                "name": "Color Mode Toggle",
+                "author": "Cariboudjan",
+                "author_link": "https://github.com/Cariboudjan",
+                "desc": "On compatible themes, one-click toggle switching between dark mode and light mode.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/Color_Mode_Toggle-Cariboudjan",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/Color_Mode_Toggle-Cariboudjan/Color%20Mode%20Toggle%20-%20Cariboudjan%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/ColorModeToggle-Cariboudjan.png"
+            }
+        },
+        {
+            "app": {
+                "id": 7,
+                "name": "JaxCore",
+                "author": "Jax",
+                "author_link": "https://github.com/EnhancedJax",
+                "desc": "Allows integration of Vallistart 3.0 with the Droptop home button, as well as shortcuts to YourMixer, QuickNotes, and Keylauncher from JaxCore.\n- JaxCore and related modules required\n- Module download links included inside app.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/JaxCore",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/JaxCore/JaxCore%20-%20JaxCore%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/JaxCore-Jax.png"
+            }
+        },
+        {
+            "app": {
+                "id": 6,
+                "name": "System Monitor",
+                "author": "Yaron",
+                "author_link": "https://github.com/Yaron2334",
+                "desc": "Displays CPU, GPU, RAM, Voltage, and other system resources within the app and on the top bar.",
+                "official_link": "https://github.com/Yaron2334/SystemMonitor",
+                "direct_download_link": "https://github.com/Yaron2334/SystemMonitor/raw/main/System%20Monitor%20-%20Yaron%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/SystemMonitor-Yaron.png"
+            }
+        },
+        {
+            "app": {
+                "id": 5,
+                "name": "Quick Settings",
+                "author": "Cariboudjan",
+                "author_link": "https://github.com/Cariboudjan",
+                "desc": "Toggles the Quick Settings menu (Win+A) in Windows 11, or the Action Center in Windows 10.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/Quick_Settings-Cariboudjan",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/Quick_Settings-Cariboudjan/Quick%20Settings%20-%20Cariboudjan%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/QuickSettings-Cariboudjan.png"
+            }
+        },
+        {
+            "app": {
+                "id": 4,
+                "name": "Disks",
+                "author": "Phanklock",
+                "author_link": "#",
+                "desc": "Shortcuts of up to 5 disk drives and displays remaining gigabytes.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/Disks-Phanlock",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/Disks-Phanlock/Disks%20-%20Phanlock%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/Disks-Phanlock.png"
+            }
+        },
+        {
+            "app": {
+                "id": 3,
+                "name": "DailyQuotes",
+                "author": "Bunz",
+                "author_link": "https://github.com/66Bunz",
+                "desc": "Shows a series of quotes, updating daily. Cycles through a new quote every 20 seconds, or use the scroll wheel to cycle through them manually.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/Daily_Quotes-Bunz",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/Daily_Quotes-Bunz/Daily%20Quotes%20-%20Bunz%20(Droptop%20App).rmskin",
+                "secondary_link": "https://github.com/66Bunz/DroptopFour-DailyQuotes",
+                "image": "/data/community_apps/images/DailyQuotes-Bunz.png"
+            }
+        },
+        {
+            "app": {
+                "id": 2,
+                "name": "Recycle Bin",
+                "author": "Phanlock",
+                "author_link": "#",
+                "desc": "Displays the recycle bin. The bin icon will change depending on how much is in the recycle bin. Drag & drop to the icon to delete files.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/Recycle_Bin-Phanlock",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/Recycle_Bin-Phanlock/Recycle%20Bin%20-%20Phanlock%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/RecycleBin-Phanlock.png"
+            }
+        },
+        {
+            "app": {
+                "id": 1,
+                "name": "Location",
+                "author": "notAperson",
+                "author_link": "#",
+                "desc": "Shows your IP and location information.",
+                "official_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/tree/main/Apps/Location-notAperson",
+                "direct_download_link": "https://github.com/Droptop-Four/Droptop-Community-Apps/raw/main/Apps/Location-notAperson/Location%20-%20notAperson%20(Droptop%20App).rmskin",
+                "secondary_link": "#",
+                "image": "/data/community_apps/images/Location-notAperson.png"
+            }
+        }
+    ]
+}

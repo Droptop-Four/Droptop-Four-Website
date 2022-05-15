@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ling" href="/img/DroptopFourLogo.png">
+    <meta name="theme-color" content="#4BD765">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Create an App | Droptop Four</title>
+</head>
+
+<body>
+
+    <header class="">
+        <a class="skip-to-main-content" href="#main-content">
+            Skip to main content
+        </a>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="/index.html"><img src="/img/DroptopFourLogo.png" alt="Droptop Four Logo"></a>
+            </div>
+            <div class="site-name">
+                <a href="/index.html">
+                    <h4>Droptop Four</h4>
+                </a>
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/download.html">Download</a></li>
+                    <li><a href="/pages/community-apps.html">Community Apps</a></li>
+                    <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
+                    <li><a href="/pages/faq.html">FAQs</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-image"></div>
+
+
+    <!-- Main Content -->
+    <main class="create-an-app-page">
+        <section class="create-an-app-banner">
+            <div class="create-an-app-banner-text">
+                <h1>CREATE AN APP</h1>
+            </div>
+        </section>
+
+        <div class="create-an-app-tablecontents">
+            How to:
+            <ul>
+                <li>
+                    <a href="#make-an-app">Make an app</a>
+                    <ul>
+                        <li><a href="#builtin-variables">Built-in variables</a></li>
+                    </ul>
+                </li>
+                <li><a href="#share-an-app">Share an app</a></li>
+            </ul>
+        </div>
+
+        <section class="create-an-app-contents" id="main-content">
+            
+            <div class="make-an-app" id="make-an-app">
+                <h3>How to make an app</h3>
+
+                <div class="make-an-app-disclaimer">
+                    Before you begin you should have a basic understanding of how to create skins with Rainmeter. Get help on the <a href="https://forum.rainmeter.net/index.php?sid=" target="_blank" class="link">Rainmeter.net forums</a> or on the <a href="https://discord.gg/rainmeter" target="_blank" class="link">Rainmeter Discord</a>.
+                </div>
+
+                <div class="make-an-app-process">
+                    <ul>
+                        <li id="m-step-1"><a class="underline">Step 1</a>: Navigate to <a class="code">Documents\Rainmeter\Skins\Droptop Community Apps\Apps\</a></li>
+
+                        <li id="m-step-2"><a class="underline">Step 2</a>: Copy and paste one of these apps you'd like to use as a template for creating your app. Rename the folder to the name of your app, followed by your name. For example, rename <a class="code">Sample_App-Cariboudjan - Copy</a> to <a class="code">System_Monitor-John_Smith</a>.</li>
+
+                        <li><a class="important">IMPORTANT</a> - Your folder's name <a class="underline">must</a> be one word with no spaces, like in the example above. Use an underscore in the place of a space, and use a dash to separate the app name from the author's name. It's recommended that you use the format shown above.
+                        <br>
+                        Example: <a class="code">App_Name-Your_Name</a></li>
+
+                        <li id="m-step-3"><a class="underline">Step 3</a>: Refresh Rainmeter</li>
+
+                        <li id="m-step-4"><a class="underline">Step 4</a>: Go to the Droptop home button >> "Droptop settings" >> "Community Apps" >> Select a slot >> Select your new app. Your app should now be enabled in Droptop, ready for editing.</li>
+
+                        <li id="m-step-5"><a class="underline">Step 5</a>: In your app's folder, edit the <a class="code">CustomApp.ini</a> file. Edit the <a class="code">NumberOfItems</a> variable to reflect the number of items in your dropdown menu (Maximum 10). Change <a class="code">NumberOfBoxes</a> to reflect how many boxes you'll be using (Maximum 5).</li>
+
+                        <li id="m-step-6"><a class="underline">Step 6</a>: Below that, you'll see <a class="code">ItemTextX</a>, <a class="code">ItemIsFolderX</a>, and <a class="code">ItemActionX</a>. These represent each item in the Dropdown menu, in order from the topmost item to the bottommost item in the list. If <a class="code">ItemIsFolderX</a> is a folder that opens more options, set that value to 1. Otherwise, set it to 0.</li>
+
+                        <li id="m-step-7"><a class="underline">Step 7</a>: Set each item's action. To set an action, you must have an understanding of Rainmeter bangs. Bangs are instructions of what action to perform when that item is selected.</li>
+
+                        <li id="m-step-8"><a class="underline">Step 8</a>: After you've made a few items for your dropdown menu, now you can make icons for your dropdown menu. First, create a fun button for your app in the top bar. Go to the "Button" folder in your app folder. You will find 2 png files - <a class="code">Button.png</a> will be your icon, and <a class="code">ButtonS.png</a> will be your icon with a Drop Shadow filter applied to it. Edit the <a class="code">.png</a> files in Photoshop, GIMP, or another advanced image editor. Create a <a class="code">32x32</a> sized icon for your app. The canvas size of each icon should remain the same. Edit the file - Do not replace the image with another image. The icon you create should always be a pure white color.
+
+                        The free software <a href="https://www.gimp.org/" target="_blank" class="underline">GIMP</a> is useful for editing these types of files.</li>
+
+                        <li id="m-step-9"><a class="underline">Step 9</a>: You can now also make icons for all of your individual items in the dropdown menu. Under the "Icons" folder, you can replace these icons with any <a class="code">32x32</a> icon. The icon you create should always be a pure white color. The canvas size of each icon should remain the same.</li>
+
+                        <li id="m-step-10"><a class="underline">Step 10</a>: Repeat this step for any submenus you've created for your app. Go to <a class="code">Folder\Icons\</a> and set the icons in the same way as you did in <a href="#m-step-9" class="underline">Step 9</a> for the folder number that corresponds to the position of that submenu in the dropdown menu.</li>
+
+                        <li id="m-step-11"><a class="underline">Step 11</a>: Continue editing the <a class="code">CustomApp.ini</a> until it meets the design you had in mind. When you're finished, proceed to compile and share your app with the world.</li>
+                    </ul>
+
+                    <div class="builtin-variables" id="builtin-variables">
+                        <h4>Built-in Variables</h4>
+
+                        <ul>
+                            <li>
+                                <a class="builtin-variable">[#App_Name-Your_Name]</a><br>Equals the slot number your app is in (equals 1, 2, or 3)
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#CustomAppID[#App_Name-Your_Name]]</a><br>Equals the name of your app
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#CustomAppActiveID[#App_Name-Your_Name[#HideAppCustomApp[#App_Name-Your_Name]]]]</a><br>Equals the the name of your app only if your app is active - If not active, equals nothing.
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#HideAppCustomApp[#App_Name-Your_Name]]</a><br>Equals 0 if your app is active - 1 if inactive.
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="share-an-app" id="share-an-app">
+                <h3>How to share an app</h3>
+
+                <div class="make-an-app-process">
+                    <ul>
+                        <li id="s-step-1"><a class="underline">Step 1</a>: If your app requires any special plugins, navigate to <a class="code">App_Name-Your_Name\Plugins\</a> and move any 32-bit and 64-bit plugin <a class="code">.dll</a> binaries to the 32bit and 64bit folders respectively.</li>
+
+                        <li id="s-step-2"><a class="underline">Step 2</a>: Go to Droptop Settings >> Support >> Developer tools >> Generate .rsmkin >> Select your app.</li>
+
+                        <li id="s-step-3"><a class="underline">Step 3</a>: When the compiler is finished, an Explorer window will appear with your installable <a class="code">.rmskin</a> package.</li>
+
+                        <li id="s-step-4"><a class="underline">Step 4</a>: Share your creation on the Droptop Discord <a href="https://discord.gg/xGdEzpdzXk" target="_blank" class="link">#💻╏app-creation</a> channel.</li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </div>
+
+        </section>
+    </main>
+    <!-- Main Content End -->
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank"><i class="fab fa-deviantart"></i></a>
+            <a href="https://github.com/Droptop-Four" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="/pages/download.html">Download</a></li>
+            <li><a href="/pages/community-apps.html">Community Apps</a></li>
+            <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
+            <li><a href="/pages/faq.html">FAQs</a></li>
+        </ul>
+        <p class="copyright">
+            &copy; Droptop Four 2018-2022
+        </li>
+    </section>
+    <!-- Footer End -->
+
+
+    <!-- Script -->
+    <script src="/js/main.js"></script>
+    <!-- Script End -->
+
+</body>
+
+</html>
