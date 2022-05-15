@@ -842,22 +842,25 @@ input[type="checkbox"] {
   .home-banner {
     padding-top: 80px;
   }
-  .home-banner h1 {
-    width: 100%;
-    text-align: center;
-    padding-left: 0px;
-  }
-  .showcase-container {
+  .home-banner-text {
+    padding: 100px 24px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .home-banner-text h1 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: -25px;
   }
   .download-button-container {
-    margin-top: 100px;
-    padding-top: 200px;
+    position: relative;
+    top: 10px;
   }
-  .download-button {
-    display : block;
-    margin: 0 auto;
+  .download-button-container button {
+    position: inherit;
+    transform: translateY(0);
   }
 }
 
