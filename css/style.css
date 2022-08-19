@@ -3,8 +3,8 @@
 
 :root {
   --main-bg-color: #181820;
-  --main-bg-color-tr: #22222D80;
-  --main-bg-highlight-tr: #4B4B4B80;
+  --main-bg-color-tr: #22222d9b;
+  --main-bg-highlight-tr: #393939b6;
   --secondary-bg-color: #0D0D11;
   --accents-text-color: #4BD765;
   --important-text-color: #FB8368;
@@ -188,7 +188,7 @@ input[type="checkbox"] {
 
 
 /* ------- MAIN ------- */
-.bg-image {
+/* .bg-image {
   display: flex;
 	align-self: stretch;
 	position: absolute;
@@ -204,7 +204,7 @@ input[type="checkbox"] {
   background-size: auto auto;
   opacity: 0.3;
   z-index: -999;
-}
+} */
 
 
 
@@ -265,7 +265,7 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   overflow: hidden;
   width: 100%;
 }
@@ -354,13 +354,73 @@ input[type="checkbox"] {
   outline: none;
 }
 
+.home-contents {
+  /* background-color: green; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 
 
+.droptop-info {
+  /* background-color: red; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 80px;
+  
+}
+
+/* .droptop-info h1 {
+  color: var(--accents-text-color);
+  padding-bottom: 10px;
+} */
+
+/* .droptop-info p {
+  color: var(--main-text-color);
+  padding-bottom: 10px;
+} */
+
+.droptop-info-1 img {
+  height: 1500px;
+  /* width: ; */
+  max-width: 80%;
+  mask-image: linear-gradient(to left, black, transparent);
+  -webkit-mask-image: linear-gradient(to left, black, transparent);
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: right top;
+}
 
 
+.test h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  color: red;
+}
 
-
+.test p {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 55%;
+}
 
 
 
