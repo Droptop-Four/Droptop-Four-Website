@@ -6,11 +6,15 @@
   --main-bg-color-tr: #22222d9b;
   --main-bg-highlight-tr: #393939b6;
   --secondary-bg-color: #0D0D11;
+  --secondary-bg-color-tr: #0d0d112c; /* Make transparent */
   --accents-text-color: #4BD765;
   --important-text-color: #FB8368;
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
   --tertiary-text-color: #84858A;
+  --code-background-color: #D3F5FD;
+  --code-text-color: #2085ED;
+  --round-borders: 8px;
 }
 
 html {
@@ -28,8 +32,8 @@ html {
 }
 
 .code {
-  background-color: #d3f5fd;
-  color: #2085ed;
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
   border-radius: 3px;
   font-family: courier, monospace;
   padding: 0 3px;
@@ -62,6 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar a {
@@ -256,18 +261,18 @@ input[type="checkbox"] {
 } */
 
 
-
-
 .home-banner {
+  width: 100%;
+  min-height: calc(100vh - 65px * 2);
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 65px;
   color: var(--accents-text-color);
   font-size: 40px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 80px;
   overflow: hidden;
-  width: 100%;
 }
 
 .showcase-container {
@@ -285,7 +290,7 @@ input[type="checkbox"] {
   max-width: 80%;
   mask-image: linear-gradient(to left, black, transparent);
   -webkit-mask-image: linear-gradient(to left, black, transparent);
-  border-radius: 8px;
+  border-radius: var(--round-borders);
   object-fit: cover;
   object-position: right top;
 }
@@ -330,11 +335,11 @@ input[type="checkbox"] {
   background-color: var(--main-bg-color);
   color: var(--accents-text-color);
   border: none;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 30px;
-  border-radius: 8px;
+  font-size: 20px;
+  border-radius: var(--round-borders);
   cursor: pointer;
 }
 
@@ -364,9 +369,24 @@ input[type="checkbox"] {
 
 
 
-.droptop-info {
+
+
+
+.body-divider {
+  width: 100%;
+  height: 65px;
+  padding: calc(65px / 2) 100px 0 100px;
+}
+
+.body-divider hr {
+  border-color: var(--secondary-bg-color-tr);
+}
+
+
+
+.home-container {
   /* background-color: red; */
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -374,59 +394,184 @@ input[type="checkbox"] {
   font-size: 30px;
   justify-content: center;
   text-align: center;
-  padding-bottom: 80px;
-  
+  padding: 0px 65px;
+  min-height: calc(100vh - 65px * 2);
+  height: max-content;
 }
 
-/* .droptop-info h1 {
-  color: var(--accents-text-color);
-  padding-bottom: 10px;
-} */
 
-/* .droptop-info p {
-  color: var(--main-text-color);
-  padding-bottom: 10px;
-} */
 
-.droptop-info-1 img {
-  height: 1500px;
-  /* width: ; */
-  max-width: 80%;
-  mask-image: linear-gradient(to left, black, transparent);
-  -webkit-mask-image: linear-gradient(to left, black, transparent);
-  border-radius: 8px;
+.droptop-info-1 {
+  width: 100%;
+  position: relative;
+}
+
+
+.image-block-1 {
+  height: 600px;
+  width: 100%;
+  max-width: 90%;
+  border-radius: var(--round-borders);
   object-fit: cover;
-  object-position: right top;
+  object-position: left top;
+  opacity: 0.4;
 }
 
+.image-block-2 {
+  height: 600px;
+  width: 100%;
+  max-width: 90%;
+  border-radius: var(--round-borders);
+  object-fit: cover;
+  object-position: left top;
+  opacity: 0.3;
+}
 
-.test h1 {
+.text-block-c {
+  width: 75%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  color: red;
 }
 
-.test p {
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  width: 55%;
+.text-block-c h1 {
+  color: var(--accents-text-color);
+  padding-bottom: 10px;
+}
+
+.text-block-c p {
+  color: var(--main-text-color);
+  padding-bottom: 10px;
+  line-height: 1.4;
 }
 
 
+.text-block-r {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding-right: 10px;
+}
+
+
+.text-block-r h1 {
+  color: var(--accents-text-color);
+  padding-bottom: 10px;
+}
+
+.text-block-r p {
+  color: var(--main-text-color);
+  padding-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Media Query to move side to side image and text if tab width is small */
 
 
 
 
+
+
+
+
+
+.test-slideshow {
+  height: 500px;
+  width: 100%;
+  border-radius: var(--round-borders);
+  object-fit: cover;
+  object-position: left top;
+}
+
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 60%;
+  transform: translate(0, 50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.text-block-s {
+  width: 75%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-block-s h1 {
+  color: var(--accents-text-color);
+  padding-bottom: 10px;
+}
+
+.text-block-s p {
+  color: var(--main-text-color);
+  padding-bottom: 10px;
+  line-height: 1.4;
+}
 
 
 
@@ -701,7 +846,7 @@ input[type="checkbox"] {
   text-align: left;
   transition: 0.4s;
   font-size: 20px;
-  border-radius: 8px;
+  border-radius: var(--round-borders);
 }
 
 .accordion:after {
@@ -734,7 +879,7 @@ input[type="checkbox"] {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  border-radius: 8px;
+  border-radius: var(--round-borders);
 }
 
 .faq-problem {
