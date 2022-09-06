@@ -3,7 +3,6 @@ let slides = document.getElementsByClassName("mySlides");
 
 
 function plusSlides(n) {
-  let test = 1
   SlidesButtons(slideIndex += n);
 }
 
@@ -27,10 +26,11 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); 
+  setTimeout(showSlides, 3500); 
 }
 
 
 SlidesButtons(slideIndex);
 
 showSlides();
+
