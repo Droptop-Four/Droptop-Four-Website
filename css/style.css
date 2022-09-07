@@ -369,6 +369,21 @@ input[type="checkbox"] {
   position: relative;
 }
 
+.droptop-info-4 {
+  width: 100%;
+  position: relative;
+}
+
+.droptop-info-5 {
+  width: 100%;
+  position: relative;
+}
+
+.droptop-info-6 {
+  width: 100%;
+  position: relative;
+}
+
 
 .image-block-1 {
   height: 600px;
@@ -389,6 +404,40 @@ input[type="checkbox"] {
   object-position: left top;
   opacity: 0.3;
 }
+
+.image-block-4 {
+  height: 600px;
+  width: 100%;
+  max-width: 90%;
+  border-radius: var(--round-borders);
+  object-fit: cover;
+  object-position: right top;
+  opacity: 0.4;
+}
+
+.image-block-5 {
+  height: 600px;
+  width: 100%;
+  max-width: 90%;
+  border-radius: var(--round-borders);
+  object-fit: cover;
+  object-position: left top;
+  opacity: 0.2;
+}
+
+.image-block-6 {
+  height: auto;
+  width: 40%;
+  max-width: 90%;
+  border-radius: var(--round-borders);
+  object-fit: cover;
+  object-position: right top;
+  opacity: 0.4;
+}
+
+
+
+
 
 .text-block-c {
   width: 75%;
@@ -544,6 +593,13 @@ input[type="checkbox"] {
   padding-bottom: 10px;
   line-height: 1.4;
 }
+
+
+
+
+
+
+
 
 
 
