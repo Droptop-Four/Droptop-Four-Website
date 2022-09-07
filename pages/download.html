@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <title>Download | Droptop Four</title>
 </head>
 
@@ -76,12 +77,12 @@
 
 
                 <div class="download-button-container2">
-                    <button class="download-button2" onclick="location.href='/pages/download.html';"
+                    <button class="download-button2" onclick=downloadSupporter()
                         type="button">DOWNLOAD supporter version</button>
                 </div>
 
                 <div class="download-button-container2">
-                    <button class="download-button2" onclick="location.href='/pages/download.html';"
+                    <button class="download-button2" onclick=downloadBase()
                         type="button">DOWNLOAD base version</button>
                 </div>
 
@@ -105,13 +106,35 @@
                     <!-- tabella con differenze tra versione base e supporter -->
                     <table>
                         <tr>
-                            <th>Base</th>
                             <th>Supporter</th>
+                            <th>Base</th>
                         </tr>
                         <tr>
-                            <td>test1</td>
-                            <td>test2</td>
+                            <td>300 home buttons icons</td>
+                            <td>7 home buttons icons</td>
                         </tr>
+                        <tr>
+                            <td>12 fully-customizable folders</td>
+                            <td>6 fully-customizable folders</td>
+                        </tr>
+                        <tr>
+                            <td>22 themes to choose from</td>
+                            <td>4 themes to choose from</td>
+                        </tr>
+                        <tr>
+                            <td>22 themes to choose from</td>
+                            <td>4 themes to choose from</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Always show droptop</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Droptop side apps</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">17+ different languages</td>
+                        </tr>
+                        
                     </table>
 
                 </div>
@@ -162,6 +185,7 @@
 
     <!-- Script -->
     <script src="/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script End -->
 
 </body>

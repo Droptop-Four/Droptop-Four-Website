@@ -1,3 +1,6 @@
+
+
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -12,6 +15,69 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+
+function downloadBase() {
+  window.location.href = "https://github.com/Droptop-Four/Basic-Version/raw/main/Droptop%20Basic%20Version.rmskin"
+}
+
+
+
+function downloadSupporter() {
+  if (navigator.userAgent.indexOf('Win') != -1) {
+    SupporterAlert()
+  } else {
+		AgentAlert()
+	}
+}
+
+
+function SupporterAlert() {
+  Swal.fire({
+    title: '<p class="download-alert-title" style="font-weight: 600; font-size: 2rem;">The basic version of Droptop must be installed first!</p>',
+    html: '<p class="download-alert-text">Please download and install the basic version of Droptop before purchasing and installing the supporter version.</p>',
+    icon: 'warning',
+    // imageUrl: 'https://cdn-icons-png.flaticon.com/512/8256/8256069.png',
+    imageWidth: 100,
+    imageHeight: 100,
+    background: '#181820',
+    confirmButtonColor: '#5AB05B',
+    confirmButtonText: 'I have it already',
+    showDenyButton: true,
+    denyButtonText: 'Get Basic Version',
+    denyButtonColor: '#84858A',
+    reverseButtons: true,
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.open('https://cariboudjan.gumroad.com/l/droptop', '_blank')
+      Swal.close()
+    } else if (result.isDenied) {
+      downloadBase()
+      Swal.close()
+    }        
+  })
+}
+
+
+function AgentAlert() {
+  Swal.fire({
+    title: '<p class="agent-alert-title">Incompatible Device</p>',
+    html: '<p class="agent-alert-text">Droptop Four only works on Windows devices. Download anyway?</p>',
+    icon: 'warning',
+    background: '#181820',
+    confirmButtonColor: '#5AB05B',
+    confirmButtonText: 'Download',
+    showDenyButton: true,
+    denyButtonText: 'Cancel',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      SupporterAlert()
+    }
+  })
+}
+
 
 
 

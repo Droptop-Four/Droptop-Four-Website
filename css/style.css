@@ -621,9 +621,21 @@ input[type="checkbox"] {
 
 
 
+.download-alert-title {
+  color: var(--accents-text-color);
+}
 
+.download-alert-text {
+  color: var(--secondary-text-color);
+}
 
+.agent-alert-title {
+  color: #D5273E;
+}
 
+.agent-alert-text {
+  color: var(--secondary-text-color);
+}
 
 
 
