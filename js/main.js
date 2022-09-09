@@ -19,25 +19,33 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-function downloadBase() {
+function DownloadBase() {
   window.location.href = "https://github.com/Droptop-Four/Basic-Version/raw/main/Droptop%20Basic%20Version.rmskin"
+}
+
+function UpdateBase() {
+  window.location.href = "https://github.com/Droptop-Four/Update/raw/main/Droptop%20Update.rmskin"
 }
 
 
 
-function downloadSupporter() {
+function Download(version) {
   if (navigator.userAgent.indexOf('Win') != -1) {
-    SupporterAlert()
+    if (version == 'base') {
+      DownloadBase()
+    } else {
+      DroptopAlert(version)
+    }
   } else {
-		AgentAlert()
+		AgentAlert(version)
 	}
 }
 
 
-function SupporterAlert() {
+function DroptopAlert(version) {
   Swal.fire({
     title: '<p class="download-alert-title" style="font-weight: 600; font-size: 2rem;">The basic version of Droptop must be installed first!</p>',
-    html: '<p class="download-alert-text">Please download and install the basic version of Droptop before purchasing and installing the supporter version.</p>',
+    html: '<p class="download-alert-text">Please download and install the basic version of Droptop before installing the supporter version or an update.</p>',
     icon: 'warning',
     // imageUrl: 'https://cdn-icons-png.flaticon.com/512/8256/8256069.png',
     imageWidth: 100,
@@ -51,17 +59,22 @@ function SupporterAlert() {
     reverseButtons: true,
   }).then((result) => {
     if (result.isConfirmed) {
-      window.open('https://cariboudjan.gumroad.com/l/droptop', '_blank')
-      Swal.close()
+      if (version == 'supporter') {
+        window.open('https://cariboudjan.gumroad.com/l/droptop', '_blank')
+        Swal.close()
+      } else if (version == 'update') {
+        UpdateBase()
+        Swal.close()
+      }
     } else if (result.isDenied) {
-      downloadBase()
+      DownloadBase()
       Swal.close()
     }        
   })
 }
 
 
-function AgentAlert() {
+function AgentAlert(version) {
   Swal.fire({
     title: '<p class="agent-alert-title">Incompatible Device</p>',
     html: '<p class="agent-alert-text">Droptop Four only works on Windows devices. Download anyway?</p>',
@@ -73,7 +86,11 @@ function AgentAlert() {
     denyButtonText: 'Cancel',
   }).then((result) => {
     if (result.isConfirmed) {
-      SupporterAlert()
+      if (version == 'base') {
+        DownloadBase()
+      } else {
+        DroptopAlert(version)
+      }
     }
   })
 }

@@ -8,6 +8,7 @@
   --secondary-bg-color: #0D0D11;
   --secondary-bg-color-tr: #0d0d112c; /* Make transparent */
   --accents-text-color: #4BD765;
+  --accents-text-color-2: #5AB05B;
   --important-text-color: #FB8368;
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
@@ -274,7 +275,7 @@ input[type="checkbox"] {
   width: 55%;
 }
 
-.download-button-container {
+.home-button-container {
   justify-content: center;
   align-items: center;
   float: right;
@@ -286,7 +287,7 @@ input[type="checkbox"] {
   justify-content: center
 }
 
-.download-button-container button {
+.home-download-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -301,13 +302,13 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.download-button:hover {
+.home-download-button:hover {
   background-color: var(--main-bg-highlight-tr);
   color: var(--main-text-color);
   transition: 0.3s ease;
 }
 
-.download-button:active {
+.home-download-button:active {
   background-color: var(--main-bg-highlight-tr);
   color: var(--main-text-color);
   transition: 0.3s ease;
@@ -598,13 +599,6 @@ input[type="checkbox"] {
 
 
 
-
-
-
-
-
-
-
 /* ------ DOWNLOAD PAGE ------ */
 
 .download-banner {
@@ -617,42 +611,27 @@ input[type="checkbox"] {
   padding-bottom: 50px;
 }
 
-
 .download-container {
   width: 100%;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
-  /* align-self: center; */
   font-size: 30px;
   justify-content: center;
   text-align: center;
   padding: 0px 65px;
-  /* min-height: calc(65vh); */
   height: max-content;
-  /* background-color: red; */
+  color: var(--main-text-color)
 }
 
-
-.download-button-container2 {
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* float: right; */
+.download-button-container {
   border: none;
-  /* text-align: center; */
-  /* width: 45%; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  background-color: red;
 }
 
-.download-button-container2 button {
+.download-button {
   width: 400px;
   height: 150px;
-  background-color: var(--main-bg-color);
-  color: var(--accents-text-color);
-  /* border: none; */
+  background-color: var(--accents-text-color);
+  color: var(--main-bg-color);
   padding: 40px;
   text-align: center;
   text-decoration: none;
@@ -662,19 +641,27 @@ input[type="checkbox"] {
   margin: 40px;
 }
 
-.download-button2:hover {
-  background-color: var(--main-bg-highlight-tr);
-  color: var(--main-text-color);
+.download-button:hover {
+  background-color: var(--main-bg-highlight);
+  color: var(--accents-text-color);
+  border-color: var(--accents-text-color);
   transition: 0.3s ease;
 }
 
-.download-button2:active {
-  background-color: var(--main-bg-highlight-tr);
-  color: var(--main-text-color);
+.download-button:active {
+  background-color: var(--main-bg-highlight);
+  color: var(--accents-text-color);
+  border-color: var(--accents-text-color);
   transition: 0.3s ease;
 }
 
-
+.download-update-container {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 65px;
+  color: var(--main-text-color);
+}
 
 
 .download-alert-title {
@@ -694,17 +681,94 @@ input[type="checkbox"] {
 }
 
 
+.versions-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.versions-table th {
+  background-color: var(--accents-text-color);
+  color: var(--main-bg-color);
+  border: 1px solid;
+  border-color: var(--accents-text-color);
+  padding: 10px;
+}
+
+.versions-table td {
+  border: 1px solid;
+  border-color: var(--accents-text-color);
+  padding: 10px;
+}
+
+.left-table {
+  text-align: left;
+}
+
+.center-table {
+  text-align: center;
+}
 
 
 
 
 
 
+/* ------ UPDATE PAGE ------ */
 
 
+.update-banner {
+  color: var(--accents-text-color);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.update-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 65px;
+  height: max-content;
+  color: var(--main-text-color)
+}
 
+.update-button-container {
+  border: none;
+}
 
+.update-button {
+  width: 400px;
+  height: 150px;
+  background-color: var(--accents-text-color);
+  color: var(--main-bg-color);
+  padding: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: var(--round-borders);
+  cursor: pointer;
+  margin: 40px;
+}
+
+.update-button:hover {
+  background-color: var(--main-bg-highlight);
+  color: var(--accents-text-color);
+  border-color: var(--accents-text-color);
+  transition: 0.3s ease;
+}
+
+.update-button:active {
+  background-color: var(--main-bg-highlight);
+  color: var(--accents-text-color);
+  border-color: var(--accents-text-color);
+  transition: 0.3s ease;
+}
 
 
 
