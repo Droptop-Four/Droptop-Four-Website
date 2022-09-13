@@ -6,9 +6,10 @@
   --main-bg-color-tr: #22222d9b;
   --main-bg-highlight-tr: #393939b6;
   --secondary-bg-color: #0D0D11;
-  --secondary-bg-color-tr: #0d0d112c; /* Make transparent */
+  --secondary-bg-color-tr: #0d0d112c; /* TODO: Make transparent */
   --accents-text-color: #4BD765;
-  --accents-text-color-2: #5AB05B;
+  --accents-text-color-2: #27af40;
+  --accents-text-color-3: #155b22 ; 
   --important-text-color: #FB8368;
   --main-text-color: #FFFFFF;
   --secondary-text-color: #B0B2B8;
@@ -29,7 +30,7 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto-light', sans-serif;
 }
 
 .code {
@@ -70,14 +71,6 @@ body {
   overflow-x: hidden;
 }
 
-.navbar a {
-  text-decoration: none;
-}
-
-.navbar li {
-  list-style: none;
-}
-
 /* Skip-to-main-content */
 .skip-to-main-content {
   background: var(--main-bg-color);
@@ -107,9 +100,19 @@ body {
   color: var(--accents-text-color);
   z-index: 999;
 }
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style: none;
+}
+
 .nav-links a {
   color: var(--accents-text-color);
 }
+
 /* LOGO */
 .logo img {
   border-radius: 20%;
@@ -315,7 +318,6 @@ input[type="checkbox"] {
 }
 
 .home-contents {
-  /* background-color: green; */
   height: 100%;
   width: 100%;
   display: flex;
@@ -486,7 +488,7 @@ input[type="checkbox"] {
   line-height: 1.4;
 }
 
-/* Media Query to move side to side image and text if tab width is small */
+/* TODO: Media Query to move side to side image and text if tab width is small */
 
 
 
@@ -642,16 +644,16 @@ input[type="checkbox"] {
 }
 
 .download-button:hover {
-  background-color: var(--main-bg-highlight);
-  color: var(--accents-text-color);
-  border-color: var(--accents-text-color);
+  background-color: var(--accents-text-color-3);
+  color: var(--secondary-text-color);
+  border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
 .download-button:active {
-  background-color: var(--main-bg-highlight);
-  color: var(--accents-text-color);
-  border-color: var(--accents-text-color);
+  background-color: var(--accents-text-color-3);
+  color: var(--secondary-text-color);
+  border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
@@ -713,6 +715,22 @@ input[type="checkbox"] {
 
 
 
+
+/* TODO: Remove*/
+
+.chtemp {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 65px;
+  color: var(--accents-text-color);
+}
+
+
+
+
+
+
 /* ------ UPDATE PAGE ------ */
 
 
@@ -757,16 +775,16 @@ input[type="checkbox"] {
 }
 
 .update-button:hover {
-  background-color: var(--main-bg-highlight);
-  color: var(--accents-text-color);
-  border-color: var(--accents-text-color);
+  background-color: var(--accents-text-color-3);
+  color: var(--secondary-text-color);
+  border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
 .update-button:active {
-  background-color: var(--main-bg-highlight);
-  color: var(--accents-text-color);
-  border-color: var(--accents-text-color);
+  background-color: var(--accents-text-color-3);
+  color: var(--secondary-bg-color);
+  border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 

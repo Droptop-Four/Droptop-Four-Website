@@ -9,11 +9,8 @@
     <meta name="theme-color" content="#4BD765">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="sweetalert2.min.css">
-    <title>Download | Droptop Four</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Community Apps | Droptop Four</title>
 </head>
 
 <body>
@@ -40,10 +37,10 @@
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/pages/download.html">Download</a></li>
-                    <li><a href="/pages/community-apps.html">Community Apps</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/community-apps">Community Apps</a></li>
                     <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
-                    <li><a href="/pages/faq.html">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </div>
             </ul>
         </nav>
@@ -52,63 +49,44 @@
     <div class="bg-image"></div>
 
 
-
     <!-- Main Content -->
-    <main class="update-page">
-        <section class="update-banner">
-            <div class="update-banner-text">
-                <h1>UPDATE</h1>
+    <main class="community-apps-page">
+        <section class="community-apps-banner">
+            <div class="community-apps-banner-text">
+                <h1>COMMUNITY APPS</h1>
             </div>
         </section>
 
-
-
-
-
-        <div aria-hidden="true" class="body-divider" id="divider-1">
-            <hr>
-            </hr>
+        <div class="app-making">
+            <p>Want to make your own app? <a class="link" href="/community-apps/create-an-app.html">See the Tutorial</a>!!</p>
         </div>
 
-        <section class="update-contents" id="main-content">
+        <section class="community-apps-contents" id="main-content">
+            <ul class="appsList" id="appsList">
 
+            </ul>
 
-            <div class="update-container">
-                <div class="update-button-container">
-                    <button class="update-button" onclick="Download('update')" type="button">UPDATE</button>
-                </div>
-
-
+            <div class="app-making">
+                <p>Want to make your own app? <a class="link" href="/community-apps/create-an-app.html">See the Tutorial</a>!!</p>
             </div>
-
-
-            <div aria-hidden="true" class="body-divider" id="divider-2">
-                <hr>
-                </hr>
-            </div>
-
-
-
 
         </section>
     </main>
     <!-- Main Content End -->
 
 
-
     <!-- Footer -->
     <section class="footer">
         <div class="social">
-            <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank"><i
-                    class="fab fa-deviantart"></i></a>
+            <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank"><i class="fab fa-deviantart"></i></a>
             <a href="https://github.com/Droptop-Four" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
         <ul class="list">
-            <li><a href="/pages/download.html">Download</a></li>
-            <li><a href="/pages/community-apps.html">Community Apps</a></li>
-            <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
-            <li><a href="/pages/faq.html">FAQs</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/community-apps">Community Apps</a></li>
+            <!-- <li class="hidden"><a href="/pages/community-themes.html">Community Themes</a></li> -->
+            <li><a href="/faq">FAQs</a></li>
         </ul>
         <p class="copyright">
             &copy; Droptop Four 2018-2022
@@ -119,8 +97,9 @@
 
     <!-- Script -->
     <script src="/js/main.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
 </body>
 
