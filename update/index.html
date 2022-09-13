@@ -9,8 +9,11 @@
     <meta name="theme-color" content="#4BD765">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Community Themes | Droptop Four</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Download | Droptop Four</title>
 </head>
 
 <body>
@@ -49,15 +52,56 @@
     <div class="bg-image"></div>
 
 
+
     <!-- Main Content -->
-    <main class="home-page">
-        <section class="home-banner">
-            <div class="home-banner-text">
-                <h1>COMMUNITY THEMES</h1>
+    <main class="update-page">
+        <section class="update-banner">
+            <div class="update-banner-text">
+                <h1>UPDATE</h1>
             </div>
         </section>
 
-        <section class="home-contents" id="main-content">
+
+
+
+
+        <div aria-hidden="true" class="body-divider" id="divider-1">
+            <hr>
+            </hr>
+        </div>
+
+        <section class="update-contents" id="main-content">
+
+
+            <div class="update-container">
+                <div class="update-button-container">
+                    <button class="update-button" onclick="Download('update')" type="button">UPDATE</button>
+                </div>
+
+
+            </div>
+
+
+            <div aria-hidden="true" class="body-divider" id="divider-2">
+                <hr>
+                </hr>
+            </div>
+
+            <div class="changelog-container">
+                <div class="chtemp">
+                    Changelog: <br> 
+                    ... <br>
+                    ... <br>
+                </div>
+            </div>
+
+            <div aria-hidden="true" class="body-divider" id="divider-3">
+                <hr>
+                </hr>
+            </div>
+
+
+
 
         </section>
     </main>
@@ -68,7 +112,8 @@
     <!-- Footer -->
     <section class="footer">
         <div class="social">
-            <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank"><i class="fab fa-deviantart"></i></a>
+            <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank"><i
+                    class="fab fa-deviantart"></i></a>
             <a href="https://github.com/Droptop-Four" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
@@ -87,6 +132,7 @@
 
     <!-- Script -->
     <script src="/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script End -->
 
 </body>

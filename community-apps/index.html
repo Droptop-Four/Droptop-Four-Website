@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Download | Droptop Four</title>
+    <title>Community Apps | Droptop Four</title>
 </head>
 
 <body>
@@ -22,10 +22,10 @@
         <nav class="navbar">
             <!-- LOGO -->
             <div class="logo">
-                <a href="/index.html"><img src="/img/DroptopFourLogo.png" alt="Droptop Four Logo"></a>
+                <a href="/"><img src="/img/DroptopFourLogo.png" alt="Droptop Four Logo"></a>
             </div>
             <div class="site-name">
-                <a href="/index.html">
+                <a href="/">
                     <h4>Droptop Four</h4>
                 </a>
             </div>
@@ -36,11 +36,11 @@
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/download.html">Download</a></li>
-                    <li><a href="/pages/community-apps.html">Community Apps</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/community-apps">Community Apps</a></li>
                     <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
-                    <li><a href="/pages/faq.html">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </div>
             </ul>
         </nav>
@@ -49,21 +49,30 @@
     <div class="bg-image"></div>
 
 
-
     <!-- Main Content -->
-    <main class="download-page">
-        <section class="download-banner">
-            <div class="download-banner-text">
-                <h1>DOWNLOADS</h1>
+    <main class="community-apps-page">
+        <section class="community-apps-banner">
+            <div class="community-apps-banner-text">
+                <h1>COMMUNITY APPS</h1>
             </div>
         </section>
 
-        <section class="download-contents" id="main-content">
+        <div class="app-making">
+            <p>Want to make your own app? <a class="link" href="/community-apps/create-an-app.html">See the Tutorial</a>!!</p>
+        </div>
+
+        <section class="community-apps-contents" id="main-content">
+            <ul class="appsList" id="appsList">
+
+            </ul>
+
+            <div class="app-making">
+                <p>Want to make your own app? <a class="link" href="/community-apps/create-an-app.html">See the Tutorial</a>!!</p>
+            </div>
 
         </section>
     </main>
     <!-- Main Content End -->
-
 
 
     <!-- Footer -->
@@ -74,10 +83,10 @@
             <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
         <ul class="list">
-            <li><a href="/pages/download.html">Download</a></li>
-            <li><a href="/pages/community-apps.html">Community Apps</a></li>
-            <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
-            <li><a href="/pages/faq.html">FAQs</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/community-apps">Community Apps</a></li>
+            <!-- <li class="hidden"><a href="/pages/community-themes.html">Community Themes</a></li> -->
+            <li><a href="/faq">FAQs</a></li>
         </ul>
         <p class="copyright">
             &copy; Droptop Four 2018-2022
@@ -89,6 +98,8 @@
     <!-- Script -->
     <script src="/js/main.js"></script>
     <!-- Script End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
 </body>
 

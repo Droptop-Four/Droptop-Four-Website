@@ -9,12 +9,22 @@
     <meta name="theme-color" content="#4BD765">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="twitter:title" content="Droptop Four" />
+	<meta name="twitter:description" content="Dropdown menu bar & app launcher for Windows & Rainmeter" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="/img/ThemeImage1" />    <!-- TODO: Sostituire con URL-->
+    <meta name="twitter:image:alt" content="Droptop Four image"
+	<meta property="og:title" content="Droptop Four" />
+	<meta property="og:image" content="/img/ThemeImage1" />    <!-- TODO: Sostituire con URL-->
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:alt" content="Droptop Four image" />
+    <meta property="og:url" content="https://www.droptopfour.com" />
     <title>Droptop Four</title>
 </head>
 
 <body>
-    
-    
+
+
 
     <header class="">
         <a class="skip-to-main-content" href="#main-content">
@@ -23,10 +33,10 @@
         <nav class="navbar">
             <!-- LOGO -->
             <div class="logo">
-                <a href="/index.html"><img src="/img/DroptopFourLogo.png" alt="Droptop Four Logo"></a>
+                <a href="/"><img src="/img/DroptopFourLogo.png" alt="Droptop Four Logo"></a>
             </div>
             <div class="site-name">
-                <a href="/index.html">
+                <a href="/">
                     <h4>Droptop Four</h4>
                 </a>
             </div>
@@ -37,16 +47,17 @@
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
-                    <li><a href="/pages/download.html">Download</a></li>
-                    <li><a href="/pages/community-apps.html">Community Apps</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/community-apps">Community Apps</a></li>
                     <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
-                    <li><a href="/pages/faq.html">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </div>
             </ul>
         </nav>
     </header>
 
-    <div class="bg-image"></div>
+    <!-- <div class="bg-image"></div> -->
+
 
 
 
@@ -54,40 +65,251 @@
     <!-- Main Content -->
     <main class="home-page">
 
-        
-        <!-- <div class="slideshow-container">
-            <div class="slideshow">
-                <div class="slideshow-mover-1"></div>
-                <div class="slideshow-mover-2"></div>
-            </div>
-            <div class="slideshow-subtitle-container">
-                <p class="slideshow-subtitle">Droptop Themes Showcase</p>
-            </div>
-        </div> -->
 
 
         <section class="home-banner">
             <div class="showcase-container">
-                <img src="/img/showcase1.png" alt="Droptop Screenshot"/>
+                <img src="/img/Support.png" alt="Droptop Screenshot" />
                 <div class="home-banner-text">
                     <h1>Dropdown menu bar & app launcher for Windows & Rainmeter</h1>
-                    
-                    <div class="download-button-container">
-                        <button class="download-button" onclick="location.href='/pages/download.html';" type="button">DOWNLOAD</button>
+
+                    <div class="home-button-container">
+                        <button class="home-download-button" onclick="location.href='/download';" type="button">DOWNLOAD</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div aria-hidden="true" class="body-divider" id="divider-1">
+            <hr>
+            </hr>
+        </div>
+
+
+        <section class="home-contents" id="main-content">
+
+            <div class="home-container">
+                <div class="droptop-info-1">
+                    <img class="image-block-1" src="/img/ThemeImage1.png" alt="Droptop Screenshot" />
+                    <div class="text-block-c">
+                        <h1>Always show Droptop</h1>
+                        <p>Droptop mimics the behavior of menu bars that exist on several other operating systems, floating above your windows to allow quick and easy access to your applications at all times</p>
+                        <p>Autohide and Desktop-Only modes are also available</p>
                     </div>
                 </div>
             </div>
 
-                
+            <div aria-hidden="true" class="body-divider" id="divider-2">
+                <hr>
+                </hr>
             </div>
-        </section>
-        
-
-        <section class="home-contents" id="main-content">
 
 
 
-            
+
+            <div class="home-container">
+                <div class="droptop-info-2">
+                    <img class="image-block-2" src="/img/showcase2.png" alt="Droptop Screenshot" />
+                    <div class="text-block-r">
+                        <h1>Expandable dropdown menus & submenus</h1>
+                        <p>Droptop allows you to catalog your applications into scrollable groups by taking directory, filename, and icon information directly from any specified folder, allowing easy adding and removing shortcuts, renaming, and icon support through Windows. Easily drag & drop your shortcuts into Droptop's folders to add shortcuts, or rename, delete, or change a shortcut's icon all through the standard Windows interface</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div aria-hidden="true" class="body-divider" id="divider-3">
+                <hr>
+                </hr>
+            </div>
+
+
+            <div class="home-container">
+                <div class="droptop-info-3">
+                    <div class="test-slideshow">
+                        <div class="slideshow-container" id="test">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 22</div>
+                                <img src="/img/themes/1.png" style="width:100%">
+                                <div class="text">Default</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 22</div>
+                                <img src="/img/themes/2.png" style="width:100%">
+                                <div class="text">Color Match</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 22</div>
+                                <img src="/img/themes/3.png" style="width:100%">
+                                <div class="text">Big Sur</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 22</div>
+                                <img src="/img/themes/4.png" style="width:100%">
+                                <div class="text">Transparent</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">5 / 22</div>
+                                <img src="/img/themes/5.png" style="width:100%">
+                                <div class="text">Flat & Solid</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">6 / 22</div>
+                                <img src="/img/themes/6.png" style="width:100%">
+                                <div class="text">Cathode</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">7 / 22</div>
+                                <img src="/img/themes/7.png" style="width:100%">
+                                <div class="text">Dapil</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">8 / 22</div>
+                                <img src="/img/themes/8.png" style="width:100%">
+                                <div class="text">Ubuntu</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">9 / 22</div>
+                                <img src="/img/themes/9.png" style="width:100%">
+                                <div class="text">Windows 95</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">10 / 22</div>
+                                <img src="/img/themes/10.png" style="width:100%">
+                                <div class="text">Catalina</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">11 / 22</div>
+                                <img src="/img/themes/11.png" style="width:100%">
+                                freccia
+                                <div class="text">Retro</div>
+                                freccia
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">12 / 22</div>
+                                <img src="/img/themes/12.png" style="width:100%">
+                                <div class="text">Chrome OS</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">13 / 22</div>
+                                <img src="/img/themes/13.png" style="width:100%">
+                                <div class="text">Minimalist</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">14 / 22</div>
+                                <img src="/img/themes/14.png" style="width:100%">
+                                <div class="text">Aperture Science</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">15 / 22</div>
+                                <img src="/img/themes/15.png" style="width:100%">
+                                <div class="text">Windows 11</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">16 / 22</div>
+                                <img src="/img/themes/16.png" style="width:100%">
+                                <div class="text">Elementary OS</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">17 / 22</div>
+                                <img src="/img/themes/17.png" style="width:100%">
+                                <div class="text">Tranquil</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">18 / 22</div>
+                                <img src="/img/themes/18.png" style="width:100%">
+                                <div class="text">Macinotsh</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">19 / 22</div>
+                                <img src="/img/themes/19.png" style="width:100%">
+                                <div class="text">Gameboy</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">20 / 22</div>
+                                <img src="/img/themes/20.png" style="width:100%">
+                                <div class="text">Terminal</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">21 / 22</div>
+                                <img src="/img/themes/21.png" style="width:100%">
+                                <div class="text">Senja</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">22 / 22</div>
+                                <img src="/img/themes/22.png" style="width:100%">
+                                <div class="text">Discord</div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+
+
+                    <div class="text-block-s">
+                        <h1>Over 20 themes</h1>
+                        <p>Choose from a selection of 22 premade themes and 1 custom theme that alter the look & feel of your desktop and dropdown menus</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div aria-hidden="true" class="body-divider" id="divider-4">
+                <hr>
+                </hr>
+            </div>
+
+            <div class="home-container">
+                <div class="droptop-info-4">
+                    <img class="image-block-4" src="/img/showcase1.png" alt="Droptop Screenshot" />
+                    <div class="text-block-c">
+                        <h1>Droptop side apps</h1>
+                        <p>Droptop comes pre-equipped with 15 unique apps, allowing quick and easy access to many necessary functions, as well as notifications for elements such as your Gmail inbox, current weather conditions, and more...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div aria-hidden="true" class="body-divider" id="divider-5">
+                <hr>
+                </hr>
+            </div>
+
+            <div class="home-container">
+                <div class="droptop-info-5">
+                    <img class="image-block-5" src="/img/HomeButtons.png" alt="Droptop Screenshot" />
+                    <div class="text-block-c">
+                        <h1>300 home buttons icons</h1>
+                        <p>With the supporter version you can choose between 300 different home button icons</p>
+                    </div>
+                </div>
+            </div>
+
+            <div aria-hidden="true" class="body-divider" id="divider-6">
+                <hr>
+                </hr>
+            </div>
+
+            <div class="home-container">
+                <div class="droptop-info-6">
+                    <img class="image-block-6" src="/img/languages.png" alt="Droptop Screenshot" />
+                    <div class="text-block-c">
+                        <h1>17+ different languages</h1>
+                        <p>Thanks to community support, Droptop is available in over 16 different languages, including French, Spanish, Portuguese, German, Italian, Arabic, Japanese, and more...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div aria-hidden="true" class="body-divider" id="divider-7">
+                <hr>
+                </hr>
+            </div>
+
+
+
+
+
         </section>
     </main>
     <!-- Main Content End -->
@@ -103,10 +325,10 @@
             <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
         <ul class="list">
-            <li><a href="/pages/download.html">Download</a></li>
-            <li><a href="/pages/community-apps.html">Community Apps</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/community-apps">Community Apps</a></li>
             <!-- <li class="hidden"><a href="/pages/community-themes.html">Community Themes</a></li> -->
-            <li><a href="/pages/faq.html">FAQs</a></li>
+            <li><a href="/faq">FAQs</a></li>
         </ul>
         <p class="copyright">
             &copy; Droptop Four 2018-2022
@@ -117,6 +339,7 @@
 
     <!-- Script -->
     <script src="/js/main.js"></script>
+    <script src="/js/slideshow.js"></script>
     <!-- Script End -->
 
 
