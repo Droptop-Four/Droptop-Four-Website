@@ -233,6 +233,7 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: calc(20px + 10vh);
   padding: 0px 65px;
   color: var(--accents-text-color);
   font-size: 40px;
