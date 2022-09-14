@@ -343,18 +343,6 @@ input[type="checkbox"] {
   border-color: var(--secondary-bg-color-tr);
 }
 
-#divider-1 {
-  width: 100%;
-  height: 15%;
-  padding: calc(15% / 2) 100px 0 100px;
-}
-
-#divider-1 hr {
-  border-color: transparent;
-}
-
-
-
 
 .home-container {
   width: 100%;
@@ -624,6 +612,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(20px + 10vh);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -755,6 +744,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(20px + 10vh);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -815,6 +805,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(20px + 10vh);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -932,6 +923,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(20px + 10vh);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1035,6 +1027,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(20px + 10vh);
   padding-top: 50px;
   padding-bottom: 50px;
 }
