@@ -98,6 +98,9 @@ body {
   padding: 20px;
   background-color: var(--secondary-bg-color);
   color: var(--accents-text-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 999;
 }
 
@@ -333,6 +336,12 @@ input[type="checkbox"] {
   width: 100%;
   height: 65px;
   padding: calc(65px / 2) 100px 0 100px;
+}
+
+#divider-1 {
+  width: 100%;
+  height: 100px;
+  padding: calc(100px / 2) 100px 0 100px;
 }
 
 .body-divider hr {
