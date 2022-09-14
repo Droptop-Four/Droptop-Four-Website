@@ -338,15 +338,20 @@ input[type="checkbox"] {
   padding: calc(65px / 2) 100px 0 100px;
 }
 
-#divider-1 {
-  width: 100%;
-  height: 100px;
-  padding: calc(100px / 2) 100px 0 100px;
-}
-
 .body-divider hr {
   border-color: var(--secondary-bg-color-tr);
 }
+
+#divider-1 {
+  width: 100%;
+  height: 15%;
+  padding: calc(15% / 2) 100px 0 100px;
+}
+
+#divider-1 hr {
+  border-color: transparent;
+}
+
 
 
 
