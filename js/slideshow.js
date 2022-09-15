@@ -1,8 +1,8 @@
 let slideIndex = 1;
-let slides = document.getElementsByClassName("mySlides");
+let slides = document.getElementsByClassName("Slide");
 
 
-function plusSlides(n) {
+function MoveSlides(n) {
   SlidesButtons(slideIndex += n);
 }
 
