@@ -559,13 +559,8 @@ input[type="checkbox"] {
   font-size: 30px;
   justify-content: center;
   text-align: center;
-  padding: 0px 65px;
   height: max-content;
   color: var(--main-text-color)
-}
-
-.download-button-container {
-  border: none;
 }
 
 .download-button {
@@ -573,8 +568,7 @@ input[type="checkbox"] {
   height: 150px;
   background-color: var(--accents-text-color);
   color: var(--main-bg-color);
-  padding: 40px;
-  text-align: center;
+  padding: 0 40px;
   text-decoration: none;
   font-size: 25px;
   border-radius: var(--round-borders);
@@ -696,7 +690,7 @@ input[type="checkbox"] {
   height: 150px;
   background-color: var(--accents-text-color);
   color: var(--main-bg-color);
-  padding: 40px;
+  padding: 0 40px;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
@@ -752,15 +746,15 @@ input[type="checkbox"] {
 .app-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
-  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   font-family: arial;
   background-color: #0D0D11;
   border-radius: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
-  align-items: center;
-  align-content: center;
 }
 
 .app-card-container {
@@ -1180,7 +1174,6 @@ input[type="checkbox"] {
   }
 
   .home-banner-text {
-    /* padding: 100px 24px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1299,6 +1292,43 @@ input[type="checkbox"] {
     opacity: 1;
   }
 
+  .download-banner {
+    padding-top: 80px;
+  }
+
+  .download-container {
+    min-height: auto;
+  }
+
+  .download-button {
+    width: 300px;
+    height: 100px;
+  }
+
+  .versions-table {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .update-banner {
+    padding-top: 80px;
+  }
+
+  .update-container {
+    min-height: auto;
+  }
+
+  .update-button {
+    width: 300px;
+    height: 100px;
+  }
+
+  .community-apps-banner {
+    padding-top: 80px;
+  }
+
 
 }
 
@@ -1323,6 +1353,19 @@ input[type="checkbox"] {
     width: auto;
     height: 100px;
   }
+
+  .download-container {
+    flex-direction: column;
+  }
+
+  .download-button {
+    margin: 20px 0;
+  }
+
+  .update-button {
+    margin: 20px 0;
+  }
+
 }
 
 
@@ -1374,5 +1417,47 @@ input[type="checkbox"] {
   .text-block-s p {
     line-height: 1.2;
   }
+
+  .download-banner-text {
+    font-size: 38px;
+  }
+
+  .versions-table {
+    width: 60%;
+    overflow-x:auto;
+  }
+
+  .update-banner-text {
+    font-size: 38px;
+  }
+
+  .community-apps-banner-text {
+    font-size: 38px;
+  }
+
 }
 
+
+@media screen and (max-width: 360px) {
+  .download-banner-text {
+    font-size: 30px;
+  }
+
+  .download-button {
+    width: 250px;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .update-banner-text {
+    font-size: 30px;
+  }
+
+  .update-button {
+    width: 250px;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+
+}
