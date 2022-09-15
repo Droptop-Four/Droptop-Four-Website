@@ -405,8 +405,6 @@ input[type="checkbox"] {
 .slideshow-container-1 {
   width: 100%;
   border-radius: var(--round-borders);
-  object-fit: cover;
-  object-position: left top;
 }
 
 .slideshow-container-2 {
@@ -423,6 +421,9 @@ input[type="checkbox"] {
 
 .Slide img {
   border-radius: var(--round-borders);
+  object-fit: cover;
+  object-position: left top;
+  height: 150px;
 }
 
 .fade {
@@ -1197,7 +1198,10 @@ input[type="checkbox"] {
     top: 10px;
     transform: translateY(0);
     margin-top: 10px;
+  }
 
+  .home-container {
+    min-height: auto;
   }
 
   .droptop-info-1 {
@@ -1242,7 +1246,7 @@ input[type="checkbox"] {
   }
 
   .droptop-info-3 {
-    padding: 15px;
+    padding: 0 10px;
     border-style: solid;
     border-color: var(--accents-text-color);
     border-radius: var(--round-borders);
@@ -1250,6 +1254,13 @@ input[type="checkbox"] {
 
   .slideshow-container-2 {
     border: none;
+  }
+
+  .Slide img {
+    object-fit: cover;
+    object-position: left top;
+    width: auto;
+    height: 100px;
   }
 
   .droptop-info-4 {
@@ -1291,9 +1302,77 @@ input[type="checkbox"] {
 
 }
 
+
+
 @media screen and (max-width: 720px) {
+  .home-banner {
+    padding: 0px 10px;
+  }
+
   .home-banner-text h1 {
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .home-container {
+    padding: 0px 30px;
+  }
+
+  .Slide img {
+    object-fit: cover;
+    object-position: left top;
+    width: auto;
+    height: 100px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .showcase-container img {
+    max-width: 100%;
+  }
+
+  .home-banner-text {
+    width: 100%;
+  }
+
+  .home-banner-text h1 {
+    font-size: 45px;
+  }
+
+  .home-container {
+    padding: 0px 15px;
+  }
+
+  .text-block-c {
+    width: 100%;
+  }
+
+  .text-block-c p {
+    line-height: 1.2;
+  }
+
+  .text-block-r {
+    width: 100%;
+  }
+
+  .text-block-r p {
+    line-height: 1.2;
+  }
+
+  .Slide img {
+    object-fit: cover;
+    object-position: left top;
+    width: auto;
+    height: 100px;
+  }
+
+  .text-block-s {
+    width: 100%;
+  }
+
+  .text-block-s p {
+    line-height: 1.2;
   }
 }
 
