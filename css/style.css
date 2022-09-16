@@ -90,7 +90,6 @@ body {
 
 
 
-
 /* ------ NAVBAR ------ */
 
 .navbar {
@@ -119,7 +118,6 @@ body {
   color: var(--accents-text-color);
 }
 
-/* LOGO */
 .logo img {
   border-radius: 20%;
   margin-top: 5px;
@@ -138,7 +136,6 @@ body {
   color: var(--accents-text-color);
 }
 
-/* NAVBAR MENU */
 .menu {
   display: flex;
   gap: 1em;
@@ -155,12 +152,10 @@ body {
   padding: 5px 14px;
 }
 
-/* RESPONSIVE NAVBAR MENU STARTS */
 input[type="checkbox"] {
   display: none;
 }
 
-/*HAMBURGER MENU*/
 .hamburger {
   display: none;
   font-size: 24px;
@@ -169,6 +164,7 @@ input[type="checkbox"] {
   cursor: pointer;
   z-index: 999;
 }
+
 
 
 /* ------- MAIN ------- */
@@ -189,9 +185,6 @@ input[type="checkbox"] {
   opacity: 0.3;
   z-index: -999;
 } */
-
-
-
 
 
 
@@ -627,7 +620,6 @@ input[type="checkbox"] {
 
 
 
-
 /* ------ DOWNLOAD PAGE ------ */
 
 .download-banner {
@@ -804,7 +796,6 @@ input[type="checkbox"] {
 
 
 
-
 /* ------ COMMUNITY APPS PAGE ------ */
 
 .community-apps-banner {
@@ -922,7 +913,6 @@ input[type="checkbox"] {
 
 
 
-
 /* ------ CREATE AN APP PAGE ------ */
 
 .create-an-app-banner {
@@ -1016,14 +1006,7 @@ input[type="checkbox"] {
 
 
 
-
 /* ------ FAQ PAGE ------ */
-
-/* .faq-page {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-} */
 
 .faq-banner {
   color: var(--accents-text-color);
@@ -1045,7 +1028,6 @@ input[type="checkbox"] {
   margin-right: auto;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: var(--main-bg-color-tr);
   border-style: 2px solid;
@@ -1062,7 +1044,7 @@ input[type="checkbox"] {
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
   font-size: 15px;
   color: var(--main-bg-highlight-tr);
   float: right;
@@ -1070,10 +1052,9 @@ input[type="checkbox"] {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: var(--main-bg-highlight-tr);
 }
@@ -1082,7 +1063,6 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   margin: 0 0 15px;
   padding: 0 18px;
@@ -1146,7 +1126,6 @@ input[type="checkbox"] {
   text-align: center;
   width: 80%;
 }
-
 
 
 
@@ -1217,10 +1196,6 @@ input[type="checkbox"] {
   font-size: 10px;
   color: var(--secondary-text-color);
 }
-
-
-
-
 
 
 
@@ -1417,10 +1392,7 @@ input[type="checkbox"] {
   .community-apps-banner {
     padding-top: 80px;
   }
-
-
 }
-
 
 
 @media screen and (max-width: 720px) {
@@ -1454,9 +1426,7 @@ input[type="checkbox"] {
   .update-button {
     margin: 20px 0;
   }
-
 }
-
 
 
 @media screen and (max-width: 480px) {
@@ -1523,7 +1493,6 @@ input[type="checkbox"] {
   .community-apps-banner-text {
     font-size: 38px;
   }
-
 }
 
 
@@ -1547,6 +1516,4 @@ input[type="checkbox"] {
     height: 80px;
     padding: 0 20px;
   }
-
-
 }
