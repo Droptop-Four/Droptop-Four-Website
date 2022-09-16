@@ -427,13 +427,101 @@ input[type="checkbox"] {
 }
 
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+  animation: fadein 1.5s 0s, fadeout 1.5s 3s;
+  -webkit-animation: fadein 1.5s 0s, fadeout 1.5s 3s;
+  -moz-animation: fadein 1.5s 0, fadeout 1.5s 3s;
+  -o-animation: fadein 1.5s 0, fadeout 1.5s 3s;
+  -ms-animation: fadein 1.5s 0, fadeout 1.5s 3s;
 }
 
-@keyframes fade {
-  from {opacity: .4}
+.fade2 {
+  animation: fadein 0.2s 0s, fadeout 0.2s 4.3s;
+  -webkit-animation: fadein 0.2s 0s, fadeout 0.2s 4.3s;
+  -moz-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
+  -o-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
+  -ms-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
+}
+
+@keyframes fadein {
+  from {opacity: 0}
   to {opacity: 1}
+}
+
+@-moz-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes fadeout {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@-moz-keyframes fadeout {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeout {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeout {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
 }
 
 .theme-number {
@@ -442,6 +530,7 @@ input[type="checkbox"] {
   padding: 8px 12px;
   position: absolute;
   top: 2px;
+  z-index: 500;
 }
 
 .prev, .next {
