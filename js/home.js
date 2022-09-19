@@ -1,3 +1,6 @@
+
+// ---- HOME ----
+
 let slideIndex = 1;
 let slides = document.getElementsByClassName("Slide");
 
