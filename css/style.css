@@ -530,7 +530,7 @@ input[type="checkbox"] {
   position: relative;
   display: inline;
   width: auto;
-  padding: 16px;
+  padding: 12px;
   color: var(--main-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -539,8 +539,10 @@ input[type="checkbox"] {
   user-select: none;
 }
 
-.prev:hover, .prev:active, .next:hover, .next:active {
-  background-color: rgba(0,0,0,0.8);
+@media(hover: hover) {
+  .prev:hover, .prev:active, .next:hover, .next:active {
+    background-color: rgba(0,0,0,0.8);
+  }
 }
 
 .theme-name {
