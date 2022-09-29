@@ -339,6 +339,7 @@ input[type="checkbox"] {
   border-style: solid;
   border-color: var(--accents-text-color);
   border-radius: var(--round-borders);
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .text-block-c h1 {
@@ -377,6 +378,7 @@ input[type="checkbox"] {
   border-style: solid;
   border-color: var(--accents-text-color);
   border-radius: var(--round-borders);
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .text-block-r h1 {
@@ -1303,6 +1305,7 @@ input[type="checkbox"] {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color:rgba(0, 0, 0, 0);
   }
 
   .droptop-info-2 {
@@ -1324,6 +1327,7 @@ input[type="checkbox"] {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color:rgba(0, 0, 0, 0);
   }
 
   .droptop-info-3 {
