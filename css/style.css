@@ -6,7 +6,7 @@
   --main-bg-color-tr: #22222d9b;
   --main-bg-highlight-tr: #393939b6;
   --secondary-bg-color: #0D0D11;
-  --secondary-bg-color-tr: #0d0d112c; /* TODO: Make transparent */
+  --secondary-bg-color-tr: #00000000;
   --accents-text-color: #4BD765;
   --accents-text-color-2: #27af40;
   --accents-text-color-3: #155b22 ; 
@@ -192,13 +192,12 @@ input[type="checkbox"] {
 
 .home-banner {
   width: 100%;
-  min-height: calc(100vh - 65px * 2);
   height: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: calc(20px + 10vh);
-  padding: 0px 65px;
+  padding: 30px 65px;
   color: var(--accents-text-color);
   font-size: 40px;
   flex-direction: column;
@@ -309,7 +308,7 @@ input[type="checkbox"] {
 .body-divider {
   width: 100%;
   height: 65px;
-  padding: calc(65px / 2) 100px 0 100px;
+  padding: 30px;
 }
 
 .body-divider hr {
@@ -326,7 +325,6 @@ input[type="checkbox"] {
   justify-content: center;
   text-align: center;
   padding: 0px 65px;
-  min-height: calc(100vh - 65px * 2);
   height: max-content;
 }
 
@@ -411,10 +409,13 @@ input[type="checkbox"] {
 .droptop-info-3 {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slideshow-container-1 {
-  width: 100%;
+  width: 90%;
   border-radius: var(--round-borders);
 }
 
@@ -434,7 +435,6 @@ input[type="checkbox"] {
   border-radius: var(--round-borders);
   object-fit: cover;
   object-position: left top;
-  height: 150px;
 }
 
 .fade {
@@ -577,9 +577,6 @@ input[type="checkbox"] {
   width: 75%;
   position: inherit;
   margin-top: 10px;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .text-block-s h1 {
@@ -640,6 +637,10 @@ input[type="checkbox"] {
 
 .discord-invite {
   text-align: center;
+}
+
+.discord-invite img {
+  border-radius: var(--round-borders);
 }
 
 
@@ -817,7 +818,6 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: calc(20px + 10vh);
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .community-apps-banner h1 {
@@ -827,6 +827,7 @@ input[type="checkbox"] {
 .app-making {
   text-align: center;
   color: var(--main-text-color);
+  font-size: 20px;
 }
 
 .appsList li {
@@ -930,7 +931,6 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: calc(20px + 10vh);
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .create-an-app-tablecontents {
@@ -1023,7 +1023,6 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: calc(20px + 10vh);
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .faq-contents {
@@ -1125,7 +1124,7 @@ input[type="checkbox"] {
   flex-direction: column;
   color: var(--main-text-color);
   align-items: center;
-  margin-top: 10px;
+  font-size: 20px;
 }
 
 .faq-disclaimer p {
