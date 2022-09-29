@@ -239,11 +239,27 @@ input[type="checkbox"] {
   width: 70%;
 }
 
-.home-banner-text h1 {
+.home-banner-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-banner-title h1 {
   justify-content: center;
   align-items: center;
-  text-align: left;
-  width: 55%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 75px;
+}
+
+.home-banner-title h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  padding-left: 20%;
+  color: var(--secondary-text-color);
+  font-size: 30px;
 }
 
 .home-button-container {
@@ -339,6 +355,7 @@ input[type="checkbox"] {
   border-style: solid;
   border-color: var(--accents-text-color);
   border-radius: var(--round-borders);
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .text-block-c h1 {
@@ -377,6 +394,7 @@ input[type="checkbox"] {
   border-style: solid;
   border-color: var(--accents-text-color);
   border-radius: var(--round-borders);
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .text-block-r h1 {
@@ -620,6 +638,10 @@ input[type="checkbox"] {
   opacity: 0.4;
 }
 
+.discord-invite {
+  text-align: center;
+}
+
 
 
 /* ------ DOWNLOAD PAGE ------ */
@@ -723,19 +745,6 @@ input[type="checkbox"] {
 .center-table {
   text-align: center;
 }
-
-
-
-/* TODO: Remove*/
-
-.chtemp {
-  font-size: 30px;
-  justify-content: center;
-  text-align: center;
-  padding: 0px 65px;
-  color: var(--accents-text-color);
-}
-
 
 
 
@@ -1267,11 +1276,18 @@ input[type="checkbox"] {
     align-items: center;
   }
 
-  .home-banner-text h1 {
+  .home-banner-title h1 {
     text-align: center;
     width: 100%;
     position: relative;
     top: -25px;
+    margin-bottom: 0px;
+  }
+
+  .home-banner-title h2 {
+    width: 100%;
+    padding-left: 0%;
+    margin-bottom: 15px;
   }
 
   .home-download-button {
@@ -1303,6 +1319,7 @@ input[type="checkbox"] {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color:rgba(0, 0, 0, 0);
   }
 
   .droptop-info-2 {
@@ -1324,6 +1341,7 @@ input[type="checkbox"] {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color:rgba(0, 0, 0, 0);
   }
 
   .droptop-info-3 {
@@ -1424,8 +1442,12 @@ input[type="checkbox"] {
     padding: 0px 10px;
   }
 
-  .home-banner-text h1 {
+  .home-banner-title h1 {
     font-size: 50px;
+  }
+
+  .home-banner-title h2 { 
+    font-size: 25px;
   }
 
   .home-container {
