@@ -6,7 +6,7 @@
   --main-bg-color-tr: #22222d9b;
   --main-bg-highlight-tr: #393939b6;
   --secondary-bg-color: #0D0D11;
-  --secondary-bg-color-tr: #0d0d112c; /* TODO: Make transparent */
+  --secondary-bg-color-tr: #00000000;
   --accents-text-color: #4BD765;
   --accents-text-color-2: #27af40;
   --accents-text-color-3: #155b22 ; 
@@ -76,7 +76,7 @@ body {
 .skip-to-main-content {
   background: var(--main-bg-color);
   color: var(--accents-text-color)  ;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
   position: absolute;
   left: 0.5rem;
@@ -192,13 +192,12 @@ input[type="checkbox"] {
 
 .home-banner {
   width: 100%;
-  min-height: calc(100vh - 65px * 2);
   height: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: calc(20px + 10vh);
-  padding: 0px 65px;
+  padding: 30px 65px;
   color: var(--accents-text-color);
   font-size: 40px;
   flex-direction: column;
@@ -309,7 +308,7 @@ input[type="checkbox"] {
 .body-divider {
   width: 100%;
   height: 65px;
-  padding: calc(65px / 2) 100px 0 100px;
+  padding: 30px;
 }
 
 .body-divider hr {
@@ -326,7 +325,6 @@ input[type="checkbox"] {
   justify-content: center;
   text-align: center;
   padding: 0px 65px;
-  min-height: calc(100vh - 65px * 2);
   height: max-content;
 }
 
@@ -411,10 +409,13 @@ input[type="checkbox"] {
 .droptop-info-3 {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slideshow-container-1 {
-  width: 100%;
+  width: 90%;
   border-radius: var(--round-borders);
 }
 
@@ -434,23 +435,22 @@ input[type="checkbox"] {
   border-radius: var(--round-borders);
   object-fit: cover;
   object-position: left top;
-  height: 150px;
 }
 
 .fade {
-  animation: fadein 1.5s 0s, fadeout 1.5s 3s;
-  -webkit-animation: fadein 1.5s 0s, fadeout 1.5s 3s;
-  -moz-animation: fadein 1.5s 0, fadeout 1.5s 3s;
-  -o-animation: fadein 1.5s 0, fadeout 1.5s 3s;
-  -ms-animation: fadein 1.5s 0, fadeout 1.5s 3s;
+  animation: fadein 0.75s 0s, fadeout 0.5s 3s;
+  -webkit-animation: fadein 0.75s 0s, fadeout 0.75s 3s;
+  -moz-animation: fadein 0.75s 0, fadeout 0.75s 3s;
+  -o-animation: fadein 0.75s 0, fadeout 0.75s 3s;
+  -ms-animation: fadein 0.75s 0, fadeout 0.75s 3s;
 }
 
 .fade2 {
-  animation: fadein 0.2s 0s, fadeout 0.2s 4.3s;
-  -webkit-animation: fadein 0.2s 0s, fadeout 0.2s 4.3s;
-  -moz-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
-  -o-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
-  -ms-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
+  animation: fadein 0.2s 0s, fadeout 0.25s 3.3s;
+  -webkit-animation: fadein 0.2s 0s, fadeout 0.25s 3.3s;
+  -moz-animation: fadein 0.2s 0, fadeout 0.25s 3.3s;
+  -o-animation: fadein 0.2s 0, fadeout 0.25s 3.3s;
+  -ms-animation: fadein 0.2s 0, fadeout 0.25s 3.3s;
 }
 
 @keyframes fadein {
@@ -577,9 +577,6 @@ input[type="checkbox"] {
   width: 75%;
   position: inherit;
   margin-top: 10px;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .text-block-s h1 {
@@ -640,6 +637,10 @@ input[type="checkbox"] {
 
 .discord-invite {
   text-align: center;
+}
+
+.discord-invite img {
+  border-radius: var(--round-borders);
 }
 
 
@@ -817,7 +818,6 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: calc(20px + 10vh);
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .community-apps-banner h1 {
@@ -825,9 +825,9 @@ input[type="checkbox"] {
 }
 
 .app-making {
-  margin-bottom: 30px;
   text-align: center;
   color: var(--main-text-color);
+  font-size: 20px;
 }
 
 .appsList li {
@@ -855,21 +855,18 @@ input[type="checkbox"] {
   align-content: center;
 }
 
-.app-card-title {
+.app-card-name {
+  text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
+  margin: 10px;
   color: var(--accents-text-color);
 }
 
 .app-card-image {
   width: 80%;
-  padding-top: 20px;
-}
-
-.app-card-name {
-  text-transform: uppercase;
-  padding-top: 10px;
-  color: var(--main-text-color)
+  margin-top: 20px;
+  border-radius: var(--round-borders);
 }
 
 .app-card-author {
@@ -901,7 +898,7 @@ input[type="checkbox"] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 10px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -934,7 +931,6 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: calc(20px + 10vh);
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .create-an-app-tablecontents {
@@ -1027,7 +1023,6 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: calc(20px + 10vh);
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .faq-contents {
@@ -1129,8 +1124,7 @@ input[type="checkbox"] {
   flex-direction: column;
   color: var(--main-text-color);
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  font-size: 20px;
 }
 
 .faq-disclaimer p {
@@ -1168,7 +1162,7 @@ input[type="checkbox"] {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .footer .social a:hover {
@@ -1223,6 +1217,10 @@ input[type="checkbox"] {
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
+}
+
+.scroll-to-top a {
+  color: var(--accents-text-color)
 }
 
 @media(hover: hover) {
