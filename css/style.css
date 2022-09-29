@@ -1438,6 +1438,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 720px) {
   .home-banner {
     padding: 0px 10px;
+    margin-top: 120px;
   }
 
   .home-banner-title h1 {
@@ -1474,6 +1475,10 @@ input[type="checkbox"] {
 
 
 @media screen and (max-width: 480px) {
+  .home-banner {
+    margin-top: 120px;
+  }
+
   .showcase-container img {
     max-width: 100%;
   }
