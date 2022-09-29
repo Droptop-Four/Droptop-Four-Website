@@ -638,6 +638,10 @@ input[type="checkbox"] {
   opacity: 0.4;
 }
 
+.discord-invite {
+  text-align: center;
+}
+
 
 
 /* ------ DOWNLOAD PAGE ------ */
@@ -741,19 +745,6 @@ input[type="checkbox"] {
 .center-table {
   text-align: center;
 }
-
-
-
-/* TODO: Remove*/
-
-.chtemp {
-  font-size: 30px;
-  justify-content: center;
-  text-align: center;
-  padding: 0px 65px;
-  color: var(--accents-text-color);
-}
-
 
 
 
@@ -1145,12 +1136,6 @@ input[type="checkbox"] {
 .faq-disclaimer p {
   text-align: center;
   width: 80%;
-}
-
-
-
-.discord-invite {
-  text-align: center;
 }
 
 
