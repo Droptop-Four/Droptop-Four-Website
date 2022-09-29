@@ -76,7 +76,7 @@ body {
 .skip-to-main-content {
   background: var(--main-bg-color);
   color: var(--accents-text-color)  ;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
   position: absolute;
   left: 0.5rem;
@@ -438,19 +438,19 @@ input[type="checkbox"] {
 }
 
 .fade {
-  animation: fadein 1.5s 0s, fadeout 1.5s 3s;
-  -webkit-animation: fadein 1.5s 0s, fadeout 1.5s 3s;
-  -moz-animation: fadein 1.5s 0, fadeout 1.5s 3s;
-  -o-animation: fadein 1.5s 0, fadeout 1.5s 3s;
-  -ms-animation: fadein 1.5s 0, fadeout 1.5s 3s;
+  animation: fadein 0.75s 0s, fadeout 0.5s 3s;
+  -webkit-animation: fadein 0.75s 0s, fadeout 0.75s 3s;
+  -moz-animation: fadein 0.75s 0, fadeout 0.75s 3s;
+  -o-animation: fadein 0.75s 0, fadeout 0.75s 3s;
+  -ms-animation: fadein 0.75s 0, fadeout 0.75s 3s;
 }
 
 .fade2 {
-  animation: fadein 0.2s 0s, fadeout 0.2s 4.3s;
-  -webkit-animation: fadein 0.2s 0s, fadeout 0.2s 4.3s;
-  -moz-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
-  -o-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
-  -ms-animation: fadein 0.2s 0, fadeout 0.2s 4.3s;
+  animation: fadein 0.2s 0s, fadeout 0.25s 3.3s;
+  -webkit-animation: fadein 0.2s 0s, fadeout 0.25s 3.3s;
+  -moz-animation: fadein 0.2s 0, fadeout 0.25s 3.3s;
+  -o-animation: fadein 0.2s 0, fadeout 0.25s 3.3s;
+  -ms-animation: fadein 0.2s 0, fadeout 0.25s 3.3s;
 }
 
 @keyframes fadein {
@@ -1162,7 +1162,7 @@ input[type="checkbox"] {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .footer .social a:hover {
