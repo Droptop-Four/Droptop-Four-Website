@@ -704,6 +704,10 @@ input[type="checkbox"] {
   margin-top: -10px;
 }
 
+.green {
+  color: var(--accents-text-color);
+}
+
 .download-update-container {
   font-size: 30px;
   justify-content: center;
