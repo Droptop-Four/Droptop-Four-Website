@@ -684,14 +684,14 @@ input[type="checkbox"] {
 
 .download-button:hover {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
 .download-button:active {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
@@ -794,14 +794,14 @@ input[type="checkbox"] {
 
 .update-button:hover {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
 .update-button:active {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-bg-color);
+  color: var(--main-bg-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
