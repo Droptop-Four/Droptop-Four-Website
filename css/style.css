@@ -17,6 +17,8 @@
   --code-background-color: #D3F5FD;
   --code-text-color: #2085ED;
   --round-borders: 8px;
+  --background-mentioned: hsla(38,calc(1*95.7%),54.1%,0.1);
+  --background-mentioned-hover: hsla(38,calc(1*95.7%),54.1%,0.08);
 }
 
 
@@ -176,7 +178,7 @@ input[type="checkbox"] {
 	top: 0;
 	height: 100vh;
 	width: 100vw;
-  background-image: url("/img/DroptopFourLogo.png");
+  background-image: url("/img/DroptopFourLogo.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -684,16 +686,22 @@ input[type="checkbox"] {
 
 .download-button:hover {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
 .download-button:active {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
+}
+
+.download-cost {
+  font-size: 20px;
+  color: var(--secondary-text-color);
+  margin-top: -10px;
 }
 
 .download-update-container {
@@ -721,30 +729,48 @@ input[type="checkbox"] {
 }
 
 .versions-table {
-  border-collapse: collapse;
   width: 100%;
+  border-spacing: 100px 0;
 }
 
 .versions-table th {
-  background-color: var(--accents-text-color);
-  color: var(--main-bg-color);
-  border: 1px solid;
-  border-color: var(--accents-text-color);
-  padding: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .versions-table td {
-  border: 1px solid;
-  border-color: var(--accents-text-color);
   padding: 10px;
 }
 
-.left-table {
-  text-align: left;
+.table-header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.table-text {
+  font-size: 20px;
 }
 
 .center-table {
   text-align: center;
+}
+
+.header-2 {
+  color: #6d6d6d;
+}
+
+.column-2 {
+  background-color: #6d6d6d4d;
+  color: #6d6d6d;
+}
+
+.header-3 {
+  color: var(--accents-text-color);
+}
+
+.column-3 {
+  background-color: #4bd7654d;
+  color: var(--accents-text-color);
 }
 
 
@@ -794,14 +820,14 @@ input[type="checkbox"] {
 
 .update-button:hover {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
 
 .update-button:active {
   background-color: var(--accents-text-color-3);
-  color: var(--secondary-bg-color);
+  color: var(--main-bg-color);
   border-color: var(--accents-text-color-3);
   transition: 0.3s ease;
 }
@@ -1132,6 +1158,28 @@ input[type="checkbox"] {
   width: 80%;
 }
 
+.discord-mention {
+  background-color: #5865f269;
+  border-radius: var(--round-borders);
+  padding: 2px 5px;
+  color: #dee0fc;
+  overflow-wrap: break-word;
+  text-decoration: none;
+}
+
+.discord-mention:hover {
+  background-color: #5768f0;
+  cursor: pointer;
+  color: var(--main-text-color)
+}
+
+.forum-icon {
+  width: 19px;
+  height: 21px;
+}
+
+
+
 
 
 /* ------ FOOTER ------ */
@@ -1410,10 +1458,10 @@ input[type="checkbox"] {
   }
 
   .versions-table {
-    width: 80%;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    border-spacing: 50px 0;
   }
 
   .update-banner {
@@ -1466,6 +1514,14 @@ input[type="checkbox"] {
 
   .download-button {
     margin: 20px 0;
+  }
+
+  .download-cost {
+    font-size: 15;
+  }
+
+  .versions-table {
+    border-spacing: 20px 0;
   }
 
   .update-button {
@@ -1531,8 +1587,7 @@ input[type="checkbox"] {
   }
 
   .versions-table {
-    width: 60%;
-    overflow-x:auto;
+    border-spacing: 0px;
   }
 
   .update-banner-text {
@@ -1554,6 +1609,10 @@ input[type="checkbox"] {
     width: 250px;
     height: 80px;
     padding: 0 20px;
+  }
+
+  .download-cost {
+    font-size: 10;
   }
 
   .update-banner-text {

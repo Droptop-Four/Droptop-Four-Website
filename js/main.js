@@ -26,7 +26,6 @@ function DroptopAlert(version) {
     title: '<p class="download-alert-title" style="font-weight: 600; font-size: 2rem;">The basic version of Droptop must be installed first!</p>',
     html: '<p class="download-alert-text">Please download and install the basic version of Droptop before installing the supporter version or an update.</p>',
     icon: 'warning',
-    // imageUrl: 'https://cdn-icons-png.flaticon.com/512/8256/8256069.png',
     imageWidth: 100,
     imageHeight: 100,
     background: '#181820',
