@@ -729,30 +729,48 @@ input[type="checkbox"] {
 }
 
 .versions-table {
-  border-collapse: collapse;
   width: 100%;
+  border-spacing: 100px 0;
 }
 
 .versions-table th {
-  background-color: var(--accents-text-color);
-  color: var(--main-bg-color);
-  border: 1px solid;
-  border-color: var(--accents-text-color);
-  padding: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .versions-table td {
-  border: 1px solid;
-  border-color: var(--accents-text-color);
   padding: 10px;
 }
 
-.left-table {
-  text-align: left;
+.table-header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.table-text {
+  font-size: 20px;
 }
 
 .center-table {
   text-align: center;
+}
+
+.header-2 {
+  color: #6d6d6d;
+}
+
+.column-2 {
+  background-color: #6d6d6d4d;
+  color: #6d6d6d;
+}
+
+.header-3 {
+  color: var(--accents-text-color);
+}
+
+.column-3 {
+  background-color: #4bd7654d;
+  color: var(--accents-text-color);
 }
 
 
@@ -1440,10 +1458,10 @@ input[type="checkbox"] {
   }
 
   .versions-table {
-    width: 80%;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    border-spacing: 50px 0;
   }
 
   .update-banner {
@@ -1500,6 +1518,10 @@ input[type="checkbox"] {
 
   .download-cost {
     font-size: 15;
+  }
+
+  .versions-table {
+    border-spacing: 20px 0;
   }
 
   .update-button {
@@ -1565,8 +1587,7 @@ input[type="checkbox"] {
   }
 
   .versions-table {
-    width: 60%;
-    overflow-x:auto;
+    border-spacing: 0px;
   }
 
   .update-banner-text {
