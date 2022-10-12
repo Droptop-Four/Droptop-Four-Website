@@ -17,6 +17,8 @@
   --code-background-color: #D3F5FD;
   --code-text-color: #2085ED;
   --round-borders: 8px;
+  --background-mentioned: hsla(38,calc(1*95.7%),54.1%,0.1);
+  --background-mentioned-hover: hsla(38,calc(1*95.7%),54.1%,0.08);
 }
 
 
@@ -176,7 +178,7 @@ input[type="checkbox"] {
 	top: 0;
 	height: 100vh;
 	width: 100vw;
-  background-image: url("/img/DroptopFourLogo.png");
+  background-image: url("/img/DroptopFourLogo.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -696,6 +698,12 @@ input[type="checkbox"] {
   transition: 0.3s ease;
 }
 
+.download-cost {
+  font-size: 20px;
+  color: var(--secondary-text-color);
+  margin-top: -10px;
+}
+
 .download-update-container {
   font-size: 30px;
   justify-content: center;
@@ -1132,6 +1140,28 @@ input[type="checkbox"] {
   width: 80%;
 }
 
+.discord-mention {
+  background-color: #5865f269;
+  border-radius: var(--round-borders);
+  padding: 2px 5px;
+  color: #dee0fc;
+  overflow-wrap: break-word;
+  text-decoration: none;
+}
+
+.discord-mention:hover {
+  background-color: #5768f0;
+  cursor: pointer;
+  color: var(--main-text-color)
+}
+
+.forum-icon {
+  width: 19px;
+  height: 21px;
+}
+
+
+
 
 
 /* ------ FOOTER ------ */
@@ -1468,6 +1498,10 @@ input[type="checkbox"] {
     margin: 20px 0;
   }
 
+  .download-cost {
+    font-size: 15;
+  }
+
   .update-button {
     margin: 20px 0;
   }
@@ -1554,6 +1588,10 @@ input[type="checkbox"] {
     width: 250px;
     height: 80px;
     padding: 0 20px;
+  }
+
+  .download-cost {
+    font-size: 10;
   }
 
   .update-banner-text {
