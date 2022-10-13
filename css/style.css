@@ -96,7 +96,6 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   padding: 20px;
@@ -116,9 +115,16 @@ body {
   list-style: none;
 }
 
+.nav-links {
+  position: fixed;
+  right: 40px;
+}
+
 .nav-links a {
   color: var(--accents-text-color);
 }
+
+
 
 .logo img {
   border-radius: 20%;
@@ -131,6 +137,7 @@ body {
   text-transform: lowercase;
   letter-spacing: 3px;
   font-size: 30px;
+  margin-left: 30px;
 }
 
 .site-name a {
@@ -152,6 +159,12 @@ body {
 
 .menu li {
   padding: 5px 14px;
+}
+
+.nav-download {
+  background-color: #4bd7654d;
+  font-weight: bold;
+  border-radius: var(--round-borders);
 }
 
 input[type="checkbox"] {
@@ -1287,6 +1300,19 @@ input[type="checkbox"] {
 /* ------ MEDIA QUERIES ------ */
 
 @media screen and (max-width: 1080px) {
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .nav-links {
+    position: static;
+    right: 0px;
+  }
+
+  .site-name {
+    margin-left: 0px;
+  }
+
   .menu {
     display: none;
     position: absolute;
