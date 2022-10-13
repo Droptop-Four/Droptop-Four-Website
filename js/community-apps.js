@@ -37,8 +37,8 @@ class DisplayApps {
                 <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                 <p class="app-card-desc">${item.desc}</p>
                 <div class="app-card-buttons">
-                    <button class="app-card-button" onclick="location.href='${item.official_link}'" type="button">See on Github</button>
-                    <button class="app-card-button" onclick="location.href='${item.direct_download_link}'" type="button">Download</button>
+                    <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                    <a class="app-card-button" href="${item.direct_download_link}">Download</a>
                 </div>
               </div>  
             </div>
@@ -54,8 +54,8 @@ class DisplayApps {
                 <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                 <p class="app-card-desc">${item.desc}</p>
                 <div class="app-card-buttons">
-                    <button class="app-card-button" onclick="location.href='${item.official_link}'" type="button">See on Github</button>
-                    <button class="app-card-button" onclick="location.href='${item.direct_download_link}'" type="button">Download</button>
+                    <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                    <a class="app-card-button" href="${item.direct_download_link}">Download</a>
                 </div>
               </div>  
             </div>
