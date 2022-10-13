@@ -6,11 +6,8 @@ const appsList = document.getElementById("appsList");
 class Apps {
   async Items() {
     try {
-      console.log('start')
       let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json')
-      console.log('end')
       let data = await result.json()
-      console.log(data)
 
       let appsItems = data.apps
       appsItems = appsItems.map(item => {
@@ -22,7 +19,6 @@ class Apps {
 
     } catch (error) {
       console.log(error)
-      console.log('test')
     }
   }
 }
