@@ -250,12 +250,13 @@ input[type="checkbox"] {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 80%;
 }
 
 .home-banner-title {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .home-banner-title h1 {
@@ -277,6 +278,8 @@ input[type="checkbox"] {
 }
 
 .home-button-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   float: right;
@@ -293,10 +296,10 @@ input[type="checkbox"] {
   background-color: var(--main-bg-color);
   color: var(--accents-text-color);
   border: none;
-  padding: 30px;
+  padding: 40px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 40px;
   border-radius: var(--round-borders);
   cursor: pointer;
 }
@@ -1362,6 +1365,11 @@ input[type="checkbox"] {
     align-items: center;
   }
 
+  .home-banner-title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .home-banner-title h1 {
     text-align: center;
     width: 100%;
@@ -1376,11 +1384,16 @@ input[type="checkbox"] {
     margin-bottom: 15px;
   }
 
+  .home-button-container {
+    margin-top: 20px;
+  }
+
   .home-download-button {
     position: inherit;
     top: 10px;
     transform: translateY(0);
     margin-top: 10px;
+    padding: 40px 30px;
   }
 
   .home-container {
@@ -1539,6 +1552,11 @@ input[type="checkbox"] {
 
   .home-container {
     padding: 0px 30px;
+  }
+
+  .home-download-button {
+    padding: 30px 20px;
+    font-size: 30px;
   }
 
   .Slide img {
