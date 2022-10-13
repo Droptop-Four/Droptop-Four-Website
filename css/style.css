@@ -96,7 +96,6 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   padding: 20px;
@@ -116,9 +115,16 @@ body {
   list-style: none;
 }
 
+.nav-links {
+  position: fixed;
+  right: 40px;
+}
+
 .nav-links a {
   color: var(--accents-text-color);
 }
+
+
 
 .logo img {
   border-radius: 20%;
@@ -131,6 +137,7 @@ body {
   text-transform: lowercase;
   letter-spacing: 3px;
   font-size: 30px;
+  margin-left: 30px;
 }
 
 .site-name a {
@@ -144,14 +151,20 @@ body {
   font-size: 18px;
 }
 
-.menu li:hover {
+.menu li a:hover {
   background-color: var(--main-bg-highlight-tr);
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
-.menu li {
+.menu li a {
   padding: 5px 14px;
+}
+
+.nav-download {
+  background-color: #4bd7654d;
+  font-weight: bold;
+  border-radius: var(--round-borders);
 }
 
 input[type="checkbox"] {
@@ -237,12 +250,13 @@ input[type="checkbox"] {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 80%;
 }
 
 .home-banner-title {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .home-banner-title h1 {
@@ -264,6 +278,8 @@ input[type="checkbox"] {
 }
 
 .home-button-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   float: right;
@@ -280,12 +296,13 @@ input[type="checkbox"] {
   background-color: var(--main-bg-color);
   color: var(--accents-text-color);
   border: none;
-  padding: 30px;
+  padding: 40px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 40px;
   border-radius: var(--round-borders);
   cursor: pointer;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .home-download-button:hover {
@@ -682,6 +699,7 @@ input[type="checkbox"] {
   border-radius: var(--round-borders);
   cursor: pointer;
   margin: 40px;
+  line-height: 1.8;
 }
 
 .download-button:hover {
@@ -730,6 +748,15 @@ input[type="checkbox"] {
 
 .agent-alert-text {
   color: var(--secondary-text-color);
+}
+
+.droptop-version {
+  color: var(--secondary-text-color);
+  font-size: 15px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 65px;
+  opacity: 0.5;
 }
 
 .versions-table {
@@ -1286,6 +1313,19 @@ input[type="checkbox"] {
 /* ------ MEDIA QUERIES ------ */
 
 @media screen and (max-width: 1080px) {
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .nav-links {
+    position: static;
+    right: 0px;
+  }
+
+  .site-name {
+    margin-left: 0px;
+  }
+
   .menu {
     display: none;
     position: absolute;
@@ -1326,6 +1366,11 @@ input[type="checkbox"] {
     align-items: center;
   }
 
+  .home-banner-title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .home-banner-title h1 {
     text-align: center;
     width: 100%;
@@ -1340,11 +1385,16 @@ input[type="checkbox"] {
     margin-bottom: 15px;
   }
 
+  .home-button-container {
+    margin-top: 20px;
+  }
+
   .home-download-button {
     position: inherit;
     top: 10px;
     transform: translateY(0);
     margin-top: 10px;
+    padding: 40px 30px;
   }
 
   .home-container {
@@ -1505,6 +1555,11 @@ input[type="checkbox"] {
     padding: 0px 30px;
   }
 
+  .home-download-button {
+    padding: 30px 20px;
+    font-size: 30px;
+  }
+
   .Slide img {
     object-fit: cover;
     object-position: left top;
@@ -1588,6 +1643,10 @@ input[type="checkbox"] {
 
   .download-banner-text {
     font-size: 38px;
+  }
+
+  .download-button {
+    line-height: 1;
   }
 
   .versions-table {
