@@ -682,6 +682,7 @@ input[type="checkbox"] {
   border-radius: var(--round-borders);
   cursor: pointer;
   margin: 40px;
+  line-height: 1.8;
 }
 
 .download-button:hover {
@@ -1588,6 +1589,10 @@ input[type="checkbox"] {
 
   .download-banner-text {
     font-size: 38px;
+  }
+
+  .download-button {
+    line-height: 1;
   }
 
   .versions-table {
