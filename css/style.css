@@ -151,13 +151,13 @@ body {
   font-size: 18px;
 }
 
-.menu li:hover {
+.menu li a:hover {
   background-color: var(--main-bg-highlight-tr);
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
-.menu li {
+.menu li a {
   padding: 5px 14px;
 }
 
@@ -744,6 +744,15 @@ input[type="checkbox"] {
 
 .agent-alert-text {
   color: var(--secondary-text-color);
+}
+
+.droptop-version {
+  color: var(--secondary-text-color);
+  font-size: 15px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 65px;
+  opacity: 0.5;
 }
 
 .versions-table {
