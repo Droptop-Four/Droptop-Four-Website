@@ -27,6 +27,7 @@ html {
   scroll-behavior: smooth;
   width: auto !important;
   overflow-x: hidden;
+  scroll-padding-top: 120px;
 }
 
 * {
@@ -1531,6 +1532,10 @@ d
   .community-apps-banner {
     padding-top: 80px;
   }
+  
+  .create-an-app-banner {
+    padding-top: 80px;
+  }
 }
 
 
@@ -1655,6 +1660,10 @@ d
   }
 
   .community-apps-banner-text {
+    font-size: 38px;
+  }
+  
+  .create-an-app-banner-text {
     font-size: 38px;
   }
 }
