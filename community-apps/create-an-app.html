@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/ling" href="/img/DroptopFourLogo.png">
+    <link rel="icon" type="image/ling" href="/img/DroptopFourLogo.webp">
     <meta name="theme-color" content="#4BD765">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
     <meta name="twitter:title" content="Create an App | Droptop Four" />
 	<meta name="twitter:description" content="Tutorial on how to create a custom app for Droptop Four" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="https://raw.githubusercontent.com/Droptop-Four/Droptop-Four-Media-Kit/main/Banners/DroptopBanner3.png" />
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
     <meta name="twitter:image:alt" content="Droptop Four image" />
 	<meta property="og:title" content="Create an App | Droptop Four" />
-	<meta property="og:image" content="https://raw.githubusercontent.com/Droptop-Four/Droptop-Four-Media-Kit/main/Banners/DroptopBanner3.png" />
-	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
+	<meta property="og:image:type" content="image/webp" />
 	<meta property="og:image:alt" content="Droptop Four image" />
     <meta property="og:url" content="https://www.droptopfour.com" />
     <title>Create an App | Droptop Four</title>
@@ -35,7 +35,7 @@
         <nav class="navbar">
             <!-- LOGO -->
             <div class="logo">
-                <a href="/"><img src="/img/DroptopFourLogo.png" alt="Droptop Four Logo"></a>
+                <a href="/"><img src="/img/DroptopFourLogo.webp" alt="Droptop Four Logo"></a>
             </div>
             <div class="site-name">
                 <a href="/">
@@ -49,7 +49,7 @@
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
-                    <li><a href="/download">Download</a></li>
+                    <li><a class="nav-download" href="/download">Download</a></li>
                     <li><a href="/community-apps">Community Apps</a></li>
                     <!-- <li><a href="/pages/community-themes.html">Community Themes</a></li> -->
                     <li><a href="/faq">FAQs</a></li>
@@ -112,21 +112,21 @@
 
                         <li id="m-step-3"><a class="underline">Step 3</a>: Refresh Rainmeter</li>
 
-                        <li id="m-step-4"><a class="underline">Step 4</a>: Go to the Droptop home button >> "Droptop settings" >> "Community Apps" >> Select a slot >> Select your new app. Your app should now be enabled in Droptop, ready for editing.</li>
+                        <li id="m-step-4"><a class="underline">Step 4</a>: Go to Droptop settings >> Community Apps >> Select a slot >> Select your new app. Your app should now be enabled in Droptop, ready for editing.</li>
 
                         <li id="m-step-5"><a class="underline">Step 5</a>: In your app's folder, edit the <a class="code">CustomApp.ini</a> file. Edit the <a class="code">NumberOfItems</a> variable to reflect the number of items in your dropdown menu (Maximum 10). Change <a class="code">NumberOfBoxes</a> to reflect how many boxes you'll be using (Maximum 5).</li>
 
                         <li id="m-step-6"><a class="underline">Step 6</a>: Below that, you'll see <a class="code">ItemTextX</a>, <a class="code">ItemIsFolderX</a>, and <a class="code">ItemActionX</a>. These represent each item in the Dropdown menu, in order from the topmost item to the bottommost item in the list. If <a class="code">ItemIsFolderX</a> is a folder that opens more options, set that value to 1. Otherwise, set it to 0.</li>
 
-                        <li id="m-step-7"><a class="underline">Step 7</a>: Set each item's action. To set an action, you must have an understanding of Rainmeter bangs. Bangs are instructions of what action to perform when that item is selected.</li>
+                        <li id="m-step-7"><a class="underline">Step 7</a>: Set each item's action. To set an action, you must have an understanding of <a class="link" href="https://docs.rainmeter.net/manual/bangs/" target="_blank">Rainmeter bangs</a>. Bangs are instructions of what action to perform when that item is selected. When <a class="code">ItemIsFolderX</a> is equal to <a class="code"></a>1</a>, the actions will not be triggered, instead a submenu will be opened.</li>
 
-                        <li id="m-step-8"><a class="underline">Step 8</a>: After you've made a few items for your dropdown menu, now you can make icons for your dropdown menu. First, create a fun button for your app in the top bar. Go to the "Button" folder in your app folder. You will find 2 png files - <a class="code">Button.png</a> will be your icon, and <a class="code">ButtonS.png</a> will be your icon with a Drop Shadow filter applied to it. Edit the <a class="code">.png</a> files in Photoshop, GIMP, or another advanced image editor. Create a <a class="code">32x32</a> sized icon for your app. The canvas size of each icon should remain the same. Edit the file - Do not replace the image with another image. The icon you create should always be a pure white color.
+                        <li id="m-step-8"><a class="underline">Step 8</a>: After you've made a few items for your dropdown menu, now you can make icons for your dropdown menu. First, create a fun button for your app in the top bar. Go to the <a class="code">Button</a> folder in your app folder. You will find 2 <a class="code">.png</a> files. <a class="code">Button.png</a> will be your icon, and <a class="code">ButtonS.png</a> will be your icon with a drop shadow effect applied to it. Edit the <a class="code">.png</a> files in Photoshop, GIMP, or another advanced image editor.
 
-                        The free software <a href="https://www.gimp.org/" target="_blank" class="underline">GIMP</a> is useful for editing these types of files.</li>
+                        <li><a class="important">IMPORTANT</a> - The canvas size of the button should be 78x52, and the button names must remain as <a class="code">Button.png</a> and <a class="code">ButtonS.png</a> and should be a pure white color. For an automatic way of generating the appropriate icons, first find or make an icon with a 32x32 canvas size and save it to your desktop. Drag the icon to the Home Button at the top-right corner of Droptop. <a class="code">Button.png</a> and <a class="code">ButtonS.png</a> will automatically be generated in <a class="code">Documents\Rainmeter\Skins\Droptop Folders\Other files\Home\</a>.</li>
 
-                        <li id="m-step-9"><a class="underline">Step 9</a>: You can now also make icons for all of your individual items in the dropdown menu. Under the "Icons" folder, you can replace these icons with any <a class="code">32x32</a> icon. The icon you create should always be a pure white color. The canvas size of each icon should remain the same.</li>
+                        <li id="m-step-9"><a class="underline">Step 9</a>: You can now also make icons for all of your individual items in the dropdown menu. Under the <a class="code">Icons</a> folder, you can replace these icons with any 32x32 icon. The icon you create should always be a pure white color. The canvas size of each icon should remain the same.</li>
 
-                        <li id="m-step-10"><a class="underline">Step 10</a>: Repeat this step for any submenus you've created for your app. Go to <a class="code">Folder\Icons\</a> and set the icons in the same way as you did in <a href="#m-step-9" class="underline">Step 9</a> for the folder number that corresponds to the position of that submenu in the dropdown menu.</li>
+                        <li id="m-step-10"><a class="underline">Step 10</a>: Repeat this step for any submenus you've created for your app. Go to <a class="code">Folder\Icons\</a> and set the icons in the same way as you did in <a href="#m-step-9" class="link">Step 9</a> for the folder number that corresponds to the position of that submenu in the dropdown menu.</li>
 
                         <li id="m-step-11"><a class="underline">Step 11</a>: Continue editing the <a class="code">CustomApp.ini</a> until it meets the design you had in mind. When you're finished, proceed to compile and share your app with the world.</li>
                     </ul>
@@ -167,13 +167,13 @@
 
                 <div class="make-an-app-process">
                     <ul>
-                        <li id="s-step-1"><a class="underline">Step 1</a>: If your app requires any special plugins, navigate to <a class="code">App_Name-Your_Name\Plugins\</a> and move any 32-bit and 64-bit plugin <a class="code">.dll</a> binaries to the 32bit and 64bit folders respectively.</li>
+                        <li id="s-step-1"><a class="underline">Step 1</a>: If your app requires any special plugins, navigate to <a class="code">App_Name-Your_Name\Plugins\</a> and move any 32-bit and 64-bit plugin <a class="code">.dll</a> binaries to the <a class="code">32bit</a> and <a class="code">64bit</a> folders respectively inside of your app folder.</li>
 
                         <li id="s-step-2"><a class="underline">Step 2</a>: Go to Droptop Settings >> Support >> Developer tools >> Generate .rsmkin >> Select your app.</li>
 
                         <li id="s-step-3"><a class="underline">Step 3</a>: When the compiler is finished, an Explorer window will appear with your installable <a class="code">.rmskin</a> package.</li>
 
-                        <li id="s-step-4"><a class="underline">Step 4</a>: Share your creation on the Droptop Discord <a href="https://discord.gg/xGdEzpdzXk" target="_blank" class="link">#💻╏app-creation</a> channel.</li>
+                        <li id="s-step-4"><a class="underline">Step 4</a>: Share your creation on the Droptop Discord <a href="https://discord.gg/xGdEzpdzXk" target="_blank" class="discord-mention">#💻╏app-creation</a> channel.</li>
                     </ul>
                 </div>
 

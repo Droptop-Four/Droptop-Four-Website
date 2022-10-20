@@ -6,11 +6,8 @@ const appsList = document.getElementById("appsList");
 class Apps {
   async Items() {
     try {
-      console.log('start')
       let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json')
-      console.log('end')
       let data = await result.json()
-      console.log(data)
 
       let appsItems = data.apps
       appsItems = appsItems.map(item => {
@@ -22,7 +19,6 @@ class Apps {
 
     } catch (error) {
       console.log(error)
-      console.log('test')
     }
   }
 }
@@ -41,8 +37,8 @@ class DisplayApps {
                 <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                 <p class="app-card-desc">${item.desc}</p>
                 <div class="app-card-buttons">
-                    <button class="app-card-button" onclick="location.href='${item.official_link}'" type="button">See on Github</button>
-                    <button class="app-card-button" onclick="location.href='${item.direct_download_link}'" type="button">Download</button>
+                    <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                    <a class="app-card-button" href="${item.direct_download_link}">Download</a>
                 </div>
               </div>  
             </div>
@@ -58,8 +54,8 @@ class DisplayApps {
                 <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                 <p class="app-card-desc">${item.desc}</p>
                 <div class="app-card-buttons">
-                    <button class="app-card-button" onclick="location.href='${item.official_link}'" type="button">See on Github</button>
-                    <button class="app-card-button" onclick="location.href='${item.direct_download_link}'" type="button">Download</button>
+                    <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                    <a class="app-card-button" href="${item.direct_download_link}">Download</a>
                 </div>
               </div>  
             </div>
