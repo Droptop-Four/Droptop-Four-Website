@@ -1,4 +1,3 @@
-
 // ---- COMMUNITY APPS ----
 
 const appsList = document.getElementById("appsList");
@@ -6,28 +5,29 @@ const appsList = document.getElementById("appsList");
 class Apps {
   async Items() {
     try {
-      let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json')
-      let data = await result.json()
+      let result = await fetch(
+        "https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json"
+      );
+      let data = await result.json();
 
-      let appsItems = data.apps
-      appsItems = appsItems.map(item => {
-        const { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url } = item.app
+      let appsItems = data.apps;
+      appsItems = appsItems.map((item) => {
+        const { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, } = item.app;
 
-        return { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url }
-      })
-      return appsItems
-
+        return { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, };
+      });
+      return appsItems;
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 }
 
 class DisplayApps {
   displayApps(apps) {
-    let result = ""
+    let result = "";
     apps.forEach((item) => {
-      if (item.author_link == '#') {
+      if (item.author_link == "#") {
         result += `
           <div>
             <div class="app-card" id="${item.id}">
@@ -43,7 +43,7 @@ class DisplayApps {
               </div>  
             </div>
           </div>
-          `
+          `;
       } else {
         result += `
           <div>
@@ -60,17 +60,16 @@ class DisplayApps {
               </div>  
             </div>
           </div>
-          `
-        }
+          `;
       }
-          )
-    appsList.innerHTML = result
+    });
+    appsList.innerHTML = result;
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const apps = new Apps()
-  const displayapps = new DisplayApps()
+  const apps = new Apps();
+  const displayapps = new DisplayApps();
 
-  apps.Items().then(apps => displayapps.displayApps(apps))
-})
+  apps.Items().then((apps) => displayapps.displayApps(apps));
+});
