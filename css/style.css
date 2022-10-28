@@ -885,9 +885,22 @@ input[type="checkbox"] {
   font-size: 20px;
 }
 
-.appsList li {
-  padding-bottom: 20px;
+
+
+
+
+.appsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
+
+.appsList div {
+  margin-bottom: 20px;
+}
+
+
+
+
 
 .app-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -900,8 +913,10 @@ input[type="checkbox"] {
   background-color: #0D0D11;
   border-radius: 25px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
+
+
 
 .app-card-container {
   display: flex;
@@ -973,6 +988,7 @@ input[type="checkbox"] {
 .app-card-button:focus {
   outline: none;
 }
+
 
 
 
@@ -1363,7 +1379,7 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
   }
-d
+
   .home-banner-title {
     width: 100%;
     margin-bottom: 20px;

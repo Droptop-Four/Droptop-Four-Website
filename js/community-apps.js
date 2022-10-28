@@ -29,7 +29,7 @@ class DisplayApps {
     apps.forEach((item) => {
       if (item.author_link == '#') {
         result += `
-          <li>
+          <div>
             <div class="app-card" id="${item.id}">
               <div class="app-card-container">
                 <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
@@ -42,11 +42,11 @@ class DisplayApps {
                 </div>
               </div>  
             </div>
-          </li>
+          </div>
           `
       } else {
         result += `
-          <li>
+          <div>
             <div class="app-card" id="${item.id}">
               <div class="app-card-container">
                 <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
@@ -59,7 +59,7 @@ class DisplayApps {
                 </div>
               </div>  
             </div>
-          </li>
+          </div>
           `
         }
       }
