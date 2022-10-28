@@ -1326,6 +1326,14 @@ input[type="checkbox"] {
 
 /* ------ MEDIA QUERIES ------ */
 
+@media screen and (max-width: 1580px) {
+  .appsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
 @media screen and (max-width: 1080px) {
   .navbar {
     justify-content: space-around;
@@ -1549,6 +1557,10 @@ input[type="checkbox"] {
     padding-top: 80px;
   }
   
+  .appsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .create-an-app-banner {
     padding-top: 80px;
   }
