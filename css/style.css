@@ -51,6 +51,10 @@ html {
   overflow-wrap: break-word;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .underline {
   text-decoration: underline;
   color: var(--secondary-text-color);
@@ -885,10 +889,6 @@ input[type="checkbox"] {
   font-size: 20px;
 }
 
-
-
-
-
 .appsList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -897,10 +897,6 @@ input[type="checkbox"] {
 .appsList div {
   margin-bottom: 20px;
 }
-
-
-
-
 
 .app-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -915,8 +911,6 @@ input[type="checkbox"] {
   padding-top: 20px;
   padding-bottom: 5px;
 }
-
-
 
 .app-card-container {
   display: flex;
