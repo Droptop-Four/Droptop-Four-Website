@@ -11,6 +11,9 @@ class Apps {
       let data = await result.json();
 
       let appsItems = data.apps;
+
+      console.log(appsItems)
+
       appsItems = appsItems.map((item) => {
         const { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, } = item.app;
 

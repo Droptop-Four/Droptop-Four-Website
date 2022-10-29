@@ -963,7 +963,7 @@ input[type="checkbox"] {
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-  margin: 4px 2px;
+  margin: 20px 2px 0 2px;
   cursor: pointer;
 }
 
@@ -1074,6 +1074,124 @@ input[type="checkbox"] {
 .share-an-app h3 {
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+
+
+
+/* ------ COMMUNITY THEMES PAGE ------ */
+
+.community-themes-banner {
+  color: var(--accents-text-color);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(20px + 10vh);
+  padding-top: 50px;
+}
+
+.community-themes-banner h1 {
+  text-align: center;
+}
+
+.theme-making {
+  text-align: center;
+  color: var(--main-text-color);
+  font-size: 20px;
+}
+
+.themesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.themesList div {
+  margin-bottom: 20px;
+}
+
+.theme-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: arial;
+  background-color: #0D0D11;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.app-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.theme-card-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  color: var(--accents-text-color);
+}
+
+.theme-card-image {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: var(--round-borders);
+}
+
+.theme-card-author {
+  color: var(--secondary-text-color);
+}
+
+.theme-card-author-link {
+  color: var(--secondary-text-color);
+}
+
+.app-card-desc {
+  align-items: center;
+  text-align: center;
+  max-width: 90%;
+  color: var(--main-text-color);
+  padding: 10px 10px;
+}
+
+.theme-card-buttons {
+  padding: 0 5px;
+}
+
+.theme-card-button {
+  background-color: var(--main-bg-color);
+  color: var(--accents-text-color);
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 20px 2px 0 2px;
+  cursor: pointer;
+}
+
+.theme-card-button:hover {
+  background-color: var(--main-bg-highlight-tr);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.theme-card-button:active {
+  background-color: var(--main-bg-highlight-tr);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.theme-card-button:focus {
+  outline: none;
 }
 
 
@@ -1324,6 +1442,10 @@ input[type="checkbox"] {
   .appsList {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .themesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -1558,6 +1680,19 @@ input[type="checkbox"] {
   .create-an-app-banner {
     padding-top: 80px;
   }
+
+  .community-themes-banner {
+    padding-top: 80px;
+  }
+
+  .themesList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .create-a-theme-banner {
+    padding-top: 80px;
+  }
+
 }
 
 
@@ -1686,6 +1821,14 @@ input[type="checkbox"] {
   }
   
   .create-an-app-banner-text {
+    font-size: 38px;
+  }
+
+  .community-themes-banner-text {
+    font-size: 38px;
+  }
+  
+  .create-a-theme-banner-text {
     font-size: 38px;
   }
 }
