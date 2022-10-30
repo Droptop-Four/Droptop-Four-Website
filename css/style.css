@@ -88,6 +88,7 @@ body {
   left: 0.5rem;
   transform: translateY(-120%);
   transition: transform 325ms ease-in;
+  z-index: 1000;
 }
 
 .skip-to-main-content:focus {
