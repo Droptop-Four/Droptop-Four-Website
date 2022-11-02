@@ -31,39 +31,75 @@ class DisplayApps {
     let result = "";
     apps.forEach((item) => {
       if (item.author_link == "#") {
-        result += `
-          <div>
-            <div class="app-card" id="${item.id}">
-              <div class="app-card-container">
-                <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
-                <h3 class="app-card-name">${item.name}</h3>
-                <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
-                <p class="app-card-desc">${item.desc}</p>
-                <div class="app-card-buttons">
-                    <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
-                    <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
-                </div>
-              </div>  
+        if (item.official_link == "#") {
+          result += `
+            <div>
+              <div class="app-card" id="${item.id}">
+                <div class="app-card-container">
+                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
+                  <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-desc">${item.desc}</p>
+                  <div class="app-card-buttons">
+                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                  </div>
+                </div>  
+              </div>
             </div>
-          </div>
-          `;
+            `;
+        } else {
+          result += `
+            <div>
+              <div class="app-card" id="${item.id}">
+                <div class="app-card-container">
+                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
+                  <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-desc">${item.desc}</p>
+                  <div class="app-card-buttons">
+                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            `;
+        }
       } else {
-        result += `
-          <div>
-            <div class="app-card" id="${item.id}">
-              <div class="app-card-container">
-                <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
-                <h3 class="app-card-name">${item.name}</h3>
-                <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
-                <p class="app-card-desc">${item.desc}</p>
-                <div class="app-card-buttons">
-                    <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
-                    <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
-                </div>
-              </div>  
+        if (item.official_link == "#") {
+          result += `
+            <div>
+              <div class="app-card" id="${item.id}">
+                <div class="app-card-container">
+                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
+                  <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-desc">${item.desc}</p>
+                  <div class="app-card-buttons">
+                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                  </div>
+                </div>  
+              </div>
             </div>
-          </div>
-          `;
+            `;
+        } else {
+          result += `
+            <div>
+              <div class="app-card" id="${item.id}">
+                <div class="app-card-container">
+                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
+                  <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-desc">${item.desc}</p>
+                  <div class="app-card-buttons">
+                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            `;
+        }
       }
     });
     appsList.innerHTML = result;
