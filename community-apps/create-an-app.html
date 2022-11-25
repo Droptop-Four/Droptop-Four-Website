@@ -102,33 +102,19 @@
 
                 <div class="make-an-app-process">
                     <ul>
-                        <li id="m-step-1"><a class="underline">Step 1</a>: Navigate to <a class="code">Documents\Rainmeter\Skins\Droptop Community Apps\Apps\</a></li>
+                        <li id="m-step-1"><a class="underline">Step 1</a>: In Droptop settings, got to "Droptop settings >> Community apps >> Create new app". Fill out the required fields. When finished, your app will be created and a File Explorer window will pop up.</li>
 
-                        <li id="m-step-2"><a class="underline">Step 2</a>: Copy and paste one of these apps you'd like to use as a template for creating your app. Rename the folder to the name of your app, followed by your name. For example, rename <a class="code">Sample_App-Cariboudjan - Copy</a> to <a class="code">System_Monitor-John_Smith</a>.</li>
+                        <li id="m-step-2"><a class="underline">Step 2</a>: In your app's folder, edit the <a class="code">CustomApp.ini</a> file. Edit the <a class="code">NumberOfItems</a> variable to reflect the number of items in your dropdown menu (Maximum 10). Change <a class="code">NumberOfBoxes</a> to reflect how many boxes you'll be using (Maximum 5).</li>
 
-                        <li><a class="important">IMPORTANT</a> - Your folder's name <a class="underline">must</a> be one word with no spaces, like in the example above. Use an underscore in the place of a space, and use a dash to separate the app name from the author's name. It's recommended that you use the format shown above.
-                        <br>
-                        Example: <a class="code">App_Name-Your_Name</a></li>
+                        <li id="m-step-3"><a class="underline">Step 3</a>: Below that, you'll see <a class="code">ItemTextX</a>, <a class="code">ItemIsFolderX</a>, and <a class="code">ItemActionX</a>. These represent each item in the Dropdown menu, in order from the topmost item to the bottommost item in the list. If <a class="code">ItemIsFolderX</a> is a folder that opens more options, set that value to 1. Otherwise, set it to 0.</li>
 
-                        <li id="m-step-3"><a class="underline">Step 3</a>: Refresh Rainmeter</li>
+                        <li id="m-step-4"><a class="underline">Step 4</a>: Set each item's action. To set an action, you must have an understanding of <a class="link" href="https://docs.rainmeter.net/manual/bangs/" target="_blank">Rainmeter bangs</a>. Bangs are instructions of what action to perform when that item is selected. When <a class="code">ItemIsFolderX</a> is equal to <a class="code"></a>1</a>, the actions will not be triggered, instead a submenu will be opened.</li>
 
-                        <li id="m-step-4"><a class="underline">Step 4</a>: Go to Droptop settings >> Community Apps >> Select a slot >> Select your new app. Your app should now be enabled in Droptop, ready for editing.</li>
+                        <li id="m-step-5"><a class="underline">Step 5</a>: You can now also make icons for all of your individual items in the dropdown menu. Under the <a class="code">Icons</a> folder, you can replace these icons with any 32x32 icon. The icon you create should always be a pure white color. The canvas size of each icon should remain the same.</li>
 
-                        <li id="m-step-5"><a class="underline">Step 5</a>: In your app's folder, edit the <a class="code">CustomApp.ini</a> file. Edit the <a class="code">NumberOfItems</a> variable to reflect the number of items in your dropdown menu (Maximum 10). Change <a class="code">NumberOfBoxes</a> to reflect how many boxes you'll be using (Maximum 5).</li>
+                        <li id="m-step-6"><a class="underline">Step 6</a>: Repeat this step for any submenus you've created for your app. Go to <a class="code">Folder\Icons\</a> and set the icons in the same way as you did in <a href="#m-step-5" class="link">Step 5</a> for the folder number that corresponds to the position of that submenu in the dropdown menu.</li>
 
-                        <li id="m-step-6"><a class="underline">Step 6</a>: Below that, you'll see <a class="code">ItemTextX</a>, <a class="code">ItemIsFolderX</a>, and <a class="code">ItemActionX</a>. These represent each item in the Dropdown menu, in order from the topmost item to the bottommost item in the list. If <a class="code">ItemIsFolderX</a> is a folder that opens more options, set that value to 1. Otherwise, set it to 0.</li>
-
-                        <li id="m-step-7"><a class="underline">Step 7</a>: Set each item's action. To set an action, you must have an understanding of <a class="link" href="https://docs.rainmeter.net/manual/bangs/" target="_blank">Rainmeter bangs</a>. Bangs are instructions of what action to perform when that item is selected. When <a class="code">ItemIsFolderX</a> is equal to <a class="code"></a>1</a>, the actions will not be triggered, instead a submenu will be opened.</li>
-
-                        <li id="m-step-8"><a class="underline">Step 8</a>: After you've made a few items for your dropdown menu, now you can make icons for your dropdown menu. First, create a fun button for your app in the top bar. Go to the <a class="code">Button</a> folder in your app folder. You will find 2 <a class="code">.png</a> files. <a class="code">Button.png</a> will be your icon, and <a class="code">ButtonS.png</a> will be your icon with a drop shadow effect applied to it. Edit the <a class="code">.png</a> files in Photoshop, GIMP, or another advanced image editor.
-
-                        <li><a class="important">IMPORTANT</a> - The canvas size of the button should be 78x52, and the button names must remain as <a class="code">Button.png</a> and <a class="code">ButtonS.png</a> and should be a pure white color. For an automatic way of generating the appropriate icons, first find or make an icon with a 32x32 canvas size and save it to your desktop. Drag the icon to the Home Button at the top-right corner of Droptop. <a class="code">Button.png</a> and <a class="code">ButtonS.png</a> will automatically be generated in <a class="code">Documents\Rainmeter\Skins\Droptop Folders\Other files\Home\</a>.</li>
-
-                        <li id="m-step-9"><a class="underline">Step 9</a>: You can now also make icons for all of your individual items in the dropdown menu. Under the <a class="code">Icons</a> folder, you can replace these icons with any 32x32 icon. The icon you create should always be a pure white color. The canvas size of each icon should remain the same.</li>
-
-                        <li id="m-step-10"><a class="underline">Step 10</a>: Repeat this step for any submenus you've created for your app. Go to <a class="code">Folder\Icons\</a> and set the icons in the same way as you did in <a href="#m-step-9" class="link">Step 9</a> for the folder number that corresponds to the position of that submenu in the dropdown menu.</li>
-
-                        <li id="m-step-11"><a class="underline">Step 11</a>: Continue editing the <a class="code">CustomApp.ini</a> until it meets the design you had in mind. When you're finished, proceed to compile and share your app with the world.</li>
+                        <li id="m-step-7"><a class="underline">Step 7</a>: Continue editing the <a class="code">CustomApp.ini</a> until it meets the design you had in mind. When you're finished, proceed to compile and share your app with the world.</li>
                     </ul>
 
                     <div aria-hidden="true" class="body-divider" id="divider-3">
@@ -151,6 +137,9 @@
                             </li>
                             <li>
                                 <a class="builtin-variable">[#HideAppCustomApp[#App_Name-Your_Name]]</a><br>Equals 0 if your app is active - 1 if inactive.
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#CustomAppInstallDate[#App_Name-Your_Name]]</a><br>Equals the date the app was installed on the user's computer.
                             </li>
                         </ul>
                     </div>
