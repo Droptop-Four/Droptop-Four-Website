@@ -127,16 +127,25 @@
 
                         <ul>
                             <li>
-                                <a class="builtin-variable">[#App_Name-Your_Name]</a><br>Equals the slot number your app is in (equals 1, 2, 3, 4 or 5)
+                                <a class="builtin-variable">[#MyAppID]</a><br>Equals the slot number your app is in (equals 1, 2, 3, 4 or 5).
                             </li>
                             <li>
-                                <a class="builtin-variable">[#CustomAppID[#App_Name-Your_Name]]</a><br>Equals the name of your app
+                                <a class="builtin-variable">[#MyAppName]</a><br>Equals the name of your app.
                             </li>
                             <li>
-                                <a class="builtin-variable">[#CustomAppActiveID[#App_Name-Your_Name[#HideAppCustomApp[#App_Name-Your_Name]]]]</a><br>Equals the the name of your app only if your app is active - If not active, equals nothing.
+                                <a class="builtin-variable">[#MyAppAuthor]</a><br>Equals your name, the author.
                             </li>
                             <li>
-                                <a class="builtin-variable">[#HideAppCustomApp[#App_Name-Your_Name]]</a><br>Equals 0 if your app is active - 1 if inactive.
+                                <a class="builtin-variable">[#MyVariablesLoc]</a><br>Equals the file location of the Variables.inc file.
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#CustomAppID[#MyAppID]]</a><br>Equals the ID Badge of your app (Same as the app's folder name).
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#CustomAppActiveID[#MyAppID[#HideAppCustomApp[#MyAppID]]]]</a><br>Equals the the name of your app only if your app is active - If not active, equals nothing.
+                            </li>
+                            <li>
+                                <a class="builtin-variable">[#HideAppCustomApp[#MyAppID]]</a><br>Equals 0 if your app is active - 1 if inactive.
                             </li>
                             <li>
                                 <a class="builtin-variable">[#CustomAppInstallDate[#App_Name-Your_Name]]</a><br>Equals the date the app was installed on the user's computer.
