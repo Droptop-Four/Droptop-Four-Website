@@ -30,8 +30,8 @@ class DisplayApps {
   displayApps(apps) {
     let result = "";
     apps.forEach((item) => {
-      if (item.author_link == "#") {
-        if (item.official_link == "#") {
+      if (item.author_link == "") {
+        if (item.official_link == "") {
           result += `
             <div>
               <div class="app-card" id="${item.id}">
@@ -66,7 +66,7 @@ class DisplayApps {
             `;
         }
       } else {
-        if (item.official_link == "#") {
+        if (item.official_link == "") {
           result += `
             <div>
               <div class="app-card" id="${item.id}">

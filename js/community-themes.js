@@ -28,7 +28,7 @@ class DisplayThemes {
   displayThemes(themes) {
     let result = "";
     themes.forEach((item) => {
-      if (item.author_link == "#") {
+      if (item.author_link == "") {
         result += `
           <div>
             <div class="theme-card" id="${item.id}">
