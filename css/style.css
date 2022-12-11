@@ -1125,7 +1125,7 @@ input[type="checkbox"] {
   padding-bottom: 5px;
 }
 
-.app-card-container {
+.theme-card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1160,6 +1160,7 @@ input[type="checkbox"] {
   max-width: 90%;
   color: var(--main-text-color);
   padding: 10px 10px;
+  line-height: 1.4;
 }
 
 .theme-card-buttons {
