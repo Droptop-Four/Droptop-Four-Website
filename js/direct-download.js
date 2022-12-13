@@ -28,6 +28,7 @@ function Download() {
         location.replace("../download")
       }
     clearInterval(handle)
+    setTimeout(Home, 15000)
 }
 
 function ManualDownload() {
@@ -40,4 +41,9 @@ function ManualDownload() {
     } else {
         location.replace("../download")
     }
+    setTimeout(Home, 15000)
+}
+
+function Home() {
+    location.replace("../")
 }
