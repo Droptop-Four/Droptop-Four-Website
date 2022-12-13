@@ -51,6 +51,10 @@ html {
   overflow-wrap: break-word;
 }
 
+.droptop {
+  color: var(--accents-text-color)
+}
+
 .bold {
   font-weight: bold;
 }
