@@ -753,7 +753,7 @@ input[type="checkbox"] {
   color: var(--secondary-text-color);
 }
 
-.droptop-version {
+.droptop-version-text {
   color: var(--secondary-text-color);
   font-size: 15px;
   justify-content: center;
@@ -805,6 +805,33 @@ input[type="checkbox"] {
 .column-3 {
   background-color: #4bd7654d;
   color: var(--accents-text-color);
+}
+
+
+.direct-download-title {
+  color: var(--accents-text-color);
+}
+
+
+.direct-download-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  height: max-content;
+  color: var(--main-text-color);
+  line-height: 1.4;
+}
+
+.direct-download-suppport {
+  margin-top: 10px;
+  color: var(--accents-text-color);
+  line-height: 2;
 }
 
 

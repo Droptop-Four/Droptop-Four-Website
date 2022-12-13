@@ -2,11 +2,11 @@
 // ---- MAIN ----
 
 function DownloadBase() {
-  window.location.href = "https://github.com/Droptop-Four/Basic-Version/raw/main/Droptop%20Basic%20Version.rmskin"
+  window.location.href = "../direct-download?variant=base"
 }
 
 function UpdateBase() {
-  window.location.href = "https://github.com/Droptop-Four/Update/raw/main/Droptop%20Update.rmskin"
+  location.replace("../direct-download?")
 }
 
 function Download(version) {

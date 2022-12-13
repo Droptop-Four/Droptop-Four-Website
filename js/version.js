@@ -10,8 +10,7 @@ async function getVersion() {
     } catch (error) {
         console.log(error);
     }
-    document.getElementById("droptop-version").innerHTML += 
-    `<div>Current version: ${version}</div>`;
+    document.getElementById("droptop-version").innerHTML += `<a>${version}</a>`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
