@@ -6,7 +6,7 @@ function DownloadBase() {
 }
 
 function UpdateBase() {
-  location.replace("../direct-download?")
+  window.location.href = "../direct-download?variant=update"
 }
 
 function Download(version) {
