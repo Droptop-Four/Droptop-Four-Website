@@ -12,8 +12,6 @@ class Apps {
 
       let appsItems = data.apps;
 
-      console.log(appsItems);
-
       appsItems = appsItems.map((item) => {
         const {
           id,
@@ -52,7 +50,7 @@ class DisplayApps {
   displayApps(apps) {
     let result = "";
     apps.forEach((item) => {
-      if (item.hidden == 0) {
+      if (item.hidden != 1) {
         if (item.author_link == "") {
           if (item.official_link == "") {
             result += `

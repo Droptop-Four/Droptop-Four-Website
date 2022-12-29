@@ -50,7 +50,7 @@ class DisplayThemes {
   displayThemes(themes) {
     let result = "";
     themes.forEach((item) => {
-      if (item.hidden == 0) {
+      if (item.hidden != 1) {
         if (item.author_link == "") {
           result += `
           <div>
