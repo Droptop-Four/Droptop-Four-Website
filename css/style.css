@@ -1130,8 +1130,8 @@ input[type="checkbox"] {
 
 .theme-making {
   text-align: center;
-  color: var(--main-text-color);
-  font-size: 20px;
+  color: var(--tertiary-text-color);
+  font-size: 18px;
 }
 
 .themesList {
@@ -1360,9 +1360,11 @@ input[type="checkbox"] {
 
 .discord-mention:hover {
   background-color: #5768f0;
+  text-decoration: underline;
   cursor: pointer;
   color: var(--main-text-color);
 }
+
 
 .forum-icon {
   width: 19px;
