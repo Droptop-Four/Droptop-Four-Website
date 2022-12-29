@@ -13,9 +13,31 @@ class Themes {
       let themesItems = data.themes;
 
       themesItems = themesItems.map((item) => {
-        const { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, } = item.theme;
+        const {
+          id,
+          name,
+          author,
+          author_link,
+          desc,
+          official_link,
+          direct_download_link,
+          secondary_link,
+          image_url,
+          hidden,
+        } = item.theme;
 
-        return { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, };
+        return {
+          id,
+          name,
+          author,
+          author_link,
+          desc,
+          official_link,
+          direct_download_link,
+          secondary_link,
+          image_url,
+          hidden,
+        };
       });
       return themesItems;
     } catch (error) {
@@ -28,8 +50,9 @@ class DisplayThemes {
   displayThemes(themes) {
     let result = "";
     themes.forEach((item) => {
-      if (item.author_link == "") {
-        result += `
+      if (item.hidden == 0) {
+        if (item.author_link == "") {
+          result += `
           <div>
             <div class="theme-card" id="${item.id}">
               <div class="theme-card-container">
@@ -44,8 +67,8 @@ class DisplayThemes {
             </div>
           </div>
           `;
-      } else {
-        result += `
+        } else {
+          result += `
           <div>
             <div class="theme-card" id="${item.id}">
               <div class="theme-card-container">
@@ -60,6 +83,7 @@ class DisplayThemes {
             </div>
           </div>
           `;
+        }
       }
     });
     themesList.innerHTML = result;

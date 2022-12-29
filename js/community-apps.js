@@ -12,12 +12,34 @@ class Apps {
 
       let appsItems = data.apps;
 
-      console.log(appsItems)
+      console.log(appsItems);
 
       appsItems = appsItems.map((item) => {
-        const { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, } = item.app;
+        const {
+          id,
+          name,
+          author,
+          author_link,
+          desc,
+          official_link,
+          direct_download_link,
+          secondary_link,
+          image_url,
+          hidden,
+        } = item.app;
 
-        return { id, name, author, author_link, desc, official_link, direct_download_link, secondary_link, image_url, };
+        return {
+          id,
+          name,
+          author,
+          author_link,
+          desc,
+          official_link,
+          direct_download_link,
+          secondary_link,
+          image_url,
+          hidden,
+        };
       });
       return appsItems;
     } catch (error) {
@@ -30,9 +52,10 @@ class DisplayApps {
   displayApps(apps) {
     let result = "";
     apps.forEach((item) => {
-      if (item.author_link == "") {
-        if (item.official_link == "") {
-          result += `
+      if (item.hidden == 0) {
+        if (item.author_link == "") {
+          if (item.official_link == "") {
+            result += `
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
@@ -47,43 +70,8 @@ class DisplayApps {
               </div>
             </div>
             `;
-        } else {
-          result += `
-            <div>
-              <div class="app-card" id="${item.id}">
-                <div class="app-card-container">
-                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
-                  <h3 class="app-card-name">${item.name}</h3>
-                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
-                  <p class="app-card-desc">${item.desc}</p>
-                  <div class="app-card-buttons">
-                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
-                      <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
-                  </div>
-                </div>  
-              </div>
-            </div>
-            `;
-        }
-      } else {
-        if (item.official_link == "") {
-          result += `
-            <div>
-              <div class="app-card" id="${item.id}">
-                <div class="app-card-container">
-                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
-                  <h3 class="app-card-name">${item.name}</h3>
-                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
-                  <p class="app-card-desc">${item.desc}</p>
-                  <div class="app-card-buttons">
-                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
-                  </div>
-                </div>  
-              </div>
-            </div>
-            `;
-        } else {
-          result += `
+          } else {
+            result += `
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
@@ -99,6 +87,42 @@ class DisplayApps {
               </div>
             </div>
             `;
+          }
+        } else {
+          if (item.official_link == "") {
+            result += `
+            <div>
+              <div class="app-card" id="${item.id}">
+                <div class="app-card-container">
+                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
+                  <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-desc">${item.desc}</p>
+                  <div class="app-card-buttons">
+                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            `;
+          } else {
+            result += `
+            <div>
+              <div class="app-card" id="${item.id}">
+                <div class="app-card-container">
+                  <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
+                  <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-desc">${item.desc}</p>
+                  <div class="app-card-buttons">
+                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            `;
+          }
         }
       }
     });
