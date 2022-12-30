@@ -19,6 +19,7 @@ class Apps {
           author,
           author_link,
           desc,
+          version,
           official_link,
           direct_download_link,
           secondary_link,
@@ -32,6 +33,7 @@ class Apps {
           author,
           author_link,
           desc,
+          version,
           official_link,
           direct_download_link,
           secondary_link,
@@ -59,6 +61,7 @@ class DisplayApps {
                 <div class="app-card-container">
                   <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
                   <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
                   <div class="app-card-buttons">
@@ -75,6 +78,7 @@ class DisplayApps {
                 <div class="app-card-container">
                   <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
                   <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
                   <div class="app-card-buttons">
@@ -94,6 +98,7 @@ class DisplayApps {
                 <div class="app-card-container">
                   <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
                   <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
                   <div class="app-card-buttons">
@@ -110,6 +115,7 @@ class DisplayApps {
                 <div class="app-card-container">
                   <img class="app-card-image" src="${item.image_url}" alt="${item.name} image">
                   <h3 class="app-card-name">${item.name}</h3>
+                  <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
                   <div class="app-card-buttons">
