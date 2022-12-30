@@ -965,6 +965,12 @@ input[type="checkbox"] {
   color: var(--accents-text-color);
 }
 
+.app-card-version {
+  color: var(--secondary-text-color);
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
 .app-card-image {
   width: 80%;
   margin-top: 20px;
