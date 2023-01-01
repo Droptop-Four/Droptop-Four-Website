@@ -1,8 +1,9 @@
-{ 
-     "tabWidth": 4, 
-     "useTabs": false, 
-     "printWidth": 180, 
-     "singleQuote": true, 
-     "bracketSpacing": true, 
-     "bracketSameLine": true 
+{
+    "tabWidth": 4,
+    "useTabs": false,
+    "printWidth": 200,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+    "htmlWhitespaceSensitivity": "strict"
 }
