@@ -1471,6 +1471,7 @@ input[type="checkbox"] {
   .scroll-to-top:active {
     background-color: var(--secondary-bg-color);
     color: var(--accents-text-color);
+    border: 1px solid var(--accents-text-color);
   }
 }
 
