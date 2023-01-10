@@ -33,10 +33,10 @@ function Download() {
 function ManualDownload() {
     if (variant == 'base') {
         console.log('mirror base download');
-        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/tempdroptopfour.appspot.com/o/Droptop%20Basic%20Version.rmskin?alt=media&token=5bc1cc71-100b-43e1-97b7-e48fb40941cd';
+        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Basic%20Version.rmskin?alt=media&token=a4211a51-e8a9-477b-9d28-c5eaf73fffb5';
     } else if (variant == 'update') {
         console.log('mirror update download');
-        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/tempdroptopfour.appspot.com/o/Droptop%20Update.rmskin?alt=media&token=e25637a4-eecc-4c67-9e3c-a79fe03b9d0a';
+        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Update.rmskin?alt=media&token=e574c348-e381-4602-beaf-841814505ef2';
     } else {
         location.replace('../download');
     }
