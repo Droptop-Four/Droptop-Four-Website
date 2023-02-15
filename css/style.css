@@ -36,9 +36,10 @@ html {
 }
 
 .code {
-    background-color: var(--code-background-color);
-    color: var(--code-text-color);
+    background-color: var(--main-bg-color);
+    color: var(--accents-text-color);
     border-radius: 3px;
+    border: 1px solid var(--accents-text-color);
     font-family: courier, monospace;
     padding: 0 3px;
     overflow-wrap: break-word;
@@ -264,6 +265,7 @@ input[type='checkbox'] {
     text-align: center;
     margin-bottom: 20px;
     font-size: 75px;
+    text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544)
 }
 
 .home-banner-title h2 {
