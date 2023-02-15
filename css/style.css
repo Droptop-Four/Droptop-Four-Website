@@ -265,6 +265,7 @@ input[type='checkbox'] {
     text-align: center;
     margin-bottom: 20px;
     font-size: 75px;
+    text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544)
 }
 
 .home-banner-title h2 {
