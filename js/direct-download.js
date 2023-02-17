@@ -8,7 +8,7 @@ let variant = params.variant;
 
 if (variant) {
     if (variant == 'base' || variant == 'update') {
-        handle = setTimeout(Download, 3000);
+        handle = setTimeout(Download, 1000);
     } else {
         location.replace('../download');
     }
