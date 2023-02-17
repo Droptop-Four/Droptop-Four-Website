@@ -265,7 +265,7 @@ input[type='checkbox'] {
     text-align: center;
     margin-bottom: 20px;
     font-size: 75px;
-    text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544)
+    text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544);
 }
 
 .home-banner-title h2 {
@@ -1378,6 +1378,58 @@ input[type='checkbox'] {
     height: 21px;
 }
 
+/* ------ SEARCH PAGE ------ */
+
+.search-banner {
+    color: var(--accents-text-color);
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(20px + 10vh);
+    padding-top: 50px;
+}
+
+.search-banner h1 {
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input[type='search'] {
+    padding: 6px;
+    font-size: 20px;
+    border: solid 2px;
+    border-radius: var(--round-borders) 0 0 var(--round-borders);
+    border-color: var(--accents-text-color);
+}
+
+.search-bar button {
+    float: right;
+    padding: 6px 10px;
+    background: var(--secondary-bg-color);
+    color: var(--accents-text-color);
+    font-size: 20px;
+    border: solid 2px;
+    cursor: pointer;
+    border-radius: 0 var(--round-borders) var(--round-borders) 0;
+    border-color: var(--accents-text-color);
+}
+
+.searchList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.searchList div {
+    margin-bottom: 20px;
+}
+
 /* ------ FOOTER ------ */
 
 .footer {
@@ -1484,6 +1536,10 @@ input[type='checkbox'] {
     }
 
     .themesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .searchList {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -1730,6 +1786,14 @@ input[type='checkbox'] {
     .create-a-theme-banner {
         padding-top: 80px;
     }
+
+    .search-banner {
+        padding-top: 80px;
+    }
+
+    .searchList {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1864,6 +1928,10 @@ input[type='checkbox'] {
     }
 
     .create-a-theme-banner-text {
+        font-size: 38px;
+    }
+
+    .search-banner-text {
         font-size: 38px;
     }
 }

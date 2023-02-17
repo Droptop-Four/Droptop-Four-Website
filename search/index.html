@@ -9,24 +9,23 @@
         <link rel="stylesheet" href="/css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/e8027f79c9.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="sweetalert2.min.css" />
         <meta name="description" content="Dropdown menu bar & app launcher for Windows & Rainmeter" />
         <meta name="keywords" content="Rainmeter, Skin, Skins, Rainmeter-Skin, Rainmeter-Skins, Droptop, DroptopFour, Droptop-Four" />
         <meta name="author" content="Bunz, Cariboudjan, Jax" />
-        <meta name="twitter:title" content="Update | Droptop Four" />
-        <meta name="twitter:description" content="Update page for Droptop Four" />
+        <meta name="twitter:title" content="SEARCH | Droptop Four" />
+        <meta name="twitter:description" content="Search for Droptop Four" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
         <meta name="twitter:image:alt" content="Droptop Four image" />
-        <meta property="og:title" content="Droptop Four" />
+        <meta property="og:title" content="SEARCH | Droptop Four" />
         <meta property="og:image" content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content="Droptop Four image" />
         <meta property="og:url" content="https://www.droptopfour.com" />
-        <title>Update | Droptop Four</title>
+        <title>Search | Droptop Four</title>
     </head>
 
-    <body>
+    <body class="site">
         <header>
             <a class="skip-to-main-content" href="#main-content"> Skip to main content </a>
             <nav class="navbar">
@@ -59,10 +58,10 @@
         <!-- <div class="bg-image"></div> -->
 
         <!-- Main Content -->
-        <main class="update-page">
-            <section class="update-banner">
-                <div class="update-banner-text">
-                    <h1>UPDATE</h1>
+        <main class="search-page">
+            <section class="search-banner">
+                <div class="search-banner-text">
+                    <h1>SEARCH</h1>
                 </div>
             </section>
 
@@ -70,18 +69,26 @@
                 <hr />
             </div>
 
-            <section class="update-contents" id="main-content">
-                <div class="update-container">
-                    <div class="update-button-container">
-                        <!-- prettier-ignore -->
-                        <button class="update-button" onclick="UpdateBase()" type="button"><i class="fa fa-download"></i>  UPDATE</button>
-                    </div>
-                </div>
+            <section class="search-contents" id="main-content">
+                
+                <form class="search-bar" role="search">
+                    <input id="searchbar" type="search" name="s" placeholder="Search Apps and Themes..." size="20" autofocus />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
 
-                <div aria-hidden="true" class="body-divider" id="divider-1">
+                <div aria-hidden="true" class="body-divider" id="divider-2">
                     <hr />
                 </div>
+
+                <!-- prettier-ignore -->
+                <div class="searchList" id="searchList">
+                    <!-- Content from search.js -->
+                </div>
             </section>
+
+            <div aria-hidden="true" class="body-divider" id="divider-3">
+                <hr />
+            </div>
         </main>
         <!-- Main Content End -->
 
@@ -108,7 +115,7 @@
 
         <!-- Script -->
         <script src="/js/main.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="/js/search.js"></script>
         <!-- Script End -->
     </body>
 </html>
