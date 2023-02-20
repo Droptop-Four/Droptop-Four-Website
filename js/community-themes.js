@@ -1,5 +1,11 @@
 // ---- COMMUNITY THEMES ----
 
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+});
+
+let id_query = params.id;
+
 const themesList = document.getElementById('themesList');
 
 class Themes {
@@ -77,9 +83,19 @@ class DisplayThemes {
     }
 }
 
+function Scroll() {
+    const appElement = document.getElementById(id_query);
+    if (appElement) {
+        appElement.scrollIntoView();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const themes = new Themes();
     const displaythemes = new DisplayThemes();
 
-    themes.Items().then((themes) => displaythemes.displayThemes(themes));
+    themes
+        .Items()
+        .then((themes) => displaythemes.displayThemes(themes))
+        .then(Scroll);
 });
