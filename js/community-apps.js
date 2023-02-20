@@ -1,5 +1,11 @@
 // ---- COMMUNITY APPS ----
 
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+});
+
+let id_query = params.id;
+
 const appsList = document.getElementById('appsList');
 
 class Apps {
@@ -120,9 +126,18 @@ class DisplayApps {
     }
 }
 
+function Scroll() {
+    const appElement = document.getElementById(id_query);
+    if (appElement) {
+        appElement.scrollIntoView();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const apps = new Apps();
     const displayapps = new DisplayApps();
 
-    apps.Items().then((apps) => displayapps.displayApps(apps));
+    apps.Items()
+        .then((apps) => displayapps.displayApps(apps))
+        .then(Scroll);
 });
