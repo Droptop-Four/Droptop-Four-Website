@@ -2,7 +2,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
 });
 
-let search_query = params.s
+let search_query = params.s;
 
 const selezionati = [];
 
@@ -54,11 +54,9 @@ const search_bar = document.getElementById('searchbar');
         if (item.app) {
             let selected_app = item.app;
 
-            if (selected_app.author_link == '') {
-                if (selected_app.official_link == '') {
-                    result += `
+            result += `
         <div>
-          <div class="app-card" id="${selected_app.id}">
+          <div class="app-card" id="${selected_app.id}" onclick="window.location='https://droptopfour.com/community-apps?id=${selected_app.id}';" style="cursor: pointer;">
             <div class="app-card-container">
               <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image">
               <h3 class="app-card-name">${selected_app.name}</h3>
@@ -66,105 +64,29 @@ const search_bar = document.getElementById('searchbar');
               <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
               <p class="app-card-desc">${selected_app.desc}</p>
               <div class="app-card-buttons">
-                  <a class="app-card-button bold" href="${selected_app.direct_download_link}">Download</a>
+                  <a class="app-card-button bold" href="$https://droptopfour.com/community-apps?id=${selected_app.id}">View</a>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
         `;
-                } else {
-                    result += `
-        <div>
-          <div class="app-card" id="${selected_app.id}">
-            <div class="app-card-container">
-              <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image">
-              <h3 class="app-card-name">${selected_app.name}</h3>
-              <p class="app-card-version">v${selected_app.version}</p>
-              <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
-              <p class="app-card-desc">${selected_app.desc}</p>
-              <div class="app-card-buttons">
-                  <a class="app-card-button bold" href="${selected_app.direct_download_link}">Download</a>
-                  <a class="app-card-button" href="${selected_app.official_link}" target="_blank">See on Github</a>
-              </div>
-            </div>  
-          </div>
-        </div>
-        `;
-                }
-            } else {
-                if (selected_app.official_link == '') {
-                    result += `
-        <div>
-          <div class="app-card" id="${selected_app.id}">
-            <div class="app-card-container">
-              <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image">
-              <h3 class="app-card-name">${selected_app.name}</h3>
-              <p class="app-card-version">v${selected_app.version}</p>
-              <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
-              <p class="app-card-desc">${selected_app.desc}</p>
-              <div class="app-card-buttons">
-                  <a class="app-card-button bold" href="${selected_app.direct_download_link}">Download</a>
-              </div>
-            </div>  
-          </div>
-        </div>
-        `;
-                } else {
-                    result += `
-        <div>
-          <div class="app-card" id="${selected_app.id}">
-            <div class="app-card-container">
-              <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image">
-              <h3 class="app-card-name">${selected_app.name}</h3>
-              <p class="app-card-version">v${selected_app.version}</p>
-              <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
-              <p class="app-card-desc">${selected_app.desc}</p>
-              <div class="app-card-buttons">
-                  <a class="app-card-button bold" href="${selected_app.direct_download_link}">Download</a>
-                  <a class="app-card-button" href="${selected_app.official_link}" target="_blank">See on Github</a>
-              </div>
-            </div>  
-          </div>
-        </div>
-        `;
-                }
-            }
         } else {
             let selected_theme = item.theme;
-
-            if (selected_theme.author_link == '') {
-                result += `
-      <div>
-        <div class="theme-card" id="${selected_theme.id}">
-          <div class="theme-card-container">
-            <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image">
-            <h3 class="theme-card-name">${selected_theme.name}</h3>
-            <p class="theme-card-author">Created by <a class="theme-card-author-link">${selected_theme.author}</a></p>
-            <p class="theme-card-desc">${selected_theme.desc}</p>
-            <div class="theme-card-buttons">
-                <a class="theme-card-button bold" href="${selected_theme.direct_download_link}">Download</a>
-            </div>
-          </div>  
-        </div>
-      </div>
-      `;
-            } else {
-                result += `
-      <div>
-        <div class="theme-card" id="${selected_theme.id}">
-          <div class="theme-card-container">
-            <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image">
-            <h3 class="theme-card-name">${selected_theme.name}</h3>
-            <p class="theme-card-author">Created by <a class="theme-card-author-link" href="${selected_theme.author_link}">${selected_theme.author}</a></p>
-            <p class="theme-card-desc">${selected_theme.desc}</p>
-            <div class="theme-card-buttons">
-                <a class="theme-card-button bold" href="${selected_theme.direct_download_link}">Download</a>
-            </div>
-          </div>  
-        </div>
-      </div>
-      `;
-            }
+            result += `
+              <div>
+                <div class="theme-card" id="${selected_theme.id}" onclick="window.location='https://droptopfour.com/community-themes?id=${selected_theme.id}';" style="cursor: pointer;">
+                  <div class="theme-card-container">
+                    <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image">
+                    <h3 class="theme-card-name">${selected_theme.name}</h3>
+                    <p class="theme-card-author">Created by <a class="theme-card-author-link">${selected_theme.author}</a></p>
+                    <p class="theme-card-desc">${selected_theme.desc}</p>
+                    <div class="theme-card-buttons">
+                        <a class="theme-card-button bold" href="https://droptopfour.com/community-themes?id=${selected_theme.id}">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              `;
         }
     }
 
