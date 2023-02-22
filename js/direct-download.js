@@ -36,7 +36,7 @@ function ManualDownload() {
         window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Basic%20Version.rmskin?alt=media&token=662736a1-41d1-4e28-b596-347701227928';
     } else if (variant == 'update') {
         console.log('mirror update download');
-        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Update.rmskin?alt=media&token=e574c348-e381-4602-beaf-841814505ef2';
+        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Update.rmskin?alt=media&token=22319dd9-b0e6-4539-a735-4ccbc772925e';
     } else {
         location.replace('../download');
     }
