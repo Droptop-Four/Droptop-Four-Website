@@ -33,7 +33,7 @@ function Download() {
 function ManualDownload() {
     if (variant == 'base') {
         console.log('mirror base download');
-        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Basic%20Version.rmskin?alt=media&token=a4211a51-e8a9-477b-9d28-c5eaf73fffb5';
+        window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Basic%20Version.rmskin?alt=media&token=662736a1-41d1-4e28-b596-347701227928';
     } else if (variant == 'update') {
         console.log('mirror update download');
         window.location.href = 'https://firebasestorage.googleapis.com/v0/b/droptopfour-bec1e.appspot.com/o/Droptop%20Update.rmskin?alt=media&token=e574c348-e381-4602-beaf-841814505ef2';
