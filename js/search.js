@@ -58,7 +58,7 @@ const search_bar = document.getElementById('searchbar');
         <div>
           <div class="app-card" id="${selected_app.id}" onclick="window.location='https://droptopfour.com/community-apps?id=${selected_app.id}';" style="cursor: pointer;">
             <div class="app-card-container">
-              <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image">
+              <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image" loading="lazy">
               <h3 class="app-card-name">${selected_app.name}</h3>
               <p class="app-card-version">v${selected_app.version}</p>
               <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
@@ -76,7 +76,7 @@ const search_bar = document.getElementById('searchbar');
               <div>
                 <div class="theme-card" id="${selected_theme.id}" onclick="window.location='https://droptopfour.com/community-themes?id=${selected_theme.id}';" style="cursor: pointer;">
                   <div class="theme-card-container">
-                    <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image">
+                    <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image" loading="lazy">
                     <h3 class="theme-card-name">${selected_theme.name}</h3>
                     <p class="theme-card-author">Created by <a class="theme-card-author-link">${selected_theme.author}</a></p>
                     <p class="theme-card-desc">${selected_theme.desc}</p>
