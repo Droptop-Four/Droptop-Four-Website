@@ -37,7 +37,7 @@
 
 <!-- DISCORD BANNER -->
 <p align="center">
-  <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank">
+  <a href="https://www.droptopfour.com/discord/" target="_blank">
     <img src="https://discordapp.com/api/guilds/800124057923485728/widget.png?style=banner3" alt="Discord Community Invite"/>
   </a>
 </p>
@@ -53,7 +53,7 @@
       <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github"></a>
     <a href="https://cariboudjan.gumroad.com/l/droptop">
       <img src="https://img.shields.io/badge/Gumroad-36A9AE?style=for-the-badge&logo=gumroad&logoColor=white" alt="Gumroad"></a>
-    <a href="https://discord.gg/aGQ6uE4Fgp">
+    <a href="https://www.droptopfour.com/discord/">
       <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
 </p>  
 
