@@ -11,7 +11,7 @@ const themesList = document.getElementById('themesList');
 class Themes {
     async Items() {
         try {
-            let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_themes/community_themes.json');
+            let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_themes/community_themes.json');
             let data = await result.json();
 
             let themesItems = data.themes;

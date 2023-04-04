@@ -11,7 +11,7 @@ const appsList = document.getElementById('appsList');
 class Apps {
     async Items() {
         try {
-            let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json');
+            let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json');
             let data = await result.json();
 
             let appsItems = data.apps;

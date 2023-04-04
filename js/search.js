@@ -9,8 +9,8 @@ const selezionati = [];
 const search_bar = document.getElementById('searchbar');
 
 (async () => {
-    const apps_url = 'https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json';
-    const themes_url = 'https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_themes/community_themes.json';
+    const apps_url = 'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json';
+    const themes_url = 'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_themes/community_themes.json';
 
     const apps_response = await fetch(apps_url);
     const themes_response = await fetch(themes_url);
