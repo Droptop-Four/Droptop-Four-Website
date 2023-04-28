@@ -2,9 +2,25 @@
 
 let slideIndex = 1;
 let slides = document.getElementsByClassName('Slide');
+var timer;
+
+function showSlides() {
+    let i;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    timer = setTimeout(showSlides, 3500);
+}
 
 function MoveSlides(n) {
+    clearTimeout(timer);
     SlidesButtons((slideIndex += n));
+    timer = setTimeout(showSlides, 3500);
 }
 
 function SlidesButtons(n) {
@@ -21,18 +37,6 @@ function SlidesButtons(n) {
     slides[slideIndex - 1].style.display = 'block';
 }
 
-function showSlides() {
-    let i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 3500);
-}
 
 SlidesButtons(slideIndex);
 
