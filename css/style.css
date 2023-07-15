@@ -239,6 +239,65 @@ input[type='checkbox'] {
     border-radius: 4px;
 }
 
+/* ------- 404 ------- */
+
+.p404-banner {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(20px + 10vh);
+    padding: 30px 65px;
+    color: var(--accents-text-color);
+    font-size: 40px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.p404-container img {
+    opacity: 0.1;
+    width: 100%;
+}
+
+.p404-banner-text {
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.p404-banner-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.p404-banner-title h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 75px;
+    text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544);
+}
+
+.p404-banner-title h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    padding-left: 20%;
+    color: var(--secondary-text-color);
+    font-size: 30px;
+}
+
 /* ------- HOME ------- */
 
 .home-banner {
@@ -1642,7 +1701,7 @@ input[type='checkbox'] {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1160px) {
     .navbar {
         justify-content: space-around;
     }
@@ -1684,6 +1743,44 @@ input[type='checkbox'] {
 
     .hamburger {
         display: block;
+    }
+
+
+    .p404-banner {
+        padding-top: 80px;
+    }
+
+    .p404-banner-text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .p404-banner-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .p404-banner-title h1 {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: -25px;
+        margin-bottom: 0px;
+    }
+
+    .home-banner-title h2 {
+        width: 100%;
+        padding-left: 0%;
+        margin-bottom: 15px;
     }
 
     .home-banner {
@@ -1899,6 +1996,19 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 720px) {
+    .p404-banner {
+        padding: 0px 10px;
+        margin-top: 120px;
+    }
+
+    .p404-banner-title h1 {
+        font-size: 50px;
+    }
+
+    .p404-banner-title h2 {
+        font-size: 25px;
+    }
+    
     .home-banner {
         padding: 0px 10px;
         margin-top: 120px;
@@ -1950,7 +2060,19 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 480px) {
-    .home-banner {
+    .p404-banner {
+        margin-top: 120px;
+    }
+
+    .p404-banner-text {
+        width: 100%;
+    }
+
+    .p404-banner-text h1 {
+        font-size: 45px;
+    }
+
+    .p404-banner {
         margin-top: 120px;
     }
 
