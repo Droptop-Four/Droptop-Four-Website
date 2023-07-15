@@ -1,0 +1,58 @@
+{
+    "name": "Droptop Four",
+    "short_name": "DroptopFour",
+    "categories": [
+        "droptop",
+        "droptop-four",
+        "droptopfour",
+        "menu",
+        "bar",
+        "launcher",
+        "rainmeter",
+        "windows",
+        "app",
+        "application",
+        "desktop",
+        "start",
+        "startmenu",
+        "startmenualternative",
+        "startmenu"
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#43ff64",
+    "background_color": "#181820",
+    "orientation": "any",
+    "description": "Dropdown menu bar & app launcher for Windows & Rainmeter.",
+    "icons": [
+        {
+            "src": "img/DroptopFourLogo.webp",
+            "sizes": "256x256",
+            "type": "image/webp"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "windows",
+            "url": "https://droptopfour.com/download"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Download",
+            "url": "/download",
+            "description": "Download Droptop Four"
+        },
+        {
+            "name": "Community Apps",
+            "url": "/community-apps",
+            "description": "View Community Apps"
+        },
+        {
+            "name": "Community Themes",
+            "url": "/community-themes",
+            "description": "View Community Themes"
+        }
+    ]
+}
