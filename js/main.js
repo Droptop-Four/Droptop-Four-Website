@@ -2,10 +2,9 @@
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-        navigator.serviceWorker
-            .register('/serviceWorker.js')
-            .then((res) => console.log('service worker registered'))
-            .catch((err) => console.log('service worker not registered', err));
+        navigator.serviceWorker.register('/serviceWorker.js');
+        // .then((res) => console.log('service worker registered'))
+        // .catch((err) => console.log('service worker not registered', err));
     });
 }
 
@@ -98,3 +97,122 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function checkAnnouncements() {
+    fetch('https://raw.githubusercontent.com/Droptop-Four/test/main/data/announcements.json')
+        .then((response) => response.json())
+        .then((data) => {
+            let scope = data.scope;
+
+            if (scope == 'website') {
+                let date = data.date;
+                let expiration = data.expiration;
+
+                const currentDate = new Date();
+                const year = currentDate.getFullYear().toString().slice(-2);
+                const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+                const day = currentDate.getDate().toString().padStart(2, '0');
+
+                const now = `${year}.${month}${day}`;
+
+                if (now >= date) {
+                    let announcement = data.announcement;
+                    let type = data.type;
+                    
+                    if (expiration == 'none') {
+                        const dismissed = sessionStorage.getItem('announcementDismissed');
+                        if (!dismissed) {
+                            showFloatingBanner(announcement, type);
+                            console.log('Announcement: ' + announcement + '\nType: ' + type);
+                        }
+                    } else if (expiration >= now) {
+                        const dismissed = sessionStorage.getItem('announcementDismissed');
+                        if (!dismissed) {
+                            showFloatingBanner(announcement, type);
+                            console.log('Announcement: ' + announcement + '\nType: ' + type);
+                        }
+                    } else if (expiration < now) {
+                        // Announcement expired
+                    }
+                }
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
+
+function showFloatingBanner(message,type) {
+    const bannerContainer = document.createElement('div');
+    bannerContainer.id = 'floatingBanner';
+    bannerContainer.style.position = 'fixed';
+    bannerContainer.style.bottom = '10px';
+    bannerContainer.style.right = '10px';
+    bannerContainer.style.backgroundColor = '#303842';
+    bannerContainer.style.padding = '10px';
+    bannerContainer.style.borderRadius = '5px';
+    bannerContainer.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.3)';
+    bannerContainer.style.zIndex = '9999';
+    bannerContainer.style.width = '75%';
+    bannerContainer.style.maxWidth = '75%';
+  
+    const announcementContent = document.createElement('div');
+    announcementContent.style.display = 'flex';
+    announcementContent.style.alignItems = 'center';
+  
+    const icon = document.createElement('span');
+    icon.style.display = 'flex';
+    icon.style.alignItems = 'center';
+    icon.style.marginBottom = '1%';
+  
+    const announcementMessage = document.createElement('p');
+    announcementMessage.textContent = message;
+    announcementMessage.style.color = '#ffffff';
+    announcementMessage.style.margin = '0';
+    announcementMessage.style.marginLeft = '10px';
+  
+    const dismissButton = document.createElement('button');
+    dismissButton.textContent = '✕';
+    dismissButton.style.position = 'absolute';
+    dismissButton.style.top = '10px';
+    dismissButton.style.right = '10px';
+    dismissButton.style.backgroundColor = 'transparent';
+    dismissButton.style.border = 'none';
+    dismissButton.style.cursor = 'pointer';
+    dismissButton.style.color = '#ffffff';
+    dismissButton.style.fontWeight = 'bold';
+
+    if (type == "important") {
+        bannerContainer.style.borderLeft = 'solid 5px red';
+        icon.textContent = '🛑';
+        icon.style.color = 'red';
+    } else if (type == "warning") {
+        bannerContainer.style.borderLeft = 'solid 5px orange';
+        icon.textContent = '⚠️';
+        icon.style.color = 'orange';
+    } else if (type == "info") {
+        bannerContainer.style.borderLeft = 'solid 5px #346ddb';
+        icon.textContent = '🛈';
+        icon.style.color = '#346ddb';
+    }
+  
+    announcementContent.appendChild(icon);
+    announcementContent.appendChild(announcementMessage);
+    bannerContainer.appendChild(dismissButton);
+    bannerContainer.appendChild(announcementContent);
+    document.body.appendChild(bannerContainer);
+  
+    dismissButton.addEventListener('click', dismissFloatingBanner);
+  }
+
+function dismissFloatingBanner() {
+    const bannerContainer = document.getElementById('floatingBanner');
+    if (bannerContainer) {
+        bannerContainer.remove();
+    }
+    sessionStorage.setItem('announcementDismissed', 'true');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    checkAnnouncements();
+});
