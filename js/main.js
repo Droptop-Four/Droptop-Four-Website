@@ -99,7 +99,7 @@ function topFunction() {
 }
 
 function checkAnnouncements() {
-    fetch('https://raw.githubusercontent.com/Droptop-Four/test/main/data/announcements.json')
+    fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/announcements.json')
         .then((response) => response.json())
         .then((data) => {
             let scope = data.scope;
