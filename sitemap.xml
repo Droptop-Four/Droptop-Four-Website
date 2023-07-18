@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://www.droptopfour.com/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/download/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/update/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/community-apps/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/community-themes/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/search/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/privacy-policy/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/discord/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.droptopfour.com/gumroad/</loc>
+    <lastmod>2023-07-15T13:07:19+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
