@@ -47,12 +47,12 @@ class Themes {
             let data = await result.json();
             let themesItems = data.themes;
             themesItems = themesItems.map((item) => {
-                const { id, name, image_url } = item.theme;
+                const { id, name, webp_url } = item.theme;
 
                 return {
                     id,
                     name,
-                    image_url,
+                    webp_url,
                 };
             });
             return themesItems;
@@ -69,7 +69,7 @@ class DisplayThemes {
             result += `
           <div class="Slide">
             <div class="theme-number">${item.id} / 22</div>
-            <img src="${item.image_url}" class="fade" style="width: 100%" alt="Droptop Default theme"/>
+            <img src="${item.webp_url}" class="fade" style="width: 100%" alt="Droptop Default theme"/>
             <a class="prev fade2" onclick="MoveSlides(-1)">&#10094;</a>
             <div class="theme-name fade2">${item.name}</div>
             <a class="next fade2" onclick="MoveSlides(1)">&#10095;</a>
