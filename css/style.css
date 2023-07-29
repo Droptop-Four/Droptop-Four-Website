@@ -1069,6 +1069,7 @@ input[type='checkbox'] {
 }
 
 .app-card-image {
+    height: auto;
     width: 80%;
     margin-top: 20px;
     border-radius: var(--round-borders);
@@ -1276,6 +1277,7 @@ input[type='checkbox'] {
 }
 
 .theme-card-image {
+    height: auto;
     width: 80%;
     margin-top: 20px;
     border-radius: var(--round-borders);
