@@ -51,7 +51,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image" loading="lazy"></a>
+                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -68,7 +68,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image" loading="lazy"></a>
+                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -88,7 +88,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image" loading="lazy"></a>
+                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -105,7 +105,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image" loading="lazy"></a>
+                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
