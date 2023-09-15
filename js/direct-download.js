@@ -19,10 +19,10 @@ if (variant) {
 function Download() {
     if (variant == 'base') {
         console.log('base download');
-        window.location.href = 'https://github.com/Droptop-Four/Basic-Version/raw/main/Droptop%20Basic%20Version.rmskin';
+        window.location.href = 'https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Basic_Version.rmskin';
     } else if (variant == 'update') {
         console.log('update');
-        window.location.href = 'https://github.com/Droptop-Four/Update/raw/main/Droptop%20Update.rmskin';
+        window.location.href = 'https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Update.rmskin';
     } else {
         location.replace('../download');
     }

@@ -103,6 +103,7 @@ function checkAnnouncements() {
         .then((response) => response.json())
         .then((data) => {
             let scope = data.scope;
+            console.log(scope);
 
             if (scope == 'website') {
                 let date = data.date;
@@ -114,6 +115,7 @@ function checkAnnouncements() {
                 const day = currentDate.getDate().toString().padStart(2, '0');
 
                 const now = `${year}.${month}${day}`;
+                console.log(now);
 
                 if (now >= date) {
                     let announcement = data.announcement;
