@@ -115,6 +115,7 @@ body {
     padding: 20px;
     background-color: rgba(13, 13, 17, 0.9);
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     color: var(--accents-text-color);
     position: fixed;
     top: 0;
@@ -166,6 +167,7 @@ body {
     font-size: 18px;
     background-color: rgba(13, 13, 17, 0.9);
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     border-radius: 8px;
 }
 
@@ -1057,6 +1059,7 @@ input[type='checkbox'] {
     font-family: arial;
     background-color: rgba(13, 13, 17, .15);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 25px;
     padding-top: 20px;
     padding-bottom: 5px;
@@ -1273,6 +1276,7 @@ input[type='checkbox'] {
     font-family: arial;
     background-color: rgba(13, 13, 17, .15);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 25px;
     padding-top: 20px;
     padding-bottom: 5px;
@@ -1574,6 +1578,7 @@ input[type='checkbox'] {
     padding: 20px;
     background-color: rgba(13, 13, 17, .15);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 25px;
     margin-bottom: 10px
 }
@@ -1625,6 +1630,7 @@ input[type='checkbox'] {
     z-index: 999;
     background-color: rgba(13, 13, 17, 0.9);
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     width: 98%;
     margin-bottom: 1%;
     margin-left: 1%;
@@ -1705,6 +1711,7 @@ input[type='checkbox'] {
     font-size: 18px;
     background-color: rgba(67, 255, 100, 0.9);
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 }
 
 .scroll-to-top a {
@@ -1755,6 +1762,7 @@ input[type='checkbox'] {
         position: absolute;
         background-color: rgba(16, 16, 21, 0.973);
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         right: 0;
         left: 0;
         text-align: center;
