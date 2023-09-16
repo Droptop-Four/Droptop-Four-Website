@@ -103,7 +103,7 @@ function checkAnnouncements() {
         .then((response) => response.json())
         .then((data) => {
             let scope = data.scope;
-            console.log(scope);
+            // console.log(scope);
 
             if (scope == 'website') {
                 let date = data.date;
@@ -115,7 +115,7 @@ function checkAnnouncements() {
                 const day = currentDate.getDate().toString().padStart(2, '0');
 
                 const now = `${year}.${month}${day}`;
-                console.log(now);
+                // console.log(now);
 
                 if (now >= date) {
                     let announcement = data.announcement;
@@ -125,13 +125,13 @@ function checkAnnouncements() {
                         const dismissed = sessionStorage.getItem('announcementDismissed');
                         if (!dismissed) {
                             showFloatingBanner(announcement, type);
-                            console.log('Announcement: ' + announcement + '\nType: ' + type);
+                            // console.log('Announcement: ' + announcement + '\nType: ' + type);
                         }
                     } else if (expiration >= now) {
                         const dismissed = sessionStorage.getItem('announcementDismissed');
                         if (!dismissed) {
                             showFloatingBanner(announcement, type);
-                            console.log('Announcement: ' + announcement + '\nType: ' + type);
+                            // console.log('Announcement: ' + announcement + '\nType: ' + type);
                         }
                     } else if (expiration < now) {
                         // Announcement expired
