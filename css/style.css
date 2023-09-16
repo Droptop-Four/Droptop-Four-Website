@@ -79,12 +79,12 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-image: linear-gradient(to top, #1a6527, #005446, #00404e, #082a3d, #181820);
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(#1a6527), color-stop(#005446), color-stop(#00404e), color-stop(#082a3d), color-stop(#181820));
-    background-image: -webkit-linear-gradient(bottom,  #1a6527, #005446, #00404e, #082a3d, #181820);
-    background-image:    -moz-linear-gradient(bottom,  #1a6527, #005446, #00404e, #082a3d, #181820);
-    background-image:     -ms-linear-gradient(bottom,  #1a6527, #005446, #00404e, #082a3d, #181820);
-    background-image:      -o-linear-gradient(bottom,  #1a6527, #005446, #00404e, #082a3d, #181820);
+    background-image: linear-gradient(to top, #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #1a6527), color-stop(25%, #005446), color-stop(50%, #00404e), color-stop(75%, #082a3d), color-stop(100%, #181820));
+    background-image: -webkit-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
+    background-image: -moz-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
+    background-image: -ms-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
+    background-image: -o-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
     background-size: cover;
     background-repeat: none;
     background-attachment: fixed;
