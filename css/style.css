@@ -1567,6 +1567,15 @@ input[type='checkbox'] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+}
+
+.privacy-policy-section {
+    padding: 20px;
+    background-color: rgba(13, 13, 17, .15);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    margin-bottom: 10px
 }
 
 .last-updated {
