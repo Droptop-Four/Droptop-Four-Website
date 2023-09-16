@@ -79,21 +79,15 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-image: linear-gradient(to top, #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #1a6527), color-stop(25%, #005446), color-stop(50%, #00404e), color-stop(75%, #082a3d), color-stop(100%, #181820));
-    background-image: -webkit-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
-    background-image: -moz-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
-    background-image: -ms-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
-    background-image: -o-linear-gradient(bottom,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%);
+    /* background-image: linear-gradient(to right, #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%); */
+    background-image: linear-gradient(to right, #181820 0%, #082a3d 25%, #1a6527 50%, #082a3d 75%, #181820 100%);
+    /* background-image: -webkit-linear-gradient(left,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%); */
+    /* background-image: -moz-linear-gradient(left,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%); */
+    /* background-image: -ms-linear-gradient(left,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%); */
+    /* background-image: -o-linear-gradient(left,  #1a6527 0%, #005446 25%, #00404e 50%, #082a3d 75%, #181820 100%); */
     background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed;
-}
-
-@media only screen and (max-width: 768px){
-    body {
-        background-size: 100% 100vh;
-    }
+    /* background-repeat: none; */
+    /* background-attachment: scroll; */
 }
 
 /* Skip-to-main-content */
