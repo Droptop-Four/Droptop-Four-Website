@@ -812,7 +812,6 @@ input[type='checkbox'] {
     flex-direction: row;
     font-size: 30px;
     justify-content: center;
-    /* text-align: center; */
     height: max-content;
     color: var(--main-text-color);
 }
@@ -1007,15 +1006,8 @@ input[type='checkbox'] {
 
 /* ------ UPDATE PAGE ------ */
 
-.update-banner {
-    color: var(--accents-text-color);
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: calc(20px + 10vh);
-    padding-top: 50px;
-    padding-bottom: 50px;
+.update-contents {
+    margin-top: 10vh;
 }
 
 .update-container {
@@ -1024,28 +1016,62 @@ input[type='checkbox'] {
     flex-direction: row;
     font-size: 30px;
     justify-content: center;
-    text-align: center;
-    padding: 0px 65px;
     height: max-content;
     color: var(--main-text-color);
 }
 
 .update-button-container {
-    border: none;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(13, 13, 17, 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.update-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(13, 13, 17, 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.update-card-image img {
+    width: 80%;
+    margin-bottom: auto;
+}
+
+.update-card-infos {
+    align-self: left;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .update-button {
-    width: 400px;
-    height: 150px;
+    width: 80%;
+    align-self: center;
     background-color: var(--accents-text-color);
     color: var(--main-bg-color);
-    padding: 0 40px;
-    text-align: center;
+    padding: 15px 40px;
     text-decoration: none;
     font-size: 25px;
+    font-weight: 600;
     border-radius: var(--round-borders);
     cursor: pointer;
-    margin: 40px;
+    margin: 40px 0;
+    line-height: 1.8;
 }
 
 .update-button:hover {
@@ -2023,26 +2049,18 @@ input[type='checkbox'] {
 
     .download-button {
         font-size: 20px;
-}
-
-    .versions-table {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        border-spacing: 50px 0;
-    }
-
-    .update-banner {
-        padding-top: 80px;
     }
 
     .update-container {
         min-height: auto;
     }
 
+    .update-card {
+        width: 40%;
+    }
+
     .update-button {
-        width: 300px;
-        height: 100px;
+        font-size: 30px;
     }
 
     .community-apps-banner {
@@ -2150,12 +2168,21 @@ input[type='checkbox'] {
         font-size: 15;
     }
 
-    .versions-table {
-        border-spacing: 20px 0;
+    .update-container {
+        flex-direction: column;
+    }
+
+    .update-card {
+        align-self: center;
+        width: 60%
     }
 
     .update-button {
         margin: 20px 0;
+    }
+
+    .update-cost {
+        font-size: 15;
     }
 }
 
@@ -2227,16 +2254,8 @@ input[type='checkbox'] {
         width: 90%;
     }
 
-    .download-button {
-        line-height: 1;
-    }
-
-    .versions-table {
-        border-spacing: 0px;
-    }
-
-    .update-banner-text {
-        font-size: 38px;
+    .update-card {
+        width: 90%;
     }
 
     .community-apps-banner-text {
@@ -2279,14 +2298,12 @@ input[type='checkbox'] {
         font-size: 10;
     }
 
-    .update-banner-text {
-        font-size: 30px;
+    .update-card {
+        width: 90%;
     }
 
-    .update-button {
-        width: 250px;
-        height: 80px;
-        padding: 0 20px;
+    .update-cost {
+        font-size: 10;
     }
 
     .privacy-policy-banner-text {
