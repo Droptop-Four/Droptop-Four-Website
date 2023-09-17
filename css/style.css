@@ -802,17 +802,6 @@ input[type='checkbox'] {
     margin-top: 10vh;
 }
 
-.download-banner {
-    color: var(--accents-text-color);
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: calc(20px + 10vh);
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .download-container {
     width: 100%;
     display: flex;
@@ -2026,18 +2015,17 @@ input[type='checkbox'] {
         opacity: 1;
     }
 
-    .download-banner {
-        padding-top: 80px;
-    }
-
     .download-container {
         min-height: auto;
     }
 
-    .download-button {
-        width: 300px;
-        height: 100px;
+    .download-card {
+        width: 40%;
     }
+
+    .download-button {
+        font-size: 20px;
+}
 
     .versions-table {
         position: relative;
@@ -2151,6 +2139,11 @@ input[type='checkbox'] {
         flex-direction: column;
     }
 
+    .download-card {
+        align-self: center;
+        width: 60%
+    }
+
     .download-button {
         margin: 20px 0;
     }
@@ -2232,8 +2225,8 @@ input[type='checkbox'] {
         line-height: 1.2;
     }
 
-    .download-banner-text {
-        font-size: 38px;
+    .download-card {
+        width: 90%;
     }
 
     .download-button {
@@ -2280,14 +2273,8 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 360px) {
-    .download-banner-text {
-        font-size: 30px;
-    }
-
-    .download-button {
-        width: 250px;
-        height: 80px;
-        padding: 0 20px;
+    .download-card {
+        width: 90%;
     }
 
     .download-cost {
