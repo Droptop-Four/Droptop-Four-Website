@@ -839,6 +839,11 @@ input[type='checkbox'] {
     border-radius: 20px;
 }
 
+.download-card-image img {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
 .download-card-title {
     align-self: left;
     text-align: left;
@@ -864,8 +869,6 @@ input[type='checkbox'] {
 }
 
 .download-button {
-    /* width: 400px; */
-    /* height: 150px; */
     width: 80%;
     align-self: center;
     background-color: var(--accents-text-color);
