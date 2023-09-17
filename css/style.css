@@ -54,6 +54,10 @@ html {
     color: var(--accents-text-color);
 }
 
+.green {
+    color: var(--accents-text-color);
+}
+
 .bold {
     font-weight: bold;
 }
@@ -860,14 +864,6 @@ input[type='checkbox'] {
     margin-left: 10%;
 }
 
-.download-card-infos {
-    align-self: left;
-    text-align: left;
-    margin-left: 10%;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
 .download-button {
     width: 80%;
     align-self: center;
@@ -897,13 +893,12 @@ input[type='checkbox'] {
     transition: 0.3s ease;
 }
 
-.download-cost {
+.download-card-infos {
+    align-self: left;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 20px;
     font-size: 20px;
-    color: var(--secondary-text-color);
-}
-
-.green {
-    color: var(--accents-text-color);
 }
 
 .download-update-container {
