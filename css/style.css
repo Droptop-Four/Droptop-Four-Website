@@ -122,7 +122,7 @@ body {
     width: 98%;
     margin-top: 1%;
     margin-left: 1%;
-    border-radius: 8px;
+    border-radius: var(--round-borders);
     z-index: 999;
 }
 
@@ -168,7 +168,7 @@ body {
     background-color: rgba(13, 13, 17, 0.9);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
-    border-radius: 8px;
+    border-radius: var(--round-borders);
 }
 
 .menu li a:hover {
@@ -200,26 +200,15 @@ input[type='checkbox'] {
     z-index: 999;
 }
 
-/* ------- MAIN ------- */
-/* .bg-image {
-  display: flex;
-	align-self: stretch;
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100vh;
-	width: 100vw;
-  background-image: url("/img/DroptopFourLogo.webp");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-size: auto auto;
-  opacity: 0.3;
-  z-index: -999;
-} */
-
 /* ------- COOKIE CONSENT ------- */
+
+.termsfeed-com---reset button:focus {
+    border-radius: 0;
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-tabs-item-link:focus {
+    box-shadow: none;
+}
 
 .termsfeed-com---nb {
     border-radius: var(--round-borders);
@@ -246,13 +235,38 @@ input[type='checkbox'] {
     background-color: var(--main-text-color);
 }
 
-.termsfeed-com---pc-overlay .cc-cp-foot-save {
-    background-color: var(--accents-text-color);
+.cc-nb-buttons-container button {
+    border-radius: var(--round-borders);
 }
 
-.cc-pc-head-lang-select {
-    border-color: none;
+.termsfeed-com---pc-dialog {
+    border-radius: var(--round-borders);
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-title-text {
+    color: var(--accents-text-color);
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-close {
+    color: var(--accents-text-color);
+}
+
+.termsfeed-com---pc-overlay .cc-cp-foot-save {
+    background-color: var(--accents-text-color);
+    border-radius: var(--round-borders);
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-lang select {
     border-radius: 4px;
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-lang select:focus {
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-content-entry-title {
+    color: var(--accents-text-color);
 }
 
 /* ------- 404 ------- */
@@ -272,7 +286,7 @@ input[type='checkbox'] {
 }
 
 .p404-container img {
-    opacity: 0.1;
+    opacity: 0.3;
     width: 100%;
 }
 
@@ -1201,7 +1215,7 @@ input[type='checkbox'] {
 }
 
 .app-card-button {
-    background-color: var(--main-bg-color);
+    background-color: rgba(24, 24, 32, .6);
     color: var(--accents-text-color);
     border: none;
     padding: 10px;
@@ -1228,96 +1242,6 @@ input[type='checkbox'] {
 
 .app-card-button:focus {
     outline: none;
-}
-
-/* ------ CREATE AN APP PAGE ------ */
-
-.create-an-app-banner {
-    color: var(--accents-text-color);
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: calc(20px + 10vh);
-    padding-top: 50px;
-}
-
-.create-an-app-tablecontents {
-    list-style-position: inside;
-    width: 80%;
-    min-height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--main-text-color);
-}
-
-.create-an-app-tablecontents li a {
-    color: var(--accents-text-color);
-}
-
-.create-an-app-tablecontents ul li ul li {
-    padding-left: 3rem;
-}
-
-.create-an-app-contents {
-    color: var(--main-text-color);
-    width: 80%;
-    min-height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-.make-an-app {
-    margin-bottom: 30px;
-    text-align: center;
-    color: var(--main-text-color);
-}
-
-.make-an-app h3 {
-    text-transform: uppercase;
-}
-
-.make-an-app-disclaimer {
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.make-an-app-process {
-    text-align: left;
-    color: var(--secondary-text-color);
-}
-
-.make-an-app-process li {
-    margin-bottom: 10px;
-}
-
-.builtin-variables {
-    padding-left: 1rem;
-}
-
-.builtin-variables h4 {
-    padding-top: 20px;
-    padding-bottom: 15px;
-}
-
-.builtin-variable {
-    color: var(--accents-text-color);
-}
-
-.share-an-app {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    text-align: center;
-    color: var(--main-text-color);
-}
-
-.share-an-app h3 {
-    text-transform: uppercase;
-    padding-bottom: 20px;
 }
 
 /* ------ COMMUNITY THEMES PAGE ------ */
@@ -1411,7 +1335,7 @@ input[type='checkbox'] {
 }
 
 .theme-card-button {
-    background-color: var(--main-bg-color);
+    background-color: rgba(24, 24, 32, .6);
     color: var(--accents-text-color);
     border: none;
     padding: 10px;
@@ -1438,147 +1362,6 @@ input[type='checkbox'] {
 
 .theme-card-button:focus {
     outline: none;
-}
-
-/* ------ FAQ PAGE ------ */
-
-.faq-banner {
-    color: var(--accents-text-color);
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: calc(20px + 10vh);
-    padding-top: 50px;
-}
-
-.faq-contents {
-    color: var(--main-text-color);
-    width: 80%;
-    min-height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.accordion {
-    background-color: var(--main-bg-color-tr);
-    border-style: 2px solid;
-    border-color: var(--accents-text-color);
-    color: var(--main-text-color);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    margin: 15px 0;
-    text-align: left;
-    transition: 0.4s;
-    font-size: 20px;
-    border-radius: var(--round-borders);
-}
-
-.accordion:after {
-    content: '\02795';
-    font-size: 15px;
-    color: var(--main-bg-highlight-tr);
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: '\2796';
-}
-
-.active,
-.accordion:hover {
-    background-color: var(--main-bg-highlight-tr);
-}
-
-.active {
-    margin: 0;
-}
-
-.panel {
-    margin: 0 0 15px;
-    padding: 0 18px;
-    background-color: var(--secondary-bg-color);
-    color: var(--main-text-color);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border-radius: var(--round-borders);
-}
-
-.faq-problem {
-    color: var(--important-text-color);
-    padding-top: 1rem;
-}
-
-.faq-solution {
-    color: var(--main-text-color);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.faq-ullist {
-    color: var(--accents-text-color);
-    list-style-position: inside;
-    padding-bottom: 1rem;
-}
-
-.faq-ullist li {
-    padding-top: 1rem;
-}
-
-.faq-ollist {
-    color: var(--secondary-text-color);
-    list-style-position: inside;
-    padding-left: 3rem;
-}
-
-.faq-ollist2 {
-    color: var(--tertiary-text-color);
-    list-style-position: inside;
-    list-style-type: square;
-    padding-left: 3rem;
-}
-
-.faq-notes {
-    color: var(--tertiary-text-color);
-    padding-top: 0.5rem;
-}
-
-.faq-disclaimer {
-    display: flex;
-    flex-direction: column;
-    color: var(--main-text-color);
-    align-items: center;
-    font-size: 20px;
-}
-
-.faq-disclaimer p {
-    text-align: center;
-    width: 80%;
-}
-
-.discord-mention {
-    background-color: #5865f269;
-    border-radius: var(--round-borders);
-    padding: 2px 5px;
-    color: #dee0fc;
-    overflow-wrap: break-word;
-    text-decoration: none;
-}
-
-.discord-mention:hover {
-    background-color: #5768f0;
-    text-decoration: underline;
-    cursor: pointer;
-    color: var(--main-text-color);
-}
-
-.forum-icon {
-    width: 19px;
-    height: 21px;
 }
 
 /* ------ SEARCH PAGE ------ */
@@ -1719,7 +1502,7 @@ input[type='checkbox'] {
     width: 98%;
     margin-bottom: 1%;
     margin-left: 1%;
-    border-radius: 8px;
+    border-radius: var(--round-borders);
 }
 
 .footer .social {
