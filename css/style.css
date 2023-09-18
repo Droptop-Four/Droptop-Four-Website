@@ -54,10 +54,6 @@ html {
     color: var(--accents-text-color);
 }
 
-.green {
-    color: var(--accents-text-color);
-}
-
 .bold {
     font-weight: bold;
 }
@@ -844,7 +840,6 @@ input[type='checkbox'] {
 
 .download-card-image img {
     width: 60px;
-    margin-bottom: 30px;
 }
 
 .download-card-title {
@@ -852,12 +847,21 @@ input[type='checkbox'] {
     text-align: left;
     margin-left: 10%;
     margin-bottom: 10px;
+    margin-top: 30px;
     font-weight: bold;
 }
 
 .download-card-price {
     font-size: 60px;
     color: var(--secondary-text-color);
+    align-self: left;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.download-card-price-supporter {
+    font-size: 60px;
+    color: var(--accents-text-color);
     align-self: left;
     text-align: left;
     margin-left: 10%;
@@ -1036,6 +1040,7 @@ input[type='checkbox'] {
 .update-card {
     width: 30%;
     display: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding: 30px;
@@ -1046,8 +1051,17 @@ input[type='checkbox'] {
     border-radius: 20px;
 }
 
+.update-card-title {
+    align-self: left;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
 .update-card-image img {
-    width: 80%;
+    width: 60px;
     margin-bottom: auto;
 }
 
@@ -1057,6 +1071,7 @@ input[type='checkbox'] {
     margin-left: 10%;
     margin-bottom: 20px;
     font-size: 20px;
+    color: var(--secondary-text-color);
 }
 
 .update-button {
@@ -2060,7 +2075,7 @@ input[type='checkbox'] {
     }
 
     .update-button {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .community-apps-banner {
@@ -2165,7 +2180,7 @@ input[type='checkbox'] {
     }
 
     .download-cost {
-        font-size: 15;
+        font-size: 15px;
     }
 
     .update-container {
@@ -2182,7 +2197,7 @@ input[type='checkbox'] {
     }
 
     .update-cost {
-        font-size: 15;
+        font-size: 15px;
     }
 }
 
@@ -2295,7 +2310,7 @@ input[type='checkbox'] {
     }
 
     .download-cost {
-        font-size: 10;
+        font-size: 10px;
     }
 
     .update-card {
@@ -2303,7 +2318,7 @@ input[type='checkbox'] {
     }
 
     .update-cost {
-        font-size: 10;
+        font-size: 10px;
     }
 
     .privacy-policy-banner-text {
