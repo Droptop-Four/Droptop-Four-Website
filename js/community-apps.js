@@ -1,7 +1,9 @@
+/** @format */
+
 // ---- COMMUNITY APPS ----
 
 const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
+	get: (searchParams, prop) => searchParams.get(prop),
 });
 
 let id_query = params.id;
@@ -9,45 +11,59 @@ let id_query = params.id;
 const appsList = document.getElementById('appsList');
 
 class Apps {
-    async Items() {
-        try {
-            let result = await fetch('https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json');
-            let data = await result.json();
+	async Items() {
+		try {
+			let result = await fetch(
+				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json'
+			);
+			let data = await result.json();
 
-            let appsItems = data.apps;
+			let appsItems = data.apps;
 
-            appsItems = appsItems.map((item) => {
-                const { id, name, author, author_link, desc, version, official_link, direct_download_link, secondary_link, image_url, hidden } = item.app;
+			appsItems = appsItems.map((item) => {
+				const {
+					id,
+					name,
+					author,
+					author_link,
+					desc,
+					version,
+					official_link,
+					direct_download_link,
+					secondary_link,
+					image_url,
+					hidden,
+				} = item.app;
 
-                return {
-                    id,
-                    name,
-                    author,
-                    author_link,
-                    desc,
-                    version,
-                    official_link,
-                    direct_download_link,
-                    secondary_link,
-                    image_url,
-                    hidden,
-                };
-            });
-            return appsItems;
-        } catch (error) {
-            console.log(error);
-        }
-    }
+				return {
+					id,
+					name,
+					author,
+					author_link,
+					desc,
+					version,
+					official_link,
+					direct_download_link,
+					secondary_link,
+					image_url,
+					hidden,
+				};
+			});
+			return appsItems;
+		} catch (error) {
+			console.log(error);
+		}
+	}
 }
 
 class DisplayApps {
-    displayApps(apps) {
-        let result = '';
-        apps.forEach((item) => {
-            if (item.hidden != 1) {
-                if (item.author_link == '') {
-                    if (item.official_link == '') {
-                        result += `
+	displayApps(apps) {
+		let result = '';
+		apps.forEach((item) => {
+			if (item.hidden != 1) {
+				if (item.author_link == '') {
+					if (item.official_link == '') {
+						result += `
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
@@ -63,8 +79,8 @@ class DisplayApps {
               </div>
             </div>
             `;
-                    } else {
-                        result += `
+					} else {
+						result += `
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
@@ -81,10 +97,10 @@ class DisplayApps {
               </div>
             </div>
             `;
-                    }
-                } else {
-                    if (item.official_link == '') {
-                        result += `
+					}
+				} else {
+					if (item.official_link == '') {
+						result += `
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
@@ -100,8 +116,8 @@ class DisplayApps {
               </div>
             </div>
             `;
-                    } else {
-                        result += `
+					} else {
+						result += `
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
@@ -118,26 +134,26 @@ class DisplayApps {
               </div>
             </div>
             `;
-                    }
-                }
-            }
-        });
-        appsList.innerHTML = result;
-    }
+					}
+				}
+			}
+		});
+		appsList.innerHTML = result;
+	}
 }
 
 function Scroll() {
-    const appElement = document.getElementById(id_query);
-    if (appElement) {
-        appElement.scrollIntoView();
-    }
+	const appElement = document.getElementById(id_query);
+	if (appElement) {
+		appElement.scrollIntoView();
+	}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const apps = new Apps();
-    const displayapps = new DisplayApps();
+	const apps = new Apps();
+	const displayapps = new DisplayApps();
 
-    apps.Items()
-        .then((apps) => displayapps.displayApps(apps))
-        .then(Scroll);
+	apps.Items()
+		.then((apps) => displayapps.displayApps(apps))
+		.then(Scroll);
 });
