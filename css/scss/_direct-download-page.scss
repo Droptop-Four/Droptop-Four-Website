@@ -14,6 +14,8 @@
 	top: 50%;
 	transform: translateY(-50%);
 	text-align: center;
+	height: -webkit-max-content;
+	height: -moz-max-content;
 	height: max-content;
 	color: $main-text-color;
 	line-height: 1.4;

@@ -26,11 +26,9 @@
 
 .privacy-policy-section {
 	padding: 20px;
-	background-color: rgba(13, 13, 17, 0.15);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border-radius: 25px;
 	margin-bottom: 10px;
+	@include blur-mixin(0.15, 5px);
+	@include border-radius-mixin(25px);
 }
 
 .last-updated {

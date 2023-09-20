@@ -1,21 +1,20 @@
 /* ----- NAVBAR ----- */
+@import 'mixins';
 
 .navbar {
 	display: flex;
 	align-items: center;
 	min-height: 8vh;
 	padding: 20px;
-	background-color: rgba(13, 13, 17, 0.9);
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
 	color: $accents-text-color;
 	position: fixed;
 	top: 0;
 	width: 98%;
 	margin-top: 1%;
 	margin-left: 1%;
-	@include border-radius-mixin($border-radius);
 	z-index: 999;
+	@include blur-mixin(0.9, 1px);
+	@include border-radius-mixin($border-radius);
 }
 
 .navbar a {
@@ -36,10 +35,10 @@
 }
 
 .logo img {
-	border-radius: 20%;
 	margin-top: 5px;
 	width: 50px;
 	height: auto;
+	@include border-radius-mixin(20px);
 }
 
 .site-name {
@@ -57,16 +56,14 @@
 .menu {
 	display: flex;
 	font-size: 18px;
-	background-color: rgba(13, 13, 17, 0.9);
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
+	@include blur-mixin(0.9, 5px);
 	@include border-radius-mixin($border-radius);
 }
 
 .menu li a:hover {
 	background-color: $main-bg-highlight-tr;
-	@include border-radius-mixin($border-radius);
 	transition: 0.3s ease;
+	@include border-radius-mixin($border-radius);
 }
 
 .menu li a {
@@ -86,7 +83,10 @@ input[type='checkbox'] {
 .hamburger {
 	display: none;
 	font-size: 24px;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	color: $accents-text-color;
 	cursor: pointer;
 	z-index: 999;
@@ -109,15 +109,13 @@ input[type='checkbox'] {
 	.menu {
 		display: none;
 		position: absolute;
-		background-color: rgba(16, 16, 21, 0.973);
-		backdrop-filter: blur(5px);
-		-webkit-backdrop-filter: blur(5px);
 		right: 0;
 		left: 0;
 		text-align: center;
 		padding: 20px 0;
 		margin-top: 36px;
 		z-index: 999;
+		@include blur-mixin(0.9, 5px);
 	}
 
 	.menu li a:hover {

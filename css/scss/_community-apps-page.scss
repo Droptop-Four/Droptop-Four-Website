@@ -37,13 +37,10 @@
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
-	font-family: arial;
-	background-color: rgba(13, 13, 17, 0.15);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border-radius: 25px;
 	padding-top: 20px;
 	padding-bottom: 5px;
+	@include blur-mixin(0.15, 5px);
+	@include border-radius-mixin(25px);
 }
 
 .app-card-container {
@@ -71,8 +68,8 @@
 	height: auto;
 	width: 80%;
 	margin-top: 20px;
-	@include border-radius-mixin($border-radius);
 	opacity: 0.8;
+	@include border-radius-mixin($border-radius);
 }
 
 .app-card-author {
@@ -105,9 +102,9 @@
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	border-radius: 10px;
 	margin: 20px 2px 0 2px;
 	cursor: pointer;
+	@include border-radius-mixin(10px);
 }
 
 .app-card-button:hover {

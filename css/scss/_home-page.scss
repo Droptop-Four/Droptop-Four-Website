@@ -2,6 +2,8 @@
 
 .home-banner {
 	width: 100%;
+	height: -webkit-max-content;
+	height: -moz-max-content;
 	height: max-content;
 	display: flex;
 	align-items: center;
@@ -29,9 +31,11 @@
 	max-width: 80%;
 	mask-image: linear-gradient(to left, black, transparent);
 	-webkit-mask-image: linear-gradient(to left, black, transparent);
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: right top;
 	object-position: right top;
+	@include border-radius-mixin($border-radius);
 }
 
 .home-banner-text {
@@ -42,10 +46,10 @@
 	-ms-transform: translate(-50%, -50%);
 	padding: 12px 24px;
 	border: none;
-	border-radius: 5px;
 	display: flex;
 	flex-direction: row;
 	width: 80%;
+	@include border-radius-mixin(5px);
 }
 
 .home-banner-title {
@@ -96,10 +100,10 @@
 	text-align: center;
 	text-decoration: none;
 	font-size: 40px;
-	@include border-radius-mixin($border-radius);
 	cursor: pointer;
 	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2),
-		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	@include border-radius-mixin($border-radius);
 }
 
 .home-download-button:hover {
@@ -141,6 +145,8 @@
 	justify-content: center;
 	text-align: center;
 	padding: 0px 65px;
+	height: -webkit-max-content;
+	height: -moz-max-content;
 	height: max-content;
 }
 
@@ -153,10 +159,12 @@
 	height: 600px;
 	width: 100%;
 	max-width: 90%;
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: left top;
 	object-position: left top;
 	opacity: 0.4;
+	@include border-radius-mixin($border-radius);
 }
 
 .text-block-c {
@@ -168,8 +176,8 @@
 	padding: 10px;
 	border-style: solid;
 	border-color: $accents-text-color;
-	@include border-radius-mixin($border-radius);
 	background-color: rgba(0, 0, 0, 0.5);
+	@include border-radius-mixin($border-radius);
 }
 
 .text-block-c h1 {
@@ -192,10 +200,12 @@
 	height: 600px;
 	width: 100%;
 	max-width: 90%;
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: left top;
 	object-position: left top;
 	opacity: 0.3;
+	@include border-radius-mixin($border-radius);
 }
 
 .text-block-r {
@@ -207,8 +217,8 @@
 	padding: 10px;
 	border-style: solid;
 	border-color: $accents-text-color;
-	@include border-radius-mixin($border-radius);
 	background-color: rgba(0, 0, 0, 0.5);
+	@include border-radius-mixin($border-radius);
 }
 
 .text-block-r h1 {
@@ -248,9 +258,11 @@
 }
 
 .Slide img {
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: left top;
 	object-position: left top;
+	@include border-radius-mixin($border-radius);
 }
 
 .fade {
@@ -279,37 +291,7 @@
 	}
 }
 
-@-moz-keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 @-webkit-keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@-o-keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@-ms-keyframes fadein {
 	0% {
 		opacity: 0;
 	}
@@ -329,37 +311,7 @@
 	}
 }
 
-@-moz-keyframes fadeout {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
 @-webkit-keyframes fadeout {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-@-o-keyframes fadeout {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-@-ms-keyframes fadeout {
 	0% {
 		opacity: 1;
 	}
@@ -388,8 +340,11 @@
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
-	@include border-radius-mixin($border-radius);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
+	@include border-radius-mixin($border-radius);
 }
 
 @media (hover: hover) {
@@ -437,10 +392,12 @@
 	height: 600px;
 	width: 100%;
 	max-width: 90%;
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: right top;
 	object-position: right top;
 	opacity: 0.4;
+	@include border-radius-mixin($border-radius);
 }
 
 .droptop-info-5 {
@@ -452,10 +409,12 @@
 	height: 600px;
 	width: 100%;
 	max-width: 90%;
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: left top;
 	object-position: left top;
 	opacity: 0.2;
+	@include border-radius-mixin($border-radius);
 }
 
 .droptop-info-6 {
@@ -467,10 +426,12 @@
 	height: auto;
 	width: auto;
 	max-width: 90%;
-	@include border-radius-mixin($border-radius);
+	-o-object-fit: cover;
 	object-fit: cover;
+	-o-object-position: center center;
 	object-position: center center;
 	opacity: 0.4;
+	@include border-radius-mixin($border-radius);
 }
 
 .discord-invite {
@@ -587,8 +548,10 @@
 }
 
 .Slide img {
-    object-fit: cover;
-    object-position: left top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left top;
+       object-position: left top;
     width: auto;
     height: 100px;
 }
@@ -737,8 +700,10 @@
 	}
 
 	.Slide img {
-		object-fit: cover;
-		object-position: left top;
+		-o-object-fit: cover;
+		   object-fit: cover;
+		-o-object-position: left top;
+		   object-position: left top;
 		width: auto;
 		height: 100px;
 	}
@@ -804,8 +769,10 @@
 	}
 
 	.Slide img {
-		object-fit: cover;
-		object-position: left top;
+		-o-object-fit: cover;
+		   object-fit: cover;
+		-o-object-position: left top;
+		   object-position: left top;
 		width: auto;
 		height: 100px;
 	}
@@ -845,8 +812,10 @@
 	}
 
 	.Slide img {
-		object-fit: cover;
-		object-position: left top;
+		-o-object-fit: cover;
+		   object-fit: cover;
+		-o-object-position: left top;
+		   object-position: left top;
 		width: auto;
 		height: 100px;
 	}

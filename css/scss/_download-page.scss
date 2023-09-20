@@ -10,6 +10,8 @@
 	flex-direction: row;
 	font-size: 30px;
 	justify-content: center;
+	height: -webkit-max-content;
+	height: -moz-max-content;
 	height: max-content;
 	color: $main-text-color;
 }
@@ -20,11 +22,9 @@
 	flex-direction: column;
 	text-align: center;
 	padding: 30px;
-	background-color: rgba(13, 13, 17, 0.3);
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
 	margin: 30px;
-	border-radius: 20px;
+	@include blur-mixin(0.3, 1px);
+	@include border-radius-mixin(20px);
 }
 
 .download-card {
@@ -33,11 +33,9 @@
 	flex-direction: column;
 	text-align: center;
 	padding: 30px;
-	background-color: rgba(13, 13, 17, 0.3);
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
 	margin: 30px;
-	border-radius: 20px;
+	@include blur-mixin(0.3, 1px);
+	@include border-radius-mixin(20px);
 }
 
 .download-card-image img {
@@ -78,10 +76,10 @@
 	text-decoration: none;
 	font-size: 25px;
 	font-weight: 600;
-	@include border-radius-mixin($border-radius);
 	cursor: pointer;
 	margin: 40px 0;
 	line-height: 1.8;
+	@include border-radius-mixin($border-radius);
 }
 
 .download-button:hover {

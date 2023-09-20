@@ -3,11 +3,11 @@
 .code {
 	background-color: $main-bg-color;
 	color: $accents-text-color;
-	border-radius: 3px;
 	border: 1px solid $accents-text-color;
 	font-family: courier, monospace;
 	padding: 0 3px;
 	overflow-wrap: break-word;
+	@include border-radius-mixin(3px);
 }
 
 .important {
@@ -69,11 +69,9 @@
 	opacity: 0.7;
 	cursor: pointer;
 	padding: 15px;
-	border-radius: 10px;
 	font-size: 18px;
 	background-color: rgba(67, 255, 100, 0.9);
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
+	@include border-radius-mixin(10px);
 }
 
 .scroll-to-top a {
