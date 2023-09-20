@@ -1,0 +1,26 @@
+/* ----- DIRECT DOWNLOAD PAGE ----- */
+
+.direct-download-title {
+	color: $accents-text-color;
+}
+
+.direct-download-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	height: max-content;
+	color: $main-text-color;
+	line-height: 1.4;
+}
+
+.direct-download-suppport {
+	margin-top: 10px;
+	color: $accents-text-color;
+	line-height: 2;
+}

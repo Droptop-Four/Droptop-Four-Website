@@ -1,0 +1,147 @@
+/* ----- UPDATE PAGE ----- */
+
+.update-contents {
+	margin-top: 10vh;
+}
+
+.update-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-size: 30px;
+	justify-content: center;
+	height: max-content;
+	color: $main-text-color;
+}
+
+.update-button-container {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 30px;
+	background-color: rgba(13, 13, 17, 0.3);
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+	margin: 30px;
+	border-radius: 20px;
+}
+
+.update-card {
+	width: 30%;
+	display: flex;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 30px;
+	background-color: rgba(13, 13, 17, 0.3);
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+	margin: 30px;
+	border-radius: 20px;
+}
+
+.update-card-title {
+	align-self: left;
+	text-align: left;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+.update-card-image img {
+	width: 60px;
+	margin-bottom: auto;
+}
+
+.update-card-infos {
+	align-self: left;
+	text-align: left;
+	margin-left: 10%;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: $secondary-text-color;
+}
+
+.update-button {
+	width: 80%;
+	align-self: center;
+	background-color: $accents-text-color;
+	color: $main-bg-color;
+	padding: 15px 40px;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 600;
+	@include border-radius-mixin($border-radius);
+	cursor: pointer;
+	margin: 40px 0;
+	line-height: 1.8;
+}
+
+.update-button:hover {
+	background-color: $accents-text-color-3;
+	color: $main-text-color;
+	border-color: $accents-text-color-3;
+	transition: 0.3s ease;
+}
+
+.update-button:active {
+	background-color: $accents-text-color-3;
+	color: $main-bg-color;
+	border-color: $accents-text-color-3;
+	transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1160px) {
+
+	.update-container {
+		min-height: auto;
+	}
+
+	.update-card {
+		width: 40%;
+	}
+
+	.update-button {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+
+	.update-container {
+		flex-direction: column;
+	}
+
+	.update-card {
+		align-self: center;
+		width: 60%;
+	}
+
+	.update-button {
+		margin: 20px 0;
+	}
+
+	.update-cost {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.update-card {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	.update-card {
+		width: 90%;
+	}
+
+	.update-cost {
+		font-size: 10px;
+	}
+}

@@ -1,0 +1,238 @@
+/* ----- DOWNLOAD PAGE ----- */
+
+.download-contents {
+	margin-top: 10vh;
+}
+
+.download-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-size: 30px;
+	justify-content: center;
+	height: max-content;
+	color: $main-text-color;
+}
+
+.download-button-container {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 30px;
+	background-color: rgba(13, 13, 17, 0.3);
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+	margin: 30px;
+	border-radius: 20px;
+}
+
+.download-card {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 30px;
+	background-color: rgba(13, 13, 17, 0.3);
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+	margin: 30px;
+	border-radius: 20px;
+}
+
+.download-card-image img {
+	width: 60px;
+}
+
+.download-card-title {
+	align-self: left;
+	text-align: left;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+.download-card-price {
+	font-size: 60px;
+	color: $secondary-text-color;
+	align-self: left;
+	text-align: left;
+	margin-left: 10%;
+}
+
+.download-card-price-supporter {
+	font-size: 60px;
+	color: $accents-text-color;
+	align-self: left;
+	text-align: left;
+	margin-left: 10%;
+}
+
+.download-button {
+	width: 80%;
+	align-self: center;
+	background-color: $accents-text-color;
+	color: $main-bg-color;
+	padding: 15px 40px;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 600;
+	@include border-radius-mixin($border-radius);
+	cursor: pointer;
+	margin: 40px 0;
+	line-height: 1.8;
+}
+
+.download-button:hover {
+	background-color: $accents-text-color-3;
+	color: $main-text-color;
+	border-color: $accents-text-color-3;
+	transition: 0.3s ease;
+}
+
+.download-button:active {
+	background-color: $accents-text-color-3;
+	color: $main-text-color;
+	border-color: $accents-text-color-3;
+	transition: 0.3s ease;
+}
+
+.download-card-infos {
+	align-self: left;
+	text-align: left;
+	margin-left: 10%;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.download-update-container {
+	font-size: 30px;
+	justify-content: center;
+	text-align: center;
+	margin-top: 20px;
+	padding: 0px 65px;
+	color: $main-text-color;
+}
+
+.download-alert-title {
+	color: $accents-text-color;
+}
+
+.download-alert-text {
+	color: $secondary-text-color;
+}
+
+.agent-alert-title {
+	color: #d5273e;
+}
+
+.agent-alert-text {
+	color: $secondary-text-color;
+}
+
+.droptop-version-text {
+	color: $secondary-text-color;
+	font-size: 15px;
+	justify-content: center;
+	text-align: center;
+	padding: 0px 65px;
+	opacity: 0.5;
+}
+
+.versions-table {
+	width: 100%;
+	border-spacing: 100px 0;
+}
+
+.versions-table th {
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+.versions-table td {
+	padding: 10px;
+}
+
+.table-header {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.table-text {
+	font-size: 20px;
+}
+
+.center-table {
+	text-align: center;
+}
+
+.header-2 {
+	color: #6d6d6d;
+}
+
+.column-2 {
+	background-color: #6d6d6d4d;
+	color: #6d6d6d;
+}
+
+.header-3 {
+	color: $accents-text-color;
+}
+
+.column-3 {
+	background-color: #4bd7654d;
+	color: $accents-text-color;
+}
+
+@media screen and (max-width: 1160px) {
+    .download-container {
+		min-height: auto;
+	}
+
+	.download-card {
+		width: 40%;
+	}
+
+	.download-button {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+
+
+	.download-container {
+		flex-direction: column;
+	}
+
+	.download-card {
+		align-self: center;
+		width: 60%;
+	}
+
+	.download-button {
+		margin: 20px 0;
+	}
+
+	.download-cost {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.download-card {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.download-card {
+		width: 90%;
+	}
+
+	.download-cost {
+		font-size: 10px;
+	}
+}

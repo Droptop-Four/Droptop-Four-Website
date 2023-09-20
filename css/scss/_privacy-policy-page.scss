@@ -1,0 +1,90 @@
+/* ----- PRIVACY POLICY PAGE ----- */
+
+.privacy-policy-banner {
+	color: $accents-text-color;
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: calc(20px + 10vh);
+	padding-top: 50px;
+}
+
+.privacy-policy-banner h1 {
+	text-align: center;
+}
+
+.privacy-policy-contents {
+	color: $main-text-color;
+	width: 80%;
+	min-height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.privacy-policy-section {
+	padding: 20px;
+	background-color: rgba(13, 13, 17, 0.15);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 25px;
+	margin-bottom: 10px;
+}
+
+.last-updated {
+	color: $tertiary-text-color;
+	font-size: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.privacy-policy-contents h2 {
+	color: $accents-text-color;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.privacy-policy-contents h3 {
+	color: $accents-text-color;
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.privacy-policy-contents h4 {
+	color: $accents-text-color;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.privacy-policy-contents p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.privacy-policy-contents ul {
+	padding-left: 25px;
+}
+
+@media screen and (max-width: 1160px) {
+    .privacy-policy-banner {
+		padding-top: 80px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .privacy-policy-banner-text {
+		font-size: 38px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	.privacy-policy-banner-text {
+		font-size: 30px;
+	}
+}

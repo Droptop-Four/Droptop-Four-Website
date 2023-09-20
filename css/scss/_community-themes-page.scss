@@ -1,0 +1,152 @@
+/* ----- COMMUNITY THEMES PAGE ----- */
+
+.community-themes-banner {
+	color: $accents-text-color;
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: calc(20px + 10vh);
+	padding-top: 50px;
+}
+
+.community-themes-banner h1 {
+	text-align: center;
+}
+
+.theme-making {
+	text-align: center;
+	color: $tertiary-text-color;
+	font-size: 18px;
+}
+
+.themesList {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.themesList div {
+	margin-bottom: 20px;
+}
+
+.theme-card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 500px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	font-family: arial;
+	background-color: rgba(13, 13, 17, 0.15);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 25px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.theme-card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+
+.theme-card-name {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 10px;
+	color: $accents-text-color;
+}
+
+.theme-card-image {
+	height: auto;
+	width: 80%;
+	margin-top: 20px;
+	@include border-radius-mixin($border-radius);
+}
+
+.theme-card-author {
+	color: $secondary-text-color;
+}
+
+.theme-card-author-link {
+	color: $secondary-text-color;
+}
+
+.theme-card-desc {
+	align-items: center;
+	text-align: center;
+	max-width: 90%;
+	color: $main-text-color;
+	padding: 10px 10px;
+	line-height: 1.4;
+}
+
+.theme-card-buttons {
+	padding: 0 5px;
+}
+
+.theme-card-button {
+	background-color: rgba(24, 24, 32, 0.6);
+	color: $accents-text-color;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 10px;
+	margin: 20px 2px 0 2px;
+	cursor: pointer;
+}
+
+.theme-card-button:hover {
+	background-color: $main-bg-highlight-tr;
+	color: $main-text-color;
+	transition: 0.3s ease;
+}
+
+.theme-card-button:active {
+	background-color: $main-bg-highlight-tr;
+	color: $main-text-color;
+	transition: 0.3s ease;
+}
+
+.theme-card-button:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 1580px) {
+
+	.themesList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 1160px) {
+
+	.community-themes-banner {
+		padding-top: 80px;
+	}
+
+	.themesList {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.create-a-theme-banner {
+		padding-top: 80px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.community-themes-banner-text {
+		font-size: 38px;
+	}
+
+	.create-a-theme-banner-text {
+		font-size: 38px;
+	}
+}
