@@ -64,7 +64,7 @@ const search_bar = document.getElementById('searchbar');
               <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
               <p class="app-card-desc">${selected_app.desc}</p>
               <div class="app-card-buttons">
-                  <a class="app-card-button bold" href="$https://droptopfour.com/community-apps?id=${selected_app.id}">View</a>
+                  <a class="app-card-button bold" href="https://droptopfour.com/community-apps?id=${selected_app.id}">View</a>
               </div>
             </div>
           </div>
