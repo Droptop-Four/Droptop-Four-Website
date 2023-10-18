@@ -56,7 +56,6 @@
 .menu {
 	display: flex;
 	font-size: 18px;
-	@include blur-mixin(0.9, 5px);
 	@include border-radius-mixin($border-radius);
 }
 
@@ -82,7 +81,6 @@ input[type='checkbox'] {
 
 .hamburger {
 	display: none;
-	font-size: 24px;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
