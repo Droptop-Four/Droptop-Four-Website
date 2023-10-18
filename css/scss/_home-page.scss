@@ -96,14 +96,14 @@
 	background-color: $main-bg-color;
 	color: $accents-text-color;
 	border: none;
-	padding: 40px 30px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 40px;
 	cursor: pointer;
-	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2),
-	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	@include border-radius-mixin($border-radius);
+	padding: 21px 30px;
+	font-size: 30px;
+	transition: all 200ms linear;
 }
 
 .home-download-button:hover {
@@ -116,6 +116,12 @@
 	background-color: $main-bg-highlight-tr;
 	color: $main-text-color;
 	transition: 0.3s ease;
+}
+
+.release-info {
+	color: $secondary-text-color;
+	font-size: 15px;
+	opacity: 0.5;
 }
 
 .home-contents {
