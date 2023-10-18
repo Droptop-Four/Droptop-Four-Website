@@ -26,8 +26,9 @@
 }
 
 .update-card {
+	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
 	width: 30%;
-	display: flex;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -35,6 +36,13 @@
 	margin: 30px;
 	@include blur-mixin(0.3, 1px);
 	@include border-radius-mixin(20px);
+	border-style: solid;
+	border-color: $accents-text-color;
+}
+
+.update-card:hover {
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .update-card-title {
@@ -63,7 +71,7 @@
 .update-button {
 	width: 80%;
 	align-self: center;
-	background-color: $accents-text-color;
+	background-color: $accents-text-color-2;
 	color: $main-bg-color;
 	padding: 15px 40px;
 	text-decoration: none;
@@ -73,19 +81,20 @@
 	margin: 40px 0;
 	line-height: 1.8;
 	@include border-radius-mixin($border-radius);
+	border: none;
 }
 
 .update-button:hover {
-	background-color: $accents-text-color-3;
-	color: $main-text-color;
-	border-color: $accents-text-color-3;
+	background-color: $accents-text-color;
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	transition: 0.3s ease;
 }
 
 .update-button:active {
-	background-color: $accents-text-color-3;
-	color: $main-bg-color;
-	border-color: $accents-text-color-3;
+	background-color: $accents-text-color;
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	transition: 0.3s ease;
 }
 

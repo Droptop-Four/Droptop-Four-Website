@@ -1389,8 +1389,9 @@ input[type=checkbox] {
 }
 
 .update-card {
+  box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
   width: 30%;
-  display: flex;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1401,6 +1402,13 @@ input[type=checkbox] {
   -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
   background-clip: padding-box;
+  border-style: solid;
+  border-color: #43ff64;
+}
+
+.update-card:hover {
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .update-card-title {
@@ -1429,7 +1437,7 @@ input[type=checkbox] {
 .update-button {
   width: 80%;
   align-self: center;
-  background-color: #43ff64;
+  background-color: #27af40;
   color: #181820;
   padding: 15px 40px;
   text-decoration: none;
@@ -1440,19 +1448,20 @@ input[type=checkbox] {
   line-height: 1.8;
   border-radius: 8px;
   background-clip: padding-box;
+  border: none;
 }
 
 .update-button:hover {
-  background-color: #155b22;
-  color: #ffffff;
-  border-color: #155b22;
+  background-color: #43ff64;
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
   transition: 0.3s ease;
 }
 
 .update-button:active {
-  background-color: #155b22;
-  color: #181820;
-  border-color: #155b22;
+  background-color: #43ff64;
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
   transition: 0.3s ease;
 }
 
