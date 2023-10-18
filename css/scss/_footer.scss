@@ -9,7 +9,7 @@
 	width: 98%;
 	margin-bottom: 1%;
 	margin-left: 1%;
-	@include blur-mixin(0.9, 1px);
+	@include blur-mixin(0.8, 1px);
 	@include border-radius-mixin($border-radius);
 }
 

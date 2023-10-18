@@ -16,6 +16,10 @@
 }
 
 .app-making {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
 	text-align: center;
 	color: $main-text-color;
 	font-size: 20px;
@@ -31,7 +35,8 @@
 }
 
 .app-card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
 	max-width: 500px;
 	position: relative;
 	left: 50%;
@@ -41,6 +46,14 @@
 	padding-bottom: 5px;
 	@include blur-mixin(0.15, 5px);
 	@include border-radius-mixin(25px);
+	border-style: solid;
+	border-color: $accents-text-color;
+}
+
+.app-card:hover {
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	@include blur-mixin(0.4, 5px);
 }
 
 .app-card-container {
@@ -145,6 +158,13 @@
 }
 
 @media screen and (max-width: 480px) {
+	.app-making p {
+		width: 90%
+	}
+
+	.app-card {
+		max-width: 90%;
+	}
 
 	.community-apps-banner-text {
 		font-size: 38px;

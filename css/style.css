@@ -59,9 +59,6 @@
 .menu {
   display: flex;
   font-size: 18px;
-  background-color: rgba(13, 13, 17, 0.9);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border-radius: 8px;
   background-clip: padding-box;
 }
@@ -90,7 +87,6 @@ input[type=checkbox] {
 
 .hamburger {
   display: none;
-  font-size: 24px;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -231,7 +227,7 @@ input[type=checkbox] {
   width: 98%;
   margin-bottom: 1%;
   margin-left: 1%;
-  background-color: rgba(13, 13, 17, 0.9);
+  background-color: rgba(13, 13, 17, 0.8);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 8px;
@@ -513,7 +509,6 @@ input[type=checkbox] {
 }
 
 .showcase-container {
-  height: 580px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -524,9 +519,7 @@ input[type=checkbox] {
 .showcase-container img {
   height: 600px;
   width: 100%;
-  max-width: 80%;
-  mask-image: linear-gradient(to left, black, transparent);
-  -webkit-mask-image: linear-gradient(to left, black, transparent);
+  filter: brightness(70%);
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: right top;
@@ -545,7 +538,7 @@ input[type=checkbox] {
   border: none;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
   background-clip: padding-box;
 }
@@ -562,7 +555,7 @@ input[type=checkbox] {
   text-align: center;
   margin-bottom: 20px;
   font-size: 75px;
-  text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544);
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .home-banner-title h2 {
@@ -573,6 +566,7 @@ input[type=checkbox] {
   padding-left: 20%;
   color: #b0b2b8;
   font-size: 30px;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .home-button-container {
@@ -594,14 +588,15 @@ input[type=checkbox] {
   background-color: #181820;
   color: #43ff64;
   border: none;
-  padding: 40px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 40px;
   cursor: pointer;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   background-clip: padding-box;
+  padding: 21px 30px;
+  font-size: 30px;
+  transition: all 200ms linear;
 }
 
 .home-download-button:hover {
@@ -614,6 +609,12 @@ input[type=checkbox] {
   background-color: rgba(57, 57, 57, 0.7137254902);
   color: #ffffff;
   transition: 0.3s ease;
+}
+
+.release-info {
+  color: #b0b2b8;
+  font-size: 15px;
+  opacity: 0.5;
 }
 
 .home-contents {
@@ -925,162 +926,6 @@ input[type=checkbox] {
   background-clip: padding-box;
 }
 
-.home-banner-title h2 {
-  width: 100%;
-  padding-left: 0%;
-  margin-bottom: 15px;
-}
-
-.home-banner {
-  padding-top: 80px;
-}
-
-.home-banner-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-banner-title {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.home-banner-title h1 {
-  text-align: center;
-  width: 100%;
-  position: relative;
-  top: -25px;
-  margin-bottom: 0px;
-}
-
-.home-banner-title h2 {
-  width: 100%;
-  padding-left: 0%;
-  margin-bottom: 15px;
-}
-
-.home-button-container {
-  margin-top: 20px;
-}
-
-.home-download-button {
-  position: inherit;
-  top: 10px;
-  transform: translateY(0);
-  margin-top: 10px;
-  padding: 40px 30px;
-}
-
-.home-container {
-  min-height: auto;
-}
-
-.droptop-info-1 {
-  padding-top: 35px;
-  border-style: solid;
-  border-color: #43ff64;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.image-block-1 {
-  height: 200px;
-  opacity: 1;
-}
-
-.text-block-c {
-  border: none;
-  position: inherit;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.droptop-info-2 {
-  padding-top: 35px;
-  border-style: solid;
-  border-color: #43ff64;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.image-block-2 {
-  height: 200px;
-  opacity: 1;
-}
-
-.text-block-r {
-  width: 75%;
-  border: none;
-  position: inherit;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.droptop-info-3 {
-  padding: 0 10px;
-  border-style: solid;
-  border-color: #43ff64;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.slideshow-container-2 {
-  border: none;
-}
-
-.Slide img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: left top;
-  object-position: left top;
-  width: auto;
-  height: 100px;
-}
-
-.droptop-info-4 {
-  padding-top: 35px;
-  border-style: solid;
-  border-color: #43ff64;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.image-block-4 {
-  height: 200px;
-  opacity: 1;
-}
-
-.droptop-info-5 {
-  padding-top: 35px;
-  border-style: solid;
-  border-color: #43ff64;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.image-block-5 {
-  height: 200px;
-  opacity: 1;
-}
-
-.droptop-info-6 {
-  padding-top: 35px;
-  border-style: solid;
-  border-color: #43ff64;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.image-block-6 {
-  height: 200px;
-  opacity: 1;
-}
-
 @media screen and (max-width: 1160px) {
   .home-banner-title h2 {
     width: 100%;
@@ -1285,6 +1130,10 @@ input[type=checkbox] {
 /* ----- DOWNLOAD PAGE ----- */
 .download-contents {
   margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .download-container {
@@ -1296,24 +1145,13 @@ input[type=checkbox] {
   height: -moz-max-content;
   height: max-content;
   color: #ffffff;
-}
-
-.download-button-container {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 30px;
-  margin: 30px;
-  background-color: rgba(13, 13, 17, 0.3);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 20px;
-  background-clip: padding-box;
+  max-width: 90%;
 }
 
 .download-card {
-  width: 30%;
+  box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+  width: 40%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1324,6 +1162,13 @@ input[type=checkbox] {
   -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
   background-clip: padding-box;
+  border-style: solid;
+  border-color: #43ff64;
+}
+
+.download-card:hover {
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .download-card-image img {
@@ -1358,7 +1203,7 @@ input[type=checkbox] {
 .download-button {
   width: 80%;
   align-self: center;
-  background-color: #43ff64;
+  background-color: #27af40;
   color: #181820;
   padding: 15px 40px;
   text-decoration: none;
@@ -1369,28 +1214,29 @@ input[type=checkbox] {
   line-height: 1.8;
   border-radius: 8px;
   background-clip: padding-box;
+  border: none;
 }
 
 .download-button:hover {
-  background-color: #155b22;
-  color: #ffffff;
-  border-color: #155b22;
+  background-color: #43ff64;
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
   transition: 0.3s ease;
 }
 
 .download-button:active {
-  background-color: #155b22;
-  color: #ffffff;
-  border-color: #155b22;
+  background-color: #43ff64;
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
   transition: 0.3s ease;
 }
 
 .download-card-infos {
-  align-self: left;
   text-align: left;
   margin-left: 10%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 20px;
+  height: 30px;
 }
 
 .download-update-container {
@@ -1475,6 +1321,7 @@ input[type=checkbox] {
 @media screen and (max-width: 1160px) {
   .download-container {
     min-height: auto;
+    max-width: 100%;
   }
   .download-card {
     width: 40%;
@@ -1691,6 +1538,10 @@ input[type=checkbox] {
 }
 
 .app-making {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
@@ -1706,7 +1557,8 @@ input[type=checkbox] {
 }
 
 .app-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
   max-width: 500px;
   position: relative;
   left: 50%;
@@ -1719,6 +1571,16 @@ input[type=checkbox] {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 25px;
   background-clip: padding-box;
+  border-style: solid;
+  border-color: #43ff64;
+}
+
+.app-card:hover {
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+  background-color: rgba(13, 13, 17, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .app-card-container {
@@ -1820,6 +1682,12 @@ input[type=checkbox] {
   }
 }
 @media screen and (max-width: 480px) {
+  .app-making p {
+    width: 90%;
+  }
+  .app-card {
+    max-width: 90%;
+  }
   .community-apps-banner-text {
     font-size: 38px;
   }
@@ -1843,9 +1711,17 @@ input[type=checkbox] {
 }
 
 .theme-making {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   text-align: center;
   color: #84858a;
   font-size: 18px;
+}
+
+.theme-making p {
+  width: 90%;
 }
 
 .themesList {
@@ -1858,7 +1734,8 @@ input[type=checkbox] {
 }
 
 .theme-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
   max-width: 500px;
   position: relative;
   left: 50%;
@@ -1872,6 +1749,16 @@ input[type=checkbox] {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 25px;
   background-clip: padding-box;
+  border-style: solid;
+  border-color: #43ff64;
+}
+
+.theme-card:hover {
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+  background-color: rgba(13, 13, 17, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .theme-card-container {
@@ -1966,6 +1853,9 @@ input[type=checkbox] {
   }
 }
 @media screen and (max-width: 480px) {
+  .theme-card {
+    max-width: 90%;
+  }
   .community-themes-banner-text {
     font-size: 38px;
   }
