@@ -2,6 +2,10 @@
 
 .download-contents {
 	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
 }
 
 .download-container {
@@ -14,21 +18,13 @@
 	height: -moz-max-content;
 	height: max-content;
 	color: $main-text-color;
-}
-
-.download-button-container {
-	width: 30%;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 30px;
-	margin: 30px;
-	@include blur-mixin(0.3, 1px);
-	@include border-radius-mixin(20px);
+	max-width: 90%;
 }
 
 .download-card {
-	width: 30%;
+	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -36,6 +32,13 @@
 	margin: 30px;
 	@include blur-mixin(0.3, 1px);
 	@include border-radius-mixin(20px);
+	border-style: solid;
+	border-color: $accents-text-color;
+}
+
+.download-card:hover {
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .download-card-image img {
@@ -70,7 +73,7 @@
 .download-button {
 	width: 80%;
 	align-self: center;
-	background-color: $accents-text-color;
+	background-color: $accents-text-color-2;
 	color: $main-bg-color;
 	padding: 15px 40px;
 	text-decoration: none;
@@ -80,28 +83,29 @@
 	margin: 40px 0;
 	line-height: 1.8;
 	@include border-radius-mixin($border-radius);
+	border: none;
 }
 
 .download-button:hover {
-	background-color: $accents-text-color-3;
-	color: $main-text-color;
-	border-color: $accents-text-color-3;
+	background-color: $accents-text-color;
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	transition: 0.3s ease;
 }
 
 .download-button:active {
-	background-color: $accents-text-color-3;
-	color: $main-text-color;
-	border-color: $accents-text-color-3;
+	background-color: $accents-text-color;
+	box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	transition: 0.3s ease;
 }
 
 .download-card-infos {
-	align-self: left;
 	text-align: left;
 	margin-left: 10%;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	font-size: 20px;
+	height: 30px;
 }
 
 .download-update-container {
@@ -186,6 +190,7 @@
 @media screen and (max-width: 1160px) {
     .download-container {
 		min-height: auto;
+		max-width: 100%;
 	}
 
 	.download-card {
