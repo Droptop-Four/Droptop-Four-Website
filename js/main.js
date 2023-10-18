@@ -67,7 +67,7 @@ function AgentAlert(version) {
 		title: '<p class="agent-alert-title">Incompatible Device</p>',
 		html: '<p class="agent-alert-text">Droptop Four only works on Windows devices. Download anyway?</p>',
 		icon: 'warning',
-		background: '#181820',
+		background: '#181820ee',
 		backdrop: 'rgba(0,0,0,0.4)',
 		confirmButtonColor: '#5AB05B',
 		confirmButtonText: 'Download',
@@ -113,7 +113,6 @@ function checkAnnouncements() {
 		.then((response) => response.json())
 		.then((data) => {
 			let scope = data.scope;
-			// console.log(scope);
 
 			if (scope == 'website') {
 				let date = data.date;
