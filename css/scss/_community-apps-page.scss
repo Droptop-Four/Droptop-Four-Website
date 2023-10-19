@@ -44,16 +44,21 @@
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 5px;
-	@include blur-mixin(0.15, 5px);
+	// @include blur-mixin(0.15, 5px);
 	@include border-radius-mixin(25px);
 	border-style: solid;
-	border-color: $accents-text-color;
+	border-color: $accents-text-color-3;
+	background-color: rgba(67, 255, 100, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .app-card:hover {
+	border-color: $accents-text-color;
 	box-shadow: 0 0 10px rgb(67, 255, 102);
 	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
-	@include blur-mixin(0.4, 5px);
+	background-color: rgba(67, 255, 100, 0.3);
+	// @include blur-mixin(0.4, 5px);
 }
 
 .app-card-container {
@@ -69,12 +74,14 @@
 	font-weight: bold;
 	margin: 10px;
 	color: $accents-text-color;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .app-card-version {
 	color: $secondary-text-color;
 	opacity: 0.5;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .app-card-image {
@@ -87,6 +94,7 @@
 
 .app-card-author {
 	color: $secondary-text-color;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .app-card-author-link {
@@ -100,6 +108,7 @@
 	color: $main-text-color;
 	padding: 10px 10px;
 	line-height: 1.4;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .app-card-buttons {

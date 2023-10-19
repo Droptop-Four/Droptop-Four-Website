@@ -39,47 +39,47 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
-	background-image: linear-gradient(
-		to right,
-		#181820 0%,
-		#082a3d 25%,
-		#1a6527 50%,
-		#082a3d 75%,
-		#181820 100%
-	);
-	background-image: -webkit-linear-gradient(
-		left,
-		#181820 0%,
-		#082a3d 25%,
-		#1a6527 50%,
-		#082a3d 75%,
-		#181820 100%
-	);
-	background-image: -moz-linear-gradient(
-		left,
-		#181820 0%,
-		#082a3d 25%,
-		#1a6527 50%,
-		#082a3d 75%,
-		#181820 100%
-	);
-	background-image: -ms-linear-gradient(
-		left,
-		#181820 0%,
-		#082a3d 25%,
-		#1a6527 50%,
-		#082a3d 75%,
-		#181820 100%
-	);
-	background-image: -o-linear-gradient(
-		left,
-		#181820 0%,
-		#082a3d 25%,
-		#1a6527 50%,
-		#082a3d 75%,
-		#181820 100%
-	);
-	background-size: cover;
-	background-repeat: none;
-	background-attachment: scroll;
+	// background-image: linear-gradient(
+	// 	to right,
+	// 	#181820 0%,
+	// 	#082a3d 25%,
+	// 	#1a6527 50%,
+	// 	#082a3d 75%,
+	// 	#181820 100%
+	// );
+	// background-image: -webkit-linear-gradient(
+	// 	left,
+	// 	#181820 0%,
+	// 	#082a3d 25%,
+	// 	#1a6527 50%,
+	// 	#082a3d 75%,
+	// 	#181820 100%
+	// );
+	// background-image: -moz-linear-gradient(
+	// 	left,
+	// 	#181820 0%,
+	// 	#082a3d 25%,
+	// 	#1a6527 50%,
+	// 	#082a3d 75%,
+	// 	#181820 100%
+	// );
+	// background-image: -ms-linear-gradient(
+	// 	left,
+	// 	#181820 0%,
+	// 	#082a3d 25%,
+	// 	#1a6527 50%,
+	// 	#082a3d 75%,
+	// 	#181820 100%
+	// );
+	// background-image: -o-linear-gradient(
+	// 	left,
+	// 	#181820 0%,
+	// 	#082a3d 25%,
+	// 	#1a6527 50%,
+	// 	#082a3d 75%,
+	// 	#181820 100%
+	// );
+	// background-size: cover;
+	// background-repeat: none;
+	// background-attachment: scroll;
 }

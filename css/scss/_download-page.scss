@@ -30,13 +30,17 @@
 	text-align: center;
 	padding: 30px;
 	margin: 30px;
-	@include blur-mixin(0.3, 1px);
+	// @include blur-mixin(0.3, 1px);
 	@include border-radius-mixin(20px);
 	border-style: solid;
-	border-color: $accents-text-color;
+	border-color: $accents-text-color-3;
+	background-color: rgba(67, 255, 100, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .download-card:hover {
+	border-color: $accents-text-color;
 	box-shadow: 0 0 10px rgb(67, 255, 102);
 	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }

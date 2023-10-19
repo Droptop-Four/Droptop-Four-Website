@@ -1160,16 +1160,17 @@ input[type=checkbox] {
   text-align: center;
   padding: 30px;
   margin: 30px;
-  background-color: rgba(13, 13, 17, 0.3);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
   background-clip: padding-box;
   border-style: solid;
-  border-color: #43ff64;
+  border-color: #155b22;
+  background-color: rgba(67, 255, 100, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .download-card:hover {
+  border-color: #43ff64;
   box-shadow: 0 0 10px rgb(67, 255, 102);
   -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }
@@ -1400,16 +1401,17 @@ input[type=checkbox] {
   text-align: center;
   padding: 30px;
   margin: 30px;
-  background-color: rgba(13, 13, 17, 0.3);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
   background-clip: padding-box;
   border-style: solid;
-  border-color: #43ff64;
+  border-color: #155b22;
+  background-color: rgba(67, 255, 100, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .update-card:hover {
+  border-color: #43ff64;
   box-shadow: 0 0 10px rgb(67, 255, 102);
   -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 }
@@ -1578,21 +1580,20 @@ input[type=checkbox] {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px;
-  background-color: rgba(13, 13, 17, 0.15);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border-radius: 25px;
   background-clip: padding-box;
   border-style: solid;
-  border-color: #43ff64;
+  border-color: #155b22;
+  background-color: rgba(67, 255, 100, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .app-card:hover {
+  border-color: #43ff64;
   box-shadow: 0 0 10px rgb(67, 255, 102);
   -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
-  background-color: rgba(13, 13, 17, 0.4);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(67, 255, 100, 0.3);
 }
 
 .app-card-container {
@@ -1608,12 +1609,14 @@ input[type=checkbox] {
   font-weight: bold;
   margin: 10px;
   color: #43ff64;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .app-card-version {
   color: #b0b2b8;
   opacity: 0.5;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .app-card-image {
@@ -1627,6 +1630,7 @@ input[type=checkbox] {
 
 .app-card-author {
   color: #b0b2b8;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .app-card-author-link {
@@ -1640,6 +1644,7 @@ input[type=checkbox] {
   color: #ffffff;
   padding: 10px 10px;
   line-height: 1.4;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .app-card-buttons {
@@ -1756,21 +1761,20 @@ input[type=checkbox] {
   font-family: arial;
   padding-top: 20px;
   padding-bottom: 5px;
-  background-color: rgba(13, 13, 17, 0.15);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border-radius: 25px;
   background-clip: padding-box;
   border-style: solid;
-  border-color: #43ff64;
+  border-color: #155b22;
+  background-color: rgba(67, 255, 100, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .theme-card:hover {
+  border-color: #43ff64;
   box-shadow: 0 0 10px rgb(67, 255, 102);
   -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
-  background-color: rgba(13, 13, 17, 0.4);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(67, 255, 100, 0.3);
 }
 
 .theme-card-container {
@@ -1786,6 +1790,7 @@ input[type=checkbox] {
   font-weight: bold;
   margin: 10px;
   color: #43ff64;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .theme-card-image {
@@ -1798,10 +1803,12 @@ input[type=checkbox] {
 
 .theme-card-author {
   color: #b0b2b8;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .theme-card-author-link {
   color: #b0b2b8;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .theme-card-desc {
@@ -1811,6 +1818,7 @@ input[type=checkbox] {
   color: #ffffff;
   padding: 10px 10px;
   line-height: 1.4;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
 .theme-card-buttons {
@@ -2052,9 +2060,4 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  background-image: linear-gradient(to right, #181820 0%, #082a3d 25%, #1a6527 50%, #082a3d 75%, #181820 100%);
-  background-image: -o-linear-gradient(left, #181820 0%, #082a3d 25%, #1a6527 50%, #082a3d 75%, #181820 100%);
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: scroll;
 }/*# sourceMappingURL=style.css.map */
