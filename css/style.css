@@ -661,7 +661,7 @@ input[type=checkbox] {
   object-fit: cover;
   -o-object-position: left top;
   object-position: left top;
-  opacity: 0.4;
+  opacity: 0.6;
   border-radius: 8px;
   background-clip: padding-box;
 }
@@ -704,7 +704,7 @@ input[type=checkbox] {
   object-fit: cover;
   -o-object-position: left top;
   object-position: left top;
-  opacity: 0.3;
+  opacity: 0.6;
   border-radius: 8px;
   background-clip: padding-box;
 }
@@ -876,7 +876,7 @@ input[type=checkbox] {
   object-fit: cover;
   -o-object-position: right top;
   object-position: right top;
-  opacity: 0.4;
+  opacity: 0.6;
   border-radius: 8px;
   background-clip: padding-box;
 }
@@ -894,7 +894,7 @@ input[type=checkbox] {
   object-fit: cover;
   -o-object-position: left top;
   object-position: left top;
-  opacity: 0.2;
+  opacity: 0.4;
   border-radius: 8px;
   background-clip: padding-box;
 }
@@ -912,7 +912,7 @@ input[type=checkbox] {
   object-fit: cover;
   -o-object-position: center center;
   object-position: center center;
-  opacity: 0.4;
+  opacity: 0.6;
   border-radius: 8px;
   background-clip: padding-box;
 }

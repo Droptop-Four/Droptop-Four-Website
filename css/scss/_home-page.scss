@@ -17,7 +17,7 @@
 }
 
 .showcase-container {
-	height: 580px;
+	// height: 580px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -28,9 +28,10 @@
 .showcase-container img {
 	height: 600px;
 	width: 100%;
-	max-width: 80%;
-	mask-image: linear-gradient(to left, black, transparent);
-	-webkit-mask-image: linear-gradient(to left, black, transparent);
+	// max-width: 80%;
+	// mask-image: linear-gradient(to left, black, transparent);
+	// -webkit-mask-image: linear-gradient(to left, black, transparent);
+	filter: brightness(70%);
 	-o-object-fit: cover;
 	object-fit: cover;
 	-o-object-position: right top;
@@ -48,7 +49,7 @@
 	border: none;
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	width: 100%;
 	@include border-radius-mixin(5px);
 }
 
@@ -64,7 +65,7 @@
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 75px;
-	text-shadow: 0px 0px 6px rgba(17, 13, 13, 0.544);
+	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .home-banner-title h2 {
@@ -75,6 +76,7 @@
 	padding-left: 20%;
 	color: $secondary-text-color;
 	font-size: 30px;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .home-button-container {
@@ -169,7 +171,7 @@
 	object-fit: cover;
 	-o-object-position: left top;
 	object-position: left top;
-	opacity: 0.4;
+	opacity: 0.6;
 	@include border-radius-mixin($border-radius);
 }
 
@@ -210,7 +212,7 @@
 	object-fit: cover;
 	-o-object-position: left top;
 	object-position: left top;
-	opacity: 0.3;
+	opacity: 0.6;
 	@include border-radius-mixin($border-radius);
 }
 
@@ -402,7 +404,7 @@
 	object-fit: cover;
 	-o-object-position: right top;
 	object-position: right top;
-	opacity: 0.4;
+	opacity: 0.6;
 	@include border-radius-mixin($border-radius);
 }
 
@@ -419,7 +421,7 @@
 	object-fit: cover;
 	-o-object-position: left top;
 	object-position: left top;
-	opacity: 0.2;
+	opacity: 0.4;
 	@include border-radius-mixin($border-radius);
 }
 
@@ -436,7 +438,7 @@
 	object-fit: cover;
 	-o-object-position: center center;
 	object-position: center center;
-	opacity: 0.4;
+	opacity: 0.6;
 	@include border-radius-mixin($border-radius);
 }
 
