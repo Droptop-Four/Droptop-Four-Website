@@ -1186,6 +1186,7 @@ input[type=checkbox] {
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .download-card-price {
@@ -1194,6 +1195,7 @@ input[type=checkbox] {
   align-self: left;
   text-align: left;
   margin-left: 10%;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .download-card-price-supporter {
@@ -1202,6 +1204,7 @@ input[type=checkbox] {
   align-self: left;
   text-align: left;
   margin-left: 10%;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .download-button {
@@ -1241,6 +1244,7 @@ input[type=checkbox] {
   margin-bottom: 30px;
   font-size: 20px;
   height: 30px;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .download-update-container {
@@ -1423,6 +1427,7 @@ input[type=checkbox] {
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .update-card-image img {
@@ -1437,6 +1442,7 @@ input[type=checkbox] {
   margin-bottom: 20px;
   font-size: 20px;
   color: #b0b2b8;
+  text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
 }
 
 .update-button {
