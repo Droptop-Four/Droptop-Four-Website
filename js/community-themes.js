@@ -98,7 +98,10 @@ class DisplayThemes {
 	}
 }
 
+let scrollPosition = 0;
+
 function openImageModal(imageUrl, imageName) {
+	scrollPosition = window.scrollY || document.documentElement.scrollTop;
 	const modal = document.createElement('div');
 	modal.classList.add('image-modal');
 	modal.innerHTML = `
@@ -114,6 +117,7 @@ function openImageModal(imageUrl, imageName) {
     `;
 	document.body.appendChild(modal);
 	document.body.classList.add('disable-scrolling');
+	window.scrollTo(0, scrollPosition);
 
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'Escape') {
@@ -133,6 +137,7 @@ function closeImageModal() {
 	if (modal) {
 		modal.remove();
 		document.body.classList.remove('disable-scrolling');
+		window.scrollTo(0, scrollPosition);
 		document.removeEventListener('keydown', function (event) {
 			if (event.key === 'Escape') {
 				closeImageModal();
