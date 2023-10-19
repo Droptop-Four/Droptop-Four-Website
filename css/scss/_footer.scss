@@ -10,7 +10,7 @@
 	margin-bottom: 1%;
 	margin-left: 1%;
 	@include blur-mixin(0.8, 1px);
-	@include border-radius-mixin($border-radius);
+	@include border-radius-mixin(15px);
 }
 
 .footer .social {

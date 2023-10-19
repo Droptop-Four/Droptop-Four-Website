@@ -14,7 +14,7 @@
 	margin-left: 1%;
 	z-index: 999;
 	@include blur-mixin(0.9, 1px);
-	@include border-radius-mixin($border-radius);
+	@include border-radius-mixin(15px);
 }
 
 .navbar a {
@@ -56,7 +56,7 @@
 .menu {
 	display: flex;
 	font-size: 18px;
-	@include border-radius-mixin($border-radius);
+	@include border-radius-mixin(15px);
 }
 
 .menu li a:hover {
@@ -113,7 +113,7 @@ input[type='checkbox'] {
 		padding: 20px 0;
 		margin-top: 36px;
 		z-index: 999;
-		@include blur-mixin(0.9, 5px);
+		@include blur-mixin(0.95, 5px);
 	}
 
 	.menu li a:hover {
