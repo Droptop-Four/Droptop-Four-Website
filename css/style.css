@@ -113,7 +113,7 @@ input[type=checkbox] {
     left: 0;
     text-align: center;
     padding: 20px 0;
-    margin-top: 36px;
+    margin-top: 38px;
     z-index: 999;
     background-color: rgba(13, 13, 17, 0.95);
     backdrop-filter: blur(5px);
@@ -139,7 +139,7 @@ input[type=checkbox] {
     padding: 10px;
   }
   .menu {
-    margin-top: 26px;
+    margin-top: 28px;
   }
 }
 /* ----- COOKIE CONSENT ----- */
