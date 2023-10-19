@@ -8,7 +8,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: calc(20px + 10vh);
+	margin-top: calc(20px + 15vh);
 	padding: 30px 65px;
 	color: $accents-text-color;
 	font-size: 40px;
@@ -454,14 +454,14 @@
 }
 
 @media screen and (max-width: 1160px) {
+	.home-banner {
+		padding-top: 30px;
+	}
+
     .home-banner-title h2 {
 		width: 100%;
 		padding-left: 0%;
 		margin-bottom: 15px;
-	}
-
-	.home-banner {
-		padding-top: 80px;
 	}
 
 	.home-banner-text {
@@ -497,8 +497,8 @@
 		position: inherit;
 		top: 10px;
 		transform: translateY(0);
-		margin-top: 10px;
-		padding: 40px 30px;
+		padding: 21px 30px;
+		font-size: 30px;
 	}
 
 	.home-container {
@@ -607,8 +607,7 @@
 
 @media screen and (max-width: 720px) {
     .home-banner {
-		padding: 0px 10px;
-		margin-top: 120px;
+		padding: 0px 30px;
 	}
 
 	.home-banner-title h1 {
@@ -624,8 +623,8 @@
 	}
 
 	.home-download-button {
-		padding: 30px 20px;
-		font-size: 30px;
+		// padding: 30px 20px;
+		font-size: 25px;
 	}
 
 	.Slide img {
@@ -639,6 +638,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .home-banner {
+		padding: 0px 15px;
+	}
+
     .showcase-container img {
 		max-width: 100%;
 	}

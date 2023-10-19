@@ -16,7 +16,7 @@
 @import 'scss/search-page';
 @import 'scss/privacy-policy-page';
 
-@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap');
 
 html {
 	height: 100%;
@@ -31,6 +31,7 @@ html {
 	padding: 0px;
 	box-sizing: border-box;
 	font-family: 'Urbanist', sans-serif;
+	// font-weight: 400;
 }
 
 body {
