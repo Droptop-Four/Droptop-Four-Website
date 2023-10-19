@@ -48,7 +48,6 @@
 	font-family: arial;
 	padding-top: 20px;
 	padding-bottom: 5px;
-	// @include blur-mixin(0.15, 5px);
 	@include border-radius-mixin(25px);
 	border-style: solid;
 	border-color: $accents-text-color-3;
@@ -62,7 +61,6 @@
 	box-shadow: 0 0 10px rgb(67, 255, 102);
 	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	background-color: rgba(67, 255, 100, 0.3);
-	// @include blur-mixin(0.4, 5px);
 }
 
 .theme-card-container {

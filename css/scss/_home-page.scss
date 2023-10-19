@@ -17,7 +17,6 @@
 }
 
 .showcase-container {
-	// height: 580px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -28,9 +27,6 @@
 .showcase-container img {
 	height: 600px;
 	width: 100%;
-	// max-width: 80%;
-	// mask-image: linear-gradient(to left, black, transparent);
-	// -webkit-mask-image: linear-gradient(to left, black, transparent);
 	filter: brightness(70%);
 	-o-object-fit: cover;
 	object-fit: cover;
@@ -623,7 +619,6 @@
 	}
 
 	.home-download-button {
-		// padding: 30px 20px;
 		font-size: 25px;
 	}
 

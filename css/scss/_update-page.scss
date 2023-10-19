@@ -34,7 +34,6 @@
 	text-align: center;
 	padding: 30px;
 	margin: 30px;
-	// @include blur-mixin(0.3, 1px);
 	@include border-radius-mixin(20px);
 	border-style: solid;
 	border-color: $accents-text-color-3;
