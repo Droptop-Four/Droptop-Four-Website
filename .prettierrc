@@ -4,6 +4,6 @@
     "singleQuote": true,
     "bracketSpacing": true,
     "bracketSameLine": true,
-    "htmlWhitespaceSensitivity": "ignore",
+    "htmlWhitespaceSensitivity": "css",
     "insertPragma": true
 }
