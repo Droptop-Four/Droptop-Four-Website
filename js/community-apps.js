@@ -67,7 +67,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -84,7 +84,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -104,7 +104,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -121,7 +121,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="${item.image_url}" target="_blank"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -139,6 +139,48 @@ class DisplayApps {
 			}
 		});
 		appsList.innerHTML = result;
+	}
+}
+
+function openImageModal(imageUrl, imageName) {
+	const modal = document.createElement('div');
+	modal.classList.add('image-modal');
+	modal.innerHTML = `
+		<div class="image-modal-close" onclick="closeImageModal()">
+			<svg width="50" height="50" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+				<line x1="5" y1="5" x2="25" y2="25" stroke="currentColor" stroke-width="2" />
+				<line x1="25" y1="5" x2="5" y2="25" stroke="currentColor" stroke-width="2" />
+			</svg>
+		</div>
+		<div class="image-modal-content">
+			<img src="${imageUrl}" alt="${imageName}">
+		</div>
+    `;
+	document.body.appendChild(modal);
+	document.body.classList.add('disable-scrolling');
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape') {
+			closeImageModal();
+		}
+	});
+
+	modal.addEventListener('click', function (event) {
+		if (event.target === modal) {
+			closeImageModal();
+		}
+	});
+}
+
+function closeImageModal() {
+	const modal = document.querySelector('.image-modal');
+	if (modal) {
+		modal.remove();
+		document.body.classList.remove('disable-scrolling');
+		document.removeEventListener('keydown', function (event) {
+			if (event.key === 'Escape') {
+				closeImageModal();
+			}
+		});
 	}
 }
 
