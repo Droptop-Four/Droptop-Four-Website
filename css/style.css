@@ -675,7 +675,7 @@ input[type=checkbox] {
   padding: 10px;
   border-style: solid;
   border-color: #43ff64;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   background-clip: padding-box;
 }
@@ -894,7 +894,7 @@ input[type=checkbox] {
   object-fit: cover;
   -o-object-position: left top;
   object-position: left top;
-  opacity: 0.4;
+  opacity: 0.6;
   border-radius: 8px;
   background-clip: padding-box;
 }

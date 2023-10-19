@@ -184,7 +184,7 @@
 	padding: 10px;
 	border-style: solid;
 	border-color: $accents-text-color;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	@include border-radius-mixin($border-radius);
 }
 
@@ -421,7 +421,7 @@
 	object-fit: cover;
 	-o-object-position: left top;
 	object-position: left top;
-	opacity: 0.4;
+	opacity: 0.6;
 	@include border-radius-mixin($border-radius);
 }
 
