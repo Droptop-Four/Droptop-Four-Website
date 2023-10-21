@@ -98,10 +98,7 @@ class DisplayThemes {
 	}
 }
 
-let scrollPosition = 0;
-
 function openImageModal(imageUrl, imageName) {
-	scrollPosition = window.scrollY || document.documentElement.scrollTop;
 	const modal = document.createElement('div');
 	modal.classList.add('image-modal');
 	modal.innerHTML = `
@@ -116,8 +113,7 @@ function openImageModal(imageUrl, imageName) {
         </div>
     `;
 	document.body.appendChild(modal);
-	document.body.classList.add('disable-scrolling');
-	window.scrollTo(0, scrollPosition);
+	disableScroll();
 
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'Escape') {
@@ -135,15 +131,58 @@ function openImageModal(imageUrl, imageName) {
 function closeImageModal() {
 	const modal = document.querySelector('.image-modal');
 	if (modal) {
+		enableScroll();
 		modal.remove();
-		document.body.classList.remove('disable-scrolling');
-		window.scrollTo(0, scrollPosition);
 		document.removeEventListener('keydown', function (event) {
 			if (event.key === 'Escape') {
 				closeImageModal();
 			}
 		});
 	}
+}
+
+var keys = { 32: 1, 33: 1, 34: 1, 35: 1, 36: 1, 37: 1, 38: 1, 39: 1, 40: 1 };
+
+function preventDefault(e) {
+	e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+	if (keys[e.keyCode]) {
+		preventDefault(e);
+		return false;
+	}
+}
+
+var supportsPassive = false;
+try {
+	window.addEventListener(
+		'test',
+		null,
+		Object.defineProperty({}, 'passive', {
+			get: function () {
+				supportsPassive = true;
+			},
+		})
+	);
+} catch (e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent =
+	'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+function disableScroll() {
+	window.addEventListener('DOMMouseScroll', preventDefault, false);
+	window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+	window.addEventListener('touchmove', preventDefault, wheelOpt);
+	window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+function enableScroll() {
+	window.removeEventListener('DOMMouseScroll', preventDefault, false);
+	window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+	window.removeEventListener('touchmove', preventDefault, wheelOpt);
+	window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
 function Scroll() {
