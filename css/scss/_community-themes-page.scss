@@ -84,6 +84,7 @@
 	width: 80%;
 	margin-top: 20px;
 	@include border-radius-mixin($border-radius);
+	cursor: pointer;
 }
 
 .theme-card-author {

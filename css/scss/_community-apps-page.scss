@@ -88,6 +88,7 @@
 	margin-top: 20px;
 	opacity: 0.8;
 	@include border-radius-mixin($border-radius);
+	cursor: pointer;
 }
 
 .app-card-author {

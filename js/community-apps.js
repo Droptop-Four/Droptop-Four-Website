@@ -67,7 +67,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -84,7 +84,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -104,7 +104,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -121,7 +121,7 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>

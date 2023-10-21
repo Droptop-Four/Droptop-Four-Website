@@ -64,7 +64,7 @@ class DisplayThemes {
           <div>
             <div class="theme-card" id="${item.id}">
               <div class="theme-card-container">
-                <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                 <h3 class="theme-card-name">${item.name}</h3>
                 <p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
                 <p class="theme-card-desc">${item.desc}</p>
@@ -80,7 +80,7 @@ class DisplayThemes {
           <div>
             <div class="theme-card" id="${item.id}">
               <div class="theme-card-container">
-                <a href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+                <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                 <h3 class="theme-card-name">${item.name}</h3>
                 <p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
                 <p class="theme-card-desc">${item.desc}</p>

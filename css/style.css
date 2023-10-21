@@ -1692,6 +1692,7 @@ input[type=checkbox] {
   opacity: 0.8;
   border-radius: 8px;
   background-clip: padding-box;
+  cursor: pointer;
 }
 
 .app-card-author {
@@ -1865,6 +1866,7 @@ input[type=checkbox] {
   margin-top: 20px;
   border-radius: 8px;
   background-clip: padding-box;
+  cursor: pointer;
 }
 
 .theme-card-author {
