@@ -332,9 +332,8 @@ input[type=checkbox] {
   display: none;
 }
 
-.disable-scrolling {
-  height: 100%;
-  overflow: hidden;
+.pointer {
+  cursor: pointer;
 }
 
 /* Skip-to-main-content */
@@ -412,7 +411,6 @@ input[type=checkbox] {
   max-height: 80%;
   overflow: hidden;
 }
-
 .image-modal-content img {
   border-radius: 10px;
   background-clip: padding-box;
@@ -440,6 +438,102 @@ input[type=checkbox] {
 }
 
 .image-modal-close:hover {
+  background-color: #43ff64;
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+  transition: 0.3s ease;
+}
+
+/* readme modal */
+.readme-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.readme-modal-container {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  color: white;
+  background-color: #181820;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 1px solid #43ff64;
+  box-shadow: 0 0 10px rgb(67, 255, 102);
+  -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.readme-modal-content {
+  margin: auto;
+  max-width: 90%;
+}
+.readme-modal-content h1 {
+  margin-bottom: 2%;
+}
+.readme-modal-content h1 img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 2%;
+}
+.readme-modal-content h2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.readme-modal-content h4 {
+  margin-bottom: 2%;
+}
+.readme-modal-content p {
+  margin-bottom: 2%;
+}
+.readme-modal-content p a {
+  text-decoration: none;
+}
+.readme-modal-content p img {
+  max-width: 100%;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+.readme-modal-content ul li {
+  margin-left: 4%;
+  margin-bottom: 2%;
+}
+.readme-modal-content a:link {
+  color: #43ff64;
+}
+.readme-modal-content a:visited {
+  color: #43ff64;
+}
+
+.readme-modal-close {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #27af40;
+  border-radius: 10px;
+  background-clip: padding-box;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.readme-modal-close:hover {
   background-color: #43ff64;
   box-shadow: 0 0 10px rgb(67, 255, 102);
   -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
