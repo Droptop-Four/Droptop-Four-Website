@@ -269,14 +269,11 @@ function openReadmeModal(baseLink) {
 			const readmeModalContent = document.getElementById(
 				'readme-modal-content'
 			);
+			marked.use(markedGfmHeadingId.gfmHeadingId());
 			readmeModalContent.innerHTML = marked.parse(
 				readmeContent
 					.replace(/Images\//g, `${baseLink}/main/Images/`)
 					.replace(/images\//g, `${baseLink}/main/images/`)
-					.replace(/## (.*?)(\n|\r\n|\r|\n)/g, (match, title) => {
-						const id = title.toLowerCase().replace(/\s/g, '-');
-						return `<h2 id="${id}">${title}</h2>`;
-					})
 			);
 		})
 		.catch((error) => {
