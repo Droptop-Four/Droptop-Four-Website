@@ -68,7 +68,6 @@ class Themes {
 							`${rawBaseURL}/main/README.md`
 						);
 						const readmeExists = response.status === 200;
-						console.log(readmeExists)
 						return {
 							id,
 							name,
@@ -104,8 +103,6 @@ class Themes {
 			});
 
 			const themesItemsWithReadme = await Promise.all(fetchThemePromises);
-			console.log("test")
-			console.log(themesItemsWithReadme)
 
 			return themesItemsWithReadme;
 		} catch (error) {
@@ -117,9 +114,6 @@ class Themes {
 class DisplayThemes {
 	displayThemes(themes) {
 		let result = '';
-		
-		console.log(themes);
-
 		themes.forEach((item) => {
 			if (item.hidden != 1) {
 				if (item.author_link == '') {
