@@ -326,7 +326,7 @@ function openImageModal(imageUrl, imageName) {
             <img src="${imageUrl}" alt="${imageName}">
         </div>
     `;
-	document.body.themeendChild(modal);
+	document.body.appendChild(modal);
 
 	disableScroll();
 
