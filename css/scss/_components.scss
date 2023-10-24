@@ -178,6 +178,24 @@
 	overscroll-behavior: contain;
 }
 
+.readme-modal-container::-webkit-scrollbar {
+	background-color: $main-bg-color;
+	border-radius: 0 10px 10px 0;
+	width: 20px;
+}
+
+.readme-modal-container::-webkit-scrollbar-thumb {
+    background: $accents-text-color-2;
+    background-clip: content-box;
+    border: 5px solid transparent;
+	border-radius: 6px 9px 9px 6px;
+}
+
+.readme-modal-container::-webkit-scrollbar-thumb:hover {
+	background-color: $accents-text-color;
+	transition: 0.3s ease;
+}
+
 .readme-modal-content {
 	margin: auto;
 	max-width: 90%;
