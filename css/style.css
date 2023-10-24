@@ -1742,7 +1742,7 @@ input[type=checkbox] {
 
 .appsList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
 }
 
 .appsList div {
@@ -1923,7 +1923,7 @@ input[type=checkbox] {
 
 .themesList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 }
 
 .themesList div {
