@@ -194,6 +194,16 @@
 	color: $accents-text-color;
 }
 
+@media screen and (min-width: 1580px) {
+	.download-card {
+		font-size: 300%;
+	}
+	
+	.download-card-infos {
+		font-size: 50%;
+	}
+}
+
 @media screen and (max-width: 1160px) {
     .download-container {
 		min-height: auto;

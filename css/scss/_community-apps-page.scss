@@ -75,6 +75,55 @@
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
+.app-card-share {
+	font-size: 20px;
+	color: $accents-text-color;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	z-index: 100;
+	cursor: pointer;
+}
+
+.tooltip {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: $main-bg-color;
+	color: $accents-text-color;
+	border-style: solid;
+	border-color: $accents-text-color-3;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #43ff664d transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
 .app-card-version {
 	color: $secondary-text-color;
 	opacity: 0.5;

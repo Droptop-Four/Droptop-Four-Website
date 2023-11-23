@@ -21,7 +21,7 @@ class Themes {
 	async Items() {
 		try {
 			let result = await fetch(
-				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_themes/community_themes.json'
+				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_themes/community_themes.json'
 			);
 			let data = await result.json();
 
@@ -40,6 +40,7 @@ class Themes {
 					secondary_link,
 					image_url,
 					hidden,
+					changelog,
 				} = item.theme;
 
 				if (item.theme.official_link == '') {
@@ -56,6 +57,7 @@ class Themes {
 						secondary_link,
 						image_url,
 						hidden,
+						changelog,
 						readmeExists,
 					};
 				} else {
@@ -80,6 +82,7 @@ class Themes {
 							secondary_link,
 							image_url,
 							hidden,
+							changelog,
 							readmeExists,
 						};
 					} catch (error) {
@@ -96,6 +99,7 @@ class Themes {
 							secondary_link,
 							image_url,
 							hidden,
+							changelog,
 							readmeExists,
 						};
 					}
@@ -122,6 +126,9 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
+						<div class="tooltip">
+							<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+						</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="theme-card-name">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
@@ -142,6 +149,9 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
+						<div class="tooltip">
+							<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+						</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="theme-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
@@ -159,6 +169,9 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
+						<div class="tooltip">
+							<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+						</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="theme-card-name">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
@@ -179,6 +192,9 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
+						<div class="tooltip">
+							<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+						</div>
 						<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 						<h3 class="theme-card-name">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -199,6 +215,9 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
+						<div class="tooltip">
+							<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+						</div>
 						<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 						<h3 class="theme-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -216,6 +235,9 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
+						<div class="tooltip">
+							<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+						</div>
 						<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 						<h3 class="theme-card-name">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -235,6 +257,22 @@ class DisplayThemes {
 		});
 		themesList.innerHTML = result;
 	}
+}
+
+// ---- SHARE BUTTON ----
+
+function copy_to_clipboard(id) {
+	navigator.clipboard.writeText(
+		'https://www.droptopfour.com/community-themes/?id=' + id
+	);
+
+	var tooltip = document.getElementById('myTooltip' + id);
+	tooltip.innerHTML = 'Copied';
+}
+
+function out_function(id) {
+	var tooltip = document.getElementById('myTooltip' + id);
+	tooltip.innerHTML = 'Copy to clipboard';
 }
 
 // ---- README MODAL ----

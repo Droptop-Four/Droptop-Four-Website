@@ -522,6 +522,7 @@ input[type=checkbox] {
   border-radius: 10px;
   background-clip: padding-box;
 }
+.readme-modal-content ol li,
 .readme-modal-content ul li {
   margin-left: 4%;
   margin-bottom: 2%;
@@ -1499,6 +1500,14 @@ input[type=checkbox] {
   color: #43ff64;
 }
 
+@media screen and (min-width: 1580px) {
+  .download-card {
+    font-size: 300%;
+  }
+  .download-card-infos {
+    font-size: 50%;
+  }
+}
 @media screen and (max-width: 1160px) {
   .download-container {
     min-height: auto;
@@ -1789,6 +1798,55 @@ input[type=checkbox] {
   margin: 10px;
   color: #43ff64;
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
+}
+
+.app-card-share {
+  font-size: 20px;
+  color: #43ff64;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #181820;
+  color: #43ff64;
+  border-style: solid;
+  border-color: #155b22;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(67, 255, 102, 0.3019607843) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 .app-card-version {

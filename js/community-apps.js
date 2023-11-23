@@ -21,7 +21,7 @@ class Apps {
 	async Items() {
 		try {
 			let result = await fetch(
-				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json'
+				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json'
 			);
 			let data = await result.json();
 
@@ -40,6 +40,7 @@ class Apps {
 					secondary_link,
 					image_url,
 					hidden,
+					changelog,
 				} = item.app;
 
 				if (item.app.official_link == '') {
@@ -56,6 +57,7 @@ class Apps {
 						secondary_link,
 						image_url,
 						hidden,
+						changelog,
 						readmeExists,
 					};
 				} else {
@@ -80,6 +82,7 @@ class Apps {
 							secondary_link,
 							image_url,
 							hidden,
+							changelog,
 							readmeExists,
 						};
 					} catch (error) {
@@ -96,6 +99,7 @@ class Apps {
 							secondary_link,
 							image_url,
 							hidden,
+							changelog,
 							readmeExists,
 						};
 					}
@@ -122,6 +126,9 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
+				  <div class="tooltip">
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+				</div>
                   <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
@@ -143,6 +150,9 @@ class DisplayApps {
 			<div>
 				<div class="app-card" id="${item.id}">
 					<div class="app-card-container">
+					<div class="tooltip">
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+				</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="app-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 					<p class="app-card-version">v${item.version}</p>
@@ -161,6 +171,9 @@ class DisplayApps {
 			<div>
 				<div class="app-card" id="${item.id}">
 					<div class="app-card-container">
+					<div class="tooltip">
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+				</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="app-card-name">${item.name}</h3>
 					<p class="app-card-version">v${item.version}</p>
@@ -182,7 +195,10 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+				<div class="tooltip">
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+				</div>
+				<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
@@ -203,10 +219,13 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+				<div class="tooltip">
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+				</div>
+				<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
-                  <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
+                  <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
@@ -221,7 +240,10 @@ class DisplayApps {
             <div>
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
-                  <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+				<div class="tooltip">
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext" id="myTooltip${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+				</div>
+				<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
@@ -241,6 +263,22 @@ class DisplayApps {
 		});
 		appsList.innerHTML = result;
 	}
+}
+
+// ---- SHARE BUTTON ----
+
+function copy_to_clipboard(id) {
+	navigator.clipboard.writeText(
+		'https://www.droptopfour.com/community-apps/?id=' + id
+	);
+
+	var tooltip = document.getElementById('myTooltip' + id);
+	tooltip.innerHTML = 'Copied';
+}
+
+function out_function(id) {
+	var tooltip = document.getElementById('myTooltip' + id);
+	tooltip.innerHTML = 'Copy to clipboard';
 }
 
 // ---- README MODAL ----
@@ -274,7 +312,7 @@ function openReadmeModal(baseLink) {
 				readmeContent
 					.replace(/Images\//g, `${baseLink}/main/Images/`)
 					.replace(/images\//g, `${baseLink}/main/images/`)
-			)
+			);
 		})
 		.catch((error) => {
 			console.error('Errore nel caricamento del README:', error);
