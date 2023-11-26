@@ -2122,6 +2122,53 @@ input[type=checkbox] {
     font-size: 38px;
   }
 }
+/* ----- CHANGELOG PAGE ----- */
+.changelog-banner {
+  color: #43ff64;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(20px + 10vh);
+  padding-top: 50px;
+}
+.changelog-banner h1 {
+  text-align: center;
+}
+
+.changenotesList div {
+  margin-bottom: 20px;
+}
+
+.changenote-card {
+  max-width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+}
+.changenote-card h2 {
+  margin-bottom: 2%;
+}
+.changenote-card ol li,
+.changenote-card ul li {
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 1160px) {
+  .changelog-banner {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .changenote-card {
+    max-width: 90%;
+  }
+  .changelog-banner-text {
+    font-size: 38px;
+  }
+}
 /* ----- SEARCH PAGE ----- */
 .search-banner {
   color: #43ff64;
