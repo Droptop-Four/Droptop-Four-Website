@@ -140,60 +140,6 @@
 	color: $secondary-text-color;
 }
 
-.droptop-version-text {
-	color: $secondary-text-color;
-	font-size: 15px;
-	justify-content: center;
-	text-align: center;
-	padding: 0px 65px;
-	opacity: 0.5;
-}
-
-.versions-table {
-	width: 100%;
-	border-spacing: 100px 0;
-}
-
-.versions-table th {
-	padding-bottom: 20px;
-	font-weight: bold;
-}
-
-.versions-table td {
-	padding: 10px;
-}
-
-.table-header {
-	font-weight: bold;
-	font-size: 25px;
-}
-
-.table-text {
-	font-size: 20px;
-}
-
-.center-table {
-	text-align: center;
-}
-
-.header-2 {
-	color: #6d6d6d;
-}
-
-.column-2 {
-	background-color: #6d6d6d4d;
-	color: #6d6d6d;
-}
-
-.header-3 {
-	color: $accents-text-color;
-}
-
-.column-3 {
-	background-color: #4bd7654d;
-	color: $accents-text-color;
-}
-
 @media screen and (min-width: 1580px) {
 	.download-card {
 		font-size: 300%;

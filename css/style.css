@@ -391,6 +391,15 @@ input[type=checkbox] {
     right: 10px;
   }
 }
+.latest-changenotes-container {
+  color: #ffffff;
+}
+
+.latest-changenotes-text {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
 /* image modal */
 .image-modal {
   display: flex;
@@ -1446,60 +1455,6 @@ input[type=checkbox] {
   color: #b0b2b8;
 }
 
-.droptop-version-text {
-  color: #b0b2b8;
-  font-size: 15px;
-  justify-content: center;
-  text-align: center;
-  padding: 0px 65px;
-  opacity: 0.5;
-}
-
-.versions-table {
-  width: 100%;
-  border-spacing: 100px 0;
-}
-
-.versions-table th {
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.versions-table td {
-  padding: 10px;
-}
-
-.table-header {
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.table-text {
-  font-size: 20px;
-}
-
-.center-table {
-  text-align: center;
-}
-
-.header-2 {
-  color: #6d6d6d;
-}
-
-.column-2 {
-  background-color: rgba(109, 109, 109, 0.3019607843);
-  color: #6d6d6d;
-}
-
-.header-3 {
-  color: #43ff64;
-}
-
-.column-3 {
-  background-color: rgba(75, 215, 101, 0.3019607843);
-  color: #43ff64;
-}
-
 @media screen and (min-width: 1580px) {
   .download-card {
     font-size: 300%;
@@ -1551,6 +1506,10 @@ input[type=checkbox] {
 /* ----- UPDATE PAGE ----- */
 .update-contents {
   margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .update-container {
