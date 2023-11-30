@@ -15,12 +15,20 @@
 	}
 }
 
+.changelog-contents {
+	max-width: 2500px;
+	width: 90%;
+	left: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .changenotesList div {
 	margin-bottom: 20px;
 }
 
 .changenote-card {
-	max-width: 500px;
+	max-width: 700px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);

@@ -7,8 +7,11 @@
 	min-height: 100%;
 	z-index: 999;
 	width: 98%;
+	max-width: 2500px;
 	margin-bottom: 1%;
-	margin-left: 1%;
+	left: 50%;
+	margin-right: auto;
+	margin-left: auto;
 	@include blur-mixin(0.8, 1px);
 	@include border-radius-mixin(15px);
 }

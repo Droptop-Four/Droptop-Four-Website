@@ -16,12 +16,14 @@
 
 .privacy-policy-contents {
 	color: $main-text-color;
-	width: 80%;
+	width: 60%;
+	max-width: 2000px;
 	min-height: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+	left: 50%;
 }
 
 .privacy-policy-section {

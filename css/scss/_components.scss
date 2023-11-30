@@ -42,6 +42,16 @@
 	cursor: pointer;
 }
 
+.body-divider {
+	width: 100%;
+	height: 65px;
+	padding: 30px;
+}
+
+.body-divider hr {
+	border-color: $secondary-bg-color-tr;
+}
+
 /* Skip-to-main-content */
 .skip-to-main-content {
 	background: $main-bg-color;

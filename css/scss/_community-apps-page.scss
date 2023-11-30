@@ -1,6 +1,5 @@
 /* ----- COMMUNITY APPS PAGE ----- */
 
-
 .community-apps-banner {
 	color: $accents-text-color;
 	font-size: 50px;
@@ -13,6 +12,14 @@
 
 .community-apps-banner h1 {
 	text-align: center;
+}
+
+.community-apps-contents {
+	max-width: 2500px;
+	width: 100%;
+	left: 50%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .app-making {
