@@ -1,0 +1,148 @@
+/* ----- NAVBAR ----- */
+@import 'mixins';
+
+.navbar {
+	display: flex;
+	align-items: center;
+	min-height: 8vh;
+	padding: 20px;
+	color: $accents-text-color;
+	position: fixed;
+	top: 0;
+	width: 98%;
+	max-width: 2500px;
+	margin-top: 1%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
+	@include blur-mixin(0.95, 1px);
+	@include border-radius-mixin(15px);
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.navbar li {
+	list-style: none;
+}
+
+.nav-links {
+	position: fixed;
+	right: 40px;
+}
+
+.nav-links a {
+	color: $accents-text-color;
+}
+
+.logo img {
+	margin-top: 5px;
+	width: 50px;
+	height: auto;
+	@include border-radius-mixin(20px);
+}
+
+.site-name {
+	text-transform: lowercase;
+	letter-spacing: 3px;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+.site-name a {
+	text-decoration: none;
+	color: $accents-text-color;
+}
+
+.menu {
+	display: flex;
+	font-size: 18px;
+	@include border-radius-mixin(15px);
+}
+
+.menu li a:hover {
+	background-color: $main-bg-highlight-tr;
+	transition: 0.3s ease;
+	@include border-radius-mixin($border-radius);
+}
+
+.menu li a {
+	padding: 5px 14px;
+}
+
+.nav-download {
+	background-color: #4bd7654d;
+	font-weight: bold;
+	@include border-radius-mixin($border-radius);
+}
+
+input[type='checkbox'] {
+	display: none;
+}
+
+.hamburger {
+	display: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	color: $accents-text-color;
+	cursor: pointer;
+	z-index: 999;
+}
+
+@media screen and (max-width: 1160px) {
+	.navbar {
+		justify-content: space-around;
+	}
+
+	.nav-links {
+		position: static;
+		right: 0px;
+	}
+
+	.site-name {
+		margin-left: 0px;
+	}
+
+	.menu {
+		display: none;
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+		padding: 20px 0;
+		margin-top: 38px;
+		z-index: 999;
+		@include blur-mixin(0.95, 5px);
+	}
+
+	.menu li a:hover {
+		background-color: $main-bg-highlight-tr;
+		color: $main-text-color;
+		transition: 0.3s ease;
+	}
+
+	.menu li {
+		margin-top: 20px;
+	}
+
+	input[type='checkbox']:checked ~ .menu {
+		display: block;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.navbar {
+		padding: 10px;
+	}
+
+	.menu {
+		margin-top: 28px;
+	}
+}

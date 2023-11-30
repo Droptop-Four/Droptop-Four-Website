@@ -1,0 +1,42 @@
+/* ----- DIRECT DOWNLOAD PAGE ----- */
+
+.direct-download-title {
+	color: $accents-text-color;
+}
+
+.direct-download-contents {
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	max-width: 2500px;
+	width: 90%;
+	left: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.direct-download-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 1.4;
+	width: 100%;
+	font-size: 30px;
+	justify-content: center;
+	color: $main-text-color;
+}
+
+.direct-download-suppport {
+	margin-top: 10px;
+	color: $accents-text-color;
+	line-height: 2;
+}
+
+@media screen and (max-width: 1160px) {
+    .direct-download-container {
+		min-height: auto;
+		max-width: 100%;
+	}
+}

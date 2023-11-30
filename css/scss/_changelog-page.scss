@@ -1,0 +1,64 @@
+/* ----- CHANGELOG PAGE ----- */
+
+
+.changelog-banner {
+	color: $accents-text-color;
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: calc(20px + 10vh);
+	padding-top: 50px;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.changelog-contents {
+	max-width: 2500px;
+	width: 90%;
+	left: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.changenotesList div {
+	margin-bottom: 20px;
+}
+
+.changenote-card {
+	max-width: 700px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	color: $main-text-color;
+
+	h2 {
+		margin-bottom: 2%;
+	}
+
+	ol li,
+	ul li {
+		margin-left: 4%;
+		margin-top: 2%;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+
+	.changelog-banner {
+		padding-top: 80px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.changenote-card {
+		max-width: 90%;
+	}
+
+	.changelog-banner-text {
+		font-size: 38px;
+	}
+}

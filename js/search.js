@@ -1,5 +1,7 @@
+/** @format */
+
 const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
+	get: (searchParams, prop) => searchParams.get(prop),
 });
 
 let search_query = params.s;
@@ -9,52 +11,62 @@ const selezionati = [];
 const search_bar = document.getElementById('searchbar');
 
 (async () => {
-    const apps_url = 'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json';
-    const themes_url = 'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_themes/community_themes.json';
+	const apps_url =
+		'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json';
+	const themes_url =
+		'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_themes/community_themes.json';
 
-    const apps_response = await fetch(apps_url);
-    const themes_response = await fetch(themes_url);
-    const apps_json = await apps_response.json();
-    const themes_json = await themes_response.json();
+	const apps_response = await fetch(apps_url);
+	const themes_response = await fetch(themes_url);
+	const apps_json = await apps_response.json();
+	const themes_json = await themes_response.json();
 
-    const apps_items = apps_json.apps;
-    const themes_items = themes_json.themes;
+	const apps_items = apps_json.apps;
+	const themes_items = themes_json.themes;
 
-    if (search_query) {
-        let search_query = params.s.toLowerCase();
+	if (search_query) {
+		let search_query = params.s.toLowerCase();
 
-        search_bar.value = search_query;
+		search_bar.value = search_query;
 
-        for (let i in apps_items) {
-            const app = apps_items[i].app;
-            if (app.hidden != 1) {
-                if (app.name.toLowerCase().includes(search_query) || app.author.toLowerCase().includes(search_query) || app.desc.toLowerCase().includes(search_query)) {
-                    selezionati.push(apps_items[i]);
-                }
-            }
-        }
+		for (let i in apps_items) {
+			const app = apps_items[i].app;
+			if (app.hidden != 1) {
+				if (
+					app.name.toLowerCase().includes(search_query) ||
+					app.author.toLowerCase().includes(search_query) ||
+					app.desc.toLowerCase().includes(search_query)
+				) {
+					selezionati.push(apps_items[i]);
+				}
+			}
+		}
 
-        for (let i in themes_items) {
-            const theme = themes_items[i].theme;
-            if (theme.hidden != 1) {
-                if (theme.name.toLowerCase().includes(search_query) || theme.author.toLowerCase().includes(search_query) || theme.desc.toLowerCase().includes(search_query)) {
-                    selezionati.push(themes_items[i]);
-                }
-            }
-        }
-    }
+		for (let i in themes_items) {
+			const theme = themes_items[i].theme;
+			if (theme.hidden != 1) {
+				if (
+					theme.name.toLowerCase().includes(search_query) ||
+					theme.author.toLowerCase().includes(search_query) ||
+					theme.desc.toLowerCase().includes(search_query)
+				) {
+					selezionati.push(themes_items[i]);
+				}
+			}
+		}
+	}
 
-    const searchList = document.getElementById('searchList');
+	const searchList = document.getElementById('searchList');
 
-    let result = '';
+	let result = '';
 
-    for (let i in selezionati) {
-        let item = selezionati[i];
+	for (let i in selezionati) {
+		let item = selezionati[i];
 
-        if (item.app) {
-            let selected_app = item.app;
+		if (item.app) {
+			let selected_app = item.app;
 
-            result += `
+			result += `
         <div>
           <div class="app-card" id="${selected_app.id}" onclick="window.location='https://droptopfour.com/community-apps?id=${selected_app.id}';" style="cursor: pointer;">
             <div class="app-card-container">
@@ -70,9 +82,9 @@ const search_bar = document.getElementById('searchbar');
           </div>
         </div>
         `;
-        } else {
-            let selected_theme = item.theme;
-            result += `
+		} else {
+			let selected_theme = item.theme;
+			result += `
               <div>
                 <div class="theme-card" id="${selected_theme.id}" onclick="window.location='https://droptopfour.com/community-themes?id=${selected_theme.id}';" style="cursor: pointer;">
                   <div class="theme-card-container">
@@ -87,8 +99,8 @@ const search_bar = document.getElementById('searchbar');
                 </div>
               </div>
               `;
-        }
-    }
+		}
+	}
 
-    searchList.innerHTML = result;
+	searchList.innerHTML = result;
 })();

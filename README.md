@@ -1,5 +1,6 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- @format -->
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- PROJECT LOGO -->
 <br />
@@ -10,14 +11,13 @@
     </a>
 </p>
 
-
 <!-- TITLE -->
 <h1 align="center">DROPTOP FOUR</h1>
 
 <!-- DROPTOP SITE -->
 <p align="center">
     <a href="https://droptopfour.com"><img src="https://img.shields.io/static/v1?label=Droptop+Four&message=Website&color=50AE5C&style=for-the-badge" alt="Droptop Four Website"></a>
-</p>  
+</p>
 
 <!-- INTRO -->
 <p align="center">
@@ -26,12 +26,10 @@
     Feature and option-rich settings menu allow you full control over the appearance and functionality of your dropdown menus.<br><br>
 </p>
 
-
 <!-- DROPTOPFOUR DOWNLOAD -->
 <p align="center">
     <a href="https://github.com/Droptop-Four/Droptop-Four/releases/latest"><img src="https://img.shields.io/static/v1?label=Download&message=Droptop+Four&color=50AE5C&style=for-the-badge" alt="Download Droptop Four"></a>
-</p>  
-
+</p>
 
 <p><h2 align="center">Join the Community Now!!</h2></p>
 
@@ -41,7 +39,6 @@
     <img src="https://discordapp.com/api/guilds/800124057923485728/widget.png?style=banner3" alt="Discord Community Invite"/>
   </a>
 </p>
-
 
 <p><h2 align="center">Contacts</h2></p>
 
@@ -55,4 +52,4 @@
       <img src="https://img.shields.io/badge/Gumroad-36A9AE?style=for-the-badge&logo=gumroad&logoColor=white" alt="Gumroad"></a>
     <a href="https://discord.gg/aGQ6uE4Fgp">
       <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
-</p>  
+</p>

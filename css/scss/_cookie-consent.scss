@@ -1,0 +1,68 @@
+/* ----- COOKIE CONSENT ----- */
+
+.termsfeed-com---reset button:focus {
+	@include border-radius-mixin(0px);
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-tabs-item-link:focus {
+	box-shadow: none;
+}
+
+.termsfeed-com---nb {
+	border: 2px solid $main-bg-color;
+	outline: none;
+	background-color: $secondary-bg-color;
+	color: $accents-text-color;
+	border-color: $accents-text-color;
+	@include border-radius-mixin($border-radius);
+}
+
+.termsfeed-com---nb .cc-nb-title {
+	color: $accents-text-color;
+}
+
+.termsfeed-com---nb .cc-nb-okagree {
+	background-color: $accents-text-color;
+}
+
+.termsfeed-com---nb .cc-nb-reject {
+	background-color: red;
+}
+
+.termsfeed-com---nb .cc-nb-changep {
+	background-color: $main-text-color;
+}
+
+.cc-nb-buttons-container button {
+	@include border-radius-mixin($border-radius);
+}
+
+.termsfeed-com---pc-dialog {
+	@include border-radius-mixin($border-radius);
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-title-text {
+	color: $accents-text-color;
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-close {
+	color: $accents-text-color;
+}
+
+.termsfeed-com---pc-overlay .cc-cp-foot-save {
+	background-color: $accents-text-color;
+	@include border-radius-mixin($border-radius);
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-lang select {
+	@include border-radius-mixin(4px);
+}
+
+.termsfeed-com---palette-dark .cc-pc-head-lang select:focus {
+	box-shadow: none;
+	@include border-radius-mixin(4px);
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-content-entry-title {
+	color: $accents-text-color;
+}
