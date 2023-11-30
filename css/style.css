@@ -2172,7 +2172,7 @@ input[type=checkbox] {
 
 .searchList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
 }
 
 .searchList div {
