@@ -36,9 +36,31 @@
 	width: 90%;
 }
 
+.sorting-options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	
+	label {
+		color: $accents-text-color;
+	}
+
+	select {
+		margin-left: 10px;
+		padding: 6px;
+		font-size: 15px;
+		border: solid 2px;
+		border-radius: $border-radius;
+		border-color: $accents-text-color;
+		background-color: $secondary-text-color;
+	}
+}
+
 .themesList {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
 }
 
 .themesList div {
