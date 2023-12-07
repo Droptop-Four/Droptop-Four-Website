@@ -1758,6 +1758,26 @@ input[type=checkbox] {
   font-size: 20px;
 }
 
+.sorting-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.sorting-options label {
+  color: #43ff64;
+}
+.sorting-options select {
+  margin-left: 10px;
+  padding: 6px;
+  font-size: 15px;
+  border: solid 2px;
+  border-radius: 8px;
+  border-color: #43ff64;
+  background-color: #b0b2b8;
+}
+
 .appsList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
@@ -1996,9 +2016,29 @@ input[type=checkbox] {
   width: 90%;
 }
 
+.sorting-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.sorting-options label {
+  color: #43ff64;
+}
+.sorting-options select {
+  margin-left: 10px;
+  padding: 6px;
+  font-size: 15px;
+  border: solid 2px;
+  border-radius: 8px;
+  border-color: #43ff64;
+  background-color: #b0b2b8;
+}
+
 .themesList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
 }
 
 .themesList div {
