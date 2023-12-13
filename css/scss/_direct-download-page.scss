@@ -5,14 +5,14 @@
 }
 
 .direct-download-contents {
-	margin-top: 10vh;
 	display: flex;
+	left: 50%;
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	max-width: 2500px;
 	width: 90%;
-	left: 50%;
+	max-width: 2500px;
+	margin-top: 10vh;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -20,12 +20,12 @@
 .direct-download-container {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	line-height: 1.4;
-	width: 100%;
-	font-size: 30px;
 	justify-content: center;
+	width: 100%;
 	color: $main-text-color;
+	font-size: 30px;
+	line-height: 1.4;
+	text-align: center;
 }
 
 .direct-download-suppport {
@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 1160px) {
     .direct-download-container {
-		min-height: auto;
 		max-width: 100%;
+		min-height: auto;
 	}
 }

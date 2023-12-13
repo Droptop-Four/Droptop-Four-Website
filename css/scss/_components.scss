@@ -1,18 +1,18 @@
 /* ----- COMPONENTS ----- */
 
 .code {
-	background-color: $main-bg-color;
-	color: $accents-text-color;
-	border: 1px solid $accents-text-color;
-	font-family: courier, monospace;
-	padding: 0 3px;
 	overflow-wrap: break-word;
+	padding: 0 3px;
+	border: 1px solid $accents-text-color;
+	color: $accents-text-color;
+	font-family: courier, monospace;
+	background-color: $main-bg-color;
 	@include border-radius-mixin(3px);
 }
 
 .important {
-	color: $important-text-color;
 	overflow-wrap: break-word;
+	color: $important-text-color;
 }
 
 .droptop {
@@ -24,14 +24,14 @@
 }
 
 .underline {
-	text-decoration: underline;
-	color: $secondary-text-color;
 	overflow-wrap: break-word;
+	color: $secondary-text-color;
+	text-decoration: underline;
 }
 
 .link {
-	color: $accents-text-color;
 	overflow-wrap: break-word;
+	color: $accents-text-color;
 }
 
 .hidden {
@@ -54,15 +54,15 @@
 
 /* Skip-to-main-content */
 .skip-to-main-content {
-	background: $main-bg-color;
-	color: $accents-text-color;
-	padding: 0.5rem 0.5rem;
-	border-radius: 0 0 0.5rem 0.5rem;
+	z-index: 1000;
 	position: absolute;
 	left: 0.5rem;
-	transform: translateY(-120%);
+	padding: 0.5rem 0.5rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+	color: $accents-text-color;
+	background: $main-bg-color;
 	transition: transform 325ms ease-in;
-	z-index: 1000;
+	transform: translateY(-120%);
 }
 
 .skip-to-main-content:focus {
@@ -72,18 +72,18 @@
 /* scroll-to-top */
 .scroll-to-top {
 	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
+	opacity: 0.7;
 	z-index: 999;
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	padding: 15px;
 	border: 2px solid $main-bg-color;
 	outline: none;
-	background-color: $accents-text-color;
 	color: $main-bg-color;
-	opacity: 0.7;
-	cursor: pointer;
-	padding: 15px;
 	font-size: 18px;
+	cursor: pointer;
+	background-color: $accents-text-color;
 	background-color: rgba(67, 255, 100, 0.9);
 	@include border-radius-mixin(10px);
 }
@@ -95,16 +95,16 @@
 @media (hover: hover) {
 	.scroll-to-top:hover,
 	.scroll-to-top:active {
-		background-color: $secondary-bg-color;
-		color: $accents-text-color;
 		border-color: $accents-text-color;
+		color: $accents-text-color;
+		background-color: $secondary-bg-color;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.scroll-to-top {
-		bottom: 10px;
 		right: 10px;
+		bottom: 10px;
 	}
 }
 
@@ -113,22 +113,22 @@
 }
 
 .latest-changenotes-text {
-	font-size: 30px;
 	margin-bottom: 30px;
+	font-size: 30px;
 }
 
 /* image modal */
 .image-modal {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 999;
 }
 
 .image-modal-content {
@@ -145,69 +145,69 @@
 }
 
 .image-modal-close {
+    display: flex;
     position: absolute;
     top: 2%;
     right: 6%;
-    font-size: 50px;
-    cursor: pointer;
-    background-color: $accents-text-color-2;
+    justify-content: center;
+    align-items: center;
 	@include border-radius-mixin(10px);
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #000;
+    font-size: 50px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
+    background-color: $accents-text-color-2;
 }
 
 .image-modal-close:hover {
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	background-color: $accents-text-color;
 	box-shadow: 0 0 10px rgb(67, 255, 102);
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	transition: 0.3s ease;
 }
 
 /* readme modal */
 .readme-modal {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 999;
 }
 
 .readme-modal-container {
+    -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+    overscroll-behavior: contain;
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
-	color: white;
-	background-color: $main-bg-color;
+	max-width: 90%;
+	max-height: 90%;
 	@include border-radius-mixin(10px);
 	border: 1px solid $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	overflow: auto;
-	overscroll-behavior: contain;
+	color: white;
+	background-color: $main-bg-color;
+	box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .readme-modal-container::-webkit-scrollbar {
-	background-color: $main-bg-color;
-	border-radius: 0 10px 10px 0;
 	width: 20px;
+	border-radius: 0 10px 10px 0;
+	background-color: $main-bg-color;
 }
 
 .readme-modal-container::-webkit-scrollbar-thumb {
-    background: $accents-text-color-2;
-    background-clip: content-box;
     border: 5px solid transparent;
-	border-radius: 6px 9px 9px 6px;
+    border-radius: 6px 9px 9px 6px;
+    background: $accents-text-color-2;
+	background-clip: content-box;
 }
 
 .readme-modal-container::-webkit-scrollbar-thumb:hover {
@@ -216,8 +216,8 @@
 }
 
 .readme-modal-content {
-	margin: auto;
 	max-width: 90%;
+	margin: auto;
 
 	h1 {
 		margin-bottom: 2%;
@@ -254,8 +254,8 @@
 
 	ol li,
 	ul li {
-		margin-left: 4%;
 		margin-bottom: 2%;
+		margin-left: 4%;
 	}
 
 	a:link {
@@ -268,26 +268,26 @@
 }
 
 .readme-modal-close {
+    display: flex;
     position: absolute;
     top: 2%;
     right: 3%;
-    font-size: 50px;
-    cursor: pointer;
-    background-color: $accents-text-color-2;
+    justify-content: center;
+    align-items: center;
 	@include border-radius-mixin(10px);
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #000;
+    font-size: 50px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
+    background-color: $accents-text-color-2;
 }
 
 .readme-modal-close:hover {
+	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	background-color: $accents-text-color;
 	box-shadow: 0 0 10px rgb(67, 255, 102);
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
 	transition: 0.3s ease;
 }

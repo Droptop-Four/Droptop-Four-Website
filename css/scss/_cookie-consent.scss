@@ -10,10 +10,10 @@
 
 .termsfeed-com---nb {
 	border: 2px solid $main-bg-color;
-	outline: none;
-	background-color: $secondary-bg-color;
-	color: $accents-text-color;
 	border-color: $accents-text-color;
+	outline: none;
+	color: $accents-text-color;
+	background-color: $secondary-bg-color;
 	@include border-radius-mixin($border-radius);
 }
 

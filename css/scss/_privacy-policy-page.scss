@@ -1,13 +1,13 @@
 /* ----- PRIVACY POLICY PAGE ----- */
 
 .privacy-policy-banner {
-	color: $accents-text-color;
-	font-size: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: calc(20px + 10vh);
 	padding-top: 50px;
+	color: $accents-text-color;
+	font-size: 50px;
 }
 
 .privacy-policy-banner h1 {
@@ -15,50 +15,50 @@
 }
 
 .privacy-policy-contents {
-	color: $main-text-color;
+	display: block;
+	left: 50%;
 	width: 60%;
 	max-width: 2000px;
 	min-height: auto;
-	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 	padding: 20px;
-	left: 50%;
+	color: $main-text-color;
 }
 
 .privacy-policy-section {
-	padding: 20px;
 	margin-bottom: 10px;
+	padding: 20px;
 	@include blur-mixin(0.15, 5px);
 	@include border-radius-mixin(25px);
 }
 
 .last-updated {
-	color: $tertiary-text-color;
-	font-size: 15px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: $tertiary-text-color;
+	font-size: 15px;
 }
 
 .privacy-policy-contents h2 {
-	color: $accents-text-color;
-	font-size: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: $accents-text-color;
+	font-size: 30px;
 }
 
 .privacy-policy-contents h3 {
-	color: $accents-text-color;
-	font-size: 25px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: $accents-text-color;
+	font-size: 25px;
 }
 
 .privacy-policy-contents h4 {
-	color: $accents-text-color;
-	font-size: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: $accents-text-color;
+	font-size: 20px;
 }
 
 .privacy-policy-contents p {

@@ -1,13 +1,13 @@
 /* ----- COMMUNITY THEMES PAGE ----- */
 
 .community-themes-banner {
-	color: $accents-text-color;
-	font-size: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: calc(20px + 10vh);
 	padding-top: 50px;
+	color: $accents-text-color;
+	font-size: 50px;
 }
 
 .community-themes-banner h1 {
@@ -15,9 +15,9 @@
 }
 
 .community-themes-contents {
-	max-width: 2500px;
-	width: 100%;
 	left: 50%;
+	width: 100%;
+	max-width: 2500px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -27,9 +27,9 @@
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	text-align: center;
 	color: $tertiary-text-color;
 	font-size: 18px;
+	text-align: center;
 }
 
 .theme-making p {
@@ -39,9 +39,9 @@
 .sorting-options {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
-	justify-content: center;
 	
 	label {
 		color: $accents-text-color;
@@ -50,17 +50,17 @@
 	select {
 		margin-left: 10px;
 		padding: 6px;
-		font-size: 15px;
 		border: solid 2px;
-		border-radius: $border-radius;
 		border-color: $accents-text-color;
+		border-radius: $border-radius;
+		font-size: 15px;
 		background-color: $secondary-text-color;
 	}
 }
 
 .themesList {
-	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
+	display: grid;
 }
 
 .themesList div {
@@ -68,29 +68,29 @@
 }
 
 .theme-card {
-	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-backdrop-filter: blur(5px);
 	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
-	max-width: 500px;
+	backdrop-filter: blur(5px);
 	position: relative;
 	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	font-family: arial;
+	max-width: 500px;
 	padding-top: 20px;
 	padding-bottom: 5px;
-	@include border-radius-mixin(25px);
 	border-style: solid;
 	border-color: $accents-text-color-3;
+	@include border-radius-mixin(25px);
+	font-family: arial;
+	text-align: center;
 	background-color: rgba(67, 255, 100, 0.15);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+    transform: translateX(-50%);
 }
 
 .theme-card:hover {
-	border-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
 	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	border-color: $accents-text-color;
 	background-color: rgba(67, 255, 100, 0.3);
+	box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .theme-card-container {
@@ -101,17 +101,17 @@
 }
 
 .theme-card-name {
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: bold;
 	margin: 10px;
 	color: $accents-text-color;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .theme-card-image {
-	height: auto;
 	width: 80%;
+	height: auto;
 	margin-top: 20px;
 	@include border-radius-mixin($border-radius);
 	cursor: pointer;
@@ -129,11 +129,11 @@
 
 .theme-card-desc {
 	align-items: center;
-	text-align: center;
 	max-width: 90%;
-	color: $main-text-color;
 	padding: 10px 10px;
+	color: $main-text-color;
 	line-height: 1.4;
+	text-align: center;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
@@ -142,28 +142,28 @@
 }
 
 .theme-card-button {
-	background-color: rgba(24, 24, 32, 0.6);
-	color: $accents-text-color;
-	border: none;
+	display: inline-block;
+	margin: 20px 2px 0 2px;
 	padding: 10px;
+	border: none;
+	color: $accents-text-color;
+	font-size: 16px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 20px 2px 0 2px;
 	cursor: pointer;
+	background-color: rgba(24, 24, 32, 0.6);
 	@include border-radius-mixin(10px);
 }
 
 .theme-card-button:hover {
-	background-color: $main-bg-highlight-tr;
 	color: $main-text-color;
+	background-color: $main-bg-highlight-tr;
 	transition: 0.3s ease;
 }
 
 .theme-card-button:active {
-	background-color: $main-bg-highlight-tr;
 	color: $main-text-color;
+	background-color: $main-bg-highlight-tr;
 	transition: 0.3s ease;
 }
 
