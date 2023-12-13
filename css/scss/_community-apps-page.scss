@@ -1,13 +1,13 @@
 /* ----- COMMUNITY APPS PAGE ----- */
 
 .community-apps-banner {
-	color: $accents-text-color;
-	font-size: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: calc(20px + 10vh);
 	padding-top: 50px;
+	color: $accents-text-color;
+	font-size: 50px;
 }
 
 .community-apps-banner h1 {
@@ -15,9 +15,9 @@
 }
 
 .community-apps-contents {
-	max-width: 2500px;
-	width: 100%;
 	left: 50%;
+	width: 100%;
+	max-width: 2500px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -27,17 +27,17 @@
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	text-align: center;
 	color: $main-text-color;
 	font-size: 20px;
+	text-align: center;
 }
 
 .sorting-options {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
-	justify-content: center;
 	
 	label {
 		color: $accents-text-color;
@@ -46,17 +46,17 @@
 	select {
 		margin-left: 10px;
 		padding: 6px;
-		font-size: 15px;
 		border: solid 2px;
-		border-radius: $border-radius;
 		border-color: $accents-text-color;
+		border-radius: $border-radius;
+		font-size: 15px;
 		background-color: $secondary-text-color;
 	}
 }
 
 .appsList {
-	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
+	display: grid;
 }
 
 .appsList div {
@@ -64,28 +64,28 @@
 }
 
 .app-card {
-	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-backdrop-filter: blur(5px);
 	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
-	max-width: 500px;
+	backdrop-filter: blur(5px);
 	position: relative;
 	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
+	max-width: 500px;
 	padding-top: 20px;
 	padding-bottom: 5px;
-	@include border-radius-mixin(25px);
 	border-style: solid;
+	@include border-radius-mixin(25px);
 	border-color: $accents-text-color-3;
+	text-align: center;
 	background-color: rgba(67, 255, 100, 0.15);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+    transform: translateX(-50%);
 }
 
 .app-card:hover {
-	border-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
 	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	border-color: $accents-text-color;
 	background-color: rgba(67, 255, 100, 0.3);
+	box-shadow: 0 0 10px rgb(67, 255, 102);
 }
 
 .app-card-container {
@@ -96,19 +96,19 @@
 }
 
 .app-card-name {
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: bold;
 	margin: 10px;
 	color: $accents-text-color;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .app-card-share {
-	font-size: 20px;
-	color: $accents-text-color;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 	z-index: 100;
+	color: $accents-text-color;
+	font-size: 20px;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 	cursor: pointer;
 }
 
@@ -119,26 +119,25 @@
 }
 
 .tooltip .tooltiptext {
+	opacity: 0;
 	visibility: hidden;
-	width: 140px;
-	background-color: $main-bg-color;
-	color: $accents-text-color;
-	border-style: solid;
-	border-color: $accents-text-color-3;
-	text-align: center;
-	border-radius: 6px;
-	padding: 5px;
-	position: absolute;
 	z-index: 1;
+	position: absolute;
 	bottom: 150%;
 	left: 50%;
+	width: 140px;
 	margin-left: -75px;
-	opacity: 0;
+	padding: 5px;
+	border-style: solid;
+	border-color: $accents-text-color-3;
+	border-radius: 6px;
+	color: $accents-text-color;
+	text-align: center;
+	background-color: $main-bg-color;
 	transition: opacity 0.3s;
 }
   
 .tooltip .tooltiptext::after {
-	content: "";
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -146,25 +145,26 @@
 	border-width: 5px;
 	border-style: solid;
 	border-color: #43ff664d transparent transparent transparent;
+	content: "";
 }
   
 .tooltip:hover .tooltiptext {
-	visibility: visible;
 	opacity: 1;
+	visibility: visible;
 }
 
 .app-card-version {
-	color: $secondary-text-color;
 	opacity: 0.5;
 	margin-bottom: 10px;
+	color: $secondary-text-color;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
 .app-card-image {
-	height: auto;
-	width: 80%;
-	margin-top: 20px;
 	opacity: 0.8;
+	width: 80%;
+	height: auto;
+	margin-top: 20px;
 	@include border-radius-mixin($border-radius);
 	cursor: pointer;
 }
@@ -180,11 +180,11 @@
 
 .app-card-desc {
 	align-items: center;
-	text-align: center;
 	max-width: 90%;
-	color: $main-text-color;
 	padding: 10px 10px;
+	color: $main-text-color;
 	line-height: 1.4;
+	text-align: center;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
@@ -193,28 +193,28 @@
 }
 
 .app-card-button {
-	background-color: rgba(24, 24, 32, 0.6);
-	color: $accents-text-color;
-	border: none;
+	display: inline-block;
+	margin: 20px 2px 0 2px;
 	padding: 10px;
+	border: none;
+	color: $accents-text-color;
+	font-size: 16px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 20px 2px 0 2px;
 	cursor: pointer;
+	background-color: rgba(24, 24, 32, 0.6);
 	@include border-radius-mixin(10px);
 }
 
 .app-card-button:hover {
-	background-color: $main-bg-highlight-tr;
 	color: $main-text-color;
+	background-color: $main-bg-highlight-tr;
 	transition: 0.3s ease;
 }
 
 .app-card-button:active {
-	background-color: $main-bg-highlight-tr;
 	color: $main-text-color;
+	background-color: $main-bg-highlight-tr;
 	transition: 0.3s ease;
 }
 

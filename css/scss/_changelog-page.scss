@@ -2,13 +2,13 @@
 
 
 .changelog-banner {
-	color: $accents-text-color;
-	font-size: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: calc(20px + 10vh);
 	padding-top: 50px;
+	color: $accents-text-color;
+	font-size: 50px;
 
 	h1 {
 		text-align: center;
@@ -16,9 +16,9 @@
 }
 
 .changelog-contents {
-	max-width: 2500px;
-	width: 90%;
 	left: 50%;
+	width: 90%;
+	max-width: 2500px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -28,11 +28,11 @@
 }
 
 .changenote-card {
-	max-width: 700px;
 	position: relative;
 	left: 50%;
-	transform: translateX(-50%);
+	max-width: 700px;
 	color: $main-text-color;
+	transform: translateX(-50%);
 
 	h2 {
 		margin-bottom: 2%;
@@ -40,8 +40,8 @@
 
 	ol li,
 	ul li {
-		margin-left: 4%;
 		margin-top: 2%;
+		margin-left: 4%;
 	}
 }
 

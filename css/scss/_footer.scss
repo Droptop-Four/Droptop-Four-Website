@@ -1,38 +1,38 @@
 /* ----- FOOTER ----- */
 
 .footer {
-	width: 100%;
-	padding: 10px 0;
-	margin-top: auto;
-	min-height: 100%;
 	z-index: 999;
+	left: 50%;
+	width: 100%;
 	width: 98%;
 	max-width: 2500px;
-	margin-bottom: 1%;
-	left: 50%;
+	min-height: 100%;
+	margin-top: auto;
 	margin-right: auto;
+	margin-bottom: 1%;
 	margin-left: auto;
+	padding: 10px 0;
 	@include blur-mixin(0.8, 1px);
 	@include border-radius-mixin(15px);
 }
 
 .footer .social {
-	text-align: center;
 	padding-bottom: 5px;
 	color: $secondary-text-color;
+	text-align: center;
 }
 
 .footer .social a {
-	font-size: 16px;
-	color: $secondary-text-color;
-	border: 1px solid $secondary-text-color;
+	display: inline-block;
+	opacity: 0.5;
 	width: 28px;
 	height: 28px;
-	line-height: 28px;
-	display: inline-block;
-	text-align: center;
 	margin: 0 8px;
-	opacity: 0.5;
+	border: 1px solid $secondary-text-color;
+	color: $secondary-text-color;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
 	@include border-radius-mixin(50%);
 }
 
@@ -42,19 +42,19 @@
 
 .footer .list {
 	margin-top: 0;
+	margin-bottom: 0;
 	padding: 0;
 	list-style: none;
+	color: $secondary-text-color;
 	font-size: 12px;
 	line-height: 1.6;
-	margin-bottom: 0;
 	text-align: center;
-	color: $secondary-text-color;
 }
 
 .footer ul li a {
+	opacity: 0.8;
 	color: $secondary-text-color;
 	text-decoration: none;
-	opacity: 0.8;
 }
 
 .footer ul li {
@@ -68,7 +68,7 @@
 
 .footer .copyright {
 	margin-top: 5px;
-	text-align: center;
-	font-size: 10px;
 	color: $secondary-text-color;
+	font-size: 10px;
+	text-align: center;
 }
