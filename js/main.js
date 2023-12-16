@@ -112,11 +112,11 @@ function checkAnnouncements() {
 	)
 		.then((response) => response.json())
 		.then((data) => {
-			let scope = data.scope;
+			let website_ann = data.website;
 
-			if (scope == 'website') {
-				let date = data.date;
-				let expiration = data.expiration;
+			if (website_ann.date != null) {
+				let date = website_ann.date;
+				let expiration = website_ann.expiration;
 
 				const currentDate = new Date();
 				const year = currentDate.getFullYear().toString().slice(-2);
@@ -128,8 +128,8 @@ function checkAnnouncements() {
 				const now = `${year}.${month}${day}`;
 
 				if (now >= date) {
-					let announcement = data.announcement;
-					let type = data.type;
+					let announcement = website_ann.announcement;
+					let type = website_ann.type;
 
 					if (expiration == 'none') {
 						const dismissed = sessionStorage.getItem(
