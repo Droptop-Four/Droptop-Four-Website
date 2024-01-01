@@ -1,254 +1,458 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="manifest prefetch" href="/manifest.json">
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon preload" type="image/webp" href="/img/DroptopFourLogo.webp" as="image" />
-        <meta name="theme-color" content="#4BD765" />
-        <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet prefetch" as="font"/>
-        <script src="https://kit.fontawesome.com/e8027f79c9.js" crossorigin="anonymous" ></script>
-        <meta name="description" content="Dropdown menu bar & app launcher for Windows & Rainmeter" />
-        <meta name="keywords" content="Rainmeter, Skin, Skins, Rainmeter-Skin, Rainmeter-Skins, Droptop, DroptopFour, Droptop-Four" />
-        <meta name="author" content="Bunz, Cariboudjan, Jax" />
-        <meta name="twitter:title" content="Droptop Four" />
-        <meta name="twitter:description" content="Dropdown menu bar & app launcher for Windows & Rainmeter" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
-        <meta name="twitter:image:alt" content="Droptop Four image" />
-        <meta property="og:title" content="Droptop Four" />
-        <meta property="og:image" content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:alt" content="Droptop Four image" />
-        <meta property="og:url" content="https://www.droptopfour.com" />
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link href="img/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="img/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="img/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-        <link href="img/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-        <link href="img/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="img/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-        <link href="img/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="img/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="img/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="img/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <title>Droptop Four</title>
-        <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-        <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-        <script type="text/javascript" charset="UTF-8">
-            document.addEventListener('DOMContentLoaded', function () {
-                cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Droptop Four","website_privacy_policy_url":"https://droptopfour.com/privacy-policy"});
-            });
-        </script>
-        <!-- Google Analytics -->
-        <script type="text/plain" data-cookie-consent="tracking"  src="https://www.googletagmanager.com/gtag/js?id=G-Y7LX6LXPRW"></script>
-        <script type="text/plain" data-cookie-consent="tracking">
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-Y7LX6LXPRW');
-        </script>
-        <!-- end of Google Analytics-->
-        <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
-        <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-        <link rel="stylesheet preload" href="/css/style.css" as="style" />
-    </head>
+	<head>
+		<link rel="manifest prefetch" href="/manifest.json" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon preload"
+			type="image/webp"
+			href="/img/DroptopFourLogo.webp"
+			as="image" />
+		<meta name="theme-color" content="#4BD765" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet prefetch"
+			as="font" />
+		<script
+			src="https://kit.fontawesome.com/e8027f79c9.js"
+			crossorigin="anonymous"></script>
+		<meta
+			name="description"
+			content="Dropdown menu bar & app launcher for Windows & Rainmeter" />
+		<meta
+			name="keywords"
+			content="Rainmeter, Skin, Skins, Rainmeter-Skin, Rainmeter-Skins, Droptop, DroptopFour, Droptop-Four" />
+		<meta name="author" content="Bunz, Cariboudjan, Jax" />
+		<meta name="twitter:title" content="Droptop Four" />
+		<meta
+			name="twitter:description"
+			content="Dropdown menu bar & app launcher for Windows & Rainmeter" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:image"
+			content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
+		<meta name="twitter:image:alt" content="Droptop Four image" />
+		<meta property="og:title" content="Droptop Four" />
+		<meta
+			property="og:image"
+			content="https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/Media-Kit/Banners/DroptopBanner3.webp" />
+		<meta property="og:image:type" content="image/webp" />
+		<meta property="og:image:alt" content="Droptop Four image" />
+		<meta property="og:url" content="https://www.droptopfour.com" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link
+			href="img/iphone5_splash.png"
+			media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/iphone6_splash.png"
+			media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/iphoneplus_splash.png"
+			media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/iphonex_splash.png"
+			media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/iphonexr_splash.png"
+			media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/iphonexsmax_splash.png"
+			media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/ipad_splash.png"
+			media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/ipadpro1_splash.png"
+			media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/ipadpro3_splash.png"
+			media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<link
+			href="img/ipadpro2_splash.png"
+			media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image" />
+		<title>Droptop Four</title>
+		<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+		<script
+			type="text/javascript"
+			src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+			charset="UTF-8"></script>
+		<script type="text/javascript" charset="UTF-8">
+			document.addEventListener('DOMContentLoaded', function () {
+				cookieconsent.run({
+					notice_banner_type: 'simple',
+					consent_type: 'express',
+					palette: 'dark',
+					language: 'en',
+					page_load_consent_levels: ['strictly-necessary'],
+					notice_banner_reject_button_hide: false,
+					preferences_center_close_button_hide: false,
+					page_refresh_confirmation_buttons: false,
+					website_name: 'Droptop Four',
+					website_privacy_policy_url:
+						'https://droptopfour.com/privacy-policy',
+				});
+			});
+		</script>
+		<!-- Google Analytics -->
+		<script
+			type="text/plain"
+			data-cookie-consent="tracking"
+			src="https://www.googletagmanager.com/gtag/js?id=G-Y7LX6LXPRW"></script>
+		<script type="text/plain" data-cookie-consent="tracking">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-Y7LX6LXPRW');
+		</script>
+		<!-- end of Google Analytics-->
+		<noscript>
+			Free cookie consent management tool by
+			<a class="test" href="https://www.termsfeed.com/">TermsFeed</a>
+		</noscript>
+		<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+		<link rel="stylesheet preload" href="/css/style.css" as="style" />
+	</head>
 
-    <body>
-        <header>
-            <a class="skip-to-main-content" href="#main-content"> Skip to main content </a>
-            <nav class="navbar">
-                <!-- LOGO -->
-                <div class="logo">
-                    <a href="/"><img src="/img/DroptopFourLogo.webp" alt="Droptop Four Logo" /></a>
-                </div>
-                <div class="site-name">
-                    <a href="/">
-                        <h4>Droptop Four</h4>
-                    </a>
-                </div>
-                <!-- NAVIGATION MENU -->
-                <ul class="nav-links">
-                    <!-- USING CHECKBOX HACK -->
-                    <input type="checkbox" id="checkbox_toggle" />
-                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                    <!-- NAVIGATION MENUS -->
-                    <div class="menu">
-                        <li><a class="nav-download" href="/download">Download</a></li>
-                        <li><a href="/community-apps">Community Apps</a></li>
-                        <li><a href="/community-themes">Community Themes</a></li>
-                        <li><a href="https://docs.droptopfour.com/help/faqs">FAQs</a></li>
-                        <li><a href="https://docs.droptopfour.com">Docs</a></li>
-                        <li><a href="/search"><i class="fa fa-search"></i></a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+	<body>
+		<header>
+			<a class="skip-to-main-content" href="#main-content">
+				Skip to main content
+			</a>
+			<nav class="navbar">
+				<!-- LOGO -->
+				<div class="logo">
+					<a href="/">
+						<img
+							src="/img/DroptopFourLogo.webp"
+							alt="Droptop Four Logo" />
+					</a>
+				</div>
+				<div class="site-name">
+					<a href="/">
+						<h4>Droptop Four</h4>
+					</a>
+				</div>
+				<!-- NAVIGATION MENU -->
+				<ul class="nav-links">
+					<!-- USING CHECKBOX HACK -->
+					<input type="checkbox" id="checkbox_toggle" />
+					<label for="checkbox_toggle" class="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="28"
+							fill="none"
+							viewBox="0 0 24 24">
+							<path
+								stroke="currentColor"
+								stroke-width="4"
+								stroke-linecap="round"
+								d="M2 4h20M2 14h20M2 24h20"></path>
+						</svg>
+					</label>
+					<!-- NAVIGATION MENUS -->
+					<div class="menu">
+						<li>
+							<a class="nav-download" href="/download">
+								Download
+							</a>
+						</li>
+						<li><a href="/community-apps">Community Apps</a></li>
+						<li>
+							<a href="/community-themes">Community Themes</a>
+						</li>
+						<li>
+							<a href="https://docs.droptopfour.com/help/faqs">
+								FAQs
+							</a>
+						</li>
+						<li><a href="https://docs.droptopfour.com">Docs</a></li>
+						<li>
+							<a href="/search"><i class="fa fa-search"></i></a>
+						</li>
+					</div>
+				</ul>
+			</nav>
+		</header>
 
-        <!-- <div class="bg-image"></div> -->
+		<!-- <div class="bg-image"></div> -->
 
-        <!-- Main Content -->
-        <main class="home-page">
-            
-            <section class="home-banner">
-                <div class="showcase-container">
-                    <img src="/img/Home.webp" alt="Droptop Screenshot"/>
-                    <div class="home-banner-text">
-                        <div class="home-banner-title">
-                            <h1>droptop four</h1>
-                            <h2>Dropdown menu bar & app launcher for Windows & Rainmeter</h2>
-                        </div>
+		<!-- Main Content -->
+		<main class="home-page">
 
-                        <div class="home-button-container">
-                            <button class="home-download-button" onclick="location.href='/download';" type="button">DOWNLOAD</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+			<section class="home-contents" id="main-content">
 
-            <div aria-hidden="true" class="body-divider" id="divider-1">
-                <hr />
-            </div>
+				<section class="home-banner">
+					<div class="showcase-container">
+						<img src="/img/Home.webp" alt="Droptop Screenshot" />
+						<div class="home-banner-text">
+							<div class="home-banner-title">
+								<h1>droptop four</h1>
+								<h2>
+									Dropdown menu bar & app launcher for Windows &
+									Rainmeter
+								</h2>
+							</div>
+	
+							<div class="home-button-container">
+								<button
+									class="home-download-button"
+									onclick="location.href='/download';"
+									type="button">
+									<i class="fa fa-download"></i>
+									DOWNLOAD
+									<!-- prettier-ignore -->
+									<p class="release-info" id="droptop-version">v</p>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+	
+				<div aria-hidden="true" class="body-divider" id="divider-1">
+					<hr />
+				</div>
 
-            <section class="home-contents" id="main-content">
-                <div class="home-container">
-                    <div class="droptop-info-1">
-                        <img class="image-block-1" src="/img/Image1.webp" alt="Droptop Screenshot" loading="lazy"/>
-                        <div class="text-block-c">
-                            <h1>Always show Droptop</h1>
-                            <!-- display: block -->
-                            <p>Droptop mimics the behavior of menu bars that exist on several other operating systems, floating above your windows to allow quick and easy access to your applications at all times</p>
-                            <p>Autohide and Desktop-Only modes are also available</p>
-                        </div>
-                    </div>
-                </div>
+				<div class="home-container">
+					<div class="droptop-info-1">
+						<img
+							class="image-block-1"
+							src="/img/Image1.webp"
+							alt="Droptop Screenshot"
+							loading="lazy" />
+						<div class="text-block-c">
+							<h1>Always show Droptop</h1>
 
-                <div aria-hidden="true" class="body-divider" id="divider-2">
-                    <hr />
-                </div>
+							<p>
+								Droptop mimics the behavior of menu bars that
+								exist on several other operating systems,
+								floating above your windows to allow quick and
+								easy access to your applications at all times
+							</p>
+							<p>
+								Autohide and Desktop-Only modes are also
+								available
+							</p>
+						</div>
+					</div>
+				</div>
 
-                <div class="home-container">
-                    <div class="droptop-info-2">
-                        <img class="image-block-2" src="/img/Image2.webp" alt="Droptop Screenshot" loading="lazy"/>
-                        <div class="text-block-r">
-                            <h1>Expandable dropdown menus & submenus</h1>
-                            <!-- display: block -->
-                            <p>Droptop allows you to catalog your applications into scrollable groups by taking directory, filename, and icon information directly from any specified folder, allowing easy adding and removing shortcuts, renaming, and icon support through Windows. Easily drag & drop your shortcuts into Droptop's folders to add shortcuts, or rename, delete, or change a shortcut's icon all through the standard Windows interface</p>
-                        </div>
-                    </div>
-                </div>
+				<div aria-hidden="true" class="body-divider" id="divider-2">
+					<hr />
+				</div>
 
-                <div aria-hidden="true" class="body-divider" id="divider-3">
-                    <hr />
-                </div>
+				<div class="home-container">
+					<div class="droptop-info-2">
+						<img
+							class="image-block-2"
+							src="/img/Image2.webp"
+							alt="Droptop Screenshot"
+							loading="lazy" />
+						<div class="text-block-r">
+							<h1>Expandable dropdown menus & submenus</h1>
 
-                <div class="home-container">
-                    <div class="droptop-info-3">
-                        <div class="slideshow-container-1">
-                            <div class="slideshow-container-2" id="slideshow-container">
-                                
-                            </div>
-                        </div>
+							<p>
+								Droptop allows you to catalog your applications
+								into scrollable groups by taking directory,
+								filename, and icon information directly from any
+								specified folder, allowing easy adding and
+								removing shortcuts, renaming, and icon support
+								through Windows. Easily drag & drop your
+								shortcuts into Droptop's folders to add
+								shortcuts, or rename, delete, or change a
+								shortcut's icon all through the standard Windows
+								interface
+							</p>
+						</div>
+					</div>
+				</div>
 
-                        <div class="text-block-s">
-                            <h1>Over 20 themes</h1>
-                            <!-- display: block -->
-                            <p>Choose from a selection of 22 premade themes and 1 custom theme that alter the look & feel of your desktop and dropdown menus</p>
-                        </div>
-                    </div>
-                </div>
+				<div aria-hidden="true" class="body-divider" id="divider-3">
+					<hr />
+				</div>
 
-                <div aria-hidden="true" class="body-divider" id="divider-4">
-                    <hr />
-                </div>
+				<div class="home-container">
+					<div class="droptop-info-3">
+						<div class="slideshow-container-1">
+							<div
+								class="slideshow-container-2"
+								id="slideshow-container"></div>
+						</div>
 
-                <div class="home-container">
-                    <div class="droptop-info-4">
-                        <img class="image-block-4" src="/img/Image3.webp" alt="Droptop Screenshot" loading="lazy"/>
-                        <div class="text-block-c">
-                            <h1>Droptop side apps</h1>
-                            <!-- display: block -->
-                            <p>Droptop comes pre-equipped with 15 unique apps, allowing quick and easy access to many necessary functions, as well as notifications for elements such as your Gmail inbox, current weather conditions, and more...</p>
-                        </div>
-                    </div>
-                </div>
+						<div class="text-block-s">
+							<h1>Over 20 themes</h1>
 
-                <div aria-hidden="true" class="body-divider" id="divider-5">
-                    <hr />
-                </div>
+							<p>
+								Choose from a selection of 22 premade themes and
+								1 custom theme that alter the look & feel of
+								your desktop and dropdown menus
+							</p>
+						</div>
+					</div>
+				</div>
 
-                <div class="home-container">
-                    <div class="droptop-info-5">
-                        <img class="image-block-5" src="/img/HomeButtons.webp" alt="Droptop Screenshot" loading="lazy"/>
-                        <div class="text-block-c">
-                            <h1>300 home buttons icons</h1>
-                            <!-- display: block -->
-                            <p>With the supporter version you can choose between 300 different home button icons</p>
-                        </div>
-                    </div>
-                </div>
+				<div aria-hidden="true" class="body-divider" id="divider-4">
+					<hr />
+				</div>
 
-                <div aria-hidden="true" class="body-divider" id="divider-6">
-                    <hr />
-                </div>
+				<div class="home-container">
+					<div class="droptop-info-4">
+						<img
+							class="image-block-4"
+							src="/img/Image3.webp"
+							alt="Droptop Screenshot"
+							loading="lazy" />
+						<div class="text-block-c">
+							<h1>Droptop side apps</h1>
 
-            <div class="home-container">
-                <div class="droptop-info-6">
-                    <img class="image-block-6" src="/img/Localization.webp" alt="Droptop Screenshot" loading="lazy"/>
-                    <div class="text-block-c">
-                        <h1>18+ different languages</h1>
-                        <!-- display: block -->
-                        <p>Thanks to community support, Droptop is available in many languages, including French, Spanish, Portuguese, German, Italian, Arabic, Japanese, and more...</p>
-                    </div>
-                </div>
+							<p>
+								Droptop comes pre-equipped with 15 unique apps,
+								allowing quick and easy access to many necessary
+								functions, as well as notifications for elements
+								such as your Gmail inbox, current weather
+								conditions, and more...
+							</p>
+						</div>
+					</div>
+				</div>
 
-                <div aria-hidden="true" class="body-divider" id="divider-7">
-                    <hr />
-                </div>
+				<div aria-hidden="true" class="body-divider" id="divider-5">
+					<hr />
+				</div>
 
-                <div class="discord-invite">
-                    <a href="https://discord.gg/wVeRPYbUNx" target="_blank">
-                        <img src="https://discordapp.com/api/guilds/800124057923485728/widget.png?style=banner3" alt="Discord Community Invite" loading="lazy"/>
-                    </a>
-                </div>
+				<div class="home-container">
+					<div class="droptop-info-5">
+						<img
+							class="image-block-5"
+							src="/img/HomeButtons.webp"
+							alt="Droptop Screenshot"
+							loading="lazy" />
+						<div class="text-block-c">
+							<h1>300 home buttons icons</h1>
 
-                <div aria-hidden="true" class="body-divider" id="divider-8">
-                    <hr />
-                </div>
-            </section>
-        </main>
-        <!-- Main Content End -->
+							<p>
+								With the supporter version you can choose
+								between 300 different home button icons
+							</p>
+						</div>
+					</div>
+				</div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="social">
-                <a href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007" target="_blank" aria-label="DeviantArt link"><i class="fa-brands fa-deviantart"></i></a>
-                <a href="https://github.com/Droptop-Four" target="_blank" aria-label="Github link"><i class="fa-brands fa-github"></i></a>
-                <a href="https://discord.gg/aGQ6uE4Fgp" target="_blank" aria-label="Discord link"><i class="fa-brands fa-discord"></i></a>
-            </div>
-            <ul class="list">
-                <li><a href="/download">Download</a></li>
-                <li><a href="/community-apps">Community Apps</a></li>
-                <li><a href="/community-themes">Community Themes</a></li>
-                <li><a href="https://docs.droptopfour.com/help/faqs">FAQs</a></li>
-                <li><a href="https://docs.droptopfour.com">Docs</a></li>
-            </ul>
-            <ul class="list">
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                <li><a  href="#" id="open_preferences_center">Update cookies preferences</a></li>
-            </ul>
-            <p class="copyright"> &copy; Droptop Four 2018-2023 </p>
-        </footer>
-        <!-- Footer End -->
+				<div aria-hidden="true" class="body-divider" id="divider-6">
+					<hr />
+				</div>
 
-        <!-- Scroll to top Button -->
-        <button onclick="topFunction()" class="scroll-to-top" id="scroll-to-top" title="Scroll to the top"><i class="fa-solid fa-up-long"></i></button>
-        <!-- Scroll to top Button End -->
+				<div class="home-container">
+					<div class="droptop-info-6">
+						<img
+							class="image-block-6"
+							src="/img/Localization.webp"
+							alt="Droptop Screenshot"
+							loading="lazy" />
+						<div class="text-block-c">
+							<h1>22+ different languages</h1>
 
-        <!-- Script -->
-        <script src="/js/main.js"></script>
-        <script src="/js/home.js"></script>
-        <!-- Script End -->
-    </body>
+							<p>
+								Thanks to community support, Droptop is
+								available in many languages, including French,
+								Spanish, Portuguese, German, Italian, Arabic,
+								Japanese, and more...
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div aria-hidden="true" class="body-divider" id="divider-7">
+					<hr />
+				</div>
+
+				<div class="discord-invite">
+					<a href="https://discord.gg/wVeRPYbUNx" target="_blank">
+						<img
+							src="https://discordapp.com/api/guilds/800124057923485728/widget.png?style=banner3"
+							alt="Discord Community Invite"
+							loading="lazy" />
+					</a>
+				</div>
+
+				<div aria-hidden="true" class="body-divider" id="divider-8">
+					<hr />
+				</div>
+			</section>
+		</main>
+		<!-- Main Content End -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="social">
+				<a
+					href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007"
+					target="_blank"
+					aria-label="DeviantArt link">
+					<i class="fa-brands fa-deviantart"></i>
+				</a>
+				<a
+					href="https://github.com/Droptop-Four"
+					target="_blank"
+					aria-label="Github link">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a
+					href="https://discord.gg/aGQ6uE4Fgp"
+					target="_blank"
+					aria-label="Discord link">
+					<i class="fa-brands fa-discord"></i>
+				</a>
+			</div>
+			<ul class="list">
+				<li><a href="/download">Download</a></li>
+				<li><a href="/community-apps">Community Apps</a></li>
+				<li><a href="/community-themes">Community Themes</a></li>
+				<li>
+					<a href="https://docs.droptopfour.com/help/faqs">FAQs</a>
+				</li>
+				<li><a href="https://docs.droptopfour.com">Docs</a></li>
+			</ul>
+			<ul class="list">
+				<li><a href="/privacy-policy">Privacy Policy</a></li>
+				<li>
+					<a href="#" id="open_preferences_center">
+						Update cookies preferences
+					</a>
+				</li>
+			</ul>
+			<p class="copyright">&copy; Droptop Four 2018-2023</p>
+		</footer>
+		<!-- Footer End -->
+
+		<!-- Scroll to top Button -->
+		<button
+			onclick="topFunction()"
+			class="scroll-to-top"
+			id="scroll-to-top"
+			title="Scroll to the top">
+			<i class="fa-solid fa-up-long"></i>
+		</button>
+		<!-- Scroll to top Button End -->
+
+		<!-- Script -->
+		<script src="/js/main.js"></script>
+		<script src="/js/home.js"></script>
+		<script src="/js/version.js"></script>
+		<!-- Script End -->
+	</body>
 </html>

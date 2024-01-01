@@ -1,0 +1,12 @@
+@mixin border-radius-mixin($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+}
+
+@mixin blur-mixin($opacity, $backdrop) {
+    -webkit-backdrop-filter: blur($backdrop);
+    backdrop-filter: blur($backdrop);
+    background-color: rgba(13, 13, 17, $opacity);
+}

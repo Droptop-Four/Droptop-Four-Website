@@ -1,0 +1,74 @@
+/* ----- FOOTER ----- */
+
+.footer {
+	z-index: 999;
+	left: 50%;
+	width: 100%;
+	width: 98%;
+	max-width: 2500px;
+	min-height: 100%;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 1%;
+	margin-left: auto;
+	padding: 10px 0;
+	@include blur-mixin(0.8, 1px);
+	@include border-radius-mixin(15px);
+}
+
+.footer .social {
+	padding-bottom: 5px;
+	color: $secondary-text-color;
+	text-align: center;
+}
+
+.footer .social a {
+	display: inline-block;
+	opacity: 0.5;
+	width: 28px;
+	height: 28px;
+	margin: 0 8px;
+	border: 1px solid $secondary-text-color;
+	color: $secondary-text-color;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	@include border-radius-mixin(50%);
+}
+
+.footer .social a:hover {
+	opacity: 0.9;
+}
+
+.footer .list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+	color: $secondary-text-color;
+	font-size: 12px;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.footer ul li a {
+	opacity: 0.8;
+	color: $secondary-text-color;
+	text-decoration: none;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.footer ul li a:hover {
+	opacity: 1;
+}
+
+.footer .copyright {
+	margin-top: 5px;
+	color: $secondary-text-color;
+	font-size: 10px;
+	text-align: center;
+}
