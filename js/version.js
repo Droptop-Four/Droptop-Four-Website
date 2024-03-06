@@ -7,7 +7,7 @@ const versiontag = document.getElementById('droptop-version');
 async function getVersion() {
 	try {
 		let result = await fetch(
-			'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/version.json'
+			'https://api.droptopfour.com/v1/version'
 		);
 		let data = await result.json();
 		version = data.version;
