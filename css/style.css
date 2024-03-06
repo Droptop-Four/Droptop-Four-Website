@@ -1435,6 +1435,14 @@ input[type=checkbox] {
   transition: 0.3s ease;
 }
 
+.download-counter {
+  align-self: center;
+  margin-bottom: 20px;
+  color: #b0b2b8;
+  font-size: 20px;
+  text-align: center;
+}
+
 .download-card-infos {
   height: 30px;
   margin-bottom: 30px;
