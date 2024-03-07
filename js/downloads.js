@@ -11,8 +11,8 @@ async function getDownloads() {
 		let data = await result.json();
 		let downloads = data.basic_downloads;
 		let sales = data.supporter_downloads;
-		downloadstag.innerHTML += `<a>${downloads}</a> downloads `;
-		salestag.innerHTML += `<a>${sales}</a> downloads`;
+		downloadstag.innerHTML += `Downloaded ${downloads} times`;
+		salestag.innerHTML += `Downloaded ${sales} times`;
 	} catch (error) {
 		console.log(error);
 	}

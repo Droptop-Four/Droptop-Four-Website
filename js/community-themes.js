@@ -170,7 +170,7 @@ class DisplayThemes {
 					<h3 class="theme-card-name">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
 					<p class="theme-card-desc">${item.desc}</p>
-					<p class="theme-card-downloads">${item.downloads} downloads</p>
+					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="theme-card-buttons">
 						<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 					</div>
@@ -194,7 +194,7 @@ class DisplayThemes {
 					<h3 class="theme-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
 					<p class="theme-card-desc">${item.desc}</p>
-					<p class="theme-card-downloads">${item.downloads} downloads</p>
+					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="theme-card-buttons">
 						<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
@@ -215,7 +215,7 @@ class DisplayThemes {
 					<h3 class="theme-card-name">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
 					<p class="theme-card-desc">${item.desc}</p>
-					<p class="theme-card-downloads">${item.downloads} downloads</p>
+					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="theme-card-buttons">
 						<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
@@ -239,7 +239,7 @@ class DisplayThemes {
 						<h3 class="theme-card-name">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
 						<p class="theme-card-desc">${item.desc}</p>
-						<p class="theme-card-downloads">${item.downloads} downloads</p>
+						<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
 						<div class="theme-card-buttons">
 							<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						</div>
@@ -263,7 +263,7 @@ class DisplayThemes {
 						<h3 class="theme-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
 						<p class="theme-card-desc">${item.desc}</p>
-						<p class="theme-card-downloads">${item.downloads} downloads</p>
+						<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
 						<div class="theme-card-buttons">
 							<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 							<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
@@ -284,7 +284,7 @@ class DisplayThemes {
 						<h3 class="theme-card-name">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
 						<p class="theme-card-desc">${item.desc}</p>
-						<p class="theme-card-downloads">${item.downloads} downloads</p>
+						<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
 						<div class="theme-card-buttons">
 							<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 							<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>

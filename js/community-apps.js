@@ -171,7 +171,7 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
-				  <p class="app-card-downloads">${item.downloads} downloads</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                   </div>
@@ -196,7 +196,7 @@ class DisplayApps {
 					<p class="app-card-version">v${item.version}</p>
 					<p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
 					<p class="app-card-desc">${item.desc}</p>
-					<p class="app-card-downloads">${item.downloads} downloads</p>
+					<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="app-card-buttons">
 						<a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
@@ -218,7 +218,7 @@ class DisplayApps {
 					<p class="app-card-version">v${item.version}</p>
 					<p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
 					<p class="app-card-desc">${item.desc}</p>
-					<p class="app-card-downloads">${item.downloads} downloads</p>
+					<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="app-card-buttons">
 						<a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
@@ -243,7 +243,7 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
-				  <p class="app-card-downloads">${item.downloads} downloads</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                   </div>
@@ -268,7 +268,7 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
-				  <p class="app-card-downloads">${item.downloads} downloads</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                       <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
@@ -290,7 +290,7 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
-				  <p class="app-card-downloads">${item.downloads} downloads</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                       <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
