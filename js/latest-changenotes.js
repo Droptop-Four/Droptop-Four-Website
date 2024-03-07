@@ -8,11 +8,11 @@ class Changenotes {
 	async Items() {
 		try {
 			let result = await fetch(
-				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/changelog.json'
+				'https://api.droptopfour.com/v1/changelog'
 			);
 			let data = await result.json();
 
-			let changenotesItems = data.changelog;
+			let changenotesItems = data;
 
 			if (changenotesItems.length > 0) {
 				const { version, new_features, modifications, bug_fixes } =

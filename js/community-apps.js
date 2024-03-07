@@ -20,18 +20,32 @@ function convertToRawGitHubURL(githubURL) {
 let displayapps;
 
 class Apps {
+	async getDownloads(uuid) {
+		try {
+			const result = await fetch(
+				`https://api.droptopfour.com/v1/downloads/community-apps/${uuid}`
+			);
+			const data = await result.json();
+			return data.downloads;
+		} catch (error) {
+			console.error('Error fetching downloads:', error);
+			return 0; // Default to 0 if there's an error
+		}
+	}
+
 	async Items() {
 		try {
 			let result = await fetch(
-				'https://raw.githubusercontent.com/Droptop-Four/GlobalData/main/data/community_apps/community_apps.json'
+				'https://api.droptopfour.com/v1/community-apps'
 			);
 			let data = await result.json();
 
-			let appsItems = data.apps;
+			let appsItems = data;
 
 			const fetchAppsPromises = appsItems.map(async (item) => {
 				const {
 					id,
+					uuid,
 					name,
 					author,
 					author_link,
@@ -47,8 +61,10 @@ class Apps {
 
 				if (item.app.official_link == '') {
 					const readmeExists = false;
+					const downloads = await this.getDownloads(item.app.uuid);
 					return {
 						id,
+						uuid,
 						name,
 						author,
 						author_link,
@@ -61,6 +77,7 @@ class Apps {
 						hidden,
 						changelog,
 						readmeExists,
+						downloads,
 					};
 				} else {
 					const rawBaseURL = convertToRawGitHubURL(
@@ -72,8 +89,12 @@ class Apps {
 							`${rawBaseURL}/main/README.md`
 						);
 						const readmeExists = response.status === 200;
+						const downloads = await this.getDownloads(
+							item.app.uuid
+						);
 						return {
 							id,
+							uuid,
 							name,
 							author,
 							author_link,
@@ -86,11 +107,16 @@ class Apps {
 							hidden,
 							changelog,
 							readmeExists,
+							downloads,
 						};
 					} catch (error) {
 						const readmeExists = false;
+						const downloads = await this.getDownloads(
+							item.app.uuid
+						);
 						return {
 							id,
+							uuid,
 							name,
 							author,
 							author_link,
@@ -103,6 +129,7 @@ class Apps {
 							hidden,
 							changelog,
 							readmeExists,
+							downloads,
 						};
 					}
 				}
@@ -144,8 +171,9 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
-                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                   </div>
                 </div>  
               </div>
@@ -168,8 +196,9 @@ class DisplayApps {
 					<p class="app-card-version">v${item.version}</p>
 					<p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
 					<p class="app-card-desc">${item.desc}</p>
+					<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="app-card-buttons">
-						<a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+						<a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
 					</div>
 					</div>  
@@ -189,8 +218,9 @@ class DisplayApps {
 					<p class="app-card-version">v${item.version}</p>
 					<p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
 					<p class="app-card-desc">${item.desc}</p>
+					<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
 					<div class="app-card-buttons">
-						<a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+						<a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
 					</div>
 					</div>  
@@ -213,8 +243,9 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
-                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                   </div>
                 </div>  
               </div>
@@ -237,8 +268,9 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link" href="${item.author_link}">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
-                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                       <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
                   </div>
                 </div>  
@@ -258,8 +290,9 @@ class DisplayApps {
                   <p class="app-card-version">v${item.version}</p>
                   <p class="app-card-author">Created by <a class="app-card-author-link">${item.author}</a></p>
                   <p class="app-card-desc">${item.desc}</p>
+				  <p class="app-card-downloads">Downloaded ${item.downloads} times</p>
                   <div class="app-card-buttons">
-                      <a class="app-card-button bold" href="${item.direct_download_link}">Download</a>
+                      <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
                       <a class="app-card-button" href="${item.official_link}" target="_blank">See on Github</a>
                   </div>
                 </div>  
@@ -465,6 +498,16 @@ function disableScroll() {
 
 function enableScroll() {
 	document.head.querySelector('style')?.remove();
+}
+
+// ---- DOWNLOAD APP ----
+
+function downloadApp(uuid, link) {
+	window.open(link);
+
+	fetch(`https://api.droptopfour.com/v1/downloads/community-apps/${uuid}`, {
+		method: 'POST',
+	});
 }
 
 // ---- MAIN ----

@@ -12,16 +12,16 @@ const search_bar = document.getElementById('searchbar');
 
 (async () => {
 	const apps_url =
-		'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_apps/community_apps.json';
+		'https://api.droptopfour.com/v1/community-apps';
 	const themes_url =
-		'https://raw.githubusercontent.com/Droptop-Four/GlobalData/v3/data/community_themes/community_themes.json';
+		'https://api.droptopfour.com/v1/community-themes';
 
 	const apps_response = await fetch(apps_url);
 	const themes_response = await fetch(themes_url);
 	const apps_json = await apps_response.json();
 	const themes_json = await themes_response.json();
 
-	const apps_items = apps_json.apps;
+	const apps_items = apps_json;
 	const themes_items = themes_json.themes;
 
 	if (search_query) {
@@ -60,8 +60,7 @@ const search_bar = document.getElementById('searchbar');
 		const nameA = (a.app ? a.app.name : a.theme.name).toLowerCase();
 		const nameB = (b.app ? b.app.name : b.theme.name).toLowerCase();
 		return nameA.localeCompare(nameB);
-	  });
-;
+	});
 	const searchList = document.getElementById('searchList');
 
 	let result = '';
@@ -90,7 +89,7 @@ const search_bar = document.getElementById('searchbar');
         `;
 		} else {
 			let selected_theme = item.theme;
-			
+
 			result += `
               <div>
                 <div class="theme-card" id="${selected_theme.id}" onclick="window.location='https://droptopfour.com/community-themes?id=${selected_theme.id}';" style="cursor: pointer;">

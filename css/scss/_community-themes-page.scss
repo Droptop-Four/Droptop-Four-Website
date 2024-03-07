@@ -109,6 +109,55 @@
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
+.theme-card-share {
+	z-index: 100;
+	color: $accents-text-color;
+	font-size: 20px;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	cursor: pointer;
+}
+
+.tooltip {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.tooltip .tooltiptext {
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1;
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	width: 140px;
+	margin-left: -75px;
+	padding: 5px;
+	border-style: solid;
+	border-color: $accents-text-color-3;
+	border-radius: 6px;
+	color: $accents-text-color;
+	text-align: center;
+	background-color: $main-bg-color;
+	transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #43ff664d transparent transparent transparent;
+	content: "";
+}
+  
+.tooltip:hover .tooltiptext {
+	opacity: 1;
+	visibility: visible;
+}
+
 .theme-card-image {
 	width: 80%;
 	height: auto;
@@ -134,6 +183,11 @@
 	color: $main-text-color;
 	line-height: 1.4;
 	text-align: center;
+	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+}
+
+.theme-card-downloads {
+	color: $secondary-text-color;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 

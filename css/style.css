@@ -1435,6 +1435,22 @@ input[type=checkbox] {
   transition: 0.3s ease;
 }
 
+.download-counter {
+  align-self: center;
+  margin-bottom: 30px;
+  color: #b0b2b8;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sales-counter {
+  align-self: center;
+  margin-bottom: 30px;
+  color: #b0b2b8;
+  font-size: 20px;
+  text-align: center;
+}
+
 .download-card-infos {
   height: 30px;
   margin-bottom: 30px;
@@ -1908,6 +1924,13 @@ input[type=checkbox] {
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
+.app-card-downloads {
+  opacity: 0.5;
+  margin-bottom: 10px;
+  color: #b0b2b8;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
+}
+
 .app-card-buttons {
   padding: 0 5px;
 }
@@ -2082,6 +2105,55 @@ input[type=checkbox] {
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
+.theme-card-share {
+  z-index: 100;
+  color: #43ff64;
+  font-size: 20px;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  width: 140px;
+  margin-left: -75px;
+  padding: 5px;
+  border-style: solid;
+  border-color: #155b22;
+  border-radius: 6px;
+  color: #43ff64;
+  text-align: center;
+  background-color: #181820;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(67, 255, 102, 0.3019607843) transparent transparent transparent;
+  content: "";
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+  visibility: visible;
+}
+
 .theme-card-image {
   width: 80%;
   height: auto;
@@ -2108,6 +2180,11 @@ input[type=checkbox] {
   color: #ffffff;
   line-height: 1.4;
   text-align: center;
+  text-shadow: 2px 2px 6px rgb(17, 13, 13);
+}
+
+.theme-card-downloads {
+  color: #b0b2b8;
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
