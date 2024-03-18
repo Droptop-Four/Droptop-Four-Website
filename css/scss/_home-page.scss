@@ -34,12 +34,12 @@
 
 .showcase-container img {
 	-o-object-fit: cover;
-	-o-object-position: right top;
+	-o-object-position: left top;
 	object-fit: cover;
-	object-position: right top;
+	object-position: left top;
 	width: 100%;
 	height: 600px;
-	filter: brightness(70%);
+	filter: brightness(60%);
 	@include border-radius-mixin($border-radius);
 }
 
