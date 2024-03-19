@@ -26,7 +26,11 @@ class Apps {
 				`https://api.droptopfour.com/v1/downloads/community-apps/${uuid}`
 			);
 			const data = await result.json();
-			return data.downloads;
+			if (data.downloads == undefined) {
+				return 0;
+			} else {
+				return data.downloads;
+			}
 		} catch (error) {
 			console.error('Error fetching downloads:', error);
 			return 0; // Default to 0 if there's an error
