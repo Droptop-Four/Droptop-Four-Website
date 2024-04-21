@@ -516,6 +516,16 @@ function downloadApp(uuid, link) {
 
 // ---- MAIN ----
 
+function HideBufferingIcon() {
+	const bufferingIcon = document.getElementById('buffering');
+	bufferingIcon.style.display = 'none';
+}
+
+function EnableSelect() {
+	const sortCriteria = document.getElementById('sort-criteria');
+	sortCriteria.removeAttribute('disabled');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	const apps = new Apps();
 	displayapps = new DisplayApps();
@@ -525,5 +535,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			displayapps.setApps(apps);
 			displayapps.sortApps();
 		})
+		.then(HideBufferingIcon)
+		.then(EnableSelect)
 		.then(Scroll);
 });

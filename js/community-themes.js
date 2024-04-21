@@ -510,6 +510,16 @@ function downloadTheme(uuid, link) {
 
 // ---- MAIN ----
 
+function HideBufferingIcon() {
+	const bufferingIcon = document.getElementById('buffering');
+	bufferingIcon.style.display = 'none';
+}
+
+function EnableSelect() {
+	const sortCriteria = document.getElementById('sort-criteria');
+	sortCriteria.removeAttribute('disabled');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	const themes = new Themes();
 	displaythemes = new DisplayThemes();
@@ -520,5 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			displaythemes.setThemes(themes);
 			displaythemes.sortThemes();
 		})
+		.then(HideBufferingIcon)
+		.then(EnableSelect)
 		.then(Scroll);
 });

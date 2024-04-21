@@ -54,6 +54,15 @@
 	}
 }
 
+.buffering-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	color: $accents-text-color;
+	text-align: center;
+}
+
 .appsList {
 	grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
 	display: grid;

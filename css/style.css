@@ -1788,6 +1788,15 @@ input[type=checkbox] {
   background-color: #b0b2b8;
 }
 
+.buffering-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #43ff64;
+  text-align: center;
+}
+
 .appsList {
   grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
   display: grid;
@@ -2051,6 +2060,15 @@ input[type=checkbox] {
   border-radius: 8px;
   font-size: 15px;
   background-color: #b0b2b8;
+}
+
+.buffering-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #43ff64;
+  text-align: center;
 }
 
 .themesList {
