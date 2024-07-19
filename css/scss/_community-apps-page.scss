@@ -38,7 +38,7 @@
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	
+
 	label {
 		color: $accents-text-color;
 	}
@@ -86,8 +86,8 @@
 	border-color: $accents-text-color-3;
 	text-align: center;
 	background-color: rgba(67, 255, 100, 0.15);
-    box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
-    transform: translateX(-50%);
+	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	transform: translateX(-50%);
 }
 
 .app-card:hover {
@@ -121,13 +121,13 @@
 	cursor: pointer;
 }
 
-.tooltip {
+.tooltip-share {
 	position: absolute;
 	top: 15px;
 	right: 15px;
 }
 
-.tooltip .tooltiptext {
+.tooltip-share .tooltiptext-share {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 1;
@@ -145,8 +145,8 @@
 	background-color: $main-bg-color;
 	transition: opacity 0.3s;
 }
-  
-.tooltip .tooltiptext::after {
+
+.tooltip-share .tooltiptext-share::after {
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -156,8 +156,8 @@
 	border-color: #43ff664d transparent transparent transparent;
 	content: "";
 }
-  
-.tooltip:hover .tooltiptext {
+
+.tooltip-share:hover .tooltiptext-share {
 	opacity: 1;
 	visibility: visible;
 }
@@ -197,11 +197,34 @@
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
 }
 
+.tooltip-downloads {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted #b0b2b880;
+
+	.tooltiptext-downloads {
+		visibility: hidden;
+		padding: 5px 0;
+		border-radius: 6px;
+		color: $secondary-text-color;
+		text-align: center;
+		background-color: $main-bg-color;
+		width: 200px;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -100px;
+		position: absolute;
+		z-index: 1;
+	}
+}
+
 .app-card-downloads {
-	opacity: 0.5;
-	margin-bottom: 10px;
-	color: $secondary-text-color;
+	color: #b0b2b880;
 	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+}
+
+.tooltip-downloads:hover .tooltiptext-downloads {
+	visibility: visible;
 }
 
 .app-card-buttons {
@@ -245,7 +268,6 @@
 }
 
 @media screen and (max-width: 1160px) {
-
 	.community-apps-banner {
 		padding-top: 80px;
 	}
@@ -261,7 +283,7 @@
 
 @media screen and (max-width: 480px) {
 	.app-making p {
-		width: 90%
+		width: 90%;
 	}
 
 	.app-card {

@@ -1856,13 +1856,13 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-.tooltip {
+.tooltip-share {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.tooltip .tooltiptext {
+.tooltip-share .tooltiptext-share {
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -1881,7 +1881,7 @@ input[type=checkbox] {
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-share .tooltiptext-share::after {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -1892,7 +1892,7 @@ input[type=checkbox] {
   content: "";
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-share:hover .tooltiptext-share {
   opacity: 1;
   visibility: visible;
 }
@@ -1933,11 +1933,33 @@ input[type=checkbox] {
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
-.app-card-downloads {
-  opacity: 0.5;
-  margin-bottom: 10px;
+.tooltip-downloads {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(176, 178, 184, 0.5019607843);
+}
+.tooltip-downloads .tooltiptext-downloads {
+  visibility: hidden;
+  padding: 5px 0;
+  border-radius: 6px;
   color: #b0b2b8;
+  text-align: center;
+  background-color: #181820;
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.app-card-downloads {
+  color: rgba(176, 178, 184, 0.5019607843);
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
+}
+
+.tooltip-downloads:hover .tooltiptext-downloads {
+  visibility: visible;
 }
 
 .app-card-buttons {
@@ -2137,7 +2159,7 @@ input[type=checkbox] {
   right: 15px;
 }
 
-.tooltip .tooltiptext {
+.tooltip-share .tooltiptext-share {
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -2156,7 +2178,7 @@ input[type=checkbox] {
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-share .tooltiptext-share::after {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -2167,7 +2189,7 @@ input[type=checkbox] {
   content: "";
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-share:hover .tooltiptext-share {
   opacity: 1;
   visibility: visible;
 }
@@ -2201,9 +2223,33 @@ input[type=checkbox] {
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
+.tooltip-downloads {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(176, 178, 184, 0.5019607843);
+}
+.tooltip-downloads .tooltiptext-downloads {
+  visibility: hidden;
+  padding: 5px 0;
+  border-radius: 6px;
+  color: #b0b2b8;
+  text-align: center;
+  background-color: #181820;
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  z-index: 1;
+}
+
 .theme-card-downloads {
   color: #b0b2b8;
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
+}
+
+.tooltip-downloads:hover .tooltiptext-downloads {
+  visibility: visible;
 }
 
 .theme-card-buttons {
