@@ -353,10 +353,10 @@ class DisplayThemes {
 				this.themes.sort((a, b) => a.version.localeCompare(b.version));
 				break;
 			case 'downloads':
-				this.themes.sort((a, b) => b.downloads - a.downloads);
+				this.themes.sort((a, b) => a.downloads - b.downloads);
 				break;
 			case 'downloads_reverse':
-				this.themes.sort((a, b) => a.downloads - b.downloads);
+				this.themes.sort((a, b) => b.downloads - a.downloads);
 				break;
 			case 'type':
 				this.themes.sort((a, b) => a.type.localeCompare(b.type));

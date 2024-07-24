@@ -1954,7 +1954,7 @@ input[type=checkbox] {
 }
 
 .app-card-downloads {
-  color: rgba(176, 178, 184, 0.5019607843);
+  color: #b0b2b880;
   text-shadow: 2px 2px 6px rgb(17, 13, 13);
 }
 
