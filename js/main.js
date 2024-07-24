@@ -19,13 +19,38 @@ function UpdateBase() {
 function Download(version) {
 	if (navigator.userAgent.indexOf('Win') != -1) {
 		if (version == 'base') {
-			DownloadBase();
+			RainmeterAlert();
 		} else {
 			DroptopAlert(version);
 		}
 	} else {
 		AgentAlert(version);
 	}
+}
+
+function RainmeterAlert() {
+	Swal.fire({
+		title: '<p class="download-alert-title" style="font-weight: 600; font-size: 2rem;">Rainmeter must be installed first!</p>',
+		html: '<p class="download-alert-text">Please download and install Rainmeter before installing Droptop Four.</p>',
+		icon: 'warning',
+		imageWidth: 100,
+		imageHeight: 100,
+		background: '#181820ee',
+		backdrop: 'rgba(0,0,0,0.4)',
+		confirmButtonColor: '#5AB05B',
+		confirmButtonText: 'I have it already',
+		showDenyButton: true,
+		denyButtonText: 'Get Rainmeter',
+		denyButtonColor: '#84858A',
+		reverseButtons: true,
+	}).then((result) => {
+		if (result.isConfirmed) {
+			DownloadBase();
+		} else if (result.isDenied) {
+			window.open('https://rainmeter.net', '_blank');
+			Swal.close();
+		}
+	});
 }
 
 function DroptopAlert(version) {
