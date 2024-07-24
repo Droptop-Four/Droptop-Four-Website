@@ -47,6 +47,7 @@ function RainmeterAlert() {
 		if (result.isConfirmed) {
 			DownloadBase();
 		} else if (result.isDenied) {
+			DownloadBase();
 			window.open('https://rainmeter.net', '_blank');
 			Swal.close();
 		}
