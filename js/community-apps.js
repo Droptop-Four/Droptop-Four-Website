@@ -361,10 +361,10 @@ class DisplayApps {
 				this.apps.sort((a, b) => a.version.localeCompare(b.version));
 				break;
 			case 'downloads':
-				this.apps.sort((a, b) => b.downloads - a.downloads);
+				this.apps.sort((a, b) => a.downloads - b.downloads);
 				break;
 			case 'downloads_reverse':
-				this.apps.sort((a, b) => a.downloads - b.downloads);
+				this.apps.sort((a, b) => b.downloads - a.downloads);
 				break;
 			case 'type':
 				this.apps.sort((a, b) => a.type.localeCompare(b.type));
