@@ -1,4 +1,5 @@
 /* ----- HOME PAGE ----- */
+@import 'mixins';
 
 .home-banner {
 	display: flex;
@@ -69,7 +70,7 @@
 	margin-bottom: 20px;
 	font-size: 75px;
 	text-align: center;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
+	text-shadow: 2px 2px 6px #110d0dcc;
 }
 
 .home-banner-title h2 {
@@ -80,7 +81,7 @@
 	color: $secondary-text-color;
 	font-size: 30px;
 	text-align: center;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
+	text-shadow: 2px 2px 6px #110d0dcc;
 }
 
 .home-button-container {
@@ -107,7 +108,7 @@
 	cursor: pointer;
 	background-color: $main-bg-color;
 	@include border-radius-mixin($border-radius);
-	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 8px 10px 0 #00000033, 0 6px 20px 0 #00000030;
 	transition: all 200ms linear;
 	transform: translateY(-50%);
 }
@@ -178,7 +179,7 @@
 	padding: 10px;
 	border-style: solid;
 	border-color: $accents-text-color;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: #000000b3;
 	transform: translate(-50%, -50%);
 	@include border-radius-mixin($border-radius);
 }
@@ -221,7 +222,7 @@
 	padding: 10px;
 	border-style: solid;
 	border-color: $accents-text-color;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: #000000b3;
 	transform: translate(-50%, -50%);
 	@include border-radius-mixin($border-radius);
 }
@@ -358,7 +359,7 @@
 	.prev:active,
 	.next:hover,
 	.next:active {
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: #000000cc;
 	}
 }
 
@@ -518,7 +519,7 @@
 		top: 0;
 		left: 50%;
 		border: none;
-		background-color: rgba(0, 0, 0, 0);
+		background-color: #00000000;
 		transform: translateX(-50%);
 	}
 
@@ -540,7 +541,7 @@
 		left: 50%;
 		width: 75%;
 		border: none;
-		background-color: rgba(0, 0, 0, 0);
+		background-color: #00000000;
 		transform: translateX(-50%);
 	}
 

@@ -61,7 +61,7 @@ class Apps {
 					image_url,
 					hidden,
 					changelog,
-					downloads
+					downloads,
 				} = item.app;
 
 				if (item.app.official_link == '') {
@@ -169,7 +169,7 @@ class DisplayApps {
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
 				  <div class="tooltip-share">
-					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="app-share-button" src="/icons/share.webp" /></a>
 				</div>
                   <a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
@@ -178,7 +178,7 @@ class DisplayApps {
                   <p class="app-card-desc">${item.desc}</p>
 				  <div class="tooltip-downloads">
 				  	<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
-					<span class="tooltiptext-downloads">The number is updated once a day</span>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
 				  </div>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
@@ -197,7 +197,7 @@ class DisplayApps {
 				<div class="app-card" id="${item.id}">
 					<div class="app-card-container">
 					<div class="tooltip-share">
-					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="app-share-button" src="/icons/share.webp" /></a>
 				</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="app-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
@@ -207,7 +207,7 @@ class DisplayApps {
 					<div class="tooltip-downloads">
 				  	<div class="tooltip-downloads">
 				  	<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
-					<span class="tooltiptext-downloads">The number is updated once a day</span>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
 				  </div>
 				  </div>
 					<div class="app-card-buttons">
@@ -224,7 +224,7 @@ class DisplayApps {
 				<div class="app-card" id="${item.id}">
 					<div class="app-card-container">
 					<div class="tooltip-share">
-					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="app-share-button" src="/icons/share.webp" /></a>
 				</div>
 					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="app-card-name">${item.name}</h3>
@@ -233,7 +233,7 @@ class DisplayApps {
 					<p class="app-card-desc">${item.desc}</p>
 					<div class="tooltip-downloads">
 				  	<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
-					<span class="tooltiptext-downloads">The number is updated once a day</span>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
 				  </div>
 					<div class="app-card-buttons">
 						<a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
@@ -252,7 +252,7 @@ class DisplayApps {
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
 				<div class="tooltip-share">
-					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="app-share-button" src="/icons/share.webp" /></a>
 				</div>
 				<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
@@ -261,7 +261,7 @@ class DisplayApps {
                   <p class="app-card-desc">${item.desc}</p>
 				  <div class="tooltip-downloads">
 				  	<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
-					<span class="tooltiptext-downloads">The number is updated once a day</span>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
 				  </div>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
@@ -280,7 +280,7 @@ class DisplayApps {
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
 				<div class="tooltip-share">
-					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="app-share-button" src="/icons/share.webp" /></a>
 				</div>
 				<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
@@ -289,7 +289,7 @@ class DisplayApps {
                   <p class="app-card-desc">${item.desc}</p>
 				  <div class="tooltip-downloads">
 				  	<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
-					<span class="tooltiptext-downloads">The number is updated once a day</span>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
 				  </div>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
@@ -305,7 +305,7 @@ class DisplayApps {
               <div class="app-card" id="${item.id}">
                 <div class="app-card-container">
 				<div class="tooltip-share">
-					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><i class="fa-regular fa-share-from-square"></i></a>
+					<a class="app-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="app-share-button" src="/icons/share.webp" /></a>
 				</div>
 				<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}'); return false" class="app-card-image" src="${item.image_url}" alt="${item.name} image"></a>
                   <h3 class="app-card-name">${item.name}</h3>
@@ -314,7 +314,7 @@ class DisplayApps {
                   <p class="app-card-desc">${item.desc}</p>
 				  <div class="tooltip-downloads">
 				  	<p class="app-card-downloads">Downloaded ${item.downloads} times</p>
-					<span class="tooltiptext-downloads">The number is updated once a day</span>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
 				  </div>
                   <div class="app-card-buttons">
                       <a class="app-card-button bold" href="javascript:void(0)" onclick="downloadApp('${item.uuid}', '${item.direct_download_link}')">Download</a>
@@ -544,7 +544,7 @@ function downloadApp(uuid, link) {
 // ---- MAIN ----
 
 function HideBufferingIcon() {
-	const bufferingIcon = document.getElementById('buffering');
+	const bufferingIcon = document.getElementById('apps-buffering');
 	bufferingIcon.style.display = 'none';
 }
 

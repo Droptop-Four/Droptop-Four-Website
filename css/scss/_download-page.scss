@@ -28,7 +28,7 @@
 
 .download-card {
 	-webkit-backdrop-filter: blur(5px);
-	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-box-shadow: 0 0 10px #43ff664d;
 	backdrop-filter: blur(5px);
 	display: flex;
 	flex-direction: column;
@@ -39,14 +39,14 @@
 	border-style: solid;
 	border-color: $accents-text-color-3;
 	text-align: center;
-    background-color: rgba(67, 255, 100, 0.15);
-    box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+    background-color: #43ff6426;
+    box-shadow: 0 0 10px #43ff664d;
 }
 
 .download-card:hover {
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px #43ff66;
 	border-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	box-shadow: 0 0 10px #43ff66;
 }
 
 .download-card-image img {
@@ -60,7 +60,7 @@
 	margin-left: 10%;
 	font-weight: bold;
 	text-align: left;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
+	text-shadow: 2px 2px 6px #110d0dcc;
 }
 
 .download-card-price {
@@ -69,7 +69,7 @@
 	color: $secondary-text-color;
 	font-size: 60px;
 	text-align: left;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
+	text-shadow: 2px 2px 6px #110d0dcc;
 }
 
 .download-card-price-supporter {
@@ -78,7 +78,7 @@
 	color: $accents-text-color;
 	font-size: 60px;
 	text-align: left;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
+	text-shadow: 2px 2px 6px #110d0dcc;
 }
 
 .download-button {
@@ -98,16 +98,16 @@
 }
 
 .download-button:hover {
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px #43ff66;
 	background-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	box-shadow: 0 0 10px #43ff66;
 	transition: 0.3s ease;
 }
 
 .download-button:active {
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px #43ff66;
 	background-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	box-shadow: 0 0 10px #43ff66;
 	transition: 0.3s ease;
 }
 
@@ -133,7 +133,7 @@
 	margin-left: 10%;
 	font-size: 20px;
 	text-align: left;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13, 0.8);
+	text-shadow: 2px 2px 6px #110d0dcc;
 }
 
 .download-update-container {

@@ -16,7 +16,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'droptop-four-cache-v1';
+const PRECACHE = 'droptop-four-cache-v2';
 const RUNTIME = 'droptop-four-runtime';
 
 // A list of local resources we always want to be cached.
@@ -27,8 +27,8 @@ const PRECACHE_URLS = [
 	'/css/style.css',
 	'/js/main.js',
 	'/js/home.js',
+	'/js/version.js',
 	'/img/DroptopFourLogo.webp',
-	'/img/help.webp',
 	'/img/Home.webp',
 	'/img/HomeButtons.webp',
 	'/img/Image1.webp',
@@ -37,7 +37,14 @@ const PRECACHE_URLS = [
 	'/img/Localization.webp',
 	'/img/Lock.webp',
 	'/img/Support.webp',
-	'/img/warning.webp',
+	'/img/Warning.webp',
+	'/icons/deviantart.webp',
+	'/icons/discord.webp',
+	'/icons/github.webp',
+	'/icons/loading.webp',
+	'/icons/search.webp',
+	'/icons/share.webp',
+	'/icons/up-arrow.webp',
 ];
 
 // The install handler takes care of precaching the resources we always need.

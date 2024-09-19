@@ -1,4 +1,5 @@
 /* ----- FOOTER ----- */
+@import 'mixins';
 
 .footer {
 	z-index: 999;
@@ -71,4 +72,10 @@
 	color: $secondary-text-color;
 	font-size: 10px;
 	text-align: center;
+}
+
+.social-icon {
+	height: 18px;
+	@include color-image-mixin("secondary");
+	margin-top: 4px;
 }

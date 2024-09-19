@@ -121,7 +121,7 @@ function scrollFunction() {
 		document.body.scrollTop > 600 ||
 		document.documentElement.scrollTop > 600
 	) {
-		mybutton.style.display = 'block';
+		mybutton.style.display = 'flex';
 	} else {
 		mybutton.style.display = 'none';
 	}

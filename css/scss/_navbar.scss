@@ -36,6 +36,11 @@
 	color: $accents-text-color;
 }
 
+.search-icon {
+	height: 18px;
+	@include color-image-mixin();
+}
+
 .logo img {
 	width: 50px;
 	height: auto;
@@ -69,6 +74,7 @@
 
 .menu li a {
 	padding: 5px 14px;
+	display: flex;
 }
 
 .nav-download {
@@ -84,9 +90,9 @@ input[type='checkbox'] {
 .hamburger {
 	-moz-user-select: none;
 	-ms-user-select: none;
-	   -webkit-user-select: none;
-	    display: none;
-	        z-index: 999;
+	-webkit-user-select: none;
+	display: none;
+	z-index: 999;
 	color: $accents-text-color;
 	cursor: pointer;
 	user-select: none;
@@ -116,6 +122,10 @@ input[type='checkbox'] {
 		padding: 20px 0;
 		text-align: center;
 		@include blur-mixin(0.95, 5px);
+	}
+
+	.menu li a {
+		display: inline;
 	}
 
 	.menu li a:hover {
