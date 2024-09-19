@@ -1,4 +1,5 @@
 /* ----- COMMUNITY THEMES PAGE ----- */
+@import 'mixins';
 
 .community-themes-banner {
 	display: flex;
@@ -58,13 +59,26 @@
 	}
 }
 
-.buffering-icon {
+#themes-buffering {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	align-content: center;
-	color: $accents-text-color;
-	text-align: center;
+}
+
+@-webkit-keyframes themes-spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes themes-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.themes-buffering-icon {
+	-webkit-animation: themes-spin 2s linear infinite;
+	animation: themes-spin 2s linear infinite;
+	@include color-image-mixin();
 }
 
 .themesList {
@@ -78,7 +92,7 @@
 
 .theme-card {
 	-webkit-backdrop-filter: blur(5px);
-	-webkit-box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	-webkit-box-shadow: 0 0 10px #43ff664d;
 	backdrop-filter: blur(5px);
 	position: relative;
 	left: 50%;
@@ -90,16 +104,16 @@
 	@include border-radius-mixin(25px);
 	font-family: arial;
 	text-align: center;
-	background-color: rgba(67, 255, 100, 0.15);
-	box-shadow: 0 0 10px rgba(67, 255, 102, 0.3);
+	background-color: #43ff6426;
+	box-shadow: 0 0 10px #43ff664d;
 	transform: translateX(-50%);
 }
 
 .theme-card:hover {
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px #43ff66;
 	border-color: $accents-text-color;
-	background-color: rgba(67, 255, 100, 0.3);
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	background-color: #43ff644d;
+	box-shadow: 0 0 10px #43ff66;
 }
 
 .theme-card-container {
@@ -115,15 +129,20 @@
 	font-weight: bold;
 	font-size: 30px;
 	text-transform: uppercase;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	text-shadow: 2px 2px 6px #110d0d;
 }
 
 .theme-card-share {
 	z-index: 100;
 	color: $accents-text-color;
 	font-size: 20px;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	text-shadow: 2px 2px 6px #110d0d;
 	cursor: pointer;
+}
+
+.theme-share-button {
+	height: 20px;
+	@include color-image-mixin();
 }
 
 .tooltip {
@@ -177,12 +196,12 @@
 
 .theme-card-author {
 	color: $secondary-text-color;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	text-shadow: 2px 2px 6px #110d0d;
 }
 
 .theme-card-author-link {
 	color: $secondary-text-color;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	text-shadow: 2px 2px 6px #110d0d;
 }
 
 .theme-card-desc {
@@ -192,7 +211,7 @@
 	color: $main-text-color;
 	line-height: 1.4;
 	text-align: center;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	text-shadow: 2px 2px 6px #110d0d;
 }
 
 .tooltip-downloads {
@@ -218,7 +237,7 @@
 
 .theme-card-downloads {
 	color: $secondary-text-color;
-	text-shadow: 2px 2px 6px rgba(17, 13, 13);
+	text-shadow: 2px 2px 6px #110d0d;
 }
 
 .tooltip-downloads:hover .tooltiptext-downloads {
@@ -239,7 +258,7 @@
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
-	background-color: rgba(24, 24, 32, 0.6);
+	background-color: #18182099;
 	@include border-radius-mixin(10px);
 }
 

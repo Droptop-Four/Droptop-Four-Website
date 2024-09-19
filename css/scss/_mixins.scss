@@ -10,3 +10,16 @@
     backdrop-filter: blur($backdrop);
     background-color: rgba(13, 13, 17, $opacity);
 }
+
+@mixin color-image-mixin($color: "accent") {
+    @if $color == "bg" {
+        filter: brightness(0) saturate(100%) invert(5%) sepia(7%) saturate(3256%) hue-rotate(201deg) brightness(94%) contrast(89%);
+        -webkit-filter: brightness(0) saturate(100%) invert(5%) sepia(7%) saturate(3256%) hue-rotate(201deg) brightness(94%) contrast(89%);
+    } @else if $color == "secondary" {
+        filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(171%) hue-rotate(187deg) brightness(91%) contrast(87%);
+        -webkit-filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(171%) hue-rotate(187deg) brightness(91%) contrast(87%);
+    } @else {
+        filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(676%) hue-rotate(55deg) brightness(103%) contrast(104%);
+        -webkit-filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(676%) hue-rotate(55deg) brightness(103%) contrast(104%);
+    }
+}

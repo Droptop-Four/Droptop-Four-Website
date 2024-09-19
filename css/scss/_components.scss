@@ -1,4 +1,5 @@
 /* ----- COMPONENTS ----- */
+@import 'mixins';
 
 .code {
 	overflow-wrap: break-word;
@@ -77,19 +78,23 @@
 	position: fixed;
 	right: 30px;
 	bottom: 20px;
-	padding: 15px;
+	padding: 17px 12px 17px 12px;
 	border: 2px solid $main-bg-color;
 	outline: none;
 	color: $main-bg-color;
 	font-size: 18px;
 	cursor: pointer;
-	background-color: $accents-text-color;
-	background-color: rgba(67, 255, 100, 0.9);
+	background-color: #43ff64e6;
 	@include border-radius-mixin(10px);
 }
 
 .scroll-to-top a {
 	color: $accents-text-color;
+}
+
+.up-arrow-icon {
+	height: 18px;
+	@include color-image-mixin("bg");
 }
 
 @media (hover: hover) {
@@ -98,6 +103,10 @@
 		border-color: $accents-text-color;
 		color: $accents-text-color;
 		background-color: $secondary-bg-color;
+		.up-arrow-icon {
+            height: 18px;
+            @include color-image-mixin();
+        }
 	}
 }
 
@@ -128,7 +137,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000000e6;
 }
 
 .image-modal-content {
@@ -163,9 +172,9 @@
 }
 
 .image-modal-close:hover {
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px #43ff66;
 	background-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	box-shadow: 0 0 10px #43ff66;
 	transition: 0.3s ease;
 }
 
@@ -180,11 +189,11 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000000cc;
 }
 
 .readme-modal-container {
-    -webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+    -webkit-box-shadow: 0 0 10px #43ff66;
     overscroll-behavior: contain;
     position: relative;
 	max-width: 90%;
@@ -194,7 +203,7 @@
 	overflow: auto;
 	color: white;
 	background-color: $main-bg-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	box-shadow: 0 0 10px #43ff66;
 }
 
 .readme-modal-container::-webkit-scrollbar {
@@ -286,8 +295,8 @@
 }
 
 .readme-modal-close:hover {
-	-webkit-box-shadow: 0 0 10px rgb(67, 255, 102);
+	-webkit-box-shadow: 0 0 10px #43ff66;
 	background-color: $accents-text-color;
-	box-shadow: 0 0 10px rgb(67, 255, 102);
+	box-shadow: 0 0 10px #43ff66;
 	transition: 0.3s ease;
 }
