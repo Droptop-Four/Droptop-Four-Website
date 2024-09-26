@@ -11,10 +11,8 @@ const selezionati = [];
 const search_bar = document.getElementById('searchbar');
 
 (async () => {
-	const apps_url =
-		'https://api.droptopfour.com/v1/community-apps';
-	const themes_url =
-		'https://api.droptopfour.com/v1/community-themes';
+	const apps_url = 'https://api.droptopfour.com/v1/community-apps';
+	const themes_url = 'https://api.droptopfour.com/v1/community-themes';
 
 	const apps_response = await fetch(apps_url);
 	const themes_response = await fetch(themes_url);
