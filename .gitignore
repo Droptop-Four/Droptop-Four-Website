@@ -1,3 +1,6 @@
 .vscode
 
 \.github
+
+# Python files for small tools to speed up some processes
+*.py
