@@ -11,16 +11,13 @@ const selezionati = [];
 const search_bar = document.getElementById('searchbar');
 
 (async () => {
-	const apps_url = 'https://api.droptopfour.com/v1/community-apps';
-	const themes_url = 'https://api.droptopfour.com/v1/community-themes';
+	const url = 'https://api.droptopfour.com/v1/community-creations';
 
-	const apps_response = await fetch(apps_url);
-	const themes_response = await fetch(themes_url);
-	const apps_json = await apps_response.json();
-	const themes_json = await themes_response.json();
+	const creations_response = await fetch(url);
+	const creations_json = await creations_response.json();
 
-	const apps_items = apps_json;
-	const themes_items = themes_json.themes;
+	const apps_items = creations_json.apps;
+	const themes_items = creations_json.themes;
 
 	if (search_query) {
 		let search_query = params.s.toLowerCase();
@@ -28,35 +25,37 @@ const search_bar = document.getElementById('searchbar');
 		search_bar.value = search_query;
 
 		for (let i in apps_items) {
-			const app = apps_items[i].app;
+			const app = apps_items[i];
 			if (app.hidden != 1) {
 				if (
 					app.name.toLowerCase().includes(search_query) ||
 					app.author.toLowerCase().includes(search_query) ||
 					app.desc.toLowerCase().includes(search_query)
 				) {
-					selezionati.push(apps_items[i]);
+					app.type = 'app';
+					selezionati.push(app);
 				}
 			}
 		}
 
 		for (let i in themes_items) {
-			const theme = themes_items[i].theme;
+			const theme = themes_items[i];
 			if (theme.hidden != 1) {
 				if (
 					theme.name.toLowerCase().includes(search_query) ||
 					theme.author.toLowerCase().includes(search_query) ||
 					theme.desc.toLowerCase().includes(search_query)
 				) {
-					selezionati.push(themes_items[i]);
+					theme.type = 'theme';
+					selezionati.push(theme);
 				}
 			}
 		}
 	}
 
 	selezionati.sort((a, b) => {
-		const nameA = (a.app ? a.app.name : a.theme.name).toLowerCase();
-		const nameB = (b.app ? b.app.name : b.theme.name).toLowerCase();
+		const nameA = (a ? a.name : a.name).toLowerCase();
+		const nameB = (b ? b.name : b.name).toLowerCase();
 		return nameA.localeCompare(nameB);
 	});
 	const searchList = document.getElementById('searchList');
@@ -66,8 +65,8 @@ const search_bar = document.getElementById('searchbar');
 	for (let i in selezionati) {
 		let item = selezionati[i];
 
-		if (item.app) {
-			let selected_app = item.app;
+		if (item.type == 'app') {
+			let selected_app = item;
 
 			result += `
         <div>
@@ -86,7 +85,7 @@ const search_bar = document.getElementById('searchbar');
         </div>
         `;
 		} else {
-			let selected_theme = item.theme;
+			let selected_theme = item;
 
 			result += `
               <div>
