@@ -613,6 +613,70 @@ input[type=checkbox] {
   transition: 0.3s ease;
 }
 
+.skeleton {
+  background-color: rgba(255, 255, 255, 0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+  animation: skeleton-pulse 1.2s infinite;
+}
+
+.skeleton-thumb {
+  height: 160px;
+  width: 80%;
+  border-radius: 8px;
+  margin: 20px auto 8px auto;
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+.skeleton-line {
+  height: 18px;
+  width: 60%;
+  margin: 12px auto;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+.skeleton-line.title {
+  height: 28px;
+  width: 50%;
+}
+
+.skeleton-line.meta {
+  width: 30%;
+}
+
+.skeleton-line.desc {
+  height: 14px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.skeleton-button {
+  height: 36px;
+  width: 120px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.015);
+  margin: 12px auto;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
 /* ----- 404 PAGE ----- */
 .p404-banner {
   display: flex;
@@ -1568,9 +1632,6 @@ input[type=checkbox] {
   align-items: center;
   align-content: center;
   margin-top: 10vh;
-}
-
-.update-contents {
   left: 50%;
   width: 90%;
   max-width: 2500px;
@@ -1814,25 +1875,6 @@ input[type=checkbox] {
   border-radius: 8px;
   font-size: 15px;
   background-color: #b0b2b8;
-}
-
-#apps-buffering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes apps-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.apps-buffering-icon {
-  animation: apps-spin 2s linear infinite;
-  filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(676%) hue-rotate(55deg) brightness(103%) contrast(104%);
-  -webkit-filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(676%) hue-rotate(55deg) brightness(103%) contrast(104%);
 }
 
 .appsList {
@@ -2126,25 +2168,6 @@ input[type=checkbox] {
   border-radius: 8px;
   font-size: 15px;
   background-color: #b0b2b8;
-}
-
-#themes-buffering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes themes-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.themes-buffering-icon {
-  animation: themes-spin 2s linear infinite;
-  filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(676%) hue-rotate(55deg) brightness(103%) contrast(104%);
-  -webkit-filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(676%) hue-rotate(55deg) brightness(103%) contrast(104%);
 }
 
 .themesList {
