@@ -34,20 +34,20 @@ function Download() {
 	setTimeout(Home, 15000);
 }
 
-function ManualDownload() {
-	if (variant == 'base') {
-		console.log('mirror base download');
-		window.location.href =
-			'https://storage.googleapis.com/droptopfour-bec1e.appspot.com/Droptop%20Basic%20Version.rmskin';
-	} else if (variant == 'update') {
-		console.log('mirror update download');
-		window.location.href =
-			'https://storage.googleapis.com/droptopfour-bec1e.appspot.com/Droptop%20Update.rmskin';
-	} else {
-		location.replace('../download');
-	}
-	setTimeout(Home, 15000);
-}
+// function ManualDownload() {
+// 	if (variant == 'base') {
+// 		console.log('mirror base download');
+// 		window.location.href =
+// 			'https://storage.googleapis.com/droptopfour-bec1e.appspot.com/Droptop%20Basic%20Version.rmskin';
+// 	} else if (variant == 'update') {
+// 		console.log('mirror update download');
+// 		window.location.href =
+// 			'https://storage.googleapis.com/droptopfour-bec1e.appspot.com/Droptop%20Update.rmskin';
+// 	} else {
+// 		location.replace('../download');
+// 	}
+// 	setTimeout(Home, 15000);
+// }
 
 function Home() {
 	location.replace('../');
