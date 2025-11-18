@@ -490,8 +490,22 @@ function closeImageModal() {
 function Scroll() {
 	const appElement = document.getElementById(id_query);
 	if (appElement) {
-		appElement.scrollIntoView();
+		try {
+			appElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		} catch {
+			appElement.scrollIntoView();
+		}
+		highlightTarget(appElement);
 	}
+}
+
+
+function highlightTarget(element, duration = 15000) {
+	if (!element) return;
+	element.classList.add('pulse', 'card-hover');
+	setTimeout(() => {
+		element.classList.remove('pulse', 'card-hover');
+	}, duration);
 }
 
 function disableScroll() {
