@@ -98,7 +98,6 @@
 }
 
 @media (hover: hover) {
-
     .scroll-to-top:hover,
     .scroll-to-top:active {
         border-color: $accents-text-color;
@@ -366,4 +365,22 @@
     100% {
         transform: translateX(300px);
     }
+}
+
+.pulse {
+    animation: pulse-animation 1s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgb(21, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+.card-hover {
+	border-color: $accents-text-color !important;
+	background-color: #43ff644d !important;
 }
