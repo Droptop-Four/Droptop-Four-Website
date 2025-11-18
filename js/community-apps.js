@@ -17,6 +17,24 @@ function convertToRawGitHubURL(githubURL) {
 	return rawURL;
 }
 
+function renderAppSkeletons(count = 6) {
+	const list = document.getElementById('appsList');
+	if (!list) return;
+	let s = '';
+	for (let i = 0; i < count; i++) {
+		s += `<div class="app-card skeleton" aria-hidden="true">
+			<div class="app-card-container">
+				<div class="app-card-image skeleton-thumb"></div>
+				<div class="app-card-name skeleton-line"></div>
+				<p class="app-card-version skeleton-line small"></p>
+				<p class="app-card-author skeleton-line small"></p>
+				<p class="app-card-desc skeleton-line desc"></p>
+			</div>
+		</div>`;
+	}
+	list.innerHTML = s;
+}
+
 let displayapps;
 
 class Apps {
@@ -120,7 +138,7 @@ class Apps {
 
 			return appsItemsWithReadme;
 		} catch (error) {
-			// console.log(error);
+			console.log(error);
 		}
 	}
 }
@@ -344,12 +362,12 @@ function copy_to_clipboard(id) {
 		'https://www.droptopfour.com/community-apps/?id=' + id
 	);
 
-	var tooltip = document.getElementById('TooltipShare' + id);
+	const tooltip = document.getElementById('TooltipShare' + id);
 	tooltip.innerHTML = 'Copied';
 }
 
 function out_function(id) {
-	var tooltip = document.getElementById('TooltipShare' + id);
+	const tooltip = document.getElementById('TooltipShare' + id);
 	tooltip.innerHTML = 'Copy to clipboard';
 }
 
@@ -477,7 +495,7 @@ function Scroll() {
 }
 
 function disableScroll() {
-	var node = document.createElement('style');
+	const node = document.createElement('style');
 	node.setAttribute('type', 'text/css');
 	node.textContent =
 		'html, body { height: auto ! important ; overflow: hidden ! important ; }';
@@ -500,26 +518,27 @@ function downloadApp(uuid, link) {
 
 // ---- MAIN ----
 
-function HideBufferingIcon() {
-	const bufferingIcon = document.getElementById('apps-buffering');
-	bufferingIcon.style.display = 'none';
-}
-
 function EnableSelect() {
 	const sortCriteria = document.getElementById('sort-criteria');
-	sortCriteria.removeAttribute('disabled');
+	if (sortCriteria) sortCriteria.removeAttribute('disabled');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+	renderAppSkeletons();
+
 	const apps = new Apps();
 	displayapps = new DisplayApps();
 
 	apps.Items()
 		.then((apps) => {
-			displayapps.setApps(apps);
-			displayapps.sortApps();
+			if (apps && Array.isArray(apps)) {
+				displayapps.setApps(apps);
+				displayapps.sortApps();
+			}
 		})
-		.then(HideBufferingIcon)
-		.then(EnableSelect)
-		.then(Scroll);
+		.catch((e) => console.error(e))
+		.finally(() => {
+			EnableSelect();
+			Scroll();
+		});
 });

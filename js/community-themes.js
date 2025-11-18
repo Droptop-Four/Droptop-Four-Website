@@ -17,6 +17,23 @@ function convertToRawGitHubURL(githubURL) {
 	return rawURL;
 }
 
+function renderThemeSkeletons(count = 6) {
+	const list = document.getElementById('themesList');
+	if (!list) return;
+	let s = '';
+	for (let i = 0; i < count; i++) {
+		s += `<div class="theme-card skeleton" aria-hidden="true">
+			<div class="theme-card-container">
+				<div class="theme-card-image skeleton-thumb"></div>
+				<div class="theme-card-name skeleton-line"></div>
+				<p class="theme-card-author skeleton-line small"></p>
+				<p class="theme-card-desc skeleton-line desc"></p>
+			</div>
+		</div>`;
+	}
+	list.innerHTML = s;
+}
+
 let displaythemes;
 
 class Themes {
@@ -120,7 +137,7 @@ class Themes {
 
 			return themesItemsWithReadme;
 		} catch (error) {
-			// console.log(error);
+			console.log(error);
 		}
 	}
 }
@@ -337,12 +354,12 @@ function copy_to_clipboard(id) {
 		'https://www.droptopfour.com/community-themes/?id=' + id
 	);
 
-	var tooltip = document.getElementById('myTooltip' + id);
+	const tooltip = document.getElementById('myTooltip' + id);
 	tooltip.innerHTML = 'Copied';
 }
 
 function out_function(id) {
-	var tooltip = document.getElementById('myTooltip' + id);
+	const tooltip = document.getElementById('myTooltip' + id);
 	tooltip.innerHTML = 'Copy to clipboard';
 }
 
@@ -470,7 +487,7 @@ function Scroll() {
 }
 
 function disableScroll() {
-	var node = document.createElement('style');
+	const node = document.createElement('style');
 	node.setAttribute('type', 'text/css');
 	node.textContent =
 		'html, body { height: auto ! important ; overflow: hidden ! important ; }';
@@ -493,27 +510,28 @@ function downloadTheme(uuid, link) {
 
 // ---- MAIN ----
 
-function HideBufferingIcon() {
-	const bufferingIcon = document.getElementById('themes-buffering');
-	bufferingIcon.style.display = 'none';
-}
-
 function EnableSelect() {
 	const sortCriteria = document.getElementById('sort-criteria');
-	sortCriteria.removeAttribute('disabled');
+	if (sortCriteria) sortCriteria.removeAttribute('disabled');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+	renderThemeSkeletons();
+
 	const themes = new Themes();
 	displaythemes = new DisplayThemes();
 
 	themes
 		.Items()
 		.then((themes) => {
-			displaythemes.setThemes(themes);
-			displaythemes.sortThemes();
+			if (themes && Array.isArray(themes)) {
+				displaythemes.setThemes(themes);
+				displaythemes.sortThemes();
+			}
 		})
-		.then(HideBufferingIcon)
-		.then(EnableSelect)
-		.then(Scroll);
+		.catch((e) => console.error(e))
+		.finally(() => {
+			EnableSelect();
+			Scroll();
+		});
 });

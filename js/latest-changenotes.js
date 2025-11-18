@@ -4,6 +4,20 @@
 
 const changenotesList = document.getElementById('changenotesList');
 
+function renderLatestChangenotesSkeletons(count = 1) {
+	const list = changenotesList;
+	if (!list) return;
+	let s = '';
+	for (let i = 0; i < count; i++) {
+		s += `<div class="changenote-card skeleton" aria-hidden="true">
+            <h2 class="changenote-title skeleton-line title"></h2>
+            <div class="skeleton-line block"></div>
+            <div class="skeleton-line block small"></div>
+        </div>`;
+	}
+	list.innerHTML = s;
+}
+
 class Changenotes {
 	async Items() {
 		try {
@@ -85,9 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	const changenotes = new Changenotes();
 	const displaychangenotes = new DisplayChangenotes();
 
+	renderLatestChangenotesSkeletons();
+
 	changenotes
 		.Items()
 		.then((changenotes) =>
 			displaychangenotes.displayChangenotes(changenotes)
-		);
+		)
+		.catch((e) => console.error(e));
 });
