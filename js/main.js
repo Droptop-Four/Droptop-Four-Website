@@ -2,12 +2,6 @@
 
 // ---- MAIN ----
 
-if ('serviceWorker' in navigator) {
-	window.addEventListener('load', function () {
-		navigator.serviceWorker.register('/serviceWorker.js');
-	});
-}
-
 function DownloadBase() {
 	window.location.href = '../direct-download?variant=base';
 }
