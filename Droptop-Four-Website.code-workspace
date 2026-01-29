@@ -1,8 +1,10 @@
+/** @format */
+
 {
 	"folders": [
 		{
-			"path": "."
-		}
+			"path": ".",
+		},
 	],
 	"settings": {
 		"workbench.colorCustomizations": {
@@ -22,8 +24,9 @@
 			"titleBar.activeBackground": "#ff6666",
 			"titleBar.activeForeground": "#15202b",
 			"titleBar.inactiveBackground": "#ff666699",
-			"titleBar.inactiveForeground": "#15202b99"
+			"titleBar.inactiveForeground": "#15202b99",
 		},
-		"peacock.color": "ff6666"
-	}
+		"peacock.color": "ff6666",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+	},
 }

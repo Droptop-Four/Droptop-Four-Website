@@ -239,7 +239,7 @@
 	line-height: 1.4;
 }
 
-.droptop-info-3 {
+.droptop-info-6 {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -249,14 +249,14 @@
 
 .slideshow-container-1 {
 	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
 	@include border-radius-mixin($border-radius);
 }
 
 .slideshow-container-2 {
 	position: relative;
 	padding: 10px;
-	border-style: solid;
-	border-color: $accents-text-color;
 	@include border-radius-mixin($border-radius);
 }
 
@@ -391,6 +391,23 @@
 	line-height: 1.4;
 }
 
+.droptop-info-3 {
+	position: relative;
+	width: 100%;
+}
+
+.image-block-3 {
+	-o-object-fit: cover;
+	-o-object-position: right top;
+	object-fit: cover;
+	object-position: right top;
+	opacity: 0.6;
+	width: 100%;
+	max-width: 90%;
+	height: 600px;
+	@include border-radius-mixin($border-radius);
+}
+
 .droptop-info-4 {
 	position: relative;
 	width: 100%;
@@ -398,9 +415,9 @@
 
 .image-block-4 {
 	-o-object-fit: cover;
-	-o-object-position: right top;
+	-o-object-position: left top;
 	object-fit: cover;
-	object-position: right top;
+	object-position: left top;
 	opacity: 0.6;
 	width: 100%;
 	max-width: 90%;
@@ -414,23 +431,6 @@
 }
 
 .image-block-5 {
-	-o-object-fit: cover;
-	-o-object-position: left top;
-	object-fit: cover;
-	object-position: left top;
-	opacity: 0.6;
-	width: 100%;
-	max-width: 90%;
-	height: 600px;
-	@include border-radius-mixin($border-radius);
-}
-
-.droptop-info-6 {
-	position: relative;
-	width: 100%;
-}
-
-.image-block-6 {
 	-o-object-fit: cover;
 	-o-object-position: center center;
 	object-fit: cover;
@@ -448,6 +448,69 @@
 
 .discord-invite img {
 	@include border-radius-mixin($border-radius);
+}
+
+.review-card {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	background: linear-gradient(135deg, rgba(29, 45, 33, 0.8) 0%, rgba(16, 25, 19, 0.9) 100%);
+	@include border-radius-mixin($border-radius);
+	min-height: 280px;
+	justify-content: space-between;
+	box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.6), 0 10px 30px 0 rgba(67, 255, 100, 0.1);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+
+	@media (hover: hover) {
+		&:hover {
+			box-shadow: 0 30px 80px 0 rgba(0, 0, 0, 0.7), 0 15px 40px 0 rgba(67, 255, 100, 0.15);
+			transform: translateY(-8px);
+		}
+	}
+}
+
+.review-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.review-stars {
+	color: $accents-text-color;
+	font-size: 28px;
+	letter-spacing: 3px;
+	text-shadow: 0 0 10px rgba(67, 255, 100, 0.3);
+}
+
+.review-rating {
+	color: $accents-text-color;
+	font-size: 16px;
+	font-weight: bold;
+	background: rgba(67, 255, 100, 0.1);
+	padding: 4px 12px;
+	@include border-radius-mixin(4px);
+	border: 1px solid rgba(67, 255, 100, 0.3);
+}
+
+.review-text {
+	color: $main-text-color;
+	line-height: 1.7;
+	margin: 15px 0;
+	flex-grow: 1;
+	font-weight: 500;
+}
+
+.review-author {
+	color: $accents-text-color;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 20px;
+	text-align: right;
+	letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 1160px) {
@@ -545,15 +608,24 @@
 		transform: translateX(-50%);
 	}
 
-	.droptop-info-3 {
+	.droptop-info-6 {
 		padding: 0 10px;
-		border-style: solid;
-		border-color: $accents-text-color;
-		@include border-radius-mixin($border-radius);
 	}
 
 	.slideshow-container-2 {
 		border: none;
+	}
+
+	.review-card {
+		padding: 30px;
+		background: linear-gradient(135deg, rgba(29, 45, 33, 0.8) 0%, rgba(16, 25, 19, 0.9) 100%);
+		box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.6), 0 10px 30px 0 rgba(67, 255, 100, 0.1);
+		min-height: 250px;
+	}
+
+	.review-header {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.Slide img {
@@ -563,6 +635,18 @@
 		   object-position: left top;
 		width: auto;
 		height: 100px;
+	}
+
+	.droptop-info-3 {
+		padding-top: 35px;
+		border-style: solid;
+		border-color: $accents-text-color;
+		@include border-radius-mixin($border-radius);
+	}
+
+	.image-block-3 {
+		opacity: 1;
+		height: 200px;
 	}
 
 	.droptop-info-4 {
@@ -585,18 +669,6 @@
 	}
 
 	.image-block-5 {
-		opacity: 1;
-		height: 200px;
-	}
-
-	.droptop-info-6 {
-		padding-top: 35px;
-		border-style: solid;
-		border-color: $accents-text-color;
-		@include border-radius-mixin($border-radius);
-	}
-
-	.image-block-6 {
 		opacity: 1;
 		height: 200px;
 	}
